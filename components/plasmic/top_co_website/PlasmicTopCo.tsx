@@ -92,8 +92,6 @@ import Icon02DarkIcon from "./icons/PlasmicIcon__Icon02Dark"; // plasmic-import:
 import Logo5Icon from "./icons/PlasmicIcon__Logo5"; // plasmic-import: LOHOmeCfgcVB/icon
 import Vector4983Icon from "./icons/PlasmicIcon__Vector4983"; // plasmic-import: Rq3Ft_qTH5VY/icon
 import PlayDeck80Icon from "./icons/PlasmicIcon__PlayDeck80"; // plasmic-import: D49IAtZWKOKQ/icon
-import Vector4999Icon from "./icons/PlasmicIcon__Vector4999"; // plasmic-import: APc44alYCyQr/icon
-import Group1321317461Icon from "./icons/PlasmicIcon__Group1321317461"; // plasmic-import: UcwCXuesB8_H/icon
 import WhiteSymbol2Icon from "./icons/PlasmicIcon__WhiteSymbol2"; // plasmic-import: MtwYLwahagat/icon
 import IntersectIcon from "./icons/PlasmicIcon__Intersect"; // plasmic-import: C_VPOYT48nxW/icon
 import CompactLogoCompactMonoWhiteIcon from "./icons/PlasmicIcon__CompactLogoCompactMonoWhite"; // plasmic-import: jcMp9w3g5Yae/icon
@@ -304,10 +302,6 @@ export type PlasmicTopCo__OverridesType = {
   arrow247?: Flex__<"div">;
   icon24Grid7?: Flex__<"div">;
   icons24IconGridSquare7?: Flex__<"div">;
-  handwrite?: Flex__<"div">;
-  frame2131327278?: Flex__<"div">;
-  group1817245929?: Flex__<"div">;
-  plane?: Flex__<"div">;
   banner2?: Flex__<"div">;
   content12?: Flex__<"div">;
   content13?: Flex__<"div">;
@@ -3051,46 +3045,6 @@ function PlasmicTopCo__RenderFunc(props: {
                     </div>
                   </Stack__>
                 </Stack__>
-                <div
-                  data-plasmic-name={"handwrite"}
-                  data-plasmic-override={overrides.handwrite}
-                  className={classNames(projectcss.all, sty.handwrite)}
-                >
-                  <div
-                    data-plasmic-name={"frame2131327278"}
-                    data-plasmic-override={overrides.frame2131327278}
-                    className={classNames(projectcss.all, sty.frame2131327278)}
-                  >
-                    <div
-                      data-plasmic-name={"group1817245929"}
-                      data-plasmic-override={overrides.group1817245929}
-                      className={classNames(
-                        projectcss.all,
-                        sty.group1817245929
-                      )}
-                    >
-                      <Vector4999Icon
-                        className={classNames(projectcss.all, sty.svg__rrCeC)}
-                        role={"img"}
-                      />
-
-                      <div
-                        data-plasmic-name={"plane"}
-                        data-plasmic-override={overrides.plane}
-                        className={classNames(projectcss.all, sty.plane)}
-                      >
-                        <Group1321317461Icon
-                          className={classNames(projectcss.all, sty.svg__vnqT1)}
-                          role={"img"}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <svg
-                    className={classNames(projectcss.all, sty.svg__h32Yj)}
-                    role={"img"}
-                  />
-                </div>
               </Stack__>
               <Stack__
                 as={"div"}
@@ -9160,10 +9114,6 @@ const PlasmicDescendants = {
     "arrow247",
     "icon24Grid7",
     "icons24IconGridSquare7",
-    "handwrite",
-    "frame2131327278",
-    "group1817245929",
-    "plane",
     "banner2",
     "content12",
     "content13",
@@ -10133,10 +10083,6 @@ const PlasmicDescendants = {
     "arrow247",
     "icon24Grid7",
     "icons24IconGridSquare7",
-    "handwrite",
-    "frame2131327278",
-    "group1817245929",
-    "plane",
     "banner2",
     "content12",
     "content13",
@@ -10174,10 +10120,6 @@ const PlasmicDescendants = {
     "arrow247",
     "icon24Grid7",
     "icons24IconGridSquare7",
-    "handwrite",
-    "frame2131327278",
-    "group1817245929",
-    "plane",
     "banner2",
     "content12",
     "content13",
@@ -10209,11 +10151,7 @@ const PlasmicDescendants = {
     "label8",
     "arrow247",
     "icon24Grid7",
-    "icons24IconGridSquare7",
-    "handwrite",
-    "frame2131327278",
-    "group1817245929",
-    "plane"
+    "icons24IconGridSquare7"
   ],
   image2: ["image2", "htmlVideo"],
   htmlVideo: ["htmlVideo"],
@@ -10258,10 +10196,6 @@ const PlasmicDescendants = {
   arrow247: ["arrow247", "icon24Grid7", "icons24IconGridSquare7"],
   icon24Grid7: ["icon24Grid7", "icons24IconGridSquare7"],
   icons24IconGridSquare7: ["icons24IconGridSquare7"],
-  handwrite: ["handwrite", "frame2131327278", "group1817245929", "plane"],
-  frame2131327278: ["frame2131327278", "group1817245929", "plane"],
-  group1817245929: ["group1817245929", "plane"],
-  plane: ["plane"],
   banner2: [
     "banner2",
     "content12",
@@ -13100,10 +13034,6 @@ type NodeDefaultElementType = {
   arrow247: "div";
   icon24Grid7: "div";
   icons24IconGridSquare7: "div";
-  handwrite: "div";
-  frame2131327278: "div";
-  group1817245929: "div";
-  plane: "div";
   banner2: "div";
   content12: "div";
   content13: "div";
@@ -13780,10 +13710,6 @@ export const PlasmicTopCo = Object.assign(
     arrow247: makeNodeComponent("arrow247"),
     icon24Grid7: makeNodeComponent("icon24Grid7"),
     icons24IconGridSquare7: makeNodeComponent("icons24IconGridSquare7"),
-    handwrite: makeNodeComponent("handwrite"),
-    frame2131327278: makeNodeComponent("frame2131327278"),
-    group1817245929: makeNodeComponent("group1817245929"),
-    plane: makeNodeComponent("plane"),
     banner2: makeNodeComponent("banner2"),
     content12: makeNodeComponent("content12"),
     content13: makeNodeComponent("content13"),
