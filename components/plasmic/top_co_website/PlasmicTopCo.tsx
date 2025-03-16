@@ -94,7 +94,6 @@ import Vector4983Icon from "./icons/PlasmicIcon__Vector4983"; // plasmic-import:
 import PlayDeck80Icon from "./icons/PlasmicIcon__PlayDeck80"; // plasmic-import: D49IAtZWKOKQ/icon
 import Vector4999Icon from "./icons/PlasmicIcon__Vector4999"; // plasmic-import: APc44alYCyQr/icon
 import Group1321317461Icon from "./icons/PlasmicIcon__Group1321317461"; // plasmic-import: UcwCXuesB8_H/icon
-import Frame2131327277Icon from "./icons/PlasmicIcon__Frame2131327277"; // plasmic-import: ycEJEN1ugpDO/icon
 import WhiteSymbol2Icon from "./icons/PlasmicIcon__WhiteSymbol2"; // plasmic-import: MtwYLwahagat/icon
 import IntersectIcon from "./icons/PlasmicIcon__Intersect"; // plasmic-import: C_VPOYT48nxW/icon
 import CompactLogoCompactMonoWhiteIcon from "./icons/PlasmicIcon__CompactLogoCompactMonoWhite"; // plasmic-import: jcMp9w3g5Yae/icon
@@ -3087,7 +3086,7 @@ function PlasmicTopCo__RenderFunc(props: {
                       </div>
                     </div>
                   </div>
-                  <Frame2131327277Icon
+                  <svg
                     className={classNames(projectcss.all, sty.svg__h32Yj)}
                     role={"img"}
                   />
