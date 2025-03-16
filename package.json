@@ -1,33 +1,44 @@
 {
-  "name": "tmp-cpa",
+  "name": "my-project",
   "version": "0.1.0",
   "private": true,
+  "description": "A Strapi application",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "strapi build",
+    "console": "strapi console",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "seed:example": "node ./scripts/seed.js",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
-    "@plasmicapp/cli": "^0.1.335",
     "@plasmicapp/loader-nextjs": "^1.0.415",
-    "@plasmicapp/react-web": "^0.2.376",
-    "@plasmicpkgs/lottie-react": "^0.0.202",
-    "@plasmicpkgs/plasmic-basic-components": "^0.0.234",
-    "@plasmicpkgs/plasmic-nav": "^0.0.181",
-    "@plasmicpkgs/plasmic-query": "^0.0.230",
-    "@plasmicpkgs/plasmic-strapi": "^0.1.161",
-    "@plasmicpkgs/react-awesome-reveal": "^3.8.213",
-    "next": "14.2.24",
-    "react": "^18",
-    "react-dom": "^18"
+    "@strapi/plugin-cloud": "5.11.2",
+    "@strapi/plugin-users-permissions": "5.11.2",
+    "@strapi/strapi": "5.11.2",
+    "better-sqlite3": "11.3.0",
+    "fs-extra": "^10.0.0",
+    "mime-types": "^2.1.27",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.24",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "ac051f65-81ae-488e-a3e1-35ec592785f8"
   }
 }
