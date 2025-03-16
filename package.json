@@ -31,4 +31,3 @@
     "typescript": "^5"
   }
 }
-"build": "plasmic sync --projects [project_ID] && next build"
