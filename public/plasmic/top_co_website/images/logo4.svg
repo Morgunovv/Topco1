@@ -1,0 +1,9 @@
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 71">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M35.417 0C35.417 19.56 19.56 35.417 0 35.417 0 15.857 15.857 0 35.417 0zm0 70.833C15.857 70.833 0 54.977 0 35.417c19.56 0 35.417 15.856 35.417 35.416zm35.416-35.416c0 19.56-15.856 35.416-35.416 35.416 0-19.56 15.856-35.416 35.416-35.416zM67.882 2.95c0 16.3-13.214 29.514-29.514 29.514 0-16.3 13.214-29.514 29.514-29.514z" fill="url(#SsGtpBg5NLSya)"/>
+  <defs>
+    <radialGradient id="SsGtpBg5NLSya" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(6.24997 54.58334 -33.71937 3.86098 37.083 14.792)">
+      <stop stop-color="#F6FAFF"/>
+      <stop offset="1" stop-color="#fff"/>
+    </radialGradient>
+  </defs>
+</svg>
