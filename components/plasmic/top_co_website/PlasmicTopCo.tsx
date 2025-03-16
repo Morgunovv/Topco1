@@ -156,7 +156,6 @@ import Vector208Icon from "./icons/PlasmicIcon__Vector208"; // plasmic-import: Q
 import Vector209Icon from "./icons/PlasmicIcon__Vector209"; // plasmic-import: TYQ6ei60I796/icon
 import Union3Icon from "./icons/PlasmicIcon__Union3"; // plasmic-import: d2RxddzUvi28/icon
 import Explore242Icon from "./icons/PlasmicIcon__Explore242"; // plasmic-import: qkNPSoxjkhbi/icon
-import Handwrite4Icon from "./icons/PlasmicIcon__Handwrite4"; // plasmic-import: VccAMTDQFIFc/icon
 
 createPlasmicElementProxy;
 
@@ -8967,10 +8966,6 @@ function PlasmicTopCo__RenderFunc(props: {
                     </Stack__>
                   </Stack__>
                 </Stack__>
-                <Handwrite4Icon
-                  className={classNames(projectcss.all, sty.svg__aOkxT)}
-                  role={"img"}
-                />
               </Stack__>
             </div>
           ) : null}

@@ -13617,18 +13617,3 @@
     display: block;
   }
 }
-.svg__aOkxT {
-  object-fit: cover;
-  max-width: 100%;
-  color: #3480f1;
-  width: 344.1274108886719px;
-  height: 102.45878601074219px;
-  position: relative;
-  flex-shrink: 0;
-  display: none;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .svg__aOkxT {
-    display: block;
-  }
-}
