@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": false
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,11 +21,4 @@
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
-}
-{
-  "compilerOptions": {
-    "noEmit": true,
-    "allowJs": true,
-    "checkJs": false
-  }
 }
