@@ -7,18 +7,24 @@
 import * as React from "react";
 import { hasVariant, ensureGlobalVariants } from "@plasmicapp/react-web";
 import { StrapiCredentialsProvider } from "@plasmicpkgs/plasmic-strapi";
+import { AntdConfigProvider } from "@plasmicpkgs/antd5/skinny/registerConfigProvider";
 
 export interface GlobalContextsProviderProps {
   children?: React.ReactElement;
   strapiCredentialsProviderProps?: Partial<
     Omit<React.ComponentProps<typeof StrapiCredentialsProvider>, "children">
   >;
+
+  antdConfigProviderProps?: Partial<
+    Omit<React.ComponentProps<typeof AntdConfigProvider>, "children">
+  >;
 }
 
 export default function GlobalContextsProvider(
   props: GlobalContextsProviderProps
 ) {
-  const { children, strapiCredentialsProviderProps } = props;
+  const { children, strapiCredentialsProviderProps, antdConfigProviderProps } =
+    props;
 
   return (
     <StrapiCredentialsProvider
@@ -36,7 +42,100 @@ export default function GlobalContextsProvider(
           : "a83be96e7b87c4e00c2cc509fa2ebc732e0ef96b72a998726361309065f055d423e7c13dafbad002a4537e8fbdb6f90c395fb2f3f148b3c58a10c737584fc53c26ea976c7a9f93cc31a9a0e2e5114450060b65d4c4894a3e3a93646b7ab3915c617a7a72767db39b0c240ac83e3641d42971fa7ff7699bc68e8399c16e1c7956"
       }
     >
-      {children}
+      <AntdConfigProvider
+        {...antdConfigProviderProps}
+        borderRadius={
+          antdConfigProviderProps && "borderRadius" in antdConfigProviderProps
+            ? antdConfigProviderProps.borderRadius!
+            : 6
+        }
+        colorBgBase={
+          antdConfigProviderProps && "colorBgBase" in antdConfigProviderProps
+            ? antdConfigProviderProps.colorBgBase!
+            : "#ffffff"
+        }
+        colorError={
+          antdConfigProviderProps && "colorError" in antdConfigProviderProps
+            ? antdConfigProviderProps.colorError!
+            : "#ff4d4f"
+        }
+        colorInfo={
+          antdConfigProviderProps && "colorInfo" in antdConfigProviderProps
+            ? antdConfigProviderProps.colorInfo!
+            : "#1677ff"
+        }
+        colorPrimary={
+          antdConfigProviderProps && "colorPrimary" in antdConfigProviderProps
+            ? antdConfigProviderProps.colorPrimary!
+            : "#1677ff"
+        }
+        colorSuccess={
+          antdConfigProviderProps && "colorSuccess" in antdConfigProviderProps
+            ? antdConfigProviderProps.colorSuccess!
+            : "#52c41a"
+        }
+        colorWarning={
+          antdConfigProviderProps && "colorWarning" in antdConfigProviderProps
+            ? antdConfigProviderProps.colorWarning!
+            : "#faad14"
+        }
+        controlHeight={
+          antdConfigProviderProps && "controlHeight" in antdConfigProviderProps
+            ? antdConfigProviderProps.controlHeight!
+            : 32
+        }
+        defaultDark={
+          antdConfigProviderProps && "defaultDark" in antdConfigProviderProps
+            ? antdConfigProviderProps.defaultDark!
+            : false
+        }
+        lineWidth={
+          antdConfigProviderProps && "lineWidth" in antdConfigProviderProps
+            ? antdConfigProviderProps.lineWidth!
+            : 1
+        }
+        loadingText={
+          antdConfigProviderProps && "loadingText" in antdConfigProviderProps
+            ? antdConfigProviderProps.loadingText!
+            : undefined
+        }
+        removeLoading={
+          antdConfigProviderProps && "removeLoading" in antdConfigProviderProps
+            ? antdConfigProviderProps.removeLoading!
+            : undefined
+        }
+        sizeStep={
+          antdConfigProviderProps && "sizeStep" in antdConfigProviderProps
+            ? antdConfigProviderProps.sizeStep!
+            : 4
+        }
+        sizeUnit={
+          antdConfigProviderProps && "sizeUnit" in antdConfigProviderProps
+            ? antdConfigProviderProps.sizeUnit!
+            : 4
+        }
+        themeStyles={
+          antdConfigProviderProps && "themeStyles" in antdConfigProviderProps
+            ? antdConfigProviderProps.themeStyles!
+            : true
+            ? {
+                fontFamily: "Inter",
+                fontSize: "16px",
+                fontWeight: "400",
+                lineHeight: "1.5",
+                color: "#4F4F4F",
+                letterSpacing: "normal"
+              }
+            : undefined
+        }
+        wireframe={
+          antdConfigProviderProps && "wireframe" in antdConfigProviderProps
+            ? antdConfigProviderProps.wireframe!
+            : false
+        }
+      >
+        {children}
+      </AntdConfigProvider>
     </StrapiCredentialsProvider>
   );
 }

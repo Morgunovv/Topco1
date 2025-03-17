@@ -81,6 +81,7 @@
   position: absolute;
   top: -1px;
   left: -1px;
+  margin-left: 103px;
 }
 .svg__k15MU {
   object-fit: cover;
@@ -98,9 +99,11 @@
   width: auto;
   height: auto;
   display: flex;
-  position: relative;
+  position: absolute;
   flex-direction: row;
   padding-left: 212px;
+  left: 275px;
+  top: 16px;
 }
 .buttons > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -169,15 +172,16 @@
 }
 .label {
   display: block;
-  font-size: 18px;
-  text-align: right;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0em;
-  line-height: 24px;
-  color: rgba(20, 22, 31, 1);
   position: relative;
   padding-right: 0px;
+  cursor: pointer;
+  letter-spacing: 0em;
+  line-height: 24px;
+  text-align: right;
+  color: rgba(20, 22, 31, 1);
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
 }
 .freeBox__wVv2U {
   display: block;
@@ -196,6 +200,13 @@
   position: absolute;
   left: 0px;
   top: 0px;
+  transition-property: all;
+  transition-duration: 1s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
+}
+.root .svg__n8AMe:hover {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(180deg);
 }
 .button2 {
   width: auto;
@@ -250,6 +261,8 @@
   line-height: 24px;
   color: rgba(20, 22, 31, 1);
   position: relative;
+  padding-right: 0px;
+  cursor: pointer;
 }
 .arrow24 {
   width: 24px;
@@ -353,6 +366,8 @@
   line-height: 24px;
   color: rgba(20, 22, 31, 1);
   position: relative;
+  padding-right: 0px;
+  cursor: pointer;
 }
 .arrow242 {
   width: 24px;
@@ -456,6 +471,8 @@
   line-height: 24px;
   color: rgba(20, 22, 31, 1);
   position: relative;
+  padding-right: 0px;
+  cursor: pointer;
 }
 .arrow243 {
   width: 24px;
@@ -559,6 +576,8 @@
   line-height: 24px;
   color: rgba(20, 22, 31, 1);
   position: relative;
+  padding-right: 0px;
+  cursor: pointer;
 }
 .arrow244 {
   width: 24px;
@@ -617,6 +636,7 @@
   position: relative;
   overflow: hidden;
   flex-direction: row;
+  cursor: pointer;
   border-radius: 100px;
   padding: 12px 18px;
 }
@@ -745,6 +765,36 @@
   .pageBlock1 {
     display: none;
   }
+}
+.menu:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 530px;
+  top: -38px;
+  background: #ffffff;
+}
+.menuItem__r6OLv:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__i58XB {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.menuItem__kbdRx:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__btRkn {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
 }
 .h1__fd3V {
   width: auto;
@@ -1052,6 +1102,17 @@
   top: 76.8%;
   left: 29.92%;
   border-radius: 50.438270568847656px;
+}
+.menuItem__bb08S:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__eps3V {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
 }
 .svg__b30Rp {
   object-fit: cover;
@@ -4672,6 +4733,9 @@
   > img {
   margin-top: 10px;
 }
+.root .card28:hover {
+  background: var(--token-vLRAY5hoWx1s);
+}
 .content28 {
   height: auto;
   display: flex;
@@ -4787,6 +4851,9 @@
 .card9 > :global(.__wab_flex-container) > picture > img,
 .card9 > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: 10px;
+}
+.root .card9:hover {
+  background: var(--token-vLRAY5hoWx1s);
 }
 .content29 {
   height: auto;
@@ -4907,6 +4974,9 @@
   > picture
   > img {
   margin-top: 10px;
+}
+.root .card10:hover {
+  background: var(--token-vLRAY5hoWx1s);
 }
 .content30 {
   height: auto;
@@ -5030,6 +5100,9 @@
   > img {
   margin-top: 10px;
 }
+.root .card11:hover {
+  background: var(--token-vLRAY5hoWx1s);
+}
 .content31 {
   height: auto;
   display: flex;
@@ -5148,6 +5221,9 @@
   > picture
   > img {
   margin-top: 10px;
+}
+.root .card12:hover {
+  background: var(--token-vLRAY5hoWx1s);
 }
 .content32 {
   height: auto;
@@ -5286,6 +5362,9 @@
   > img {
   margin-top: 10px;
 }
+.root .card13:hover {
+  background: var(--token-vLRAY5hoWx1s);
+}
 .content33 {
   height: auto;
   display: flex;
@@ -5398,6 +5477,9 @@
   > img {
   margin-top: 10px;
 }
+.root .card14:hover {
+  background: var(--token-vLRAY5hoWx1s);
+}
 .content14 {
   height: auto;
   display: flex;
@@ -5508,6 +5590,9 @@
   > img {
   margin-top: 10px;
 }
+.root .card15:hover {
+  background: var(--token-vLRAY5hoWx1s);
+}
 .content15 {
   height: auto;
   display: flex;
@@ -5617,6 +5702,9 @@
   > picture
   > img {
   margin-top: 10px;
+}
+.root .card16:hover {
+  background: var(--token-vLRAY5hoWx1s);
 }
 .content16 {
   height: auto;
@@ -5790,6 +5878,9 @@
   > img {
   margin-top: 10px;
 }
+.root .card17:hover {
+  background: var(--token-vLRAY5hoWx1s);
+}
 .content17 {
   height: auto;
   display: flex;
@@ -5899,6 +5990,9 @@
   > picture
   > img {
   margin-top: 10px;
+}
+.root .card18:hover {
+  background: var(--token-vLRAY5hoWx1s);
 }
 .content18 {
   height: auto;
@@ -6022,6 +6116,9 @@
   > img {
   margin-top: 10px;
 }
+.root .card19:hover {
+  background: var(--token-vLRAY5hoWx1s);
+}
 .content19 {
   height: auto;
   display: flex;
@@ -6140,6 +6237,9 @@
   > picture
   > img {
   margin-top: 10px;
+}
+.root .card20:hover {
+  background: var(--token-vLRAY5hoWx1s);
 }
 .content20 {
   height: auto;

@@ -60,13 +60,18 @@ export const getStaticProps: GetStaticProps = async (context) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const pageModules = await PLASMIC.fetchPages();
-  return {
-    paths: pageModules.map((mod) => ({
-      params: {
-        catchall: mod.path.substring(1).split("/"),
-      },
-    })),
-    fallback: "blocking",
+  // Определяем тип для параметров пути
+  type PathParams = {
+    catchall: string[];
   };
-}
+
+  const paths: { params: PathParams }[] = [
+    // Если нужно, добавьте конкретные пути, например:
+    // { params: { catchall: ['some', 'path'] } }
+  ];
+
+  return {
+    paths,
+    fallback: false // или 'blocking' в зависимости от ваших потребностей
+  };
+};

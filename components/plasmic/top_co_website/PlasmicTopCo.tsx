@@ -61,6 +61,8 @@ import {
 import * as plasmicAuth from "@plasmicapp/react-web/lib/auth";
 import { usePlasmicDataSourceContext } from "@plasmicapp/data-sources-context";
 
+import { AntdMenu } from "@plasmicpkgs/antd5/skinny/registerMenu";
+import { AntdMenuItem } from "@plasmicpkgs/antd5/skinny/registerMenu";
 import { LottieWrapper } from "@plasmicpkgs/lottie-react";
 import { Video } from "@plasmicpkgs/plasmic-basic-components";
 import Footer1 from "../../Footer1"; // plasmic-import: rAIC55lfHAgI/component
@@ -70,6 +72,7 @@ import { useScreenVariants as useScreenVariantsknLyTCzNv2Gm } from "./PlasmicGlo
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: tVrjFA7RVCG7zyycB4xXud/projectcss
 import sty from "./PlasmicTopCo.module.css"; // plasmic-import: gNJkpbGSqBC6/css
 
@@ -164,9 +167,11 @@ export type PlasmicTopCo__VariantsArgs = {};
 type VariantPropType = keyof PlasmicTopCo__VariantsArgs;
 export const PlasmicTopCo__VariantProps = new Array<VariantPropType>();
 
-export type PlasmicTopCo__ArgsType = {};
+export type PlasmicTopCo__ArgsType = {
+  children?: React.ReactNode;
+};
 type ArgPropType = keyof PlasmicTopCo__ArgsType;
-export const PlasmicTopCo__ArgProps = new Array<ArgPropType>();
+export const PlasmicTopCo__ArgProps = new Array<ArgPropType>("children");
 
 export type PlasmicTopCo__OverridesType = {
   root?: Flex__<"div">;
@@ -207,6 +212,7 @@ export type PlasmicTopCo__OverridesType = {
   icon24Grid5?: Flex__<"div">;
   icons24IconGridSquare5?: Flex__<"div">;
   pageBlock1?: Flex__<"div">;
+  menu?: Flex__<typeof AntdMenu>;
   illustration?: Flex__<"div">;
   illustration2?: Flex__<"div">;
   playdeck?: Flex__<"div">;
@@ -860,6 +866,7 @@ function PlasmicTopCo__RenderFunc(props: {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
+            plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.root
           )}
         >
@@ -1331,6 +1338,48 @@ function PlasmicTopCo__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.pageBlock1)}
           >
+            <AntdMenu
+              data-plasmic-name={"menu"}
+              data-plasmic-override={overrides.menu}
+              className={classNames("__wab_instance", sty.menu)}
+            >
+              {renderPlasmicSlot({
+                defaultContents: (
+                  <AntdMenuItem
+                    className={classNames(
+                      "__wab_instance",
+                      sty.menuItem__r6OLv
+                    )}
+                    key={"menuItemKey1"}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__i58XB
+                      )}
+                    >
+                      {"Builders Toolkit"}
+                    </div>
+                  </AntdMenuItem>
+                ),
+                value: args.children
+              })}
+              <AntdMenuItem
+                className={classNames("__wab_instance", sty.menuItem__kbdRx)}
+                key={"menuItemKey2"}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__btRkn
+                  )}
+                >
+                  {"Companies"}
+                </div>
+              </AntdMenuItem>
+            </AntdMenu>
             <h1
               className={classNames(
                 projectcss.all,
@@ -1534,6 +1583,20 @@ function PlasmicTopCo__RenderFunc(props: {
                 />
               </div>
             </div>
+            <AntdMenuItem
+              className={classNames("__wab_instance", sty.menuItem__bb08S)}
+              key={"menuItemKey"}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__eps3V
+                )}
+              >
+                {"Menu item"}
+              </div>
+            </AntdMenuItem>
           </Stack__>
           <HandwriteIcon
             className={classNames(projectcss.all, sty.svg__b30Rp)}
@@ -9015,6 +9078,7 @@ const PlasmicDescendants = {
     "icon24Grid5",
     "icons24IconGridSquare5",
     "pageBlock1",
+    "menu",
     "illustration",
     "illustration2",
     "playdeck",
@@ -9713,6 +9777,7 @@ const PlasmicDescendants = {
   icons24IconGridSquare5: ["icons24IconGridSquare5"],
   pageBlock1: [
     "pageBlock1",
+    "menu",
     "illustration",
     "illustration2",
     "playdeck",
@@ -9724,6 +9789,7 @@ const PlasmicDescendants = {
     "getgems",
     "background4"
   ],
+  menu: ["menu"],
   illustration: [
     "illustration",
     "illustration2",
@@ -12935,6 +13001,7 @@ type NodeDefaultElementType = {
   icon24Grid5: "div";
   icons24IconGridSquare5: "div";
   pageBlock1: "div";
+  menu: typeof AntdMenu;
   illustration: "div";
   illustration2: "div";
   playdeck: "div";
@@ -13611,6 +13678,7 @@ export const PlasmicTopCo = Object.assign(
     icon24Grid5: makeNodeComponent("icon24Grid5"),
     icons24IconGridSquare5: makeNodeComponent("icons24IconGridSquare5"),
     pageBlock1: makeNodeComponent("pageBlock1"),
+    menu: makeNodeComponent("menu"),
     illustration: makeNodeComponent("illustration"),
     illustration2: makeNodeComponent("illustration2"),
     playdeck: makeNodeComponent("playdeck"),

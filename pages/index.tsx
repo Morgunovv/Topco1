@@ -3,11 +3,25 @@
 import * as React from "react";
 import { PageParamsProvider as PageParamsProvider__ } from "@plasmicapp/react-web/lib/host";
 import GlobalContextsProvider from "../components/plasmic/top_co_website/PlasmicGlobalContextsProvider";
-
-import { PlasmicTopCo } from "../components/plasmic/top_co_website/PlasmicTopCo";
 import { useRouter } from "next/router";
+import dynamic from 'next/dynamic';
+
+const PlasmicTopCoComponent = dynamic(
+  () => import('../components/plasmic/top_co_website/PlasmicTopCo').then(mod => mod.PlasmicTopCo),
+  { ssr: false }
+);
 
 function TopCo() {
+  // Добавляем проверку на наличие window объекта
+  const isBrowser = typeof window !== "undefined";
+
+  console.log("PlasmicTopCo is rendering...");
+
+  // Используем условный рендеринг
+  if (!isBrowser) {
+    return null; // или можно вернуть загрузочный компонент
+  }
+
   // Use PlasmicTopCo to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
@@ -32,10 +46,11 @@ function TopCo() {
         params={useRouter()?.query}
         query={useRouter()?.query}
       >
-        <PlasmicTopCo />
+        <PlasmicTopCoComponent />
       </PageParamsProvider__>
     </GlobalContextsProvider>
   );
 }
 
 export default TopCo;
+export const dynamicConfig = "force-dynamic"; // Переименовываем export const dynamic в dynamicConfig
