@@ -282,25 +282,6 @@ export type PlasmicTopCo__OverridesType = {
   pageBlock5?: Flex__<"div">;
   titleSubtitle22?: Flex__<"div">;
   title23?: Flex__<"div">;
-  tabBar?: Flex__<"div">;
-  button10?: Flex__<"div">;
-  iconFrame10?: Flex__<"div">;
-  label10?: Flex__<"div">;
-  arrow249?: Flex__<"div">;
-  icon24Grid9?: Flex__<"div">;
-  icons24IconGridSquare9?: Flex__<"div">;
-  button11?: Flex__<"div">;
-  iconFrame11?: Flex__<"div">;
-  label11?: Flex__<"div">;
-  arrow2410?: Flex__<"div">;
-  icon24Grid10?: Flex__<"div">;
-  icons24IconGridSquare10?: Flex__<"div">;
-  button12?: Flex__<"div">;
-  iconFrame12?: Flex__<"div">;
-  label12?: Flex__<"div">;
-  arrow2411?: Flex__<"div">;
-  icon24Grid11?: Flex__<"div">;
-  icons24IconGridSquare11?: Flex__<"div">;
   cards2?: Flex__<"div">;
   card21?: Flex__<"div">;
   content21?: Flex__<"div">;
@@ -2832,260 +2813,6 @@ function PlasmicTopCo__RenderFunc(props: {
                   }
                 </div>
               ) : null}
-              <Stack__
-                as={"div"}
-                data-plasmic-name={"tabBar"}
-                data-plasmic-override={overrides.tabBar}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.tabBar)}
-              >
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"button10"}
-                  data-plasmic-override={overrides.button10}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.button10)}
-                >
-                  {false ? (
-                    <div
-                      data-plasmic-name={"iconFrame10"}
-                      data-plasmic-override={overrides.iconFrame10}
-                      className={classNames(projectcss.all, sty.iconFrame10)}
-                    >
-                      <Contact24Icon
-                        className={classNames(projectcss.all, sty.svg__g0Ott)}
-                        role={"img"}
-                      />
-                    </div>
-                  ) : null}
-                  <div
-                    data-plasmic-name={"label10"}
-                    data-plasmic-override={overrides.label10}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.label10
-                    )}
-                  >
-                    {"All"}
-                  </div>
-                  {false ? (
-                    <div
-                      data-plasmic-name={"arrow249"}
-                      data-plasmic-override={overrides.arrow249}
-                      className={classNames(projectcss.all, sty.arrow249)}
-                    >
-                      {false ? (
-                        <div
-                          data-plasmic-name={"icon24Grid9"}
-                          data-plasmic-override={overrides.icon24Grid9}
-                          className={classNames(
-                            projectcss.all,
-                            sty.icon24Grid9
-                          )}
-                        >
-                          <div
-                            data-plasmic-name={"icons24IconGridSquare9"}
-                            data-plasmic-override={
-                              overrides.icons24IconGridSquare9
-                            }
-                            className={classNames(
-                              projectcss.all,
-                              sty.icons24IconGridSquare9
-                            )}
-                          >
-                            <PlasmicImg__
-                              alt={""}
-                              className={classNames(sty.img__xwA3E)}
-                              displayHeight={"20.571428298950195px"}
-                              displayMaxHeight={"none"}
-                              displayMaxWidth={"100%"}
-                              displayMinHeight={"0"}
-                              displayMinWidth={"0"}
-                              displayWidth={"20.571428298950195px"}
-                              loading={"lazy"}
-                              src={{
-                                src: "/plasmic/top_co_website/images/square.svg",
-                                fullWidth: 20.571428298950195,
-                                fullHeight: 20.571428298950195,
-                                aspectRatio: 1
-                              }}
-                            />
-                          </div>
-                        </div>
-                      ) : null}
-                      <Icon2Icon
-                        className={classNames(projectcss.all, sty.svg___4Ul5C)}
-                        role={"img"}
-                      />
-                    </div>
-                  ) : null}
-                </Stack__>
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"button11"}
-                  data-plasmic-override={overrides.button11}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.button11)}
-                >
-                  {false ? (
-                    <div
-                      data-plasmic-name={"iconFrame11"}
-                      data-plasmic-override={overrides.iconFrame11}
-                      className={classNames(projectcss.all, sty.iconFrame11)}
-                    >
-                      <Contact24Icon
-                        className={classNames(projectcss.all, sty.svg__ibRuh)}
-                        role={"img"}
-                      />
-                    </div>
-                  ) : null}
-                  <div
-                    data-plasmic-name={"label11"}
-                    data-plasmic-override={overrides.label11}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.label11
-                    )}
-                  >
-                    {"For Customers"}
-                  </div>
-                  {false ? (
-                    <div
-                      data-plasmic-name={"arrow2410"}
-                      data-plasmic-override={overrides.arrow2410}
-                      className={classNames(projectcss.all, sty.arrow2410)}
-                    >
-                      {false ? (
-                        <div
-                          data-plasmic-name={"icon24Grid10"}
-                          data-plasmic-override={overrides.icon24Grid10}
-                          className={classNames(
-                            projectcss.all,
-                            sty.icon24Grid10
-                          )}
-                        >
-                          <div
-                            data-plasmic-name={"icons24IconGridSquare10"}
-                            data-plasmic-override={
-                              overrides.icons24IconGridSquare10
-                            }
-                            className={classNames(
-                              projectcss.all,
-                              sty.icons24IconGridSquare10
-                            )}
-                          >
-                            <PlasmicImg__
-                              alt={""}
-                              className={classNames(sty.img__vqVfb)}
-                              displayHeight={"20.571428298950195px"}
-                              displayMaxHeight={"none"}
-                              displayMaxWidth={"100%"}
-                              displayMinHeight={"0"}
-                              displayMinWidth={"0"}
-                              displayWidth={"20.571428298950195px"}
-                              loading={"lazy"}
-                              src={{
-                                src: "/plasmic/top_co_website/images/square.svg",
-                                fullWidth: 20.571428298950195,
-                                fullHeight: 20.571428298950195,
-                                aspectRatio: 1
-                              }}
-                            />
-                          </div>
-                        </div>
-                      ) : null}
-                      <Icon2Icon
-                        className={classNames(projectcss.all, sty.svg__rOnje)}
-                        role={"img"}
-                      />
-                    </div>
-                  ) : null}
-                </Stack__>
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"button12"}
-                  data-plasmic-override={overrides.button12}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.button12)}
-                >
-                  {false ? (
-                    <div
-                      data-plasmic-name={"iconFrame12"}
-                      data-plasmic-override={overrides.iconFrame12}
-                      className={classNames(projectcss.all, sty.iconFrame12)}
-                    >
-                      <Contact24Icon
-                        className={classNames(projectcss.all, sty.svg__gTaS9)}
-                        role={"img"}
-                      />
-                    </div>
-                  ) : null}
-                  <div
-                    data-plasmic-name={"label12"}
-                    data-plasmic-override={overrides.label12}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.label12
-                    )}
-                  >
-                    {"For Developers"}
-                  </div>
-                  {false ? (
-                    <div
-                      data-plasmic-name={"arrow2411"}
-                      data-plasmic-override={overrides.arrow2411}
-                      className={classNames(projectcss.all, sty.arrow2411)}
-                    >
-                      {false ? (
-                        <div
-                          data-plasmic-name={"icon24Grid11"}
-                          data-plasmic-override={overrides.icon24Grid11}
-                          className={classNames(
-                            projectcss.all,
-                            sty.icon24Grid11
-                          )}
-                        >
-                          <div
-                            data-plasmic-name={"icons24IconGridSquare11"}
-                            data-plasmic-override={
-                              overrides.icons24IconGridSquare11
-                            }
-                            className={classNames(
-                              projectcss.all,
-                              sty.icons24IconGridSquare11
-                            )}
-                          >
-                            <PlasmicImg__
-                              alt={""}
-                              className={classNames(sty.img__sw4H8)}
-                              displayHeight={"20.571428298950195px"}
-                              displayMaxHeight={"none"}
-                              displayMaxWidth={"100%"}
-                              displayMinHeight={"0"}
-                              displayMinWidth={"0"}
-                              displayWidth={"20.571428298950195px"}
-                              loading={"lazy"}
-                              src={{
-                                src: "/plasmic/top_co_website/images/square.svg",
-                                fullWidth: 20.571428298950195,
-                                fullHeight: 20.571428298950195,
-                                aspectRatio: 1
-                              }}
-                            />
-                          </div>
-                        </div>
-                      ) : null}
-                      <Icon2Icon
-                        className={classNames(projectcss.all, sty.svg__vZca7)}
-                        role={"img"}
-                      />
-                    </div>
-                  ) : null}
-                </Stack__>
-              </Stack__>
             </Stack__>
             <Stack__
               as={"div"}
@@ -8601,25 +8328,6 @@ const PlasmicDescendants = {
     "pageBlock5",
     "titleSubtitle22",
     "title23",
-    "tabBar",
-    "button10",
-    "iconFrame10",
-    "label10",
-    "arrow249",
-    "icon24Grid9",
-    "icons24IconGridSquare9",
-    "button11",
-    "iconFrame11",
-    "label11",
-    "arrow2410",
-    "icon24Grid10",
-    "icons24IconGridSquare10",
-    "button12",
-    "iconFrame12",
-    "label12",
-    "arrow2411",
-    "icon24Grid11",
-    "icons24IconGridSquare11",
     "cards2",
     "card21",
     "content21",
@@ -9585,25 +9293,6 @@ const PlasmicDescendants = {
     "pageBlock5",
     "titleSubtitle22",
     "title23",
-    "tabBar",
-    "button10",
-    "iconFrame10",
-    "label10",
-    "arrow249",
-    "icon24Grid9",
-    "icons24IconGridSquare9",
-    "button11",
-    "iconFrame11",
-    "label11",
-    "arrow2410",
-    "icon24Grid10",
-    "icons24IconGridSquare10",
-    "button12",
-    "iconFrame12",
-    "label12",
-    "arrow2411",
-    "icon24Grid11",
-    "icons24IconGridSquare11",
     "cards2",
     "card21",
     "content21",
@@ -9725,90 +9414,8 @@ const PlasmicDescendants = {
     "someSubtitle20",
     "handwrite2"
   ],
-  titleSubtitle22: [
-    "titleSubtitle22",
-    "title23",
-    "tabBar",
-    "button10",
-    "iconFrame10",
-    "label10",
-    "arrow249",
-    "icon24Grid9",
-    "icons24IconGridSquare9",
-    "button11",
-    "iconFrame11",
-    "label11",
-    "arrow2410",
-    "icon24Grid10",
-    "icons24IconGridSquare10",
-    "button12",
-    "iconFrame12",
-    "label12",
-    "arrow2411",
-    "icon24Grid11",
-    "icons24IconGridSquare11"
-  ],
+  titleSubtitle22: ["titleSubtitle22", "title23"],
   title23: ["title23"],
-  tabBar: [
-    "tabBar",
-    "button10",
-    "iconFrame10",
-    "label10",
-    "arrow249",
-    "icon24Grid9",
-    "icons24IconGridSquare9",
-    "button11",
-    "iconFrame11",
-    "label11",
-    "arrow2410",
-    "icon24Grid10",
-    "icons24IconGridSquare10",
-    "button12",
-    "iconFrame12",
-    "label12",
-    "arrow2411",
-    "icon24Grid11",
-    "icons24IconGridSquare11"
-  ],
-  button10: [
-    "button10",
-    "iconFrame10",
-    "label10",
-    "arrow249",
-    "icon24Grid9",
-    "icons24IconGridSquare9"
-  ],
-  iconFrame10: ["iconFrame10"],
-  label10: ["label10"],
-  arrow249: ["arrow249", "icon24Grid9", "icons24IconGridSquare9"],
-  icon24Grid9: ["icon24Grid9", "icons24IconGridSquare9"],
-  icons24IconGridSquare9: ["icons24IconGridSquare9"],
-  button11: [
-    "button11",
-    "iconFrame11",
-    "label11",
-    "arrow2410",
-    "icon24Grid10",
-    "icons24IconGridSquare10"
-  ],
-  iconFrame11: ["iconFrame11"],
-  label11: ["label11"],
-  arrow2410: ["arrow2410", "icon24Grid10", "icons24IconGridSquare10"],
-  icon24Grid10: ["icon24Grid10", "icons24IconGridSquare10"],
-  icons24IconGridSquare10: ["icons24IconGridSquare10"],
-  button12: [
-    "button12",
-    "iconFrame12",
-    "label12",
-    "arrow2411",
-    "icon24Grid11",
-    "icons24IconGridSquare11"
-  ],
-  iconFrame12: ["iconFrame12"],
-  label12: ["label12"],
-  arrow2411: ["arrow2411", "icon24Grid11", "icons24IconGridSquare11"],
-  icon24Grid11: ["icon24Grid11", "icons24IconGridSquare11"],
-  icons24IconGridSquare11: ["icons24IconGridSquare11"],
   cards2: [
     "cards2",
     "card21",
@@ -12344,25 +11951,6 @@ type NodeDefaultElementType = {
   pageBlock5: "div";
   titleSubtitle22: "div";
   title23: "div";
-  tabBar: "div";
-  button10: "div";
-  iconFrame10: "div";
-  label10: "div";
-  arrow249: "div";
-  icon24Grid9: "div";
-  icons24IconGridSquare9: "div";
-  button11: "div";
-  iconFrame11: "div";
-  label11: "div";
-  arrow2410: "div";
-  icon24Grid10: "div";
-  icons24IconGridSquare10: "div";
-  button12: "div";
-  iconFrame12: "div";
-  label12: "div";
-  arrow2411: "div";
-  icon24Grid11: "div";
-  icons24IconGridSquare11: "div";
   cards2: "div";
   card21: "div";
   content21: "div";
@@ -12985,25 +12573,6 @@ export const PlasmicTopCo = Object.assign(
     pageBlock5: makeNodeComponent("pageBlock5"),
     titleSubtitle22: makeNodeComponent("titleSubtitle22"),
     title23: makeNodeComponent("title23"),
-    tabBar: makeNodeComponent("tabBar"),
-    button10: makeNodeComponent("button10"),
-    iconFrame10: makeNodeComponent("iconFrame10"),
-    label10: makeNodeComponent("label10"),
-    arrow249: makeNodeComponent("arrow249"),
-    icon24Grid9: makeNodeComponent("icon24Grid9"),
-    icons24IconGridSquare9: makeNodeComponent("icons24IconGridSquare9"),
-    button11: makeNodeComponent("button11"),
-    iconFrame11: makeNodeComponent("iconFrame11"),
-    label11: makeNodeComponent("label11"),
-    arrow2410: makeNodeComponent("arrow2410"),
-    icon24Grid10: makeNodeComponent("icon24Grid10"),
-    icons24IconGridSquare10: makeNodeComponent("icons24IconGridSquare10"),
-    button12: makeNodeComponent("button12"),
-    iconFrame12: makeNodeComponent("iconFrame12"),
-    label12: makeNodeComponent("label12"),
-    arrow2411: makeNodeComponent("arrow2411"),
-    icon24Grid11: makeNodeComponent("icon24Grid11"),
-    icons24IconGridSquare11: makeNodeComponent("icons24IconGridSquare11"),
     cards2: makeNodeComponent("cards2"),
     card21: makeNodeComponent("card21"),
     content21: makeNodeComponent("content21"),
