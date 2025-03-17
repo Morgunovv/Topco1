@@ -7399,7 +7399,7 @@
   display: block;
   font-size: 48px;
   text-align: center;
-  font-family: "Inter Display";
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.100000023841858;

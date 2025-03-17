@@ -16,7 +16,9 @@
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
+    "@plasmicapp/cli": "^0.1.335",
     "@plasmicapp/loader-nextjs": "^1.0.415",
+    "@plasmicapp/react-web": "^0.2.376",
     "@strapi/plugin-cloud": "5.11.2",
     "@strapi/plugin-users-permissions": "5.11.2",
     "@strapi/strapi": "5.11.2",
