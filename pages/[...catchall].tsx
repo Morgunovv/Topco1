@@ -17,10 +17,19 @@ export default function PlasmicLoaderPage(props: {
 }) {
   const { plasmicData, queryCache } = props;
   const router = useRouter();
+
+  // Добавляем обработку состояния загрузки
+  if (router.isFallback) {
+    return <div>Loading...</div>;
+  }
+
+  // Обработка ошибок
   if (!plasmicData || plasmicData.entryCompMetas.length === 0) {
     return <Error statusCode={404} />;
   }
+
   const pageMeta = plasmicData.entryCompMetas[0];
+
   return (
     <PlasmicRootProvider
       loader={PLASMIC}
@@ -60,18 +69,28 @@ export const getStaticProps: GetStaticProps = async (context) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // Определяем тип для параметров пути
-  type PathParams = {
-    catchall: string[];
-  };
-
-  const paths: { params: PathParams }[] = [
-    // Если нужно, добавьте конкретные пути, например:
-    // { params: { catchall: ['some', 'path'] } }
+  // Список существующих статических страниц
+  const staticPages = [
+    '/web-visual-design',
+    '/project-relaunch',
+    '/premium-sass-design',
+    '/',
+    '/website-redesign'
   ];
+
+  // Получаем все возможные пути от PLASMIC
+  const pages = await PLASMIC.fetchPages();
+
+  const paths = pages
+    .filter(page => !staticPages.includes(page.path)) // Исключаем статические страницы
+    .map((page) => ({
+      params: {
+        catchall: page.path.split('/').filter(Boolean)
+      }
+    }));
 
   return {
     paths,
-    fallback: false // или 'blocking' в зависимости от ваших потребностей
+    fallback: 'blocking'
   };
 };
