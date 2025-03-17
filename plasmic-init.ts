@@ -1,10 +1,15 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
 
+console.log('Initializing Plasmic with:', {
+  projectId: process.env.PLASMIC_PROJECT_ID,
+  hasToken: !!process.env.PLASMIC_PROJECT_API_TOKEN
+});
+
 export const PLASMIC = initPlasmicLoader({
   projects: [
     {
-      id: "tVrjFA7RVCG7zyycB4xXud",
-      token: "GTRFxXOnFd2a1M3g9Hql8rpTTnXMbKQGvJhPwQVrWb2ChqeAJW5Wjy4gbeusvolZHoWmG3GkHkCd5zDz8vgQ",
+      id: process.env.PLASMIC_PROJECT_ID as string,
+      token: process.env.PLASMIC_PROJECT_API_TOKEN as string,
     },
   ],
 
