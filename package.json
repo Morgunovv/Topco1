@@ -1,8 +1,9 @@
 {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start"
-}
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
   "dependencies": {
     "@plasmicapp/cli": "^0.1.335",
     "@plasmicapp/loader-nextjs": "^1.0.415",
