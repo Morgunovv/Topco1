@@ -59,6 +59,8 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import ContactSection from "../../ContactSection"; // plasmic-import: 4un3pt4AfjWC/component
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -133,6 +135,7 @@ export type PlasmicFooter1__OverridesType = {
   section4?: Flex__<"div">;
   icons?: Flex__<"div">;
   bottom?: Flex__<"div">;
+  contactSection?: Flex__<typeof ContactSection>;
 };
 
 export interface DefaultFooter1Props {
@@ -773,7 +776,7 @@ function PlasmicFooter1__RenderFunc(props: {
               sty.text__exgW8
             )}
           >
-            {"\u00a9 2024 2025 All rights reserved"}
+            {"\u00a9 2025 All rights reserved"}
           </div>
           <div
             className={classNames(
@@ -786,6 +789,11 @@ function PlasmicFooter1__RenderFunc(props: {
           </div>
         </Stack__>
       </div>
+      <ContactSection
+        data-plasmic-name={"contactSection"}
+        data-plasmic-override={overrides.contactSection}
+        className={classNames("__wab_instance", sty.contactSection)}
+      />
     </div>
   ) as React.ReactElement | null;
 }
@@ -838,7 +846,8 @@ const PlasmicDescendants = {
     "icons24IconGridSquare5",
     "section4",
     "icons",
-    "bottom"
+    "bottom",
+    "contactSection"
   ],
   figmaPaste: [
     "figmaPaste",
@@ -1063,7 +1072,8 @@ const PlasmicDescendants = {
   icons24IconGridSquare5: ["icons24IconGridSquare5"],
   section4: ["section4", "icons"],
   icons: ["icons"],
-  bottom: ["bottom"]
+  bottom: ["bottom"],
+  contactSection: ["contactSection"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1116,6 +1126,7 @@ type NodeDefaultElementType = {
   section4: "div";
   icons: "div";
   bottom: "div";
+  contactSection: typeof ContactSection;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1130,15 +1141,15 @@ type NodeComponentProps<T extends NodeNameType> =
     args?: PlasmicFooter1__ArgsType;
     overrides?: NodeOverridesType<T>;
   } & Omit<PlasmicFooter1__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
-    /* Specify args directly as props*/ Omit<
-      PlasmicFooter1__ArgsType,
-      ReservedPropsType
-    > &
-    /* Specify overrides for each element directly as props*/ Omit<
+    // Specify args directly as props
+    Omit<PlasmicFooter1__ArgsType, ReservedPropsType> &
+    // Specify overrides for each element directly as props
+    Omit<
       NodeOverridesType<T>,
       ReservedPropsType | VariantPropType | ArgPropType
     > &
-    /* Specify props for the root element*/ Omit<
+    // Specify props for the root element
+    Omit<
       Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
       ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
     >;
@@ -1224,6 +1235,7 @@ export const PlasmicFooter1 = Object.assign(
     section4: makeNodeComponent("section4"),
     icons: makeNodeComponent("icons"),
     bottom: makeNodeComponent("bottom"),
+    contactSection: makeNodeComponent("contactSection"),
 
     // Metadata about props expected for PlasmicFooter1
     internalVariantProps: PlasmicFooter1__VariantProps,

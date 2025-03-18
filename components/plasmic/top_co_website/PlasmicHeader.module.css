@@ -110,6 +110,10 @@
 }
 .buildWithUs:global(.__wab_instance) {
   position: relative;
+  transition-property: all, all;
+  transition-duration: 0.5s, 0.3s;
+  -webkit-transition-property: all, all;
+  -webkit-transition-duration: 0.5s, 0.3s;
 }
 .button2 {
   width: auto;
@@ -531,112 +535,8 @@
   top: 6px;
   left: 4px;
 }
-.button6 {
-  background: rgba(20, 22, 31, 1);
-  width: auto;
-  height: auto;
-  display: flex;
+.contactUsButton:global(.__wab_instance) {
   position: relative;
-  overflow: hidden;
-  flex-direction: row;
-  cursor: pointer;
-  border-radius: 100px;
-  padding: 12px 18px;
-}
-.button6 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-left: calc(0px - 6px);
-  width: calc(100% + 6px);
-}
-.button6 > :global(.__wab_flex-container) > *,
-.button6 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.button6 > :global(.__wab_flex-container) > picture > img,
-.button6
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 6px;
-}
-.iconFrame6 {
-  width: 24px;
-  height: 24px;
-  display: block;
-  position: relative;
-  flex-shrink: 0;
-}
-.svg__wlAjU {
-  object-fit: cover;
-  max-width: 100%;
-  color: #fffdf9;
-  width: 24px;
-  height: 24px;
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-.label6 {
-  display: block;
-  font-size: 18px;
-  text-align: right;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0em;
-  line-height: 24px;
-  color: rgba(255, 253, 249, 1);
-  position: relative;
-}
-.arrow245 {
-  width: 24px;
-  height: 24px;
-  display: block;
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.icon24Grid5 {
-  width: 21px;
-  height: 21px;
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-.icons24IconGridSquare5 {
-  width: 21px;
-  height: 21px;
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-.img__aeEJi {
-  object-fit: cover;
-  max-width: 100%;
-  width: 20.571428298950195px;
-  height: 20.571428298950195px;
-  display: block !important;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-.img__aeEJi > picture > img {
-  object-fit: cover;
-}
-.svg__nQnuS {
-  object-fit: cover;
-  max-width: 100%;
-  color: #fef9ee;
-  transform: translate(0.000004291534423828125px, -0.000003337860107421875px);
-  width: 15.67839241027832px;
-  height: 12px;
-  display: block;
-  position: absolute;
-  top: 6px;
-  left: 4px;
 }
 .frame2131327275 {
   background: rgba(255, 253, 249, 1);

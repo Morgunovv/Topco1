@@ -59,11 +59,17 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 import * as plasmicAuth from "@plasmicapp/react-web/lib/auth";
+
 import { usePlasmicDataSourceContext } from "@plasmicapp/data-sources-context";
 
 import Header from "../../Header"; // plasmic-import: 9nAwrax2T-Wy/component
+import ReadMore from "../../ReadMore"; // plasmic-import: WBvPpAwJOmoD/component
 import { LottieWrapper } from "@plasmicpkgs/lottie-react";
 import { Video } from "@plasmicpkgs/plasmic-basic-components";
+import GoToWallet from "../../GoToWallet"; // plasmic-import: X6nv7zY2utC2/component
+import ApplyForInvestment from "../../ApplyForInvestment"; // plasmic-import: Daot0e6yLXbN/component
+import SeeMore from "../../SeeMore"; // plasmic-import: 45nkc3vlT8-m/component
+import ExploreButton from "../../ExploreButton"; // plasmic-import: gJgBLsmMGU7T/component
 import Footer1 from "../../Footer1"; // plasmic-import: rAIC55lfHAgI/component
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
@@ -75,15 +81,13 @@ import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: tVrjFA7RVCG7zyycB4xXud/projectcss
 import sty from "./PlasmicTopCo.module.css"; // plasmic-import: gNJkpbGSqBC6/css
 
+import HandwriteIcon from "./icons/PlasmicIcon__Handwrite"; // plasmic-import: O2csYnzG9y9K/icon
 import Star2Icon from "./icons/PlasmicIcon__Star2"; // plasmic-import: kkBN8MD9NRST/icon
 import Star3Icon from "./icons/PlasmicIcon__Star3"; // plasmic-import: dTKUTfime_op/icon
-import HandwriteIcon from "./icons/PlasmicIcon__Handwrite"; // plasmic-import: O2csYnzG9y9K/icon
 import Vector5085Icon from "./icons/PlasmicIcon__Vector5085"; // plasmic-import: ttbTmaf6HQ_n/icon
 import Vector5086Icon from "./icons/PlasmicIcon__Vector5086"; // plasmic-import: 49S6mxI0ztqm/icon
 import Vector5087Icon from "./icons/PlasmicIcon__Vector5087"; // plasmic-import: acvec5lB8NQv/icon
 import BackgroundFrameIcon from "./icons/PlasmicIcon__BackgroundFrame"; // plasmic-import: Z-RHL5UFkm6-/icon
-import Contact24Icon from "./icons/PlasmicIcon__Contact24"; // plasmic-import: 4_F0VNY3gp1U/icon
-import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: _0LPyGJ07UD3/icon
 import Handwrite2Icon from "./icons/PlasmicIcon__Handwrite2"; // plasmic-import: F3f0MWY2-fpd/icon
 import Logo150X150Icon from "./icons/PlasmicIcon__Logo150X150"; // plasmic-import: gk4acOlggq0z/icon
 import Group1321315963Icon from "./icons/PlasmicIcon__Group1321315963"; // plasmic-import: -iX4qVPBc9KG/icon
@@ -113,13 +117,13 @@ import Group1817245836Icon from "./icons/PlasmicIcon__Group1817245836"; // plasm
 import Hot51Icon from "./icons/PlasmicIcon__Hot51"; // plasmic-import: xZi8kNxMffNa/icon
 import Vector4990Icon from "./icons/PlasmicIcon__Vector4990"; // plasmic-import: rTaDdE6un7Jy/icon
 import Group1817245910Icon from "./icons/PlasmicIcon__Group1817245910"; // plasmic-import: g9vNU1g2m754/icon
+import Contact24Icon from "./icons/PlasmicIcon__Contact24"; // plasmic-import: 4_F0VNY3gp1U/icon
 import Expertise80Icon from "./icons/PlasmicIcon__Expertise80"; // plasmic-import: nON3LCkbDKcw/icon
 import Distribution80Icon from "./icons/PlasmicIcon__Distribution80"; // plasmic-import: H9cMVBIyphPH/icon
 import Investment80Icon from "./icons/PlasmicIcon__Investment80"; // plasmic-import: YH9rn0vB0z50/icon
 import Vector206Icon from "./icons/PlasmicIcon__Vector206"; // plasmic-import: JuumZqkpfFVA/icon
 import Vector207Icon from "./icons/PlasmicIcon__Vector207"; // plasmic-import: AdTl5ZUtybKq/icon
 import Union2Icon from "./icons/PlasmicIcon__Union2"; // plasmic-import: c41fP3KoQk9q/icon
-import Explore24Icon from "./icons/PlasmicIcon__Explore24"; // plasmic-import: shogHoC_iCO7/icon
 import Handwrite3Icon from "./icons/PlasmicIcon__Handwrite3"; // plasmic-import: yccUI7GdvpPS/icon
 import Star4Icon from "./icons/PlasmicIcon__Star4"; // plasmic-import: xzR8sMA2o2Me/icon
 import Star5Icon from "./icons/PlasmicIcon__Star5"; // plasmic-import: Vsr7MHRAE8Sc/icon
@@ -127,6 +131,7 @@ import Vector5021Icon from "./icons/PlasmicIcon__Vector5021"; // plasmic-import:
 import Vector5020Icon from "./icons/PlasmicIcon__Vector5020"; // plasmic-import: R076T1LtVbnp/icon
 import BackgroundFrame2Icon from "./icons/PlasmicIcon__BackgroundFrame2"; // plasmic-import: FqN65Yz_W8jS/icon
 import Contact242Icon from "./icons/PlasmicIcon__Contact242"; // plasmic-import: SN1dOQiAPloT/icon
+import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: _0LPyGJ07UD3/icon
 import Vector5088Icon from "./icons/PlasmicIcon__Vector5088"; // plasmic-import: -R7kskpyt5bW/icon
 import Vector5089Icon from "./icons/PlasmicIcon__Vector5089"; // plasmic-import: qBYRHL1_lr2g/icon
 import Vector5090Icon from "./icons/PlasmicIcon__Vector5090"; // plasmic-import: m3AOReJizJO0/icon
@@ -136,18 +141,6 @@ import Group1321315966Icon from "./icons/PlasmicIcon__Group1321315966"; // plasm
 import PlayDeck802Icon from "./icons/PlasmicIcon__PlayDeck802"; // plasmic-import: gnaO0l3Igurg/icon
 import Vector4984Icon from "./icons/PlasmicIcon__Vector4984"; // plasmic-import: OeVR-TNTy6m4/icon
 import Icon02Dark3Icon from "./icons/PlasmicIcon__Icon02Dark3"; // plasmic-import: mJB6EMJz8JaC/icon
-import BackgroundFrame3Icon from "./icons/PlasmicIcon__BackgroundFrame3"; // plasmic-import: 3EnCsOR5RpF2/icon
-import Handwrite5Icon from "./icons/PlasmicIcon__Handwrite5"; // plasmic-import: uF5xTH5ABi68/icon
-import CompactLogoCompactMonoWhite2Icon from "./icons/PlasmicIcon__CompactLogoCompactMonoWhite2"; // plasmic-import: 2-KQ9MkCoaUX/icon
-import Logo7Icon from "./icons/PlasmicIcon__Logo7"; // plasmic-import: V01rjDdFRa7n/icon
-import Group3Icon from "./icons/PlasmicIcon__Group3"; // plasmic-import: Qd19KI2cvFZx/icon
-import Logo150X1502Icon from "./icons/PlasmicIcon__Logo150X1502"; // plasmic-import: 6fjKl8lRQz6a/icon
-import PlayDeck562Icon from "./icons/PlasmicIcon__PlayDeck562"; // plasmic-import: SxWtdnILSClU/icon
-import Group1321315887Icon from "./icons/PlasmicIcon__Group1321315887"; // plasmic-import: BeboMDMUvGmY/icon
-import SymbolLight3Icon from "./icons/PlasmicIcon__SymbolLight3"; // plasmic-import: truaWz-TwSXh/icon
-import Group1321315878Icon from "./icons/PlasmicIcon__Group1321315878"; // plasmic-import: V1hLHoZqTWWb/icon
-import Group1321315965Icon from "./icons/PlasmicIcon__Group1321315965"; // plasmic-import: U5s3RpT29NVT/icon
-import Group1817245911Icon from "./icons/PlasmicIcon__Group1817245911"; // plasmic-import: EA6mN__FMIx1/icon
 import Image19Icon from "./icons/PlasmicIcon__Image19"; // plasmic-import: 3B4A8fkoMgHq/icon
 import Image20Icon from "./icons/PlasmicIcon__Image20"; // plasmic-import: P-9Pj_z0bRXP/icon
 import Image21Icon from "./icons/PlasmicIcon__Image21"; // plasmic-import: BLj_UWQ471rG/icon
@@ -158,10 +151,16 @@ import Explore242Icon from "./icons/PlasmicIcon__Explore242"; // plasmic-import:
 
 createPlasmicElementProxy;
 
-export type PlasmicTopCo__VariantMembers = {};
-export type PlasmicTopCo__VariantsArgs = {};
+export type PlasmicTopCo__VariantMembers = {
+  unnamedGroupOfVariants: "unnamedVariant";
+};
+export type PlasmicTopCo__VariantsArgs = {
+  unnamedGroupOfVariants?: SingleChoiceArg<"unnamedVariant">;
+};
 type VariantPropType = keyof PlasmicTopCo__VariantsArgs;
-export const PlasmicTopCo__VariantProps = new Array<VariantPropType>();
+export const PlasmicTopCo__VariantProps = new Array<VariantPropType>(
+  "unnamedGroupOfVariants"
+);
 
 export type PlasmicTopCo__ArgsType = {};
 type ArgPropType = keyof PlasmicTopCo__ArgsType;
@@ -188,12 +187,7 @@ export type PlasmicTopCo__OverridesType = {
   content2?: Flex__<"div">;
   titleSubtitle?: Flex__<"div">;
   title2?: Flex__<"div">;
-  button7?: Flex__<"div">;
-  iconFrame7?: Flex__<"div">;
-  label7?: Flex__<"div">;
-  arrow246?: Flex__<"div">;
-  icon24Grid6?: Flex__<"div">;
-  icons24IconGridSquare6?: Flex__<"div">;
+  readMore?: Flex__<typeof ReadMore>;
   pageBlock3?: Flex__<"div">;
   titleSubtitle10?: Flex__<"div">;
   cards?: Flex__<"div">;
@@ -259,12 +253,7 @@ export type PlasmicTopCo__OverridesType = {
   numbers?: Flex__<"div">;
   titleSubtitle13?: Flex__<"div">;
   titleSubtitle14?: Flex__<"div">;
-  button8?: Flex__<"div">;
-  iconFrame8?: Flex__<"div">;
-  label8?: Flex__<"div">;
-  arrow247?: Flex__<"div">;
-  icon24Grid7?: Flex__<"div">;
-  icons24IconGridSquare7?: Flex__<"div">;
+  goToWallet?: Flex__<typeof GoToWallet>;
   banner2?: Flex__<"div">;
   content12?: Flex__<"div">;
   content13?: Flex__<"div">;
@@ -273,12 +262,6 @@ export type PlasmicTopCo__OverridesType = {
   numbers2?: Flex__<"div">;
   titleSubtitle16?: Flex__<"div">;
   titleSubtitle17?: Flex__<"div">;
-  button9?: Flex__<"div">;
-  iconFrame9?: Flex__<"div">;
-  label9?: Flex__<"div">;
-  arrow248?: Flex__<"div">;
-  icon24Grid8?: Flex__<"div">;
-  icons24IconGridSquare8?: Flex__<"div">;
   pageBlock5?: Flex__<"div">;
   titleSubtitle22?: Flex__<"div">;
   title23?: Flex__<"div">;
@@ -407,10 +390,6 @@ export type PlasmicTopCo__OverridesType = {
   title1?: Flex__<"div">;
   button13?: Flex__<"div">;
   iconFrame13?: Flex__<"div">;
-  label13?: Flex__<"div">;
-  arrow2412?: Flex__<"div">;
-  icon24Grid12?: Flex__<"div">;
-  icons24IconGridSquare12?: Flex__<"div">;
   cards3?: Flex__<"div">;
   card29?: Flex__<"div">;
   titleSubtitle40?: Flex__<"div">;
@@ -422,12 +401,7 @@ export type PlasmicTopCo__OverridesType = {
   pageBlock7?: Flex__<"div">;
   content34?: Flex__<"div">;
   title24?: Flex__<"div">;
-  button14?: Flex__<"div">;
-  iconFrame14?: Flex__<"div">;
-  label14?: Flex__<"div">;
-  arrow2413?: Flex__<"div">;
-  icon24Grid13?: Flex__<"div">;
-  icons24IconGridSquare13?: Flex__<"div">;
+  seeMore?: Flex__<typeof SeeMore>;
   cards4?: Flex__<"div">;
   card32?: Flex__<"div">;
   image4?: Flex__<"div">;
@@ -448,12 +422,7 @@ export type PlasmicTopCo__OverridesType = {
   content35?: Flex__<"div">;
   titleSubtitle46?: Flex__<"div">;
   title25?: Flex__<"div">;
-  button15?: Flex__<"div">;
-  iconFrame15?: Flex__<"div">;
-  label15?: Flex__<"div">;
-  arrow2414?: Flex__<"div">;
-  icon24Grid14?: Flex__<"div">;
-  icons24IconGridSquare14?: Flex__<"div">;
+  exploreButton?: Flex__<typeof ExploreButton>;
   footer1?: Flex__<typeof Footer1>;
   figmaPaste2?: Flex__<"div">;
   pageBlock?: Flex__<"div">;
@@ -568,96 +537,6 @@ export type PlasmicTopCo__OverridesType = {
   arrow2417?: Flex__<"div">;
   icon24Grid17?: Flex__<"div">;
   icons24IconGridSquare17?: Flex__<"div">;
-  pageBlock12?: Flex__<"div">;
-  content50?: Flex__<"div">;
-  content51?: Flex__<"div">;
-  titleSubtitle64?: Flex__<"div">;
-  title211?: Flex__<"div">;
-  button19?: Flex__<"div">;
-  iconFrame19?: Flex__<"div">;
-  label19?: Flex__<"div">;
-  arrow2418?: Flex__<"div">;
-  icon24Grid18?: Flex__<"div">;
-  icons24IconGridSquare18?: Flex__<"div">;
-  tabBar2?: Flex__<"div">;
-  button20?: Flex__<"div">;
-  iconFrame20?: Flex__<"div">;
-  label20?: Flex__<"div">;
-  arrow2419?: Flex__<"div">;
-  icon24Grid19?: Flex__<"div">;
-  icons24IconGridSquare19?: Flex__<"div">;
-  button21?: Flex__<"div">;
-  iconFrame21?: Flex__<"div">;
-  label21?: Flex__<"div">;
-  arrow2420?: Flex__<"div">;
-  icon24Grid20?: Flex__<"div">;
-  icons24IconGridSquare20?: Flex__<"div">;
-  button22?: Flex__<"div">;
-  iconFrame22?: Flex__<"div">;
-  label22?: Flex__<"div">;
-  arrow2421?: Flex__<"div">;
-  icon24Grid21?: Flex__<"div">;
-  icons24IconGridSquare21?: Flex__<"div">;
-  cards6?: Flex__<"div">;
-  card43?: Flex__<"div">;
-  content52?: Flex__<"div">;
-  tonkeeper562?: Flex__<"div">;
-  titleSubtitle65?: Flex__<"div">;
-  headline37?: Flex__<"div">;
-  theresSomeKindOfSubtitle9?: Flex__<"div">;
-  card44?: Flex__<"div">;
-  content53?: Flex__<"div">;
-  getgems562?: Flex__<"div">;
-  titleSubtitle66?: Flex__<"div">;
-  headline38?: Flex__<"div">;
-  theresSomeKindOfSubtitle10?: Flex__<"div">;
-  card45?: Flex__<"div">;
-  content54?: Flex__<"div">;
-  tonstarter563?: Flex__<"div">;
-  titleSubtitle67?: Flex__<"div">;
-  headline39?: Flex__<"div">;
-  theresSomeKindOfSubtitle11?: Flex__<"div">;
-  card46?: Flex__<"div">;
-  content55?: Flex__<"div">;
-  stonFi56?: Flex__<"div">;
-  titleSubtitle68?: Flex__<"div">;
-  headline40?: Flex__<"div">;
-  theresSomeKindOfSubtitle12?: Flex__<"div">;
-  card47?: Flex__<"div">;
-  content56?: Flex__<"div">;
-  titleSubtitle69?: Flex__<"div">;
-  headline41?: Flex__<"div">;
-  theresSomeKindOfSubtitle13?: Flex__<"div">;
-  card48?: Flex__<"div">;
-  content57?: Flex__<"div">;
-  tribute562?: Flex__<"div">;
-  titleSubtitle70?: Flex__<"div">;
-  headline42?: Flex__<"div">;
-  theresSomeKindOfSubtitle14?: Flex__<"div">;
-  card49?: Flex__<"div">;
-  content58?: Flex__<"div">;
-  tonPunks562?: Flex__<"div">;
-  titleSubtitle71?: Flex__<"div">;
-  headline43?: Flex__<"div">;
-  theresSomeKindOfSubtitle15?: Flex__<"div">;
-  card50?: Flex__<"div">;
-  content59?: Flex__<"div">;
-  tonTech562?: Flex__<"div">;
-  titleSubtitle72?: Flex__<"div">;
-  headline44?: Flex__<"div">;
-  theresSomeKindOfSubtitle16?: Flex__<"div">;
-  card51?: Flex__<"div">;
-  content60?: Flex__<"div">;
-  tonStat562?: Flex__<"div">;
-  titleSubtitle73?: Flex__<"div">;
-  headline45?: Flex__<"div">;
-  theresSomeKindOfSubtitle17?: Flex__<"div">;
-  card52?: Flex__<"div">;
-  content61?: Flex__<"div">;
-  tonApi562?: Flex__<"div">;
-  titleSubtitle74?: Flex__<"div">;
-  headline46?: Flex__<"div">;
-  theresSomeKindOfSubtitle18?: Flex__<"div">;
   pageBlock13?: Flex__<"div">;
   titleSubtitle75?: Flex__<"div">;
   title212?: Flex__<"div">;
@@ -704,6 +583,20 @@ export type PlasmicTopCo__OverridesType = {
   arrow2424?: Flex__<"div">;
   icon24Grid24?: Flex__<"div">;
   icons24IconGridSquare24?: Flex__<"div">;
+  pageBlock12?: Flex__<"div">;
+  title3?: Flex__<"div">;
+  image13?: Flex__<"div">;
+  illustration4?: Flex__<"div">;
+  playdeck3?: Flex__<"div">;
+  background9?: Flex__<"div">;
+  tonstakers3?: Flex__<"div">;
+  background10?: Flex__<"div">;
+  wallet3?: Flex__<"div">;
+  background11?: Flex__<"div">;
+  getgems3?: Flex__<"div">;
+  background12?: Flex__<"div">;
+  pageBlock16?: Flex__<"div">;
+  content51?: Flex__<"div">;
 };
 
 export interface DefaultTopCoProps {}
@@ -755,6 +648,13 @@ function PlasmicTopCo__RenderFunc(props: {
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => ""
+      },
+      {
+        path: "unnamedGroupOfVariants",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $ctx }) =>
+          $props.unnamedGroupOfVariants
       }
     ],
     [$props, $ctx, $refs]
@@ -806,7 +706,14 @@ function PlasmicTopCo__RenderFunc(props: {
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
-            sty.root
+            sty.root,
+            {
+              [sty.rootunnamedGroupOfVariants_unnamedVariant]: hasVariant(
+                $state,
+                "unnamedGroupOfVariants",
+                "unnamedVariant"
+              )
+            }
           )}
         >
           <Header
@@ -822,6 +729,11 @@ function PlasmicTopCo__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.pageBlock1)}
           >
+            <HandwriteIcon
+              className={classNames(projectcss.all, sty.svg__b30Rp)}
+              role={"img"}
+            />
+
             <h1
               className={classNames(
                 projectcss.all,
@@ -1026,11 +938,6 @@ function PlasmicTopCo__RenderFunc(props: {
               </div>
             </div>
           </Stack__>
-          <HandwriteIcon
-            className={classNames(projectcss.all, sty.svg__b30Rp)}
-            role={"img"}
-          />
-
           <Stack__
             as={"div"}
             data-plasmic-name={"pageBlock2"}
@@ -1128,83 +1035,11 @@ function PlasmicTopCo__RenderFunc(props: {
                     "The Open Platform bridges TON and Telegram ecosystems \nto build, invest and develop on TON"
                   }
                 </div>
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"button7"}
-                  data-plasmic-override={overrides.button7}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.button7)}
-                >
-                  {false ? (
-                    <div
-                      data-plasmic-name={"iconFrame7"}
-                      data-plasmic-override={overrides.iconFrame7}
-                      className={classNames(projectcss.all, sty.iconFrame7)}
-                    >
-                      <Contact24Icon
-                        className={classNames(projectcss.all, sty.svg__wuZnq)}
-                        role={"img"}
-                      />
-                    </div>
-                  ) : null}
-                  <div
-                    data-plasmic-name={"label7"}
-                    data-plasmic-override={overrides.label7}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.label7
-                    )}
-                  >
-                    {"Read More"}
-                  </div>
-                  <div
-                    data-plasmic-name={"arrow246"}
-                    data-plasmic-override={overrides.arrow246}
-                    className={classNames(projectcss.all, sty.arrow246)}
-                  >
-                    {false ? (
-                      <div
-                        data-plasmic-name={"icon24Grid6"}
-                        data-plasmic-override={overrides.icon24Grid6}
-                        className={classNames(projectcss.all, sty.icon24Grid6)}
-                      >
-                        <div
-                          data-plasmic-name={"icons24IconGridSquare6"}
-                          data-plasmic-override={
-                            overrides.icons24IconGridSquare6
-                          }
-                          className={classNames(
-                            projectcss.all,
-                            sty.icons24IconGridSquare6
-                          )}
-                        >
-                          <PlasmicImg__
-                            alt={""}
-                            className={classNames(sty.img__lvlaz)}
-                            displayHeight={"20.571428298950195px"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"100%"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={"20.571428298950195px"}
-                            loading={"lazy"}
-                            src={{
-                              src: "/plasmic/top_co_website/images/square.svg",
-                              fullWidth: 20.571428298950195,
-                              fullHeight: 20.571428298950195,
-                              aspectRatio: 1
-                            }}
-                          />
-                        </div>
-                      </div>
-                    ) : null}
-                    <Icon2Icon
-                      className={classNames(projectcss.all, sty.svg___4ExKd)}
-                      role={"img"}
-                    />
-                  </div>
-                </Stack__>
+                <ReadMore
+                  data-plasmic-name={"readMore"}
+                  data-plasmic-override={overrides.readMore}
+                  className={classNames("__wab_instance", sty.readMore)}
+                />
               </Stack__>
             </Stack__>
           </Stack__>
@@ -1758,7 +1593,6 @@ function PlasmicTopCo__RenderFunc(props: {
                 </Stack__>
               </Stack__>
             </Stack__>
-            <div className={classNames(projectcss.all, sty.freeBox__q0Zdk)} />
           </Stack__>
           <Stack__
             as={"div"}
@@ -2454,86 +2288,11 @@ function PlasmicTopCo__RenderFunc(props: {
                       </Stack__>
                     </Stack__>
                   </Stack__>
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"button8"}
-                    data-plasmic-override={overrides.button8}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.button8)}
-                  >
-                    {false ? (
-                      <div
-                        data-plasmic-name={"iconFrame8"}
-                        data-plasmic-override={overrides.iconFrame8}
-                        className={classNames(projectcss.all, sty.iconFrame8)}
-                      >
-                        <Contact24Icon
-                          className={classNames(projectcss.all, sty.svg__pOUt)}
-                          role={"img"}
-                        />
-                      </div>
-                    ) : null}
-                    <div
-                      data-plasmic-name={"label8"}
-                      data-plasmic-override={overrides.label8}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.label8
-                      )}
-                    >
-                      {"Go to Wallet"}
-                    </div>
-                    <div
-                      data-plasmic-name={"arrow247"}
-                      data-plasmic-override={overrides.arrow247}
-                      className={classNames(projectcss.all, sty.arrow247)}
-                    >
-                      {false ? (
-                        <div
-                          data-plasmic-name={"icon24Grid7"}
-                          data-plasmic-override={overrides.icon24Grid7}
-                          className={classNames(
-                            projectcss.all,
-                            sty.icon24Grid7
-                          )}
-                        >
-                          <div
-                            data-plasmic-name={"icons24IconGridSquare7"}
-                            data-plasmic-override={
-                              overrides.icons24IconGridSquare7
-                            }
-                            className={classNames(
-                              projectcss.all,
-                              sty.icons24IconGridSquare7
-                            )}
-                          >
-                            <PlasmicImg__
-                              alt={""}
-                              className={classNames(sty.img__x33Tf)}
-                              displayHeight={"20.571428298950195px"}
-                              displayMaxHeight={"none"}
-                              displayMaxWidth={"100%"}
-                              displayMinHeight={"0"}
-                              displayMinWidth={"0"}
-                              displayWidth={"20.571428298950195px"}
-                              loading={"lazy"}
-                              src={{
-                                src: "/plasmic/top_co_website/images/square.svg",
-                                fullWidth: 20.571428298950195,
-                                fullHeight: 20.571428298950195,
-                                aspectRatio: 1
-                              }}
-                            />
-                          </div>
-                        </div>
-                      ) : null}
-                      <Icon2Icon
-                        className={classNames(projectcss.all, sty.svg__me4Ql)}
-                        role={"img"}
-                      />
-                    </div>
-                  </Stack__>
+                  <GoToWallet
+                    data-plasmic-name={"goToWallet"}
+                    data-plasmic-override={overrides.goToWallet}
+                    className={classNames("__wab_instance", sty.goToWallet)}
+                  />
                 </Stack__>
               </Stack__>
               <Stack__
@@ -2683,89 +2442,12 @@ function PlasmicTopCo__RenderFunc(props: {
                       </Stack__>
                     </Stack__>
                   </Stack__>
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"button9"}
-                    data-plasmic-override={overrides.button9}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.button9)}
-                  >
-                    {false ? (
-                      <div
-                        data-plasmic-name={"iconFrame9"}
-                        data-plasmic-override={overrides.iconFrame9}
-                        className={classNames(projectcss.all, sty.iconFrame9)}
-                      >
-                        <Contact24Icon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg___1Eupw
-                          )}
-                          role={"img"}
-                        />
-                      </div>
-                    ) : null}
-                    <div
-                      data-plasmic-name={"label9"}
-                      data-plasmic-override={overrides.label9}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.label9
-                      )}
-                    >
-                      {"Apply for Investment"}
-                    </div>
-                    <div
-                      data-plasmic-name={"arrow248"}
-                      data-plasmic-override={overrides.arrow248}
-                      className={classNames(projectcss.all, sty.arrow248)}
-                    >
-                      {false ? (
-                        <div
-                          data-plasmic-name={"icon24Grid8"}
-                          data-plasmic-override={overrides.icon24Grid8}
-                          className={classNames(
-                            projectcss.all,
-                            sty.icon24Grid8
-                          )}
-                        >
-                          <div
-                            data-plasmic-name={"icons24IconGridSquare8"}
-                            data-plasmic-override={
-                              overrides.icons24IconGridSquare8
-                            }
-                            className={classNames(
-                              projectcss.all,
-                              sty.icons24IconGridSquare8
-                            )}
-                          >
-                            <PlasmicImg__
-                              alt={""}
-                              className={classNames(sty.img__yvOgM)}
-                              displayHeight={"20.571428298950195px"}
-                              displayMaxHeight={"none"}
-                              displayMaxWidth={"100%"}
-                              displayMinHeight={"0"}
-                              displayMinWidth={"0"}
-                              displayWidth={"20.571428298950195px"}
-                              loading={"lazy"}
-                              src={{
-                                src: "/plasmic/top_co_website/images/square.svg",
-                                fullWidth: 20.571428298950195,
-                                fullHeight: 20.571428298950195,
-                                aspectRatio: 1
-                              }}
-                            />
-                          </div>
-                        </div>
-                      ) : null}
-                      <Icon2Icon
-                        className={classNames(projectcss.all, sty.svg___7395J)}
-                        role={"img"}
-                      />
-                    </div>
-                  </Stack__>
+                  <ApplyForInvestment
+                    className={classNames(
+                      "__wab_instance",
+                      sty.applyForInvestment__yFlme
+                    )}
+                  />
                 </Stack__>
               </Stack__>
             </Stack__>
@@ -4078,61 +3760,12 @@ function PlasmicTopCo__RenderFunc(props: {
                     />
                   </div>
                 ) : null}
-                <div
-                  data-plasmic-name={"label13"}
-                  data-plasmic-override={overrides.label13}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.label13
-                  )}
-                >
-                  {"Apply for Investment"}
-                </div>
-                <div
-                  data-plasmic-name={"arrow2412"}
-                  data-plasmic-override={overrides.arrow2412}
-                  className={classNames(projectcss.all, sty.arrow2412)}
-                >
-                  {false ? (
-                    <div
-                      data-plasmic-name={"icon24Grid12"}
-                      data-plasmic-override={overrides.icon24Grid12}
-                      className={classNames(projectcss.all, sty.icon24Grid12)}
-                    >
-                      <div
-                        data-plasmic-name={"icons24IconGridSquare12"}
-                        data-plasmic-override={
-                          overrides.icons24IconGridSquare12
-                        }
-                        className={classNames(
-                          projectcss.all,
-                          sty.icons24IconGridSquare12
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img___2Bt4D)}
-                          displayHeight={"20.571428298950195px"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"20.571428298950195px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/top_co_website/images/square.svg",
-                            fullWidth: 20.571428298950195,
-                            fullHeight: 20.571428298950195,
-                            aspectRatio: 1
-                          }}
-                        />
-                      </div>
-                    </div>
-                  ) : null}
-                  <Icon2Icon
-                    className={classNames(projectcss.all, sty.svg__szHYy)}
-                    role={"img"}
+                <div className={classNames(projectcss.all, sty.freeBox__daedq)}>
+                  <ApplyForInvestment
+                    className={classNames(
+                      "__wab_instance",
+                      sty.applyForInvestment__t7Gs1
+                    )}
                   />
                 </div>
               </Stack__>
@@ -4299,83 +3932,11 @@ function PlasmicTopCo__RenderFunc(props: {
                 >
                   {"TOP Insights"}
                 </div>
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"button14"}
-                  data-plasmic-override={overrides.button14}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.button14)}
-                >
-                  {false ? (
-                    <div
-                      data-plasmic-name={"iconFrame14"}
-                      data-plasmic-override={overrides.iconFrame14}
-                      className={classNames(projectcss.all, sty.iconFrame14)}
-                    >
-                      <Contact24Icon
-                        className={classNames(projectcss.all, sty.svg___6WxGi)}
-                        role={"img"}
-                      />
-                    </div>
-                  ) : null}
-                  <div
-                    data-plasmic-name={"label14"}
-                    data-plasmic-override={overrides.label14}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.label14
-                    )}
-                  >
-                    {"See More"}
-                  </div>
-                  <div
-                    data-plasmic-name={"arrow2413"}
-                    data-plasmic-override={overrides.arrow2413}
-                    className={classNames(projectcss.all, sty.arrow2413)}
-                  >
-                    {false ? (
-                      <div
-                        data-plasmic-name={"icon24Grid13"}
-                        data-plasmic-override={overrides.icon24Grid13}
-                        className={classNames(projectcss.all, sty.icon24Grid13)}
-                      >
-                        <div
-                          data-plasmic-name={"icons24IconGridSquare13"}
-                          data-plasmic-override={
-                            overrides.icons24IconGridSquare13
-                          }
-                          className={classNames(
-                            projectcss.all,
-                            sty.icons24IconGridSquare13
-                          )}
-                        >
-                          <PlasmicImg__
-                            alt={""}
-                            className={classNames(sty.img__xwRs6)}
-                            displayHeight={"20.571428298950195px"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"100%"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={"20.571428298950195px"}
-                            loading={"lazy"}
-                            src={{
-                              src: "/plasmic/top_co_website/images/square.svg",
-                              fullWidth: 20.571428298950195,
-                              fullHeight: 20.571428298950195,
-                              aspectRatio: 1
-                            }}
-                          />
-                        </div>
-                      </div>
-                    ) : null}
-                    <Icon2Icon
-                      className={classNames(projectcss.all, sty.svg___5E7Mh)}
-                      role={"img"}
-                    />
-                  </div>
-                </Stack__>
+                <SeeMore
+                  data-plasmic-name={"seeMore"}
+                  data-plasmic-override={overrides.seeMore}
+                  className={classNames("__wab_instance", sty.seeMore)}
+                />
               </Stack__>
               <Stack__
                 as={"div"}
@@ -4632,86 +4193,11 @@ function PlasmicTopCo__RenderFunc(props: {
                       "Join TOP and take part in innovative Web3 solutions \nand the limitless world of crypto"
                     }
                   </div>
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"button15"}
-                    data-plasmic-override={overrides.button15}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.button15)}
-                  >
-                    <div
-                      data-plasmic-name={"iconFrame15"}
-                      data-plasmic-override={overrides.iconFrame15}
-                      className={classNames(projectcss.all, sty.iconFrame15)}
-                    >
-                      <Explore24Icon
-                        className={classNames(projectcss.all, sty.svg__wRu9I)}
-                        role={"img"}
-                      />
-                    </div>
-                    <div
-                      data-plasmic-name={"label15"}
-                      data-plasmic-override={overrides.label15}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.label15
-                      )}
-                    >
-                      {"Explore Open Positions"}
-                    </div>
-                    {false ? (
-                      <div
-                        data-plasmic-name={"arrow2414"}
-                        data-plasmic-override={overrides.arrow2414}
-                        className={classNames(projectcss.all, sty.arrow2414)}
-                      >
-                        {false ? (
-                          <div
-                            data-plasmic-name={"icon24Grid14"}
-                            data-plasmic-override={overrides.icon24Grid14}
-                            className={classNames(
-                              projectcss.all,
-                              sty.icon24Grid14
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={"icons24IconGridSquare14"}
-                              data-plasmic-override={
-                                overrides.icons24IconGridSquare14
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.icons24IconGridSquare14
-                              )}
-                            >
-                              <PlasmicImg__
-                                alt={""}
-                                className={classNames(sty.img__nIzEn)}
-                                displayHeight={"20.571428298950195px"}
-                                displayMaxHeight={"none"}
-                                displayMaxWidth={"100%"}
-                                displayMinHeight={"0"}
-                                displayMinWidth={"0"}
-                                displayWidth={"20.571428298950195px"}
-                                loading={"lazy"}
-                                src={{
-                                  src: "/plasmic/top_co_website/images/square.svg",
-                                  fullWidth: 20.571428298950195,
-                                  fullHeight: 20.571428298950195,
-                                  aspectRatio: 1
-                                }}
-                              />
-                            </div>
-                          </div>
-                        ) : null}
-                        <Icon2Icon
-                          className={classNames(projectcss.all, sty.svg__fYzDk)}
-                          role={"img"}
-                        />
-                      </div>
-                    ) : null}
-                  </Stack__>
+                  <ExploreButton
+                    data-plasmic-name={"exploreButton"}
+                    data-plasmic-override={overrides.exploreButton}
+                    className={classNames("__wab_instance", sty.exploreButton)}
+                  />
                 </Stack__>
                 <Handwrite3Icon
                   className={classNames(projectcss.all, sty.svg__iYuDx)}
@@ -6395,1146 +5881,6 @@ function PlasmicTopCo__RenderFunc(props: {
               </Stack__>
               <Stack__
                 as={"div"}
-                data-plasmic-name={"pageBlock12"}
-                data-plasmic-override={overrides.pageBlock12}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.pageBlock12)}
-              >
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"content50"}
-                  data-plasmic-override={overrides.content50}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.content50)}
-                >
-                  <BackgroundFrame3Icon
-                    className={classNames(projectcss.all, sty.svg___3LWZe)}
-                    role={"img"}
-                  />
-
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"content51"}
-                    data-plasmic-override={overrides.content51}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.content51)}
-                  >
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"titleSubtitle64"}
-                      data-plasmic-override={overrides.titleSubtitle64}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.titleSubtitle64
-                      )}
-                    >
-                      <Handwrite5Icon
-                        className={classNames(projectcss.all, sty.svg__jNne7)}
-                        role={"img"}
-                      />
-
-                      <div
-                        data-plasmic-name={"title211"}
-                        data-plasmic-override={overrides.title211}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.title211
-                        )}
-                      >
-                        {"TOP Investment \nPortfolio"}
-                      </div>
-                      {false ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__mtgZp
-                          )}
-                        >
-                          {
-                            "The Open Platform bridges TON and Telegram ecosystems to build, invest and develop on TON"
-                          }
-                        </div>
-                      ) : null}
-                      {false ? (
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"button19"}
-                          data-plasmic-override={overrides.button19}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.button19)}
-                        >
-                          {false ? (
-                            <div
-                              data-plasmic-name={"iconFrame19"}
-                              data-plasmic-override={overrides.iconFrame19}
-                              className={classNames(
-                                projectcss.all,
-                                sty.iconFrame19
-                              )}
-                            >
-                              <Contact24Icon
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.svg__dWrei
-                                )}
-                                role={"img"}
-                              />
-                            </div>
-                          ) : null}
-                          <div
-                            data-plasmic-name={"label19"}
-                            data-plasmic-override={overrides.label19}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.label19
-                            )}
-                          >
-                            {"Read More"}
-                          </div>
-                          <div
-                            data-plasmic-name={"arrow2418"}
-                            data-plasmic-override={overrides.arrow2418}
-                            className={classNames(
-                              projectcss.all,
-                              sty.arrow2418
-                            )}
-                          >
-                            {false ? (
-                              <div
-                                data-plasmic-name={"icon24Grid18"}
-                                data-plasmic-override={overrides.icon24Grid18}
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.icon24Grid18
-                                )}
-                              >
-                                <div
-                                  data-plasmic-name={"icons24IconGridSquare18"}
-                                  data-plasmic-override={
-                                    overrides.icons24IconGridSquare18
-                                  }
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.icons24IconGridSquare18
-                                  )}
-                                >
-                                  <PlasmicImg__
-                                    alt={""}
-                                    className={classNames(sty.img__sEuox)}
-                                    displayHeight={"20.571428298950195px"}
-                                    displayMaxHeight={"none"}
-                                    displayMaxWidth={"100%"}
-                                    displayMinHeight={"0"}
-                                    displayMinWidth={"0"}
-                                    displayWidth={"20.571428298950195px"}
-                                    loading={"lazy"}
-                                    src={{
-                                      src: "/plasmic/top_co_website/images/square.svg",
-                                      fullWidth: 20.571428298950195,
-                                      fullHeight: 20.571428298950195,
-                                      aspectRatio: 1
-                                    }}
-                                  />
-                                </div>
-                              </div>
-                            ) : null}
-                            <Icon2Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg___03A62
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                        </Stack__>
-                      ) : null}
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"tabBar2"}
-                        data-plasmic-override={overrides.tabBar2}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.tabBar2)}
-                      >
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"button20"}
-                          data-plasmic-override={overrides.button20}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.button20)}
-                        >
-                          {false ? (
-                            <div
-                              data-plasmic-name={"iconFrame20"}
-                              data-plasmic-override={overrides.iconFrame20}
-                              className={classNames(
-                                projectcss.all,
-                                sty.iconFrame20
-                              )}
-                            >
-                              <Contact242Icon
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.svg___4MwN
-                                )}
-                                role={"img"}
-                              />
-                            </div>
-                          ) : null}
-                          <div
-                            data-plasmic-name={"label20"}
-                            data-plasmic-override={overrides.label20}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.label20
-                            )}
-                          >
-                            {"All"}
-                          </div>
-                          {false ? (
-                            <div
-                              data-plasmic-name={"arrow2419"}
-                              data-plasmic-override={overrides.arrow2419}
-                              className={classNames(
-                                projectcss.all,
-                                sty.arrow2419
-                              )}
-                            >
-                              {false ? (
-                                <div
-                                  data-plasmic-name={"icon24Grid19"}
-                                  data-plasmic-override={overrides.icon24Grid19}
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.icon24Grid19
-                                  )}
-                                >
-                                  <div
-                                    data-plasmic-name={
-                                      "icons24IconGridSquare19"
-                                    }
-                                    data-plasmic-override={
-                                      overrides.icons24IconGridSquare19
-                                    }
-                                    className={classNames(
-                                      projectcss.all,
-                                      sty.icons24IconGridSquare19
-                                    )}
-                                  >
-                                    <PlasmicImg__
-                                      alt={""}
-                                      className={classNames(sty.img__dIwRy)}
-                                      displayHeight={"20.571428298950195px"}
-                                      displayMaxHeight={"none"}
-                                      displayMaxWidth={"100%"}
-                                      displayMinHeight={"0"}
-                                      displayMinWidth={"0"}
-                                      displayWidth={"20.571428298950195px"}
-                                      loading={"lazy"}
-                                      src={{
-                                        src: "/plasmic/top_co_website/images/square.svg",
-                                        fullWidth: 20.571428298950195,
-                                        fullHeight: 20.571428298950195,
-                                        aspectRatio: 1
-                                      }}
-                                    />
-                                  </div>
-                                </div>
-                              ) : null}
-                              <Icon2Icon
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.svg__ofz11
-                                )}
-                                role={"img"}
-                              />
-                            </div>
-                          ) : null}
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"button21"}
-                          data-plasmic-override={overrides.button21}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.button21)}
-                        >
-                          {false ? (
-                            <div
-                              data-plasmic-name={"iconFrame21"}
-                              data-plasmic-override={overrides.iconFrame21}
-                              className={classNames(
-                                projectcss.all,
-                                sty.iconFrame21
-                              )}
-                            >
-                              <Contact242Icon
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.svg__j3I8Z
-                                )}
-                                role={"img"}
-                              />
-                            </div>
-                          ) : null}
-                          <div
-                            data-plasmic-name={"label21"}
-                            data-plasmic-override={overrides.label21}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.label21
-                            )}
-                          >
-                            {"For Customers"}
-                          </div>
-                          {false ? (
-                            <div
-                              data-plasmic-name={"arrow2420"}
-                              data-plasmic-override={overrides.arrow2420}
-                              className={classNames(
-                                projectcss.all,
-                                sty.arrow2420
-                              )}
-                            >
-                              {false ? (
-                                <div
-                                  data-plasmic-name={"icon24Grid20"}
-                                  data-plasmic-override={overrides.icon24Grid20}
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.icon24Grid20
-                                  )}
-                                >
-                                  <div
-                                    data-plasmic-name={
-                                      "icons24IconGridSquare20"
-                                    }
-                                    data-plasmic-override={
-                                      overrides.icons24IconGridSquare20
-                                    }
-                                    className={classNames(
-                                      projectcss.all,
-                                      sty.icons24IconGridSquare20
-                                    )}
-                                  >
-                                    <PlasmicImg__
-                                      alt={""}
-                                      className={classNames(sty.img__xG9Hy)}
-                                      displayHeight={"20.571428298950195px"}
-                                      displayMaxHeight={"none"}
-                                      displayMaxWidth={"100%"}
-                                      displayMinHeight={"0"}
-                                      displayMinWidth={"0"}
-                                      displayWidth={"20.571428298950195px"}
-                                      loading={"lazy"}
-                                      src={{
-                                        src: "/plasmic/top_co_website/images/square.svg",
-                                        fullWidth: 20.571428298950195,
-                                        fullHeight: 20.571428298950195,
-                                        aspectRatio: 1
-                                      }}
-                                    />
-                                  </div>
-                                </div>
-                              ) : null}
-                              <Icon2Icon
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.svg__syBjs
-                                )}
-                                role={"img"}
-                              />
-                            </div>
-                          ) : null}
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"button22"}
-                          data-plasmic-override={overrides.button22}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.button22)}
-                        >
-                          {false ? (
-                            <div
-                              data-plasmic-name={"iconFrame22"}
-                              data-plasmic-override={overrides.iconFrame22}
-                              className={classNames(
-                                projectcss.all,
-                                sty.iconFrame22
-                              )}
-                            >
-                              <Contact242Icon
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.svg___0TVr1
-                                )}
-                                role={"img"}
-                              />
-                            </div>
-                          ) : null}
-                          <div
-                            data-plasmic-name={"label22"}
-                            data-plasmic-override={overrides.label22}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.label22
-                            )}
-                          >
-                            {"For Developers"}
-                          </div>
-                          {false ? (
-                            <div
-                              data-plasmic-name={"arrow2421"}
-                              data-plasmic-override={overrides.arrow2421}
-                              className={classNames(
-                                projectcss.all,
-                                sty.arrow2421
-                              )}
-                            >
-                              {false ? (
-                                <div
-                                  data-plasmic-name={"icon24Grid21"}
-                                  data-plasmic-override={overrides.icon24Grid21}
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.icon24Grid21
-                                  )}
-                                >
-                                  <div
-                                    data-plasmic-name={
-                                      "icons24IconGridSquare21"
-                                    }
-                                    data-plasmic-override={
-                                      overrides.icons24IconGridSquare21
-                                    }
-                                    className={classNames(
-                                      projectcss.all,
-                                      sty.icons24IconGridSquare21
-                                    )}
-                                  >
-                                    <PlasmicImg__
-                                      alt={""}
-                                      className={classNames(sty.img__xg20C)}
-                                      displayHeight={"20.571428298950195px"}
-                                      displayMaxHeight={"none"}
-                                      displayMaxWidth={"100%"}
-                                      displayMinHeight={"0"}
-                                      displayMinWidth={"0"}
-                                      displayWidth={"20.571428298950195px"}
-                                      loading={"lazy"}
-                                      src={{
-                                        src: "/plasmic/top_co_website/images/square.svg",
-                                        fullWidth: 20.571428298950195,
-                                        fullHeight: 20.571428298950195,
-                                        aspectRatio: 1
-                                      }}
-                                    />
-                                  </div>
-                                </div>
-                              ) : null}
-                              <Icon2Icon
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.svg__vIcin
-                                )}
-                                role={"img"}
-                              />
-                            </div>
-                          ) : null}
-                        </Stack__>
-                      </Stack__>
-                    </Stack__>
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"cards6"}
-                      data-plasmic-override={overrides.cards6}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.cards6)}
-                    >
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"card43"}
-                        data-plasmic-override={overrides.card43}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.card43)}
-                      >
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"content52"}
-                          data-plasmic-override={overrides.content52}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.content52)}
-                        >
-                          <div
-                            data-plasmic-name={"tonkeeper562"}
-                            data-plasmic-override={overrides.tonkeeper562}
-                            className={classNames(
-                              projectcss.all,
-                              sty.tonkeeper562
-                            )}
-                          >
-                            <CompactLogoCompactMonoWhite2Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__fOmD
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"titleSubtitle65"}
-                            data-plasmic-override={overrides.titleSubtitle65}
-                            hasGap={true}
-                            className={classNames(
-                              projectcss.all,
-                              sty.titleSubtitle65
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={"headline37"}
-                              data-plasmic-override={overrides.headline37}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.headline37
-                              )}
-                            >
-                              {"Tonkeeper"}
-                            </div>
-                            <div
-                              data-plasmic-name={"theresSomeKindOfSubtitle9"}
-                              data-plasmic-override={
-                                overrides.theresSomeKindOfSubtitle9
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.theresSomeKindOfSubtitle9
-                              )}
-                            >
-                              {"Custodial wallet"}
-                            </div>
-                          </Stack__>
-                        </Stack__>
-                      </Stack__>
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"card44"}
-                        data-plasmic-override={overrides.card44}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.card44)}
-                      >
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"content53"}
-                          data-plasmic-override={overrides.content53}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.content53)}
-                        >
-                          <div
-                            data-plasmic-name={"getgems562"}
-                            data-plasmic-override={overrides.getgems562}
-                            className={classNames(
-                              projectcss.all,
-                              sty.getgems562
-                            )}
-                          >
-                            <Logo7Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__tlYSz
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"titleSubtitle66"}
-                            data-plasmic-override={overrides.titleSubtitle66}
-                            hasGap={true}
-                            className={classNames(
-                              projectcss.all,
-                              sty.titleSubtitle66
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={"headline38"}
-                              data-plasmic-override={overrides.headline38}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.headline38
-                              )}
-                            >
-                              {"Getgems"}
-                            </div>
-                            <div
-                              data-plasmic-name={"theresSomeKindOfSubtitle10"}
-                              data-plasmic-override={
-                                overrides.theresSomeKindOfSubtitle10
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.theresSomeKindOfSubtitle10
-                              )}
-                            >
-                              {"NFT Marketplace"}
-                            </div>
-                          </Stack__>
-                        </Stack__>
-                      </Stack__>
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"card45"}
-                        data-plasmic-override={overrides.card45}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.card45)}
-                      >
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"content54"}
-                          data-plasmic-override={overrides.content54}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.content54)}
-                        >
-                          <div
-                            data-plasmic-name={"tonstarter563"}
-                            data-plasmic-override={overrides.tonstarter563}
-                            className={classNames(
-                              projectcss.all,
-                              sty.tonstarter563
-                            )}
-                          >
-                            <Group3Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__ko1XH
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"titleSubtitle67"}
-                            data-plasmic-override={overrides.titleSubtitle67}
-                            hasGap={true}
-                            className={classNames(
-                              projectcss.all,
-                              sty.titleSubtitle67
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={"headline39"}
-                              data-plasmic-override={overrides.headline39}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.headline39
-                              )}
-                            >
-                              {"Tonstarter"}
-                            </div>
-                            <div
-                              data-plasmic-name={"theresSomeKindOfSubtitle11"}
-                              data-plasmic-override={
-                                overrides.theresSomeKindOfSubtitle11
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.theresSomeKindOfSubtitle11
-                              )}
-                            >
-                              {"Lauchpad"}
-                            </div>
-                          </Stack__>
-                        </Stack__>
-                      </Stack__>
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"card46"}
-                        data-plasmic-override={overrides.card46}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.card46)}
-                      >
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"content55"}
-                          data-plasmic-override={overrides.content55}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.content55)}
-                        >
-                          <div
-                            data-plasmic-name={"stonFi56"}
-                            data-plasmic-override={overrides.stonFi56}
-                            className={classNames(projectcss.all, sty.stonFi56)}
-                          >
-                            <Logo150X1502Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__eFg90
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"titleSubtitle68"}
-                            data-plasmic-override={overrides.titleSubtitle68}
-                            hasGap={true}
-                            className={classNames(
-                              projectcss.all,
-                              sty.titleSubtitle68
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={"headline40"}
-                              data-plasmic-override={overrides.headline40}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.headline40
-                              )}
-                            >
-                              {"Ston.Fi"}
-                            </div>
-                            <div
-                              data-plasmic-name={"theresSomeKindOfSubtitle12"}
-                              data-plasmic-override={
-                                overrides.theresSomeKindOfSubtitle12
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.theresSomeKindOfSubtitle12
-                              )}
-                            >
-                              {"Cross-chain DEX"}
-                            </div>
-                          </Stack__>
-                        </Stack__>
-                      </Stack__>
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"card47"}
-                        data-plasmic-override={overrides.card47}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.card47)}
-                      >
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"content56"}
-                          data-plasmic-override={overrides.content56}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.content56)}
-                        >
-                          <PlayDeck562Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__jdG1G
-                            )}
-                            role={"img"}
-                          />
-
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"titleSubtitle69"}
-                            data-plasmic-override={overrides.titleSubtitle69}
-                            hasGap={true}
-                            className={classNames(
-                              projectcss.all,
-                              sty.titleSubtitle69
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={"headline41"}
-                              data-plasmic-override={overrides.headline41}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.headline41
-                              )}
-                            >
-                              {"TON Play"}
-                            </div>
-                            <div
-                              data-plasmic-name={"theresSomeKindOfSubtitle13"}
-                              data-plasmic-override={
-                                overrides.theresSomeKindOfSubtitle13
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.theresSomeKindOfSubtitle13
-                              )}
-                            >
-                              {"Web3 gaming toolkit"}
-                            </div>
-                          </Stack__>
-                        </Stack__>
-                      </Stack__>
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"card48"}
-                        data-plasmic-override={overrides.card48}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.card48)}
-                      >
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"content57"}
-                          data-plasmic-override={overrides.content57}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.content57)}
-                        >
-                          <div
-                            data-plasmic-name={"tribute562"}
-                            data-plasmic-override={overrides.tribute562}
-                            className={classNames(
-                              projectcss.all,
-                              sty.tribute562
-                            )}
-                          >
-                            <Group1321315887Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__dwTj
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"titleSubtitle70"}
-                            data-plasmic-override={overrides.titleSubtitle70}
-                            hasGap={true}
-                            className={classNames(
-                              projectcss.all,
-                              sty.titleSubtitle70
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={"headline42"}
-                              data-plasmic-override={overrides.headline42}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.headline42
-                              )}
-                            >
-                              {"Tribute"}
-                            </div>
-                            <div
-                              data-plasmic-name={"theresSomeKindOfSubtitle14"}
-                              data-plasmic-override={
-                                overrides.theresSomeKindOfSubtitle14
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.theresSomeKindOfSubtitle14
-                              )}
-                            >
-                              {"Monetization platform on TG"}
-                            </div>
-                          </Stack__>
-                        </Stack__>
-                      </Stack__>
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"card49"}
-                        data-plasmic-override={overrides.card49}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.card49)}
-                      >
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"content58"}
-                          data-plasmic-override={overrides.content58}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.content58)}
-                        >
-                          <div
-                            data-plasmic-name={"tonPunks562"}
-                            data-plasmic-override={overrides.tonPunks562}
-                            className={classNames(
-                              projectcss.all,
-                              sty.tonPunks562
-                            )}
-                          >
-                            <PlasmicImg__
-                              alt={""}
-                              className={classNames(sty.img___4Ij4C)}
-                              displayHeight={"41.707942962646484px"}
-                              displayMaxHeight={"none"}
-                              displayMaxWidth={"100%"}
-                              displayMinHeight={"0"}
-                              displayMinWidth={"0"}
-                              displayWidth={"36px"}
-                              loading={"lazy"}
-                              src={{
-                                src: "/plasmic/top_co_website/images/слой13.svg",
-                                fullWidth: 36,
-                                fullHeight: 41.707942962646484,
-                                aspectRatio: 0.857143
-                              }}
-                            />
-                          </div>
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"titleSubtitle71"}
-                            data-plasmic-override={overrides.titleSubtitle71}
-                            hasGap={true}
-                            className={classNames(
-                              projectcss.all,
-                              sty.titleSubtitle71
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={"headline43"}
-                              data-plasmic-override={overrides.headline43}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.headline43
-                              )}
-                            >
-                              {"TON Punks"}
-                            </div>
-                            <div
-                              data-plasmic-name={"theresSomeKindOfSubtitle15"}
-                              data-plasmic-override={
-                                overrides.theresSomeKindOfSubtitle15
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.theresSomeKindOfSubtitle15
-                              )}
-                            >
-                              {"GameFI Metaverse"}
-                            </div>
-                          </Stack__>
-                        </Stack__>
-                      </Stack__>
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"card50"}
-                        data-plasmic-override={overrides.card50}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.card50)}
-                      >
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"content59"}
-                          data-plasmic-override={overrides.content59}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.content59)}
-                        >
-                          <div
-                            data-plasmic-name={"tonTech562"}
-                            data-plasmic-override={overrides.tonTech562}
-                            className={classNames(
-                              projectcss.all,
-                              sty.tonTech562
-                            )}
-                          >
-                            <SymbolLight3Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__iqm4T
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"titleSubtitle72"}
-                            data-plasmic-override={overrides.titleSubtitle72}
-                            hasGap={true}
-                            className={classNames(
-                              projectcss.all,
-                              sty.titleSubtitle72
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={"headline44"}
-                              data-plasmic-override={overrides.headline44}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.headline44
-                              )}
-                            >
-                              {"TonTech"}
-                            </div>
-                            <div
-                              data-plasmic-name={"theresSomeKindOfSubtitle16"}
-                              data-plasmic-override={
-                                overrides.theresSomeKindOfSubtitle16
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.theresSomeKindOfSubtitle16
-                              )}
-                            >
-                              {"Dev Tools & SDKs"}
-                            </div>
-                          </Stack__>
-                        </Stack__>
-                      </Stack__>
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"card51"}
-                        data-plasmic-override={overrides.card51}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.card51)}
-                      >
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"content60"}
-                          data-plasmic-override={overrides.content60}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.content60)}
-                        >
-                          <div
-                            data-plasmic-name={"tonStat562"}
-                            data-plasmic-override={overrides.tonStat562}
-                            className={classNames(
-                              projectcss.all,
-                              sty.tonStat562
-                            )}
-                          >
-                            <Group1321315878Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__f1Crl
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"titleSubtitle73"}
-                            data-plasmic-override={overrides.titleSubtitle73}
-                            hasGap={true}
-                            className={classNames(
-                              projectcss.all,
-                              sty.titleSubtitle73
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={"headline45"}
-                              data-plasmic-override={overrides.headline45}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.headline45
-                              )}
-                            >
-                              {"TonStat"}
-                            </div>
-                            <div
-                              data-plasmic-name={"theresSomeKindOfSubtitle17"}
-                              data-plasmic-override={
-                                overrides.theresSomeKindOfSubtitle17
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.theresSomeKindOfSubtitle17
-                              )}
-                            >
-                              {"Blockchain analytics"}
-                            </div>
-                          </Stack__>
-                        </Stack__>
-                      </Stack__>
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"card52"}
-                        data-plasmic-override={overrides.card52}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.card52)}
-                      >
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"content61"}
-                          data-plasmic-override={overrides.content61}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.content61)}
-                        >
-                          <div
-                            data-plasmic-name={"tonApi562"}
-                            data-plasmic-override={overrides.tonApi562}
-                            className={classNames(
-                              projectcss.all,
-                              sty.tonApi562
-                            )}
-                          >
-                            <Group1321315965Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__amTgQ
-                              )}
-                              role={"img"}
-                            />
-                          </div>
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"titleSubtitle74"}
-                            data-plasmic-override={overrides.titleSubtitle74}
-                            hasGap={true}
-                            className={classNames(
-                              projectcss.all,
-                              sty.titleSubtitle74
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={"headline46"}
-                              data-plasmic-override={overrides.headline46}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.headline46
-                              )}
-                            >
-                              {"TON API"}
-                            </div>
-                            <div
-                              data-plasmic-name={"theresSomeKindOfSubtitle18"}
-                              data-plasmic-override={
-                                overrides.theresSomeKindOfSubtitle18
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.theresSomeKindOfSubtitle18
-                              )}
-                            >
-                              {"Blockchain infrastructure"}
-                            </div>
-                          </Stack__>
-                        </Stack__>
-                      </Stack__>
-                    </Stack__>
-                    <Group1817245911Icon
-                      className={classNames(projectcss.all, sty.svg__m9E18)}
-                      role={"img"}
-                    />
-                  </Stack__>
-                </Stack__>
-              </Stack__>
-              <Stack__
-                as={"div"}
                 data-plasmic-name={"pageBlock13"}
                 data-plasmic-override={overrides.pageBlock13}
                 hasGap={true}
@@ -8204,6 +6550,242 @@ function PlasmicTopCo__RenderFunc(props: {
                   </Stack__>
                 </Stack__>
               </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"pageBlock12"}
+                data-plasmic-override={overrides.pageBlock12}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.pageBlock12)}
+              >
+                <div
+                  data-plasmic-name={"title3"}
+                  data-plasmic-override={overrides.title3}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.title3
+                  )}
+                >
+                  {
+                    "The Open Platform\nprovides a Powerful Toolkit to Build \non TON"
+                  }
+                </div>
+                <Vector5021Icon
+                  className={classNames(projectcss.all, sty.svg__esY)}
+                  role={"img"}
+                />
+
+                <div
+                  data-plasmic-name={"image13"}
+                  data-plasmic-override={overrides.image13}
+                  className={classNames(projectcss.all, sty.image13)}
+                >
+                  <div
+                    data-plasmic-name={"illustration4"}
+                    data-plasmic-override={overrides.illustration4}
+                    className={classNames(projectcss.all, sty.illustration4)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__vrEau)}
+                      displayHeight={"92px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"100px"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/top_co_website/images/bubble3.svg",
+                        fullWidth: 100,
+                        fullHeight: 92,
+                        aspectRatio: 1.086957
+                      }}
+                    />
+
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__vSXzx)}
+                      displayHeight={"100px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"93px"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/top_co_website/images/gear3.svg",
+                        fullWidth: 93,
+                        fullHeight: 100,
+                        aspectRatio: 0.93
+                      }}
+                    />
+
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img___2MPXr)}
+                      displayHeight={"129.482666015625px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"129.482666015625px"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/top_co_website/images/top4.svg",
+                        fullWidth: 129.482666015625,
+                        fullHeight: 129.482666015625,
+                        aspectRatio: 1
+                      }}
+                    />
+
+                    <div
+                      data-plasmic-name={"playdeck3"}
+                      data-plasmic-override={overrides.playdeck3}
+                      className={classNames(projectcss.all, sty.playdeck3)}
+                    >
+                      <div
+                        data-plasmic-name={"background9"}
+                        data-plasmic-override={overrides.background9}
+                        className={classNames(projectcss.all, sty.background9)}
+                      />
+
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__jxwej)}
+                        displayHeight={"23px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"33px"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/top_co_website/images/logo12.svg",
+                          fullWidth: 33,
+                          fullHeight: 23,
+                          aspectRatio: 1.434783
+                        }}
+                      />
+                    </div>
+                    <div
+                      data-plasmic-name={"tonstakers3"}
+                      data-plasmic-override={overrides.tonstakers3}
+                      className={classNames(projectcss.all, sty.tonstakers3)}
+                    >
+                      <div
+                        data-plasmic-name={"background10"}
+                        data-plasmic-override={overrides.background10}
+                        className={classNames(projectcss.all, sty.background10)}
+                      />
+
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__sfZcj)}
+                        displayHeight={"27px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"27px"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/top_co_website/images/logo13.svg",
+                          fullWidth: 27,
+                          fullHeight: 27,
+                          aspectRatio: 1
+                        }}
+                      />
+                    </div>
+                    <div
+                      data-plasmic-name={"wallet3"}
+                      data-plasmic-override={overrides.wallet3}
+                      className={classNames(projectcss.all, sty.wallet3)}
+                    >
+                      <div
+                        data-plasmic-name={"background11"}
+                        data-plasmic-override={overrides.background11}
+                        className={classNames(projectcss.all, sty.background11)}
+                      />
+
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__zogbF)}
+                        displayHeight={"28px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"35px"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/top_co_website/images/logo14.svg",
+                          fullWidth: 35,
+                          fullHeight: 28,
+                          aspectRatio: 1.25
+                        }}
+                      />
+                    </div>
+                    <div
+                      data-plasmic-name={"getgems3"}
+                      data-plasmic-override={overrides.getgems3}
+                      className={classNames(projectcss.all, sty.getgems3)}
+                    >
+                      <div
+                        data-plasmic-name={"background12"}
+                        data-plasmic-override={overrides.background12}
+                        className={classNames(projectcss.all, sty.background12)}
+                      />
+
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__vaM3G)}
+                        displayHeight={"38px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"38px"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/top_co_website/images/logo15.svg",
+                          fullWidth: 38,
+                          fullHeight: 38,
+                          aspectRatio: 1
+                        }}
+                      />
+                    </div>
+                    <Star4Icon
+                      className={classNames(projectcss.all, sty.svg__mek9)}
+                      role={"img"}
+                    />
+
+                    <Star5Icon
+                      className={classNames(projectcss.all, sty.svg__hR44R)}
+                      role={"img"}
+                    />
+                  </div>
+                </div>
+                <Vector5020Icon
+                  className={classNames(projectcss.all, sty.svg__kamed)}
+                  role={"img"}
+                />
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"pageBlock16"}
+                data-plasmic-override={overrides.pageBlock16}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.pageBlock16)}
+              >
+                <Stack__
+                  as={"div"}
+                  data-plasmic-name={"content51"}
+                  data-plasmic-override={overrides.content51}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.content51)}
+                />
+              </Stack__>
             </div>
           ) : null}
         </div>
@@ -8234,12 +6816,7 @@ const PlasmicDescendants = {
     "content2",
     "titleSubtitle",
     "title2",
-    "button7",
-    "iconFrame7",
-    "label7",
-    "arrow246",
-    "icon24Grid6",
-    "icons24IconGridSquare6",
+    "readMore",
     "pageBlock3",
     "titleSubtitle10",
     "cards",
@@ -8305,12 +6882,7 @@ const PlasmicDescendants = {
     "numbers",
     "titleSubtitle13",
     "titleSubtitle14",
-    "button8",
-    "iconFrame8",
-    "label8",
-    "arrow247",
-    "icon24Grid7",
-    "icons24IconGridSquare7",
+    "goToWallet",
     "banner2",
     "content12",
     "content13",
@@ -8319,12 +6891,6 @@ const PlasmicDescendants = {
     "numbers2",
     "titleSubtitle16",
     "titleSubtitle17",
-    "button9",
-    "iconFrame9",
-    "label9",
-    "arrow248",
-    "icon24Grid8",
-    "icons24IconGridSquare8",
     "pageBlock5",
     "titleSubtitle22",
     "title23",
@@ -8453,10 +7019,6 @@ const PlasmicDescendants = {
     "title1",
     "button13",
     "iconFrame13",
-    "label13",
-    "arrow2412",
-    "icon24Grid12",
-    "icons24IconGridSquare12",
     "cards3",
     "card29",
     "titleSubtitle40",
@@ -8468,12 +7030,7 @@ const PlasmicDescendants = {
     "pageBlock7",
     "content34",
     "title24",
-    "button14",
-    "iconFrame14",
-    "label14",
-    "arrow2413",
-    "icon24Grid13",
-    "icons24IconGridSquare13",
+    "seeMore",
     "cards4",
     "card32",
     "image4",
@@ -8494,12 +7051,7 @@ const PlasmicDescendants = {
     "content35",
     "titleSubtitle46",
     "title25",
-    "button15",
-    "iconFrame15",
-    "label15",
-    "arrow2414",
-    "icon24Grid14",
-    "icons24IconGridSquare14",
+    "exploreButton",
     "footer1",
     "figmaPaste2",
     "pageBlock",
@@ -8614,96 +7166,6 @@ const PlasmicDescendants = {
     "arrow2417",
     "icon24Grid17",
     "icons24IconGridSquare17",
-    "pageBlock12",
-    "content50",
-    "content51",
-    "titleSubtitle64",
-    "title211",
-    "button19",
-    "iconFrame19",
-    "label19",
-    "arrow2418",
-    "icon24Grid18",
-    "icons24IconGridSquare18",
-    "tabBar2",
-    "button20",
-    "iconFrame20",
-    "label20",
-    "arrow2419",
-    "icon24Grid19",
-    "icons24IconGridSquare19",
-    "button21",
-    "iconFrame21",
-    "label21",
-    "arrow2420",
-    "icon24Grid20",
-    "icons24IconGridSquare20",
-    "button22",
-    "iconFrame22",
-    "label22",
-    "arrow2421",
-    "icon24Grid21",
-    "icons24IconGridSquare21",
-    "cards6",
-    "card43",
-    "content52",
-    "tonkeeper562",
-    "titleSubtitle65",
-    "headline37",
-    "theresSomeKindOfSubtitle9",
-    "card44",
-    "content53",
-    "getgems562",
-    "titleSubtitle66",
-    "headline38",
-    "theresSomeKindOfSubtitle10",
-    "card45",
-    "content54",
-    "tonstarter563",
-    "titleSubtitle67",
-    "headline39",
-    "theresSomeKindOfSubtitle11",
-    "card46",
-    "content55",
-    "stonFi56",
-    "titleSubtitle68",
-    "headline40",
-    "theresSomeKindOfSubtitle12",
-    "card47",
-    "content56",
-    "titleSubtitle69",
-    "headline41",
-    "theresSomeKindOfSubtitle13",
-    "card48",
-    "content57",
-    "tribute562",
-    "titleSubtitle70",
-    "headline42",
-    "theresSomeKindOfSubtitle14",
-    "card49",
-    "content58",
-    "tonPunks562",
-    "titleSubtitle71",
-    "headline43",
-    "theresSomeKindOfSubtitle15",
-    "card50",
-    "content59",
-    "tonTech562",
-    "titleSubtitle72",
-    "headline44",
-    "theresSomeKindOfSubtitle16",
-    "card51",
-    "content60",
-    "tonStat562",
-    "titleSubtitle73",
-    "headline45",
-    "theresSomeKindOfSubtitle17",
-    "card52",
-    "content61",
-    "tonApi562",
-    "titleSubtitle74",
-    "headline46",
-    "theresSomeKindOfSubtitle18",
     "pageBlock13",
     "titleSubtitle75",
     "title212",
@@ -8749,7 +7211,21 @@ const PlasmicDescendants = {
     "label25",
     "arrow2424",
     "icon24Grid24",
-    "icons24IconGridSquare24"
+    "icons24IconGridSquare24",
+    "pageBlock12",
+    "title3",
+    "image13",
+    "illustration4",
+    "playdeck3",
+    "background9",
+    "tonstakers3",
+    "background10",
+    "wallet3",
+    "background11",
+    "getgems3",
+    "background12",
+    "pageBlock16",
+    "content51"
   ],
   header: ["header"],
   pageBlock1: [
@@ -8804,51 +7280,15 @@ const PlasmicDescendants = {
     "content2",
     "titleSubtitle",
     "title2",
-    "button7",
-    "iconFrame7",
-    "label7",
-    "arrow246",
-    "icon24Grid6",
-    "icons24IconGridSquare6"
+    "readMore"
   ],
   image: ["image", "group1817245925", "group1817245924"],
   group1817245925: ["group1817245925", "group1817245924"],
   group1817245924: ["group1817245924"],
-  content2: [
-    "content2",
-    "titleSubtitle",
-    "title2",
-    "button7",
-    "iconFrame7",
-    "label7",
-    "arrow246",
-    "icon24Grid6",
-    "icons24IconGridSquare6"
-  ],
-  titleSubtitle: [
-    "titleSubtitle",
-    "title2",
-    "button7",
-    "iconFrame7",
-    "label7",
-    "arrow246",
-    "icon24Grid6",
-    "icons24IconGridSquare6"
-  ],
+  content2: ["content2", "titleSubtitle", "title2", "readMore"],
+  titleSubtitle: ["titleSubtitle", "title2", "readMore"],
   title2: ["title2"],
-  button7: [
-    "button7",
-    "iconFrame7",
-    "label7",
-    "arrow246",
-    "icon24Grid6",
-    "icons24IconGridSquare6"
-  ],
-  iconFrame7: ["iconFrame7"],
-  label7: ["label7"],
-  arrow246: ["arrow246", "icon24Grid6", "icons24IconGridSquare6"],
-  icon24Grid6: ["icon24Grid6", "icons24IconGridSquare6"],
-  icons24IconGridSquare6: ["icons24IconGridSquare6"],
+  readMore: ["readMore"],
   pageBlock3: [
     "pageBlock3",
     "titleSubtitle10",
@@ -9113,12 +7553,7 @@ const PlasmicDescendants = {
     "numbers",
     "titleSubtitle13",
     "titleSubtitle14",
-    "button8",
-    "iconFrame8",
-    "label8",
-    "arrow247",
-    "icon24Grid7",
-    "icons24IconGridSquare7",
+    "goToWallet",
     "banner2",
     "content12",
     "content13",
@@ -9126,13 +7561,7 @@ const PlasmicDescendants = {
     "titleSubtitle15",
     "numbers2",
     "titleSubtitle16",
-    "titleSubtitle17",
-    "button9",
-    "iconFrame9",
-    "label9",
-    "arrow248",
-    "icon24Grid8",
-    "icons24IconGridSquare8"
+    "titleSubtitle17"
   ],
   titleSubtitle11: ["titleSubtitle11", "title22"],
   title22: ["title22"],
@@ -9150,12 +7579,7 @@ const PlasmicDescendants = {
     "numbers",
     "titleSubtitle13",
     "titleSubtitle14",
-    "button8",
-    "iconFrame8",
-    "label8",
-    "arrow247",
-    "icon24Grid7",
-    "icons24IconGridSquare7",
+    "goToWallet",
     "banner2",
     "content12",
     "content13",
@@ -9163,13 +7587,7 @@ const PlasmicDescendants = {
     "titleSubtitle15",
     "numbers2",
     "titleSubtitle16",
-    "titleSubtitle17",
-    "button9",
-    "iconFrame9",
-    "label9",
-    "arrow248",
-    "icon24Grid8",
-    "icons24IconGridSquare8"
+    "titleSubtitle17"
   ],
   banner: [
     "banner",
@@ -9182,12 +7600,7 @@ const PlasmicDescendants = {
     "numbers",
     "titleSubtitle13",
     "titleSubtitle14",
-    "button8",
-    "iconFrame8",
-    "label8",
-    "arrow247",
-    "icon24Grid7",
-    "icons24IconGridSquare7"
+    "goToWallet"
   ],
   image2: ["image2", "htmlVideo"],
   htmlVideo: ["htmlVideo"],
@@ -9199,12 +7612,7 @@ const PlasmicDescendants = {
     "numbers",
     "titleSubtitle13",
     "titleSubtitle14",
-    "button8",
-    "iconFrame8",
-    "label8",
-    "arrow247",
-    "icon24Grid7",
-    "icons24IconGridSquare7"
+    "goToWallet"
   ],
   content11: [
     "content11",
@@ -9219,19 +7627,7 @@ const PlasmicDescendants = {
   numbers: ["numbers", "titleSubtitle13", "titleSubtitle14"],
   titleSubtitle13: ["titleSubtitle13"],
   titleSubtitle14: ["titleSubtitle14"],
-  button8: [
-    "button8",
-    "iconFrame8",
-    "label8",
-    "arrow247",
-    "icon24Grid7",
-    "icons24IconGridSquare7"
-  ],
-  iconFrame8: ["iconFrame8"],
-  label8: ["label8"],
-  arrow247: ["arrow247", "icon24Grid7", "icons24IconGridSquare7"],
-  icon24Grid7: ["icon24Grid7", "icons24IconGridSquare7"],
-  icons24IconGridSquare7: ["icons24IconGridSquare7"],
+  goToWallet: ["goToWallet"],
   banner2: [
     "banner2",
     "content12",
@@ -9240,13 +7636,7 @@ const PlasmicDescendants = {
     "titleSubtitle15",
     "numbers2",
     "titleSubtitle16",
-    "titleSubtitle17",
-    "button9",
-    "iconFrame9",
-    "label9",
-    "arrow248",
-    "icon24Grid8",
-    "icons24IconGridSquare8"
+    "titleSubtitle17"
   ],
   content12: [
     "content12",
@@ -9255,13 +7645,7 @@ const PlasmicDescendants = {
     "titleSubtitle15",
     "numbers2",
     "titleSubtitle16",
-    "titleSubtitle17",
-    "button9",
-    "iconFrame9",
-    "label9",
-    "arrow248",
-    "icon24Grid8",
-    "icons24IconGridSquare8"
+    "titleSubtitle17"
   ],
   content13: [
     "content13",
@@ -9276,19 +7660,6 @@ const PlasmicDescendants = {
   numbers2: ["numbers2", "titleSubtitle16", "titleSubtitle17"],
   titleSubtitle16: ["titleSubtitle16"],
   titleSubtitle17: ["titleSubtitle17"],
-  button9: [
-    "button9",
-    "iconFrame9",
-    "label9",
-    "arrow248",
-    "icon24Grid8",
-    "icons24IconGridSquare8"
-  ],
-  iconFrame9: ["iconFrame9"],
-  label9: ["label9"],
-  arrow248: ["arrow248", "icon24Grid8", "icons24IconGridSquare8"],
-  icon24Grid8: ["icon24Grid8", "icons24IconGridSquare8"],
-  icons24IconGridSquare8: ["icons24IconGridSquare8"],
   pageBlock5: [
     "pageBlock5",
     "titleSubtitle22",
@@ -9893,10 +8264,6 @@ const PlasmicDescendants = {
     "title1",
     "button13",
     "iconFrame13",
-    "label13",
-    "arrow2412",
-    "icon24Grid12",
-    "icons24IconGridSquare12",
     "cards3",
     "card29",
     "titleSubtitle40",
@@ -9905,30 +8272,10 @@ const PlasmicDescendants = {
     "card31",
     "titleSubtitle42"
   ],
-  titleSubtitle39: [
-    "titleSubtitle39",
-    "title1",
-    "button13",
-    "iconFrame13",
-    "label13",
-    "arrow2412",
-    "icon24Grid12",
-    "icons24IconGridSquare12"
-  ],
+  titleSubtitle39: ["titleSubtitle39", "title1", "button13", "iconFrame13"],
   title1: ["title1"],
-  button13: [
-    "button13",
-    "iconFrame13",
-    "label13",
-    "arrow2412",
-    "icon24Grid12",
-    "icons24IconGridSquare12"
-  ],
+  button13: ["button13", "iconFrame13"],
   iconFrame13: ["iconFrame13"],
-  label13: ["label13"],
-  arrow2412: ["arrow2412", "icon24Grid12", "icons24IconGridSquare12"],
-  icon24Grid12: ["icon24Grid12", "icons24IconGridSquare12"],
-  icons24IconGridSquare12: ["icons24IconGridSquare12"],
   cards3: [
     "cards3",
     "card29",
@@ -9949,12 +8296,7 @@ const PlasmicDescendants = {
     "pageBlock7",
     "content34",
     "title24",
-    "button14",
-    "iconFrame14",
-    "label14",
-    "arrow2413",
-    "icon24Grid13",
-    "icons24IconGridSquare13",
+    "seeMore",
     "cards4",
     "card32",
     "image4",
@@ -9975,24 +8317,14 @@ const PlasmicDescendants = {
     "content35",
     "titleSubtitle46",
     "title25",
-    "button15",
-    "iconFrame15",
-    "label15",
-    "arrow2414",
-    "icon24Grid14",
-    "icons24IconGridSquare14",
+    "exploreButton",
     "footer1"
   ],
   pageBlock7: [
     "pageBlock7",
     "content34",
     "title24",
-    "button14",
-    "iconFrame14",
-    "label14",
-    "arrow2413",
-    "icon24Grid13",
-    "icons24IconGridSquare13",
+    "seeMore",
     "cards4",
     "card32",
     "image4",
@@ -10010,30 +8342,9 @@ const PlasmicDescendants = {
     "body2",
     "titleSubtitle45"
   ],
-  content34: [
-    "content34",
-    "title24",
-    "button14",
-    "iconFrame14",
-    "label14",
-    "arrow2413",
-    "icon24Grid13",
-    "icons24IconGridSquare13"
-  ],
+  content34: ["content34", "title24", "seeMore"],
   title24: ["title24"],
-  button14: [
-    "button14",
-    "iconFrame14",
-    "label14",
-    "arrow2413",
-    "icon24Grid13",
-    "icons24IconGridSquare13"
-  ],
-  iconFrame14: ["iconFrame14"],
-  label14: ["label14"],
-  arrow2413: ["arrow2413", "icon24Grid13", "icons24IconGridSquare13"],
-  icon24Grid13: ["icon24Grid13", "icons24IconGridSquare13"],
-  icons24IconGridSquare13: ["icons24IconGridSquare13"],
+  seeMore: ["seeMore"],
   cards4: [
     "cards4",
     "card32",
@@ -10086,49 +8397,13 @@ const PlasmicDescendants = {
     "content35",
     "titleSubtitle46",
     "title25",
-    "button15",
-    "iconFrame15",
-    "label15",
-    "arrow2414",
-    "icon24Grid14",
-    "icons24IconGridSquare14",
+    "exploreButton",
     "footer1"
   ],
-  content35: [
-    "content35",
-    "titleSubtitle46",
-    "title25",
-    "button15",
-    "iconFrame15",
-    "label15",
-    "arrow2414",
-    "icon24Grid14",
-    "icons24IconGridSquare14"
-  ],
-  titleSubtitle46: [
-    "titleSubtitle46",
-    "title25",
-    "button15",
-    "iconFrame15",
-    "label15",
-    "arrow2414",
-    "icon24Grid14",
-    "icons24IconGridSquare14"
-  ],
+  content35: ["content35", "titleSubtitle46", "title25", "exploreButton"],
+  titleSubtitle46: ["titleSubtitle46", "title25", "exploreButton"],
   title25: ["title25"],
-  button15: [
-    "button15",
-    "iconFrame15",
-    "label15",
-    "arrow2414",
-    "icon24Grid14",
-    "icons24IconGridSquare14"
-  ],
-  iconFrame15: ["iconFrame15"],
-  label15: ["label15"],
-  arrow2414: ["arrow2414", "icon24Grid14", "icons24IconGridSquare14"],
-  icon24Grid14: ["icon24Grid14", "icons24IconGridSquare14"],
-  icons24IconGridSquare14: ["icons24IconGridSquare14"],
+  exploreButton: ["exploreButton"],
   footer1: ["footer1"],
   figmaPaste2: [
     "figmaPaste2",
@@ -10244,96 +8519,6 @@ const PlasmicDescendants = {
     "arrow2417",
     "icon24Grid17",
     "icons24IconGridSquare17",
-    "pageBlock12",
-    "content50",
-    "content51",
-    "titleSubtitle64",
-    "title211",
-    "button19",
-    "iconFrame19",
-    "label19",
-    "arrow2418",
-    "icon24Grid18",
-    "icons24IconGridSquare18",
-    "tabBar2",
-    "button20",
-    "iconFrame20",
-    "label20",
-    "arrow2419",
-    "icon24Grid19",
-    "icons24IconGridSquare19",
-    "button21",
-    "iconFrame21",
-    "label21",
-    "arrow2420",
-    "icon24Grid20",
-    "icons24IconGridSquare20",
-    "button22",
-    "iconFrame22",
-    "label22",
-    "arrow2421",
-    "icon24Grid21",
-    "icons24IconGridSquare21",
-    "cards6",
-    "card43",
-    "content52",
-    "tonkeeper562",
-    "titleSubtitle65",
-    "headline37",
-    "theresSomeKindOfSubtitle9",
-    "card44",
-    "content53",
-    "getgems562",
-    "titleSubtitle66",
-    "headline38",
-    "theresSomeKindOfSubtitle10",
-    "card45",
-    "content54",
-    "tonstarter563",
-    "titleSubtitle67",
-    "headline39",
-    "theresSomeKindOfSubtitle11",
-    "card46",
-    "content55",
-    "stonFi56",
-    "titleSubtitle68",
-    "headline40",
-    "theresSomeKindOfSubtitle12",
-    "card47",
-    "content56",
-    "titleSubtitle69",
-    "headline41",
-    "theresSomeKindOfSubtitle13",
-    "card48",
-    "content57",
-    "tribute562",
-    "titleSubtitle70",
-    "headline42",
-    "theresSomeKindOfSubtitle14",
-    "card49",
-    "content58",
-    "tonPunks562",
-    "titleSubtitle71",
-    "headline43",
-    "theresSomeKindOfSubtitle15",
-    "card50",
-    "content59",
-    "tonTech562",
-    "titleSubtitle72",
-    "headline44",
-    "theresSomeKindOfSubtitle16",
-    "card51",
-    "content60",
-    "tonStat562",
-    "titleSubtitle73",
-    "headline45",
-    "theresSomeKindOfSubtitle17",
-    "card52",
-    "content61",
-    "tonApi562",
-    "titleSubtitle74",
-    "headline46",
-    "theresSomeKindOfSubtitle18",
     "pageBlock13",
     "titleSubtitle75",
     "title212",
@@ -10379,7 +8564,21 @@ const PlasmicDescendants = {
     "label25",
     "arrow2424",
     "icon24Grid24",
-    "icons24IconGridSquare24"
+    "icons24IconGridSquare24",
+    "pageBlock12",
+    "title3",
+    "image13",
+    "illustration4",
+    "playdeck3",
+    "background9",
+    "tonstakers3",
+    "background10",
+    "wallet3",
+    "background11",
+    "getgems3",
+    "background12",
+    "pageBlock16",
+    "content51"
   ],
   pageBlock: [
     "pageBlock",
@@ -10977,671 +9176,6 @@ const PlasmicDescendants = {
   arrow2417: ["arrow2417", "icon24Grid17", "icons24IconGridSquare17"],
   icon24Grid17: ["icon24Grid17", "icons24IconGridSquare17"],
   icons24IconGridSquare17: ["icons24IconGridSquare17"],
-  pageBlock12: [
-    "pageBlock12",
-    "content50",
-    "content51",
-    "titleSubtitle64",
-    "title211",
-    "button19",
-    "iconFrame19",
-    "label19",
-    "arrow2418",
-    "icon24Grid18",
-    "icons24IconGridSquare18",
-    "tabBar2",
-    "button20",
-    "iconFrame20",
-    "label20",
-    "arrow2419",
-    "icon24Grid19",
-    "icons24IconGridSquare19",
-    "button21",
-    "iconFrame21",
-    "label21",
-    "arrow2420",
-    "icon24Grid20",
-    "icons24IconGridSquare20",
-    "button22",
-    "iconFrame22",
-    "label22",
-    "arrow2421",
-    "icon24Grid21",
-    "icons24IconGridSquare21",
-    "cards6",
-    "card43",
-    "content52",
-    "tonkeeper562",
-    "titleSubtitle65",
-    "headline37",
-    "theresSomeKindOfSubtitle9",
-    "card44",
-    "content53",
-    "getgems562",
-    "titleSubtitle66",
-    "headline38",
-    "theresSomeKindOfSubtitle10",
-    "card45",
-    "content54",
-    "tonstarter563",
-    "titleSubtitle67",
-    "headline39",
-    "theresSomeKindOfSubtitle11",
-    "card46",
-    "content55",
-    "stonFi56",
-    "titleSubtitle68",
-    "headline40",
-    "theresSomeKindOfSubtitle12",
-    "card47",
-    "content56",
-    "titleSubtitle69",
-    "headline41",
-    "theresSomeKindOfSubtitle13",
-    "card48",
-    "content57",
-    "tribute562",
-    "titleSubtitle70",
-    "headline42",
-    "theresSomeKindOfSubtitle14",
-    "card49",
-    "content58",
-    "tonPunks562",
-    "titleSubtitle71",
-    "headline43",
-    "theresSomeKindOfSubtitle15",
-    "card50",
-    "content59",
-    "tonTech562",
-    "titleSubtitle72",
-    "headline44",
-    "theresSomeKindOfSubtitle16",
-    "card51",
-    "content60",
-    "tonStat562",
-    "titleSubtitle73",
-    "headline45",
-    "theresSomeKindOfSubtitle17",
-    "card52",
-    "content61",
-    "tonApi562",
-    "titleSubtitle74",
-    "headline46",
-    "theresSomeKindOfSubtitle18"
-  ],
-  content50: [
-    "content50",
-    "content51",
-    "titleSubtitle64",
-    "title211",
-    "button19",
-    "iconFrame19",
-    "label19",
-    "arrow2418",
-    "icon24Grid18",
-    "icons24IconGridSquare18",
-    "tabBar2",
-    "button20",
-    "iconFrame20",
-    "label20",
-    "arrow2419",
-    "icon24Grid19",
-    "icons24IconGridSquare19",
-    "button21",
-    "iconFrame21",
-    "label21",
-    "arrow2420",
-    "icon24Grid20",
-    "icons24IconGridSquare20",
-    "button22",
-    "iconFrame22",
-    "label22",
-    "arrow2421",
-    "icon24Grid21",
-    "icons24IconGridSquare21",
-    "cards6",
-    "card43",
-    "content52",
-    "tonkeeper562",
-    "titleSubtitle65",
-    "headline37",
-    "theresSomeKindOfSubtitle9",
-    "card44",
-    "content53",
-    "getgems562",
-    "titleSubtitle66",
-    "headline38",
-    "theresSomeKindOfSubtitle10",
-    "card45",
-    "content54",
-    "tonstarter563",
-    "titleSubtitle67",
-    "headline39",
-    "theresSomeKindOfSubtitle11",
-    "card46",
-    "content55",
-    "stonFi56",
-    "titleSubtitle68",
-    "headline40",
-    "theresSomeKindOfSubtitle12",
-    "card47",
-    "content56",
-    "titleSubtitle69",
-    "headline41",
-    "theresSomeKindOfSubtitle13",
-    "card48",
-    "content57",
-    "tribute562",
-    "titleSubtitle70",
-    "headline42",
-    "theresSomeKindOfSubtitle14",
-    "card49",
-    "content58",
-    "tonPunks562",
-    "titleSubtitle71",
-    "headline43",
-    "theresSomeKindOfSubtitle15",
-    "card50",
-    "content59",
-    "tonTech562",
-    "titleSubtitle72",
-    "headline44",
-    "theresSomeKindOfSubtitle16",
-    "card51",
-    "content60",
-    "tonStat562",
-    "titleSubtitle73",
-    "headline45",
-    "theresSomeKindOfSubtitle17",
-    "card52",
-    "content61",
-    "tonApi562",
-    "titleSubtitle74",
-    "headline46",
-    "theresSomeKindOfSubtitle18"
-  ],
-  content51: [
-    "content51",
-    "titleSubtitle64",
-    "title211",
-    "button19",
-    "iconFrame19",
-    "label19",
-    "arrow2418",
-    "icon24Grid18",
-    "icons24IconGridSquare18",
-    "tabBar2",
-    "button20",
-    "iconFrame20",
-    "label20",
-    "arrow2419",
-    "icon24Grid19",
-    "icons24IconGridSquare19",
-    "button21",
-    "iconFrame21",
-    "label21",
-    "arrow2420",
-    "icon24Grid20",
-    "icons24IconGridSquare20",
-    "button22",
-    "iconFrame22",
-    "label22",
-    "arrow2421",
-    "icon24Grid21",
-    "icons24IconGridSquare21",
-    "cards6",
-    "card43",
-    "content52",
-    "tonkeeper562",
-    "titleSubtitle65",
-    "headline37",
-    "theresSomeKindOfSubtitle9",
-    "card44",
-    "content53",
-    "getgems562",
-    "titleSubtitle66",
-    "headline38",
-    "theresSomeKindOfSubtitle10",
-    "card45",
-    "content54",
-    "tonstarter563",
-    "titleSubtitle67",
-    "headline39",
-    "theresSomeKindOfSubtitle11",
-    "card46",
-    "content55",
-    "stonFi56",
-    "titleSubtitle68",
-    "headline40",
-    "theresSomeKindOfSubtitle12",
-    "card47",
-    "content56",
-    "titleSubtitle69",
-    "headline41",
-    "theresSomeKindOfSubtitle13",
-    "card48",
-    "content57",
-    "tribute562",
-    "titleSubtitle70",
-    "headline42",
-    "theresSomeKindOfSubtitle14",
-    "card49",
-    "content58",
-    "tonPunks562",
-    "titleSubtitle71",
-    "headline43",
-    "theresSomeKindOfSubtitle15",
-    "card50",
-    "content59",
-    "tonTech562",
-    "titleSubtitle72",
-    "headline44",
-    "theresSomeKindOfSubtitle16",
-    "card51",
-    "content60",
-    "tonStat562",
-    "titleSubtitle73",
-    "headline45",
-    "theresSomeKindOfSubtitle17",
-    "card52",
-    "content61",
-    "tonApi562",
-    "titleSubtitle74",
-    "headline46",
-    "theresSomeKindOfSubtitle18"
-  ],
-  titleSubtitle64: [
-    "titleSubtitle64",
-    "title211",
-    "button19",
-    "iconFrame19",
-    "label19",
-    "arrow2418",
-    "icon24Grid18",
-    "icons24IconGridSquare18",
-    "tabBar2",
-    "button20",
-    "iconFrame20",
-    "label20",
-    "arrow2419",
-    "icon24Grid19",
-    "icons24IconGridSquare19",
-    "button21",
-    "iconFrame21",
-    "label21",
-    "arrow2420",
-    "icon24Grid20",
-    "icons24IconGridSquare20",
-    "button22",
-    "iconFrame22",
-    "label22",
-    "arrow2421",
-    "icon24Grid21",
-    "icons24IconGridSquare21"
-  ],
-  title211: ["title211"],
-  button19: [
-    "button19",
-    "iconFrame19",
-    "label19",
-    "arrow2418",
-    "icon24Grid18",
-    "icons24IconGridSquare18"
-  ],
-  iconFrame19: ["iconFrame19"],
-  label19: ["label19"],
-  arrow2418: ["arrow2418", "icon24Grid18", "icons24IconGridSquare18"],
-  icon24Grid18: ["icon24Grid18", "icons24IconGridSquare18"],
-  icons24IconGridSquare18: ["icons24IconGridSquare18"],
-  tabBar2: [
-    "tabBar2",
-    "button20",
-    "iconFrame20",
-    "label20",
-    "arrow2419",
-    "icon24Grid19",
-    "icons24IconGridSquare19",
-    "button21",
-    "iconFrame21",
-    "label21",
-    "arrow2420",
-    "icon24Grid20",
-    "icons24IconGridSquare20",
-    "button22",
-    "iconFrame22",
-    "label22",
-    "arrow2421",
-    "icon24Grid21",
-    "icons24IconGridSquare21"
-  ],
-  button20: [
-    "button20",
-    "iconFrame20",
-    "label20",
-    "arrow2419",
-    "icon24Grid19",
-    "icons24IconGridSquare19"
-  ],
-  iconFrame20: ["iconFrame20"],
-  label20: ["label20"],
-  arrow2419: ["arrow2419", "icon24Grid19", "icons24IconGridSquare19"],
-  icon24Grid19: ["icon24Grid19", "icons24IconGridSquare19"],
-  icons24IconGridSquare19: ["icons24IconGridSquare19"],
-  button21: [
-    "button21",
-    "iconFrame21",
-    "label21",
-    "arrow2420",
-    "icon24Grid20",
-    "icons24IconGridSquare20"
-  ],
-  iconFrame21: ["iconFrame21"],
-  label21: ["label21"],
-  arrow2420: ["arrow2420", "icon24Grid20", "icons24IconGridSquare20"],
-  icon24Grid20: ["icon24Grid20", "icons24IconGridSquare20"],
-  icons24IconGridSquare20: ["icons24IconGridSquare20"],
-  button22: [
-    "button22",
-    "iconFrame22",
-    "label22",
-    "arrow2421",
-    "icon24Grid21",
-    "icons24IconGridSquare21"
-  ],
-  iconFrame22: ["iconFrame22"],
-  label22: ["label22"],
-  arrow2421: ["arrow2421", "icon24Grid21", "icons24IconGridSquare21"],
-  icon24Grid21: ["icon24Grid21", "icons24IconGridSquare21"],
-  icons24IconGridSquare21: ["icons24IconGridSquare21"],
-  cards6: [
-    "cards6",
-    "card43",
-    "content52",
-    "tonkeeper562",
-    "titleSubtitle65",
-    "headline37",
-    "theresSomeKindOfSubtitle9",
-    "card44",
-    "content53",
-    "getgems562",
-    "titleSubtitle66",
-    "headline38",
-    "theresSomeKindOfSubtitle10",
-    "card45",
-    "content54",
-    "tonstarter563",
-    "titleSubtitle67",
-    "headline39",
-    "theresSomeKindOfSubtitle11",
-    "card46",
-    "content55",
-    "stonFi56",
-    "titleSubtitle68",
-    "headline40",
-    "theresSomeKindOfSubtitle12",
-    "card47",
-    "content56",
-    "titleSubtitle69",
-    "headline41",
-    "theresSomeKindOfSubtitle13",
-    "card48",
-    "content57",
-    "tribute562",
-    "titleSubtitle70",
-    "headline42",
-    "theresSomeKindOfSubtitle14",
-    "card49",
-    "content58",
-    "tonPunks562",
-    "titleSubtitle71",
-    "headline43",
-    "theresSomeKindOfSubtitle15",
-    "card50",
-    "content59",
-    "tonTech562",
-    "titleSubtitle72",
-    "headline44",
-    "theresSomeKindOfSubtitle16",
-    "card51",
-    "content60",
-    "tonStat562",
-    "titleSubtitle73",
-    "headline45",
-    "theresSomeKindOfSubtitle17",
-    "card52",
-    "content61",
-    "tonApi562",
-    "titleSubtitle74",
-    "headline46",
-    "theresSomeKindOfSubtitle18"
-  ],
-  card43: [
-    "card43",
-    "content52",
-    "tonkeeper562",
-    "titleSubtitle65",
-    "headline37",
-    "theresSomeKindOfSubtitle9"
-  ],
-  content52: [
-    "content52",
-    "tonkeeper562",
-    "titleSubtitle65",
-    "headline37",
-    "theresSomeKindOfSubtitle9"
-  ],
-  tonkeeper562: ["tonkeeper562"],
-  titleSubtitle65: [
-    "titleSubtitle65",
-    "headline37",
-    "theresSomeKindOfSubtitle9"
-  ],
-  headline37: ["headline37"],
-  theresSomeKindOfSubtitle9: ["theresSomeKindOfSubtitle9"],
-  card44: [
-    "card44",
-    "content53",
-    "getgems562",
-    "titleSubtitle66",
-    "headline38",
-    "theresSomeKindOfSubtitle10"
-  ],
-  content53: [
-    "content53",
-    "getgems562",
-    "titleSubtitle66",
-    "headline38",
-    "theresSomeKindOfSubtitle10"
-  ],
-  getgems562: ["getgems562"],
-  titleSubtitle66: [
-    "titleSubtitle66",
-    "headline38",
-    "theresSomeKindOfSubtitle10"
-  ],
-  headline38: ["headline38"],
-  theresSomeKindOfSubtitle10: ["theresSomeKindOfSubtitle10"],
-  card45: [
-    "card45",
-    "content54",
-    "tonstarter563",
-    "titleSubtitle67",
-    "headline39",
-    "theresSomeKindOfSubtitle11"
-  ],
-  content54: [
-    "content54",
-    "tonstarter563",
-    "titleSubtitle67",
-    "headline39",
-    "theresSomeKindOfSubtitle11"
-  ],
-  tonstarter563: ["tonstarter563"],
-  titleSubtitle67: [
-    "titleSubtitle67",
-    "headline39",
-    "theresSomeKindOfSubtitle11"
-  ],
-  headline39: ["headline39"],
-  theresSomeKindOfSubtitle11: ["theresSomeKindOfSubtitle11"],
-  card46: [
-    "card46",
-    "content55",
-    "stonFi56",
-    "titleSubtitle68",
-    "headline40",
-    "theresSomeKindOfSubtitle12"
-  ],
-  content55: [
-    "content55",
-    "stonFi56",
-    "titleSubtitle68",
-    "headline40",
-    "theresSomeKindOfSubtitle12"
-  ],
-  stonFi56: ["stonFi56"],
-  titleSubtitle68: [
-    "titleSubtitle68",
-    "headline40",
-    "theresSomeKindOfSubtitle12"
-  ],
-  headline40: ["headline40"],
-  theresSomeKindOfSubtitle12: ["theresSomeKindOfSubtitle12"],
-  card47: [
-    "card47",
-    "content56",
-    "titleSubtitle69",
-    "headline41",
-    "theresSomeKindOfSubtitle13"
-  ],
-  content56: [
-    "content56",
-    "titleSubtitle69",
-    "headline41",
-    "theresSomeKindOfSubtitle13"
-  ],
-  titleSubtitle69: [
-    "titleSubtitle69",
-    "headline41",
-    "theresSomeKindOfSubtitle13"
-  ],
-  headline41: ["headline41"],
-  theresSomeKindOfSubtitle13: ["theresSomeKindOfSubtitle13"],
-  card48: [
-    "card48",
-    "content57",
-    "tribute562",
-    "titleSubtitle70",
-    "headline42",
-    "theresSomeKindOfSubtitle14"
-  ],
-  content57: [
-    "content57",
-    "tribute562",
-    "titleSubtitle70",
-    "headline42",
-    "theresSomeKindOfSubtitle14"
-  ],
-  tribute562: ["tribute562"],
-  titleSubtitle70: [
-    "titleSubtitle70",
-    "headline42",
-    "theresSomeKindOfSubtitle14"
-  ],
-  headline42: ["headline42"],
-  theresSomeKindOfSubtitle14: ["theresSomeKindOfSubtitle14"],
-  card49: [
-    "card49",
-    "content58",
-    "tonPunks562",
-    "titleSubtitle71",
-    "headline43",
-    "theresSomeKindOfSubtitle15"
-  ],
-  content58: [
-    "content58",
-    "tonPunks562",
-    "titleSubtitle71",
-    "headline43",
-    "theresSomeKindOfSubtitle15"
-  ],
-  tonPunks562: ["tonPunks562"],
-  titleSubtitle71: [
-    "titleSubtitle71",
-    "headline43",
-    "theresSomeKindOfSubtitle15"
-  ],
-  headline43: ["headline43"],
-  theresSomeKindOfSubtitle15: ["theresSomeKindOfSubtitle15"],
-  card50: [
-    "card50",
-    "content59",
-    "tonTech562",
-    "titleSubtitle72",
-    "headline44",
-    "theresSomeKindOfSubtitle16"
-  ],
-  content59: [
-    "content59",
-    "tonTech562",
-    "titleSubtitle72",
-    "headline44",
-    "theresSomeKindOfSubtitle16"
-  ],
-  tonTech562: ["tonTech562"],
-  titleSubtitle72: [
-    "titleSubtitle72",
-    "headline44",
-    "theresSomeKindOfSubtitle16"
-  ],
-  headline44: ["headline44"],
-  theresSomeKindOfSubtitle16: ["theresSomeKindOfSubtitle16"],
-  card51: [
-    "card51",
-    "content60",
-    "tonStat562",
-    "titleSubtitle73",
-    "headline45",
-    "theresSomeKindOfSubtitle17"
-  ],
-  content60: [
-    "content60",
-    "tonStat562",
-    "titleSubtitle73",
-    "headline45",
-    "theresSomeKindOfSubtitle17"
-  ],
-  tonStat562: ["tonStat562"],
-  titleSubtitle73: [
-    "titleSubtitle73",
-    "headline45",
-    "theresSomeKindOfSubtitle17"
-  ],
-  headline45: ["headline45"],
-  theresSomeKindOfSubtitle17: ["theresSomeKindOfSubtitle17"],
-  card52: [
-    "card52",
-    "content61",
-    "tonApi562",
-    "titleSubtitle74",
-    "headline46",
-    "theresSomeKindOfSubtitle18"
-  ],
-  content61: [
-    "content61",
-    "tonApi562",
-    "titleSubtitle74",
-    "headline46",
-    "theresSomeKindOfSubtitle18"
-  ],
-  tonApi562: ["tonApi562"],
-  titleSubtitle74: [
-    "titleSubtitle74",
-    "headline46",
-    "theresSomeKindOfSubtitle18"
-  ],
-  headline46: ["headline46"],
-  theresSomeKindOfSubtitle18: ["theresSomeKindOfSubtitle18"],
   pageBlock13: [
     "pageBlock13",
     "titleSubtitle75",
@@ -11831,7 +9365,55 @@ const PlasmicDescendants = {
   label25: ["label25"],
   arrow2424: ["arrow2424", "icon24Grid24", "icons24IconGridSquare24"],
   icon24Grid24: ["icon24Grid24", "icons24IconGridSquare24"],
-  icons24IconGridSquare24: ["icons24IconGridSquare24"]
+  icons24IconGridSquare24: ["icons24IconGridSquare24"],
+  pageBlock12: [
+    "pageBlock12",
+    "title3",
+    "image13",
+    "illustration4",
+    "playdeck3",
+    "background9",
+    "tonstakers3",
+    "background10",
+    "wallet3",
+    "background11",
+    "getgems3",
+    "background12"
+  ],
+  title3: ["title3"],
+  image13: [
+    "image13",
+    "illustration4",
+    "playdeck3",
+    "background9",
+    "tonstakers3",
+    "background10",
+    "wallet3",
+    "background11",
+    "getgems3",
+    "background12"
+  ],
+  illustration4: [
+    "illustration4",
+    "playdeck3",
+    "background9",
+    "tonstakers3",
+    "background10",
+    "wallet3",
+    "background11",
+    "getgems3",
+    "background12"
+  ],
+  playdeck3: ["playdeck3", "background9"],
+  background9: ["background9"],
+  tonstakers3: ["tonstakers3", "background10"],
+  background10: ["background10"],
+  wallet3: ["wallet3", "background11"],
+  background11: ["background11"],
+  getgems3: ["getgems3", "background12"],
+  background12: ["background12"],
+  pageBlock16: ["pageBlock16", "content51"],
+  content51: ["content51"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -11857,12 +9439,7 @@ type NodeDefaultElementType = {
   content2: "div";
   titleSubtitle: "div";
   title2: "div";
-  button7: "div";
-  iconFrame7: "div";
-  label7: "div";
-  arrow246: "div";
-  icon24Grid6: "div";
-  icons24IconGridSquare6: "div";
+  readMore: typeof ReadMore;
   pageBlock3: "div";
   titleSubtitle10: "div";
   cards: "div";
@@ -11928,12 +9505,7 @@ type NodeDefaultElementType = {
   numbers: "div";
   titleSubtitle13: "div";
   titleSubtitle14: "div";
-  button8: "div";
-  iconFrame8: "div";
-  label8: "div";
-  arrow247: "div";
-  icon24Grid7: "div";
-  icons24IconGridSquare7: "div";
+  goToWallet: typeof GoToWallet;
   banner2: "div";
   content12: "div";
   content13: "div";
@@ -11942,12 +9514,6 @@ type NodeDefaultElementType = {
   numbers2: "div";
   titleSubtitle16: "div";
   titleSubtitle17: "div";
-  button9: "div";
-  iconFrame9: "div";
-  label9: "div";
-  arrow248: "div";
-  icon24Grid8: "div";
-  icons24IconGridSquare8: "div";
   pageBlock5: "div";
   titleSubtitle22: "div";
   title23: "div";
@@ -12076,10 +9642,6 @@ type NodeDefaultElementType = {
   title1: "div";
   button13: "div";
   iconFrame13: "div";
-  label13: "div";
-  arrow2412: "div";
-  icon24Grid12: "div";
-  icons24IconGridSquare12: "div";
   cards3: "div";
   card29: "div";
   titleSubtitle40: "div";
@@ -12091,12 +9653,7 @@ type NodeDefaultElementType = {
   pageBlock7: "div";
   content34: "div";
   title24: "div";
-  button14: "div";
-  iconFrame14: "div";
-  label14: "div";
-  arrow2413: "div";
-  icon24Grid13: "div";
-  icons24IconGridSquare13: "div";
+  seeMore: typeof SeeMore;
   cards4: "div";
   card32: "div";
   image4: "div";
@@ -12117,12 +9674,7 @@ type NodeDefaultElementType = {
   content35: "div";
   titleSubtitle46: "div";
   title25: "div";
-  button15: "div";
-  iconFrame15: "div";
-  label15: "div";
-  arrow2414: "div";
-  icon24Grid14: "div";
-  icons24IconGridSquare14: "div";
+  exploreButton: typeof ExploreButton;
   footer1: typeof Footer1;
   figmaPaste2: "div";
   pageBlock: "div";
@@ -12237,96 +9789,6 @@ type NodeDefaultElementType = {
   arrow2417: "div";
   icon24Grid17: "div";
   icons24IconGridSquare17: "div";
-  pageBlock12: "div";
-  content50: "div";
-  content51: "div";
-  titleSubtitle64: "div";
-  title211: "div";
-  button19: "div";
-  iconFrame19: "div";
-  label19: "div";
-  arrow2418: "div";
-  icon24Grid18: "div";
-  icons24IconGridSquare18: "div";
-  tabBar2: "div";
-  button20: "div";
-  iconFrame20: "div";
-  label20: "div";
-  arrow2419: "div";
-  icon24Grid19: "div";
-  icons24IconGridSquare19: "div";
-  button21: "div";
-  iconFrame21: "div";
-  label21: "div";
-  arrow2420: "div";
-  icon24Grid20: "div";
-  icons24IconGridSquare20: "div";
-  button22: "div";
-  iconFrame22: "div";
-  label22: "div";
-  arrow2421: "div";
-  icon24Grid21: "div";
-  icons24IconGridSquare21: "div";
-  cards6: "div";
-  card43: "div";
-  content52: "div";
-  tonkeeper562: "div";
-  titleSubtitle65: "div";
-  headline37: "div";
-  theresSomeKindOfSubtitle9: "div";
-  card44: "div";
-  content53: "div";
-  getgems562: "div";
-  titleSubtitle66: "div";
-  headline38: "div";
-  theresSomeKindOfSubtitle10: "div";
-  card45: "div";
-  content54: "div";
-  tonstarter563: "div";
-  titleSubtitle67: "div";
-  headline39: "div";
-  theresSomeKindOfSubtitle11: "div";
-  card46: "div";
-  content55: "div";
-  stonFi56: "div";
-  titleSubtitle68: "div";
-  headline40: "div";
-  theresSomeKindOfSubtitle12: "div";
-  card47: "div";
-  content56: "div";
-  titleSubtitle69: "div";
-  headline41: "div";
-  theresSomeKindOfSubtitle13: "div";
-  card48: "div";
-  content57: "div";
-  tribute562: "div";
-  titleSubtitle70: "div";
-  headline42: "div";
-  theresSomeKindOfSubtitle14: "div";
-  card49: "div";
-  content58: "div";
-  tonPunks562: "div";
-  titleSubtitle71: "div";
-  headline43: "div";
-  theresSomeKindOfSubtitle15: "div";
-  card50: "div";
-  content59: "div";
-  tonTech562: "div";
-  titleSubtitle72: "div";
-  headline44: "div";
-  theresSomeKindOfSubtitle16: "div";
-  card51: "div";
-  content60: "div";
-  tonStat562: "div";
-  titleSubtitle73: "div";
-  headline45: "div";
-  theresSomeKindOfSubtitle17: "div";
-  card52: "div";
-  content61: "div";
-  tonApi562: "div";
-  titleSubtitle74: "div";
-  headline46: "div";
-  theresSomeKindOfSubtitle18: "div";
   pageBlock13: "div";
   titleSubtitle75: "div";
   title212: "div";
@@ -12373,6 +9835,20 @@ type NodeDefaultElementType = {
   arrow2424: "div";
   icon24Grid24: "div";
   icons24IconGridSquare24: "div";
+  pageBlock12: "div";
+  title3: "div";
+  image13: "div";
+  illustration4: "div";
+  playdeck3: "div";
+  background9: "div";
+  tonstakers3: "div";
+  background10: "div";
+  wallet3: "div";
+  background11: "div";
+  getgems3: "div";
+  background12: "div";
+  pageBlock16: "div";
+  content51: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -12387,15 +9863,15 @@ type NodeComponentProps<T extends NodeNameType> =
     args?: PlasmicTopCo__ArgsType;
     overrides?: NodeOverridesType<T>;
   } & Omit<PlasmicTopCo__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
-    /* Specify args directly as props*/ Omit<
-      PlasmicTopCo__ArgsType,
-      ReservedPropsType
-    > &
-    /* Specify overrides for each element directly as props*/ Omit<
+    // Specify args directly as props
+    Omit<PlasmicTopCo__ArgsType, ReservedPropsType> &
+    // Specify overrides for each element directly as props
+    Omit<
       NodeOverridesType<T>,
       ReservedPropsType | VariantPropType | ArgPropType
     > &
-    /* Specify props for the root element*/ Omit<
+    // Specify props for the root element
+    Omit<
       Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
       ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
     >;
@@ -12479,12 +9955,7 @@ export const PlasmicTopCo = Object.assign(
     content2: makeNodeComponent("content2"),
     titleSubtitle: makeNodeComponent("titleSubtitle"),
     title2: makeNodeComponent("title2"),
-    button7: makeNodeComponent("button7"),
-    iconFrame7: makeNodeComponent("iconFrame7"),
-    label7: makeNodeComponent("label7"),
-    arrow246: makeNodeComponent("arrow246"),
-    icon24Grid6: makeNodeComponent("icon24Grid6"),
-    icons24IconGridSquare6: makeNodeComponent("icons24IconGridSquare6"),
+    readMore: makeNodeComponent("readMore"),
     pageBlock3: makeNodeComponent("pageBlock3"),
     titleSubtitle10: makeNodeComponent("titleSubtitle10"),
     cards: makeNodeComponent("cards"),
@@ -12550,12 +10021,7 @@ export const PlasmicTopCo = Object.assign(
     numbers: makeNodeComponent("numbers"),
     titleSubtitle13: makeNodeComponent("titleSubtitle13"),
     titleSubtitle14: makeNodeComponent("titleSubtitle14"),
-    button8: makeNodeComponent("button8"),
-    iconFrame8: makeNodeComponent("iconFrame8"),
-    label8: makeNodeComponent("label8"),
-    arrow247: makeNodeComponent("arrow247"),
-    icon24Grid7: makeNodeComponent("icon24Grid7"),
-    icons24IconGridSquare7: makeNodeComponent("icons24IconGridSquare7"),
+    goToWallet: makeNodeComponent("goToWallet"),
     banner2: makeNodeComponent("banner2"),
     content12: makeNodeComponent("content12"),
     content13: makeNodeComponent("content13"),
@@ -12564,12 +10030,6 @@ export const PlasmicTopCo = Object.assign(
     numbers2: makeNodeComponent("numbers2"),
     titleSubtitle16: makeNodeComponent("titleSubtitle16"),
     titleSubtitle17: makeNodeComponent("titleSubtitle17"),
-    button9: makeNodeComponent("button9"),
-    iconFrame9: makeNodeComponent("iconFrame9"),
-    label9: makeNodeComponent("label9"),
-    arrow248: makeNodeComponent("arrow248"),
-    icon24Grid8: makeNodeComponent("icon24Grid8"),
-    icons24IconGridSquare8: makeNodeComponent("icons24IconGridSquare8"),
     pageBlock5: makeNodeComponent("pageBlock5"),
     titleSubtitle22: makeNodeComponent("titleSubtitle22"),
     title23: makeNodeComponent("title23"),
@@ -12698,10 +10158,6 @@ export const PlasmicTopCo = Object.assign(
     title1: makeNodeComponent("title1"),
     button13: makeNodeComponent("button13"),
     iconFrame13: makeNodeComponent("iconFrame13"),
-    label13: makeNodeComponent("label13"),
-    arrow2412: makeNodeComponent("arrow2412"),
-    icon24Grid12: makeNodeComponent("icon24Grid12"),
-    icons24IconGridSquare12: makeNodeComponent("icons24IconGridSquare12"),
     cards3: makeNodeComponent("cards3"),
     card29: makeNodeComponent("card29"),
     titleSubtitle40: makeNodeComponent("titleSubtitle40"),
@@ -12713,12 +10169,7 @@ export const PlasmicTopCo = Object.assign(
     pageBlock7: makeNodeComponent("pageBlock7"),
     content34: makeNodeComponent("content34"),
     title24: makeNodeComponent("title24"),
-    button14: makeNodeComponent("button14"),
-    iconFrame14: makeNodeComponent("iconFrame14"),
-    label14: makeNodeComponent("label14"),
-    arrow2413: makeNodeComponent("arrow2413"),
-    icon24Grid13: makeNodeComponent("icon24Grid13"),
-    icons24IconGridSquare13: makeNodeComponent("icons24IconGridSquare13"),
+    seeMore: makeNodeComponent("seeMore"),
     cards4: makeNodeComponent("cards4"),
     card32: makeNodeComponent("card32"),
     image4: makeNodeComponent("image4"),
@@ -12739,12 +10190,7 @@ export const PlasmicTopCo = Object.assign(
     content35: makeNodeComponent("content35"),
     titleSubtitle46: makeNodeComponent("titleSubtitle46"),
     title25: makeNodeComponent("title25"),
-    button15: makeNodeComponent("button15"),
-    iconFrame15: makeNodeComponent("iconFrame15"),
-    label15: makeNodeComponent("label15"),
-    arrow2414: makeNodeComponent("arrow2414"),
-    icon24Grid14: makeNodeComponent("icon24Grid14"),
-    icons24IconGridSquare14: makeNodeComponent("icons24IconGridSquare14"),
+    exploreButton: makeNodeComponent("exploreButton"),
     footer1: makeNodeComponent("footer1"),
     figmaPaste2: makeNodeComponent("figmaPaste2"),
     pageBlock: makeNodeComponent("pageBlock"),
@@ -12859,96 +10305,6 @@ export const PlasmicTopCo = Object.assign(
     arrow2417: makeNodeComponent("arrow2417"),
     icon24Grid17: makeNodeComponent("icon24Grid17"),
     icons24IconGridSquare17: makeNodeComponent("icons24IconGridSquare17"),
-    pageBlock12: makeNodeComponent("pageBlock12"),
-    content50: makeNodeComponent("content50"),
-    content51: makeNodeComponent("content51"),
-    titleSubtitle64: makeNodeComponent("titleSubtitle64"),
-    title211: makeNodeComponent("title211"),
-    button19: makeNodeComponent("button19"),
-    iconFrame19: makeNodeComponent("iconFrame19"),
-    label19: makeNodeComponent("label19"),
-    arrow2418: makeNodeComponent("arrow2418"),
-    icon24Grid18: makeNodeComponent("icon24Grid18"),
-    icons24IconGridSquare18: makeNodeComponent("icons24IconGridSquare18"),
-    tabBar2: makeNodeComponent("tabBar2"),
-    button20: makeNodeComponent("button20"),
-    iconFrame20: makeNodeComponent("iconFrame20"),
-    label20: makeNodeComponent("label20"),
-    arrow2419: makeNodeComponent("arrow2419"),
-    icon24Grid19: makeNodeComponent("icon24Grid19"),
-    icons24IconGridSquare19: makeNodeComponent("icons24IconGridSquare19"),
-    button21: makeNodeComponent("button21"),
-    iconFrame21: makeNodeComponent("iconFrame21"),
-    label21: makeNodeComponent("label21"),
-    arrow2420: makeNodeComponent("arrow2420"),
-    icon24Grid20: makeNodeComponent("icon24Grid20"),
-    icons24IconGridSquare20: makeNodeComponent("icons24IconGridSquare20"),
-    button22: makeNodeComponent("button22"),
-    iconFrame22: makeNodeComponent("iconFrame22"),
-    label22: makeNodeComponent("label22"),
-    arrow2421: makeNodeComponent("arrow2421"),
-    icon24Grid21: makeNodeComponent("icon24Grid21"),
-    icons24IconGridSquare21: makeNodeComponent("icons24IconGridSquare21"),
-    cards6: makeNodeComponent("cards6"),
-    card43: makeNodeComponent("card43"),
-    content52: makeNodeComponent("content52"),
-    tonkeeper562: makeNodeComponent("tonkeeper562"),
-    titleSubtitle65: makeNodeComponent("titleSubtitle65"),
-    headline37: makeNodeComponent("headline37"),
-    theresSomeKindOfSubtitle9: makeNodeComponent("theresSomeKindOfSubtitle9"),
-    card44: makeNodeComponent("card44"),
-    content53: makeNodeComponent("content53"),
-    getgems562: makeNodeComponent("getgems562"),
-    titleSubtitle66: makeNodeComponent("titleSubtitle66"),
-    headline38: makeNodeComponent("headline38"),
-    theresSomeKindOfSubtitle10: makeNodeComponent("theresSomeKindOfSubtitle10"),
-    card45: makeNodeComponent("card45"),
-    content54: makeNodeComponent("content54"),
-    tonstarter563: makeNodeComponent("tonstarter563"),
-    titleSubtitle67: makeNodeComponent("titleSubtitle67"),
-    headline39: makeNodeComponent("headline39"),
-    theresSomeKindOfSubtitle11: makeNodeComponent("theresSomeKindOfSubtitle11"),
-    card46: makeNodeComponent("card46"),
-    content55: makeNodeComponent("content55"),
-    stonFi56: makeNodeComponent("stonFi56"),
-    titleSubtitle68: makeNodeComponent("titleSubtitle68"),
-    headline40: makeNodeComponent("headline40"),
-    theresSomeKindOfSubtitle12: makeNodeComponent("theresSomeKindOfSubtitle12"),
-    card47: makeNodeComponent("card47"),
-    content56: makeNodeComponent("content56"),
-    titleSubtitle69: makeNodeComponent("titleSubtitle69"),
-    headline41: makeNodeComponent("headline41"),
-    theresSomeKindOfSubtitle13: makeNodeComponent("theresSomeKindOfSubtitle13"),
-    card48: makeNodeComponent("card48"),
-    content57: makeNodeComponent("content57"),
-    tribute562: makeNodeComponent("tribute562"),
-    titleSubtitle70: makeNodeComponent("titleSubtitle70"),
-    headline42: makeNodeComponent("headline42"),
-    theresSomeKindOfSubtitle14: makeNodeComponent("theresSomeKindOfSubtitle14"),
-    card49: makeNodeComponent("card49"),
-    content58: makeNodeComponent("content58"),
-    tonPunks562: makeNodeComponent("tonPunks562"),
-    titleSubtitle71: makeNodeComponent("titleSubtitle71"),
-    headline43: makeNodeComponent("headline43"),
-    theresSomeKindOfSubtitle15: makeNodeComponent("theresSomeKindOfSubtitle15"),
-    card50: makeNodeComponent("card50"),
-    content59: makeNodeComponent("content59"),
-    tonTech562: makeNodeComponent("tonTech562"),
-    titleSubtitle72: makeNodeComponent("titleSubtitle72"),
-    headline44: makeNodeComponent("headline44"),
-    theresSomeKindOfSubtitle16: makeNodeComponent("theresSomeKindOfSubtitle16"),
-    card51: makeNodeComponent("card51"),
-    content60: makeNodeComponent("content60"),
-    tonStat562: makeNodeComponent("tonStat562"),
-    titleSubtitle73: makeNodeComponent("titleSubtitle73"),
-    headline45: makeNodeComponent("headline45"),
-    theresSomeKindOfSubtitle17: makeNodeComponent("theresSomeKindOfSubtitle17"),
-    card52: makeNodeComponent("card52"),
-    content61: makeNodeComponent("content61"),
-    tonApi562: makeNodeComponent("tonApi562"),
-    titleSubtitle74: makeNodeComponent("titleSubtitle74"),
-    headline46: makeNodeComponent("headline46"),
-    theresSomeKindOfSubtitle18: makeNodeComponent("theresSomeKindOfSubtitle18"),
     pageBlock13: makeNodeComponent("pageBlock13"),
     titleSubtitle75: makeNodeComponent("titleSubtitle75"),
     title212: makeNodeComponent("title212"),
@@ -12995,6 +10351,20 @@ export const PlasmicTopCo = Object.assign(
     arrow2424: makeNodeComponent("arrow2424"),
     icon24Grid24: makeNodeComponent("icon24Grid24"),
     icons24IconGridSquare24: makeNodeComponent("icons24IconGridSquare24"),
+    pageBlock12: makeNodeComponent("pageBlock12"),
+    title3: makeNodeComponent("title3"),
+    image13: makeNodeComponent("image13"),
+    illustration4: makeNodeComponent("illustration4"),
+    playdeck3: makeNodeComponent("playdeck3"),
+    background9: makeNodeComponent("background9"),
+    tonstakers3: makeNodeComponent("tonstakers3"),
+    background10: makeNodeComponent("background10"),
+    wallet3: makeNodeComponent("wallet3"),
+    background11: makeNodeComponent("background11"),
+    getgems3: makeNodeComponent("getgems3"),
+    background12: makeNodeComponent("background12"),
+    pageBlock16: makeNodeComponent("pageBlock16"),
+    content51: makeNodeComponent("content51"),
 
     // Metadata about props expected for PlasmicTopCo
     internalVariantProps: PlasmicTopCo__VariantProps,

@@ -83,6 +83,32 @@ export type PlasmicBuildWithUs__OverridesType = {
   button?: Flex__<"div">;
   iconFrame?: Flex__<"div">;
   label?: Flex__<"div">;
+  frame2131327276?: Flex__<"div">;
+  contextMenus2?: Flex__<"div">;
+  header2?: Flex__<"div">;
+  controls4?: Flex__<"div">;
+  icon7?: Flex__<"div">;
+  icon8?: Flex__<"div">;
+  controls5?: Flex__<"div">;
+  icon9?: Flex__<"div">;
+  icon10?: Flex__<"div">;
+  controls6?: Flex__<"div">;
+  icon11?: Flex__<"div">;
+  icon12?: Flex__<"div">;
+  pointinghand2?: Flex__<"div">;
+  frame2131327275?: Flex__<"div">;
+  contextMenus?: Flex__<"div">;
+  header?: Flex__<"div">;
+  controls?: Flex__<"div">;
+  icon?: Flex__<"div">;
+  icon2?: Flex__<"div">;
+  controls2?: Flex__<"div">;
+  icon3?: Flex__<"div">;
+  icon4?: Flex__<"div">;
+  controls3?: Flex__<"div">;
+  icon5?: Flex__<"div">;
+  icon6?: Flex__<"div">;
+  pointinghand1?: Flex__<"div">;
 };
 
 export interface DefaultBuildWithUsProps {
@@ -194,14 +220,444 @@ function PlasmicBuildWithUs__RenderFunc(props: {
           role={"img"}
         />
       </div>
+      <div
+        data-plasmic-name={"frame2131327276"}
+        data-plasmic-override={overrides.frame2131327276}
+        className={classNames(projectcss.all, sty.frame2131327276)}
+      >
+        <div
+          data-plasmic-name={"contextMenus2"}
+          data-plasmic-override={overrides.contextMenus2}
+          className={classNames(projectcss.all, sty.contextMenus2)}
+        >
+          {false ? (
+            <div
+              data-plasmic-name={"header2"}
+              data-plasmic-override={overrides.header2}
+              className={classNames(projectcss.all, sty.header2)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__fNoU6
+                )}
+              >
+                {"Header"}
+              </div>
+            </div>
+          ) : null}
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"controls4"}
+            data-plasmic-override={overrides.controls4}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.controls4)}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___9Kpcd
+              )}
+            >
+              {"Builders Toolkit"}
+            </div>
+            <div
+              data-plasmic-name={"icon7"}
+              data-plasmic-override={overrides.icon7}
+              className={classNames(projectcss.all, sty.icon7)}
+            >
+              {false ? (
+                <div
+                  data-plasmic-name={"icon8"}
+                  data-plasmic-override={overrides.icon8}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.icon8
+                  )}
+                >
+                  {"\udbc3\udfeb"}
+                </div>
+              ) : null}
+            </div>
+          </Stack__>
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"controls5"}
+            data-plasmic-override={overrides.controls5}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.controls5)}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__i3RWn
+              )}
+            >
+              {"Companies"}
+            </div>
+            <div
+              data-plasmic-name={"icon9"}
+              data-plasmic-override={overrides.icon9}
+              className={classNames(projectcss.all, sty.icon9)}
+            >
+              {false ? (
+                <div
+                  data-plasmic-name={"icon10"}
+                  data-plasmic-override={overrides.icon10}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.icon10
+                  )}
+                >
+                  {"\udbc3\udfeb"}
+                </div>
+              ) : null}
+            </div>
+          </Stack__>
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"controls6"}
+            data-plasmic-override={overrides.controls6}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.controls6)}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__yuUm
+              )}
+            >
+              {"Portfolio"}
+            </div>
+            <div
+              data-plasmic-name={"icon11"}
+              data-plasmic-override={overrides.icon11}
+              className={classNames(projectcss.all, sty.icon11)}
+            >
+              {false ? (
+                <div
+                  data-plasmic-name={"icon12"}
+                  data-plasmic-override={overrides.icon12}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.icon12
+                  )}
+                >
+                  {"\udbc3\udfeb"}
+                </div>
+              ) : null}
+            </div>
+          </Stack__>
+          <div
+            data-plasmic-name={"pointinghand2"}
+            data-plasmic-override={overrides.pointinghand2}
+            className={classNames(projectcss.all, sty.pointinghand2)}
+          >
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img__t272Q)}
+              displayHeight={"28.590930938720703px"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"27.123157501220703px"}
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/top_co_website/images/group.svg",
+                fullWidth: 27.123157501220703,
+                fullHeight: 28.590930938720703,
+                aspectRatio: 0.935484
+              }}
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        data-plasmic-name={"frame2131327275"}
+        data-plasmic-override={overrides.frame2131327275}
+        className={classNames(projectcss.all, sty.frame2131327275)}
+      >
+        <div
+          data-plasmic-name={"contextMenus"}
+          data-plasmic-override={overrides.contextMenus}
+          className={classNames(projectcss.all, sty.contextMenus)}
+        >
+          {false ? (
+            <div
+              data-plasmic-name={"header"}
+              data-plasmic-override={overrides.header}
+              className={classNames(projectcss.all, sty.header)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___21Co0
+                )}
+              >
+                {"Header"}
+              </div>
+            </div>
+          ) : null}
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"controls"}
+            data-plasmic-override={overrides.controls}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.controls)}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__lhJd2
+              )}
+            >
+              {"Builders Toolkit"}
+            </div>
+            <div
+              data-plasmic-name={"icon"}
+              data-plasmic-override={overrides.icon}
+              className={classNames(projectcss.all, sty.icon)}
+            >
+              {false ? (
+                <div
+                  data-plasmic-name={"icon2"}
+                  data-plasmic-override={overrides.icon2}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.icon2
+                  )}
+                >
+                  {"\udbc3\udfeb"}
+                </div>
+              ) : null}
+            </div>
+          </Stack__>
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"controls2"}
+            data-plasmic-override={overrides.controls2}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.controls2)}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__gd9No
+              )}
+            >
+              {"Companies"}
+            </div>
+            <div
+              data-plasmic-name={"icon3"}
+              data-plasmic-override={overrides.icon3}
+              className={classNames(projectcss.all, sty.icon3)}
+            >
+              {false ? (
+                <div
+                  data-plasmic-name={"icon4"}
+                  data-plasmic-override={overrides.icon4}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.icon4
+                  )}
+                >
+                  {"\udbc3\udfeb"}
+                </div>
+              ) : null}
+            </div>
+          </Stack__>
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"controls3"}
+            data-plasmic-override={overrides.controls3}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.controls3)}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__ub4Qc
+              )}
+            >
+              {"Portfolio"}
+            </div>
+            <div
+              data-plasmic-name={"icon5"}
+              data-plasmic-override={overrides.icon5}
+              className={classNames(projectcss.all, sty.icon5)}
+            >
+              {false ? (
+                <div
+                  data-plasmic-name={"icon6"}
+                  data-plasmic-override={overrides.icon6}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.icon6
+                  )}
+                >
+                  {"\udbc3\udfeb"}
+                </div>
+              ) : null}
+            </div>
+          </Stack__>
+          <div
+            data-plasmic-name={"pointinghand1"}
+            data-plasmic-override={overrides.pointinghand1}
+            className={classNames(projectcss.all, sty.pointinghand1)}
+          >
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img__dcgFh)}
+              displayHeight={"28.590930938720703px"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"27.123157501220703px"}
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/top_co_website/images/group.svg",
+                fullWidth: 27.123157501220703,
+                fullHeight: 28.590930938720703,
+                aspectRatio: 0.935484
+              }}
+            />
+          </div>
+        </div>
+      </div>
     </Stack__>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  button: ["button", "iconFrame", "label"],
+  button: [
+    "button",
+    "iconFrame",
+    "label",
+    "frame2131327276",
+    "contextMenus2",
+    "header2",
+    "controls4",
+    "icon7",
+    "icon8",
+    "controls5",
+    "icon9",
+    "icon10",
+    "controls6",
+    "icon11",
+    "icon12",
+    "pointinghand2",
+    "frame2131327275",
+    "contextMenus",
+    "header",
+    "controls",
+    "icon",
+    "icon2",
+    "controls2",
+    "icon3",
+    "icon4",
+    "controls3",
+    "icon5",
+    "icon6",
+    "pointinghand1"
+  ],
   iconFrame: ["iconFrame"],
-  label: ["label"]
+  label: ["label"],
+  frame2131327276: [
+    "frame2131327276",
+    "contextMenus2",
+    "header2",
+    "controls4",
+    "icon7",
+    "icon8",
+    "controls5",
+    "icon9",
+    "icon10",
+    "controls6",
+    "icon11",
+    "icon12",
+    "pointinghand2"
+  ],
+  contextMenus2: [
+    "contextMenus2",
+    "header2",
+    "controls4",
+    "icon7",
+    "icon8",
+    "controls5",
+    "icon9",
+    "icon10",
+    "controls6",
+    "icon11",
+    "icon12",
+    "pointinghand2"
+  ],
+  header2: ["header2"],
+  controls4: ["controls4", "icon7", "icon8"],
+  icon7: ["icon7", "icon8"],
+  icon8: ["icon8"],
+  controls5: ["controls5", "icon9", "icon10"],
+  icon9: ["icon9", "icon10"],
+  icon10: ["icon10"],
+  controls6: ["controls6", "icon11", "icon12"],
+  icon11: ["icon11", "icon12"],
+  icon12: ["icon12"],
+  pointinghand2: ["pointinghand2"],
+  frame2131327275: [
+    "frame2131327275",
+    "contextMenus",
+    "header",
+    "controls",
+    "icon",
+    "icon2",
+    "controls2",
+    "icon3",
+    "icon4",
+    "controls3",
+    "icon5",
+    "icon6",
+    "pointinghand1"
+  ],
+  contextMenus: [
+    "contextMenus",
+    "header",
+    "controls",
+    "icon",
+    "icon2",
+    "controls2",
+    "icon3",
+    "icon4",
+    "controls3",
+    "icon5",
+    "icon6",
+    "pointinghand1"
+  ],
+  header: ["header"],
+  controls: ["controls", "icon", "icon2"],
+  icon: ["icon", "icon2"],
+  icon2: ["icon2"],
+  controls2: ["controls2", "icon3", "icon4"],
+  icon3: ["icon3", "icon4"],
+  icon4: ["icon4"],
+  controls3: ["controls3", "icon5", "icon6"],
+  icon5: ["icon5", "icon6"],
+  icon6: ["icon6"],
+  pointinghand1: ["pointinghand1"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -210,6 +666,32 @@ type NodeDefaultElementType = {
   button: "div";
   iconFrame: "div";
   label: "div";
+  frame2131327276: "div";
+  contextMenus2: "div";
+  header2: "div";
+  controls4: "div";
+  icon7: "div";
+  icon8: "div";
+  controls5: "div";
+  icon9: "div";
+  icon10: "div";
+  controls6: "div";
+  icon11: "div";
+  icon12: "div";
+  pointinghand2: "div";
+  frame2131327275: "div";
+  contextMenus: "div";
+  header: "div";
+  controls: "div";
+  icon: "div";
+  icon2: "div";
+  controls2: "div";
+  icon3: "div";
+  icon4: "div";
+  controls3: "div";
+  icon5: "div";
+  icon6: "div";
+  pointinghand1: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -224,15 +706,15 @@ type NodeComponentProps<T extends NodeNameType> =
     args?: PlasmicBuildWithUs__ArgsType;
     overrides?: NodeOverridesType<T>;
   } & Omit<PlasmicBuildWithUs__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
-    /* Specify args directly as props*/ Omit<
-      PlasmicBuildWithUs__ArgsType,
-      ReservedPropsType
-    > &
-    /* Specify overrides for each element directly as props*/ Omit<
+    // Specify args directly as props
+    Omit<PlasmicBuildWithUs__ArgsType, ReservedPropsType> &
+    // Specify overrides for each element directly as props
+    Omit<
       NodeOverridesType<T>,
       ReservedPropsType | VariantPropType | ArgPropType
     > &
-    /* Specify props for the root element*/ Omit<
+    // Specify props for the root element
+    Omit<
       Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
       ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
     >;
@@ -274,6 +756,32 @@ export const PlasmicBuildWithUs = Object.assign(
     // Helper components rendering sub-elements
     iconFrame: makeNodeComponent("iconFrame"),
     label: makeNodeComponent("label"),
+    frame2131327276: makeNodeComponent("frame2131327276"),
+    contextMenus2: makeNodeComponent("contextMenus2"),
+    header2: makeNodeComponent("header2"),
+    controls4: makeNodeComponent("controls4"),
+    icon7: makeNodeComponent("icon7"),
+    icon8: makeNodeComponent("icon8"),
+    controls5: makeNodeComponent("controls5"),
+    icon9: makeNodeComponent("icon9"),
+    icon10: makeNodeComponent("icon10"),
+    controls6: makeNodeComponent("controls6"),
+    icon11: makeNodeComponent("icon11"),
+    icon12: makeNodeComponent("icon12"),
+    pointinghand2: makeNodeComponent("pointinghand2"),
+    frame2131327275: makeNodeComponent("frame2131327275"),
+    contextMenus: makeNodeComponent("contextMenus"),
+    header: makeNodeComponent("header"),
+    controls: makeNodeComponent("controls"),
+    icon: makeNodeComponent("icon"),
+    icon2: makeNodeComponent("icon2"),
+    controls2: makeNodeComponent("controls2"),
+    icon3: makeNodeComponent("icon3"),
+    icon4: makeNodeComponent("icon4"),
+    controls3: makeNodeComponent("controls3"),
+    icon5: makeNodeComponent("icon5"),
+    icon6: makeNodeComponent("icon6"),
+    pointinghand1: makeNodeComponent("pointinghand1"),
 
     // Metadata about props expected for PlasmicBuildWithUs
     internalVariantProps: PlasmicBuildWithUs__VariantProps,

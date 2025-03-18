@@ -60,6 +60,7 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import BuildWithUs from "../../BuildWithUs"; // plasmic-import: IHGcM1N4E6Ud/component
+import ContactUsButton from "../../ContactUsButton"; // plasmic-import: RtBKwP03e9N1/component
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
 import { useScreenVariants as useScreenVariantsknLyTCzNv2Gm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: KNLyTCzNV2Gm/globalVariant
@@ -116,12 +117,7 @@ export type PlasmicHeader__OverridesType = {
   arrow244?: Flex__<"div">;
   icon24Grid4?: Flex__<"div">;
   icons24IconGridSquare4?: Flex__<"div">;
-  button6?: Flex__<"div">;
-  iconFrame6?: Flex__<"div">;
-  label6?: Flex__<"div">;
-  arrow245?: Flex__<"div">;
-  icon24Grid5?: Flex__<"div">;
-  icons24IconGridSquare5?: Flex__<"div">;
+  contactUsButton?: Flex__<typeof ContactUsButton>;
   frame2131327275?: Flex__<"div">;
   contextMenus?: Flex__<"div">;
   header2?: Flex__<"div">;
@@ -561,81 +557,11 @@ function PlasmicHeader__RenderFunc(props: {
               </div>
             ) : null}
           </Stack__>
-          <Stack__
-            as={"div"}
-            data-plasmic-name={"button6"}
-            data-plasmic-override={overrides.button6}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.button6)}
-          >
-            <div
-              data-plasmic-name={"iconFrame6"}
-              data-plasmic-override={overrides.iconFrame6}
-              className={classNames(projectcss.all, sty.iconFrame6)}
-            >
-              <Contact24Icon
-                className={classNames(projectcss.all, sty.svg__wlAjU)}
-                role={"img"}
-              />
-            </div>
-            <div
-              data-plasmic-name={"label6"}
-              data-plasmic-override={overrides.label6}
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.label6
-              )}
-            >
-              {"Contact Us"}
-            </div>
-            {false ? (
-              <div
-                data-plasmic-name={"arrow245"}
-                data-plasmic-override={overrides.arrow245}
-                className={classNames(projectcss.all, sty.arrow245)}
-              >
-                {false ? (
-                  <div
-                    data-plasmic-name={"icon24Grid5"}
-                    data-plasmic-override={overrides.icon24Grid5}
-                    className={classNames(projectcss.all, sty.icon24Grid5)}
-                  >
-                    <div
-                      data-plasmic-name={"icons24IconGridSquare5"}
-                      data-plasmic-override={overrides.icons24IconGridSquare5}
-                      className={classNames(
-                        projectcss.all,
-                        sty.icons24IconGridSquare5
-                      )}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__aeEJi)}
-                        displayHeight={"20.571428298950195px"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20.571428298950195px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/top_co_website/images/square.svg",
-                          fullWidth: 20.571428298950195,
-                          fullHeight: 20.571428298950195,
-                          aspectRatio: 1
-                        }}
-                      />
-                    </div>
-                  </div>
-                ) : null}
-                <Icon2Icon
-                  className={classNames(projectcss.all, sty.svg__nQnuS)}
-                  role={"img"}
-                />
-              </div>
-            ) : null}
-          </Stack__>
+          <ContactUsButton
+            data-plasmic-name={"contactUsButton"}
+            data-plasmic-override={overrides.contactUsButton}
+            className={classNames("__wab_instance", sty.contactUsButton)}
+          />
         </Stack__>
       </Stack__>
       <div
@@ -810,12 +736,7 @@ const PlasmicDescendants = {
     "arrow244",
     "icon24Grid4",
     "icons24IconGridSquare4",
-    "button6",
-    "iconFrame6",
-    "label6",
-    "arrow245",
-    "icon24Grid5",
-    "icons24IconGridSquare5",
+    "contactUsButton",
     "frame2131327275",
     "contextMenus",
     "header2",
@@ -858,12 +779,7 @@ const PlasmicDescendants = {
     "arrow244",
     "icon24Grid4",
     "icons24IconGridSquare4",
-    "button6",
-    "iconFrame6",
-    "label6",
-    "arrow245",
-    "icon24Grid5",
-    "icons24IconGridSquare5"
+    "contactUsButton"
   ],
   logoWhite: ["logoWhite"],
   buttons: [
@@ -893,12 +809,7 @@ const PlasmicDescendants = {
     "arrow244",
     "icon24Grid4",
     "icons24IconGridSquare4",
-    "button6",
-    "iconFrame6",
-    "label6",
-    "arrow245",
-    "icon24Grid5",
-    "icons24IconGridSquare5"
+    "contactUsButton"
   ],
   buildWithUs: ["buildWithUs"],
   button2: [
@@ -953,19 +864,7 @@ const PlasmicDescendants = {
   arrow244: ["arrow244", "icon24Grid4", "icons24IconGridSquare4"],
   icon24Grid4: ["icon24Grid4", "icons24IconGridSquare4"],
   icons24IconGridSquare4: ["icons24IconGridSquare4"],
-  button6: [
-    "button6",
-    "iconFrame6",
-    "label6",
-    "arrow245",
-    "icon24Grid5",
-    "icons24IconGridSquare5"
-  ],
-  iconFrame6: ["iconFrame6"],
-  label6: ["label6"],
-  arrow245: ["arrow245", "icon24Grid5", "icons24IconGridSquare5"],
-  icon24Grid5: ["icon24Grid5", "icons24IconGridSquare5"],
-  icons24IconGridSquare5: ["icons24IconGridSquare5"],
+  contactUsButton: ["contactUsButton"],
   frame2131327275: [
     "frame2131327275",
     "contextMenus",
@@ -1037,12 +936,7 @@ type NodeDefaultElementType = {
   arrow244: "div";
   icon24Grid4: "div";
   icons24IconGridSquare4: "div";
-  button6: "div";
-  iconFrame6: "div";
-  label6: "div";
-  arrow245: "div";
-  icon24Grid5: "div";
-  icons24IconGridSquare5: "div";
+  contactUsButton: typeof ContactUsButton;
   frame2131327275: "div";
   contextMenus: "div";
   header2: "div";
@@ -1069,15 +963,15 @@ type NodeComponentProps<T extends NodeNameType> =
     args?: PlasmicHeader__ArgsType;
     overrides?: NodeOverridesType<T>;
   } & Omit<PlasmicHeader__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
-    /* Specify args directly as props*/ Omit<
-      PlasmicHeader__ArgsType,
-      ReservedPropsType
-    > &
-    /* Specify overrides for each element directly as props*/ Omit<
+    // Specify args directly as props
+    Omit<PlasmicHeader__ArgsType, ReservedPropsType> &
+    // Specify overrides for each element directly as props
+    Omit<
       NodeOverridesType<T>,
       ReservedPropsType | VariantPropType | ArgPropType
     > &
-    /* Specify props for the root element*/ Omit<
+    // Specify props for the root element
+    Omit<
       Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
       ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
     >;
@@ -1145,12 +1039,7 @@ export const PlasmicHeader = Object.assign(
     arrow244: makeNodeComponent("arrow244"),
     icon24Grid4: makeNodeComponent("icon24Grid4"),
     icons24IconGridSquare4: makeNodeComponent("icons24IconGridSquare4"),
-    button6: makeNodeComponent("button6"),
-    iconFrame6: makeNodeComponent("iconFrame6"),
-    label6: makeNodeComponent("label6"),
-    arrow245: makeNodeComponent("arrow245"),
-    icon24Grid5: makeNodeComponent("icon24Grid5"),
-    icons24IconGridSquare5: makeNodeComponent("icons24IconGridSquare5"),
+    contactUsButton: makeNodeComponent("contactUsButton"),
     frame2131327275: makeNodeComponent("frame2131327275"),
     contextMenus: makeNodeComponent("contextMenus"),
     header2: makeNodeComponent("header2"),
