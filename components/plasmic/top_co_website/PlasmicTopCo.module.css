@@ -83,7 +83,7 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  font-weight: 600;
+  font-weight: 400;
   color: #14161f;
   text-align: center;
   font-size: 80px;
@@ -91,6 +91,7 @@
   max-height: 264px;
   letter-spacing: -2px;
   line-height: 110%;
+  font-family: "inter display";
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .h1__fd3V {
