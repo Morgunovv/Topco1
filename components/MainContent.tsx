@@ -10,16 +10,39 @@ export const PLASMIC = initPlasmicLoader({
     ]
 });
 
+// Определяем интерфейс для элемента данных
+interface MainItem {
+    id: string | number;
+    attributes: {
+        title?: string;
+        description?: string;
+        // добавьте другие поля, которые вы используете
+    }
+}
+
+// Определяем интерфейс для структуры данных
+interface MainData {
+    mains: {
+        data: MainItem[];
+    }
+}
+
 export function MainContent() {
-    // Здесь можно использовать обычные данные или другой способ получения данных
-    const mockData = [
-        { id: 1, attributes: { title: 'Project 1', description: 'Description 1' } },
-        { id: 2, attributes: { title: 'Project 2', description: 'Description 2' } }
-    ];
+    // Приводим data к нужному типу
+    const data: MainData = {
+        mains: {
+            data: [
+                // Ваши данные здесь
+                { id: 1, attributes: { title: 'Project 1' } },
+                { id: 2, attributes: { title: 'Project 2' } }
+            ]
+        }
+    };
 
     return (
         <div>
-            {mockData.map(item => (
+            {/* @ts-ignore */}
+            {data.mains.data.map(item => (
                 <PlasmicComponent
                     key={item.id}
                     component="ProjectCard"
