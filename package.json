@@ -5,6 +5,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@apollo/client": "^3.13.4",
     "@plasmicapp/cli": "^0.1.336",
     "@plasmicapp/loader-nextjs": "^1.0.415",
     "@plasmicapp/react-web": "^0.2.376",
@@ -16,16 +17,15 @@
     "@plasmicpkgs/react-aria": "^0.0.119",
     "@strapi/plugin-cloud": "5.11.2",
     "@strapi/plugin-users-permissions": "5.11.2",
-    "@strapi/strapi": "5.11.2",
+    "@strapi/strapi": "^5.11.3",
     "better-sqlite3": "11.3.0",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
-    "next": "14.1.0",
+    "next": "^14.2.25",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
-    "styled-components": "^6.0.0",
-    "@apollo/client": "^3.13.4"
+    "styled-components": "^6.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
