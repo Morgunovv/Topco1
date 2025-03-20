@@ -1,28 +1,15 @@
-import { useQuery } from '@apollo/client';
 import { PlasmicComponent } from '@plasmicapp/loader-nextjs';
-import { GET_MAINS } from '../lib/queries';
-
-interface MainItem {
-    id: string | number;
-    attributes: {
-        // добавьте здесь все поля, которые вы используете из item.attributes
-        title?: string;
-        description?: string;
-        // ... другие поля
-    }
-}
 
 export function MainContent() {
-    const { data } = useQuery(GET_MAINS);
-
-    if (!data) {
-        return <div>Loading...</div>;
-    }
+    // Здесь можно использовать обычные данные или другой способ получения данных
+    const mockData = [
+        { id: 1, attributes: { title: 'Project 1', description: 'Description 1' } },
+        { id: 2, attributes: { title: 'Project 2', description: 'Description 2' } }
+    ];
 
     return (
         <div>
-            {/* @ts-ignore */}
-            {data.mains.data.map(item => (
+            {mockData.map(item => (
                 <PlasmicComponent
                     key={item.id}
                     component="ProjectCard"
