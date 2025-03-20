@@ -5,6 +5,8 @@ import {
   PlasmicNavigationBar,
   DefaultNavigationBarProps
 } from "./plasmic/top_co_website/PlasmicNavigationBar";
+import { MenuSection } from "./components/MenuSection";
+import { MenuItem } from "./components/MenuItem";
 
 // Your component props start with props for variants and slots you defined
 // in Plasmic, but you can add more here, like event handlers that you can
@@ -19,9 +21,18 @@ import {
 //
 // You can also stop extending from DefaultNavigationBarProps altogether and have
 // total control over the props for your component.
-export interface NavigationBarProps extends DefaultNavigationBarProps {}
+export interface NavigationBarProps extends DefaultNavigationBarProps { }
 
-function NavigationBar(props: NavigationBarProps) {
+export function NavigationBar() {
+  return (
+    <MenuSection>
+      <MenuItem key="1">Item 1</MenuItem>
+      <MenuItem key="2">Item 2</MenuItem>
+    </MenuSection>
+  );
+}
+
+function NavigationBarComponent(props: NavigationBarProps) {
   // Use PlasmicNavigationBar to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
@@ -40,4 +51,4 @@ function NavigationBar(props: NavigationBarProps) {
   return <PlasmicNavigationBar {...props} />;
 }
 
-export default NavigationBar;
+export default NavigationBarComponent;
