@@ -1,0 +1,14 @@
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139 140">
+  <rect x="46.623" y="-15.651" width="125" height="125" rx="43.75" transform="rotate(30 46.623 -15.65)" fill="url(#VTAFx_l3wWAga)"/>
+  <rect x="46.623" y="-15.651" width="125" height="125" rx="43.75" transform="rotate(30 46.623 -15.65)" fill="url(#VTAFx_l3wWAgb)" fill-opacity=".2"/>
+  <defs>
+    <radialGradient id="VTAFx_l3wWAgb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(82.21 36.838 67.736) scale(59.6405 59.3359)">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="VTAFx_l3wWAga" x1="109.123" y1="-15.651" x2="109.123" y2="109.349" gradientUnits="userSpaceOnUse">
+      <stop/>
+      <stop offset="1" stop-color="#5F5F5F"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,85 @@
+.ariaSlider:global(.__wab_instance) {
+  position: relative;
+  box-sizing: border-box;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  color: var(--token-hs5xukPbg3uP);
+  font-family: var(--token-ztZ1HQIopiwH);
+  font-size: var(--token-aswsJx6IoFUX);
+  line-height: var(--token-3CgTdPe_gkUK);
+  width: 100%;
+  row-gap: var(--token-vWtL12YN83Av);
+}
+.ariaSlider[data-disabled]:global(.__wab_instance) {
+  opacity: 0.5;
+}
+.freeBox___7LSzn {
+  display: flex;
+  flex-direction: row;
+}
+.freeBox___7LSzn > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-left: calc(0px - var(--token-blCmg7lQWb1V));
+  width: calc(100% + var(--token-blCmg7lQWb1V));
+}
+.freeBox___7LSzn > :global(.__wab_flex-container) > *,
+.freeBox___7LSzn > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox___7LSzn > :global(.__wab_flex-container) > picture > img,
+.freeBox___7LSzn
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: var(--token-blCmg7lQWb1V);
+}
+.text__onmCs {
+  position: relative;
+}
+.freeBox__fhzNb {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding-top: var(--token-Aojtt6d7J13d);
+  padding-bottom: var(--token-Aojtt6d7J13d);
+  width: 100%;
+  min-width: 0;
+}
+.background {
+  display: flex;
+  background: var(--token-9oeU_8xRcDQY);
+  height: var(--token-blCmg7lQWb1V);
+  width: 100%;
+  min-width: 0;
+  border-radius: 99px;
+}
+.ariaSliderTrack:global(.__wab_instance) {
+  cursor: pointer;
+  opacity: 1;
+  box-sizing: border-box;
+  background: none;
+  height: var(--token-blCmg7lQWb1V);
+  width: 100%;
+  min-width: 0;
+}
+.ariaSlider[data-disabled] .ariaSliderTrack:global(.__wab_instance) {
+  cursor: not-allowed;
+}
+.sliderThumb__kq1Ri:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  margin-top: var(--token-_GRpZSiryOIz);
+}
+.foreground {
+  display: block;
+  background: var(--token-OyPG8bhCpd0Y);
+  height: var(--token-blCmg7lQWb1V);
+  border-radius: 99px 0rem 0rem 99px;
+}
+.description:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}

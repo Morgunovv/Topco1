@@ -7,10 +7,10 @@
   flex-direction: row;
   position: relative;
   transition-property: all;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   cursor: pointer;
   -webkit-transition-property: all;
-  -webkit-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.3s;
   border-radius: 100px;
   padding: 12px 18px;
 }
@@ -32,7 +32,18 @@
   margin-left: 6px;
 }
 .button15:hover {
-  background: #fffdf9;
+  transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+  transform-style: preserve-3d;
+}
+.button15:hover * {
+  transform-style: preserve-3d;
+}
+.button15:active:hover {
+  background: #f7f5ef;
+  transform-style: preserve-3d;
+}
+.button15:active:hover * {
+  transform-style: preserve-3d;
 }
 .iconFrame15 {
   width: 24px;
@@ -52,8 +63,8 @@
   top: 0px;
   left: 0px;
 }
-.button15:hover .svg__zlMp9 {
-  color: var(--token-V0_Q-Dvegas_);
+.button15:active:hover .svg__zlMp9 {
+  color: #14161f;
 }
 .label15 {
   display: block;
@@ -66,8 +77,8 @@
   color: rgba(255, 253, 249, 1);
   position: relative;
 }
-.button15:hover .label15 {
-  color: var(--token-V0_Q-Dvegas_);
+.button15:active:hover .label15 {
+  color: #14161f;
 }
 .arrow2414 {
   width: 24px;

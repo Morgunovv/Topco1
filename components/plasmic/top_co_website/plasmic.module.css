@@ -129,6 +129,10 @@
   );
   --token-s7zzNBuwncDY: #fffdf9;
   --plasmic-token-primary-light-2: var(--token-s7zzNBuwncDY);
+  --token-9oeU_8xRcDQY: #e5e7eb;
+  --plasmic-token-basic-input-background: var(--token-9oeU_8xRcDQY);
+  --token-m4bnnm8A8A3U: 1.25rem;
+  --plasmic-token-size-20: var(--token-m4bnnm8A8A3U);
 }
 
 .plasmic_tokens {

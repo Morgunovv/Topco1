@@ -525,6 +525,45 @@
           "cssFilePath": "plasmic/top_co_website/PlasmicContactUsButton.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "zTnG5uichMbB",
+          "name": "SliderThumb",
+          "type": "managed",
+          "projectId": "tVrjFA7RVCG7zyycB4xXud",
+          "renderModuleFilePath": "plasmic/top_co_website/PlasmicSliderThumb.tsx",
+          "importSpec": {
+            "modulePath": "SliderThumb.tsx"
+          },
+          "cssFilePath": "plasmic/top_co_website/PlasmicSliderThumb.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "CHKolLL000gz",
+          "name": "RangeSlider",
+          "type": "managed",
+          "projectId": "tVrjFA7RVCG7zyycB4xXud",
+          "renderModuleFilePath": "plasmic/top_co_website/PlasmicRangeSlider.tsx",
+          "importSpec": {
+            "modulePath": "RangeSlider.tsx"
+          },
+          "cssFilePath": "plasmic/top_co_website/PlasmicRangeSlider.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "hE5wE-KtKK8V",
+          "name": "Slider",
+          "type": "managed",
+          "projectId": "tVrjFA7RVCG7zyycB4xXud",
+          "renderModuleFilePath": "plasmic/top_co_website/PlasmicSlider.tsx",
+          "importSpec": {
+            "modulePath": "Slider.tsx"
+          },
+          "cssFilePath": "plasmic/top_co_website/PlasmicSlider.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1604,6 +1643,76 @@
           "id": "SH5jbpyup6Nt",
           "name": "_Слой_1 5",
           "filePath": "../public/plasmic/top_co_website/images/слой15.svg"
+        },
+        {
+          "id": "DefQf80iWSBd",
+          "name": "Star 35",
+          "filePath": "../public/plasmic/top_co_website/images/star35.svg"
+        },
+        {
+          "id": "gymVdulg3aBe",
+          "name": "White Icon 3",
+          "filePath": "../public/plasmic/top_co_website/images/whiteIcon3.svg"
+        },
+        {
+          "id": "N9cx5Ij_mxzV",
+          "name": "Star 36",
+          "filePath": "../public/plasmic/top_co_website/images/star36.svg"
+        },
+        {
+          "id": "OK4Uh_nlCkoc",
+          "name": "Path-3 3",
+          "filePath": "../public/plasmic/top_co_website/images/path33.svg"
+        },
+        {
+          "id": "hE4kM0uqXTQ_",
+          "name": "Star 37",
+          "filePath": "../public/plasmic/top_co_website/images/star37.svg"
+        },
+        {
+          "id": "Vz1HaFz4G6gx",
+          "name": "Vector 3",
+          "filePath": "../public/plasmic/top_co_website/images/vector3.svg"
+        },
+        {
+          "id": "jcifL279z040",
+          "name": "Image.svg",
+          "filePath": "../public/plasmic/top_co_website/images/imageSvg.svg"
+        },
+        {
+          "id": "UgoyVqFOa41o",
+          "name": "_Слой_1 6",
+          "filePath": "../public/plasmic/top_co_website/images/слой16.svg"
+        },
+        {
+          "id": "CEM-ZuwsUL-4",
+          "name": "_Слой_1 7",
+          "filePath": "../public/plasmic/top_co_website/images/слой17.svg"
+        },
+        {
+          "id": "Q2ZkviwrW7PP",
+          "name": "_Слой_1 8",
+          "filePath": "../public/plasmic/top_co_website/images/слой18.svg"
+        },
+        {
+          "id": "l876bi55034b",
+          "name": "_Слой_1 9",
+          "filePath": "../public/plasmic/top_co_website/images/слой19.svg"
+        },
+        {
+          "id": "gjDhBBwsoqJp",
+          "name": "Background.svg",
+          "filePath": "../public/plasmic/top_co_website/images/backgroundSvg.svg"
+        },
+        {
+          "id": "4LCjyVAYWIB4",
+          "name": "Background.svg 2",
+          "filePath": "../public/plasmic/top_co_website/images/backgroundSvg2.svg"
+        },
+        {
+          "id": "QmM17awm54Wh",
+          "name": "Vector 4983.svg",
+          "filePath": "../public/plasmic/top_co_website/images/vector4983Svg.svg"
         }
       ],
       "indirect": false,
