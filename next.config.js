@@ -12,11 +12,16 @@ const nextConfig = {
     // Добавим настройки для production
     productionBrowserSourceMaps: true, // для лучшей отладки
     poweredByHeader: false,
+    transpilePackages: ['@ant-design/icons', '@ant-design/icons-svg'],
     webpack: (config, { isServer }) => {
         // Добавляем обработку компонентов
         config.resolve.fallback = {
             ...config.resolve.fallback,
             fs: false,
+        };
+        config.resolve.alias = {
+            ...config.resolve.alias,
+            '@ant-design/icons/lib': '@ant-design/icons/es',
         };
         return config;
     }
