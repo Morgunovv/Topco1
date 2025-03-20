@@ -4964,8 +4964,8 @@
   display: block;
   transform-origin: top left;
   position: absolute;
-  top: -936px;
-  left: 18px;
+  top: -966px;
+  left: 28px;
 }
 .svg__ztee8 {
   object-fit: cover;
@@ -4976,8 +4976,8 @@
   height: 62.86703872680664px;
   display: block;
   position: absolute;
-  top: -1004px;
-  left: 638px;
+  top: -1034px;
+  left: 670px;
 }
 .pageBlock6 {
   width: 1440px;
@@ -5013,8 +5013,11 @@
   width: 608px;
   height: auto;
   display: flex;
-  position: relative;
+  position: sticky;
   flex-direction: column;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
   flex-shrink: 0;
 }
 .titleSubtitle39 > :global(.__wab_flex-container) {
