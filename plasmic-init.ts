@@ -8,16 +8,16 @@ console.log('Initializing Plasmic with:', {
 export const PLASMIC = initPlasmicLoader({
   projects: [
     {
-      id: process.env.PLASMIC_PROJECT_ID as string,
-      token: process.env.PLASMIC_PROJECT_API_TOKEN as string,
-    },
+      id: process.env.PLASMIC_PROJECT_ID!,
+      token: process.env.PLASMIC_PROJECT_API_TOKEN!
+    }
   ],
 
   // By default Plasmic will use the last published version of your project.
   // For development, you can set preview to true, which will use the unpublished
   // project, allowing you to see your designs without publishing.  Please
   // only use this for development, as this is significantly slower.
-  preview: false,
+  preview: true,
 });
 
 // You can register any code components that you want to use here; see

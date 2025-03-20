@@ -1,0 +1,120 @@
+.button15 {
+  background: rgba(20, 22, 31, 1);
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  overflow: hidden;
+  flex-direction: row;
+  position: relative;
+  transition-property: all;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  border-radius: 100px;
+  padding: 12px 18px;
+}
+.button15 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: calc(0px - 6px);
+  width: calc(100% + 6px);
+}
+.button15 > :global(.__wab_flex-container) > *,
+.button15 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.button15 > :global(.__wab_flex-container) > picture > img,
+.button15
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 6px;
+}
+.button15:hover {
+  background: #fffdf9;
+}
+.iconFrame15 {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.svg__zlMp9 {
+  object-fit: cover;
+  max-width: 100%;
+  color: #fffdf9;
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.button15:hover .svg__zlMp9 {
+  color: var(--token-V0_Q-Dvegas_);
+}
+.label15 {
+  display: block;
+  font-size: 18px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(255, 253, 249, 1);
+  position: relative;
+}
+.button15:hover .label15 {
+  color: var(--token-V0_Q-Dvegas_);
+}
+.arrow2414 {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.icon24Grid14 {
+  width: 21px;
+  height: 21px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.icons24IconGridSquare14 {
+  width: 21px;
+  height: 21px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.img {
+  object-fit: cover;
+  max-width: 100%;
+  width: 20.571428298950195px;
+  height: 20.571428298950195px;
+  display: block !important;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.svg__xYaHw {
+  object-fit: cover;
+  max-width: 100%;
+  color: #fef9ee;
+  transform: translate(0.000004291534423828125px, -0.000003337860107421875px);
+  width: 15.67839241027832px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 4px;
+}

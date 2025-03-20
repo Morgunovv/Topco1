@@ -773,7 +773,7 @@ function PlasmicFooter1__RenderFunc(props: {
               sty.text__exgW8
             )}
           >
-            {"\u00a9 2024 2025 All rights reserved"}
+            {"\u00a9 2025 All rights reserved"}
           </div>
           <div
             className={classNames(
@@ -1130,15 +1130,15 @@ type NodeComponentProps<T extends NodeNameType> =
     args?: PlasmicFooter1__ArgsType;
     overrides?: NodeOverridesType<T>;
   } & Omit<PlasmicFooter1__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
-    /* Specify args directly as props*/ Omit<
-      PlasmicFooter1__ArgsType,
-      ReservedPropsType
-    > &
-    /* Specify overrides for each element directly as props*/ Omit<
+    // Specify args directly as props
+    Omit<PlasmicFooter1__ArgsType, ReservedPropsType> &
+    // Specify overrides for each element directly as props
+    Omit<
       NodeOverridesType<T>,
       ReservedPropsType | VariantPropType | ArgPropType
     > &
-    /* Specify props for the root element*/ Omit<
+    // Specify props for the root element
+    Omit<
       Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
       ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
     >;

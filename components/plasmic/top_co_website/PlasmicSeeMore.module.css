@@ -1,0 +1,111 @@
+.button14 {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  overflow: hidden;
+  flex-direction: row;
+  cursor: pointer;
+  position: relative;
+}
+.button14 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: calc(0px - 6px);
+  width: calc(100% + 6px);
+}
+.button14 > :global(.__wab_flex-container) > *,
+.button14 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.button14 > :global(.__wab_flex-container) > picture > img,
+.button14
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 6px;
+}
+.iconFrame14 {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.svg__b4Zed {
+  object-fit: cover;
+  max-width: 100%;
+  color: #3480f1;
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.label14 {
+  display: block;
+  font-size: 18px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(52, 128, 241, 1);
+  position: relative;
+}
+.arrow2413 {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.icon24Grid13 {
+  width: 21px;
+  height: 21px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.icons24IconGridSquare13 {
+  width: 21px;
+  height: 21px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.img {
+  object-fit: cover;
+  max-width: 100%;
+  width: 20.571428298950195px;
+  height: 20.571428298950195px;
+  display: block !important;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.svg__bKfqH {
+  object-fit: cover;
+  max-width: 100%;
+  color: #3480f1;
+  transform: translate(0.000002384185791015625px, -0.000003337860107421875px);
+  width: 15.67839241027832px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.5s;
+}
+.button14:hover .svg__bKfqH {
+  left: 9px;
+}

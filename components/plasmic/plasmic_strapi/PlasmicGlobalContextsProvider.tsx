@@ -18,23 +18,12 @@ export interface GlobalContextsProviderProps {
 export default function GlobalContextsProvider(
   props: GlobalContextsProviderProps
 ) {
-  const { children, strapiCredentialsProviderProps } = props;
+  const { children } = props;
 
   return (
     <StrapiCredentialsProvider
-      {...strapiCredentialsProviderProps}
-      host={
-        strapiCredentialsProviderProps &&
-        "host" in strapiCredentialsProviderProps
-          ? strapiCredentialsProviderProps.host!
-          : "https://strapi-app.plasmic.app"
-      }
-      token={
-        strapiCredentialsProviderProps &&
-        "token" in strapiCredentialsProviderProps
-          ? strapiCredentialsProviderProps.token!
-          : undefined
-      }
+      host={process.env.NEXT_PUBLIC_STRAPI_API_URL || "http://localhost:1337"}
+      token={process.env.NEXT_PUBLIC_STRAPI_TOKEN}
     >
       {children}
     </StrapiCredentialsProvider>
