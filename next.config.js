@@ -12,7 +12,16 @@ const nextConfig = {
     // Добавим настройки для production
     productionBrowserSourceMaps: true, // для лучшей отладки
     poweredByHeader: false,
-    transpilePackages: ['@ant-design/icons', '@ant-design/icons-svg'],
+    transpilePackages: [
+        '@ant-design/icons',
+        '@ant-design/icons-svg',
+        'rc-util',
+        'rc-pagination',
+        'rc-picker',
+        'rc-table',
+        'rc-tree',
+        'rc-dialog'
+    ],
     webpack: (config, { isServer }) => {
         // Добавляем обработку компонентов
         config.resolve.fallback = {
@@ -22,7 +31,18 @@ const nextConfig = {
         config.resolve.alias = {
             ...config.resolve.alias,
             '@ant-design/icons/lib': '@ant-design/icons/es',
+            'rc-util/lib': 'rc-util/es'
         };
+
+        // Добавляем правило для обработки ES модулей
+        config.module.rules.push({
+            test: /\.m?js$/,
+            type: 'javascript/auto',
+            resolve: {
+                fullySpecified: false,
+            },
+        });
+
         return config;
     }
 }
