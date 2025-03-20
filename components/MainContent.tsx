@@ -15,6 +15,10 @@ interface MainItem {
 export function MainContent() {
     const { data } = useQuery(GET_MAINS);
 
+    if (!data) {
+        return <div>Loading...</div>;
+    }
+
     return (
         <div>
             {/* @ts-ignore */}
@@ -22,7 +26,6 @@ export function MainContent() {
                 <PlasmicComponent
                     key={item.id}
                     component="ProjectCard"
-                // ... остальные пропсы
                 />
             ))}
         </div>
