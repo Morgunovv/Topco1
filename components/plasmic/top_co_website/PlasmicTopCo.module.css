@@ -83,19 +83,21 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  font-weight: 400;
+  font-weight: 600;
   color: #14161f;
   text-align: center;
   font-size: 80px;
   opacity: 1;
   max-height: 264px;
-  letter-spacing: -2px;
+  letter-spacing: -1.6px;
   line-height: 110%;
-  font-family: "inter display";
+  font-family: var(--font-inter-display);
+  margin-top: calc(0px + 48px) !important;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .h1__fd3V {
     width: 427px;
+    margin-top: calc(0px + 48px) !important;
     display: none;
   }
 }
@@ -537,6 +539,7 @@
   flex-direction: column;
   left: 80px;
   top: -429px;
+  padding-bottom: 0px;
   flex-shrink: 0;
 }
 .titleSubtitle > :global(.__wab_flex-container) {
@@ -559,10 +562,10 @@
 .title2 {
   display: block;
   font-size: 48px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter-display);
   font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.100000023841858;
+  letter-spacing: -0.96px;
+  line-height: 110%;
   color: rgba(20, 22, 31, 1);
   position: relative;
   width: 608px;
@@ -571,7 +574,7 @@
   display: block;
   font-size: 20px;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0em;
   line-height: 28px;
   color: rgba(0, 0, 0, 1);
@@ -638,18 +641,18 @@
   margin-top: 28px;
 }
 .h1__ufjhF {
-  width: 100%;
+  width: 608px;
   height: auto;
   max-width: 100%;
   max-height: 264px;
   font-size: 48px;
   font-weight: 600;
-  color: #14161f;
+  color: rgba(20, 22, 31, 1);
   text-align: center;
   line-height: 110%;
-  letter-spacing: -2px;
+  letter-spacing: -0.96px;
   opacity: 1;
-  min-width: 0;
+  font-family: var(--font-inter-display);
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .h1__ufjhF {
@@ -1727,10 +1730,10 @@
   display: block;
   font-size: 48px;
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter-display);
   font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.100000023841858;
+  letter-spacing: -0.96px;
+  line-height: 110%;
   color: rgba(20, 22, 31, 1);
   align-self: stretch;
   position: relative;
@@ -1933,7 +1936,7 @@
 .text__i4Of {
   display: block;
   font-size: 36px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter-display);
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 1.100000023841858;
@@ -2003,7 +2006,7 @@
 .text___3SZgN {
   display: block;
   font-size: 36px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter-display);
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 1.100000023841858;
@@ -2047,7 +2050,7 @@
 .text__wIm1X {
   display: block;
   font-size: 36px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter-display);
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 1.100000023841858;
@@ -2341,7 +2344,7 @@
   display: flex;
   flex-direction: column;
   justify-self: auto;
-  padding: 180px 100px 200px;
+  padding: 180px 100px 57px;
 }
 .pageBlock5 > :global(.__wab_flex-container) {
   flex-direction: column;
@@ -2370,11 +2373,11 @@
   max-width: 100%;
   color: #14161f;
   width: 1440px;
-  height: 1317px;
+  height: 1320px;
   display: block;
   position: absolute;
   left: 8px;
-  top: -42px;
+  top: -50px;
   flex-shrink: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -2410,11 +2413,11 @@
   display: block;
   font-size: 48px;
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter-display);
   font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.100000023841858;
-  color: rgba(254, 249, 238, 1);
+  letter-spacing: -0.96px;
+  line-height: 110%;
+  color: #fef9ee;
   align-self: stretch;
   position: relative;
 }
@@ -2436,6 +2439,8 @@
   position: relative;
   align-self: stretch;
   flex-direction: row;
+  margin-top: calc(0px + 56px) !important;
+  padding-top: 77px;
 }
 .cards2 > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -4979,6 +4984,7 @@
   height: auto;
   display: flex;
   flex-direction: row;
+  margin-top: 0px;
   padding: 164px 100px;
 }
 .pageBlock6 > :global(.__wab_flex-container) {
@@ -5031,13 +5037,14 @@
 .title1 {
   display: block;
   font-size: 48px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter-display);
   font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.100000023841858;
+  letter-spacing: -0.96px;
+  line-height: 110%;
   color: rgba(20, 22, 31, 1);
   align-self: stretch;
   position: relative;
+  width: 608px;
 }
 .text__jsXt {
   display: block;
@@ -5449,12 +5456,14 @@
 .title24 {
   display: block;
   font-size: 48px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter-display);
   font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.100000023841858;
+  letter-spacing: -0.96px;
+  line-height: 110%;
   color: rgba(20, 22, 31, 1);
   position: relative;
+  width: 608px;
+  flex-shrink: 0;
 }
 .seeMore:global(.__wab_instance) {
   position: relative;
@@ -5930,11 +5939,13 @@
   max-width: 100%;
   color: #f7f5ef;
   width: 1440px;
-  height: 561px;
+  height: 570px;
   display: block;
   position: absolute;
   left: 4px;
-  top: -36px;
+  top: -4px;
+  margin-bottom: 0px;
+  margin-top: calc(0px + 10px) !important;
   flex-shrink: 0;
 }
 .titleSubtitle46 {
@@ -5996,12 +6007,14 @@
   width: 570.926513671875px;
   height: 142.82093811035156px;
   display: block;
-  position: relative;
+  position: absolute;
+  left: 435px;
+  top: 347px;
   flex-shrink: 0;
 }
 .footer1:global(.__wab_instance) {
   max-width: 100%;
-  height: 325px;
+  height: 439px;
   margin-top: calc(0px + 10px) !important;
   flex-shrink: 0;
 }
