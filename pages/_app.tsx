@@ -1,0 +1,15 @@
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import type { AppProps } from 'next/app';
+
+const client = new ApolloClient({
+    uri: process.env.NEXT_PUBLIC_GRAPHQL_URL || 'http://localhost:1337/graphql', // укажите правильный URL
+    cache: new InMemoryCache()
+});
+
+export default function App({ Component, pageProps }: AppProps) {
+    return (
+        <ApolloProvider client={client}>
+            <Component {...pageProps} />
+        </ApolloProvider>
+    );
+}
