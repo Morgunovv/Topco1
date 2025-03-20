@@ -11,7 +11,15 @@ const nextConfig = {
     },
     // Добавим настройки для production
     productionBrowserSourceMaps: true, // для лучшей отладки
-    poweredByHeader: false
+    poweredByHeader: false,
+    webpack: (config, { isServer }) => {
+        // Добавляем обработку компонентов
+        config.resolve.fallback = {
+            ...config.resolve.fallback,
+            fs: false,
+        };
+        return config;
+    }
 }
 
 module.exports = nextConfig 

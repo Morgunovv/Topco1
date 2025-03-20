@@ -1,11 +1,5 @@
-import React from 'react';
-import { Menu } from 'antd';
-import type { MenuProps } from 'antd';
+import { PlasmicComponent } from '@plasmicapp/loader-nextjs';
 
-export function MenuSection({ children }: { children: React.ReactNode }) {
-    return (
-        <Menu mode="horizontal">
-            {children}
-        </Menu>
-    );
+export function MenuSection({ children }) {
+    return <PlasmicComponent component="MenuSection">{children}</PlasmicComponent>;
 } 

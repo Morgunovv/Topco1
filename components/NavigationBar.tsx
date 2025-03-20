@@ -5,8 +5,9 @@ import {
   PlasmicNavigationBar,
   DefaultNavigationBarProps
 } from "./plasmic/top_co_website/PlasmicNavigationBar";
-import { MenuSection } from "./components/MenuSection";
-import { MenuItem } from "./components/MenuItem";
+import { MenuSection } from './MenuSection';
+import { MenuItem } from './MenuItem';
+import { PlasmicComponent } from '@plasmicapp/loader-nextjs';
 
 // Your component props start with props for variants and slots you defined
 // in Plasmic, but you can add more here, like event handlers that you can
@@ -24,12 +25,7 @@ import { MenuItem } from "./components/MenuItem";
 export interface NavigationBarProps extends DefaultNavigationBarProps { }
 
 export function NavigationBar() {
-  return (
-    <MenuSection>
-      <MenuItem key="1">Item 1</MenuItem>
-      <MenuItem key="2">Item 2</MenuItem>
-    </MenuSection>
-  );
+  return <PlasmicComponent component="NavigationBar" />;
 }
 
 function NavigationBarComponent(props: NavigationBarProps) {
