@@ -3,11 +3,7 @@ const nextConfig = {
     typescript: {
         ignoreBuildErrors: true
     },
-    // Отключаем React Server Components
-    experimental: {
-        appDir: false
-    },
-    // Добавляем конфигурацию для Plasmic
+    // Удаляем experimental.appDir
     images: {
         domains: ['static1.plasmic.app', 'img.plasmic.app']
     }
