@@ -1,3 +1,7 @@
+import { useQuery } from '@apollo/client';
+import { PlasmicComponent } from '@plasmicapp/loader-nextjs';
+import { GET_MAINS } from '../lib/queries';
+
 interface MainItem {
     id: string | number;
     attributes: {
@@ -8,16 +12,19 @@ interface MainItem {
     }
 }
 
-// В компоненте:
-return (
-    <div>
-        {/* @ts-ignore */}
-        {data.mains.data.map(item => (
-            <PlasmicComponent
-                key={item.id}
-                component="ProjectCard"
-            // ... остальные пропсы
-            />
-        ))}
-    </div>
-); 
+export function MainContent() {
+    const { data } = useQuery(GET_MAINS);
+
+    return (
+        <div>
+            {/* @ts-ignore */}
+            {data.mains.data.map(item => (
+                <PlasmicComponent
+                    key={item.id}
+                    component="ProjectCard"
+                // ... остальные пропсы
+                />
+            ))}
+        </div>
+    );
+} 
