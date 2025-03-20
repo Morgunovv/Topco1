@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@next/env": "14.1.0",
-    "@next/swc-win32-x64-msvc": "14.1.0",
     "@plasmicapp/cli": "^0.1.335",
     "@plasmicapp/loader-nextjs": "^1.0.415",
     "@plasmicapp/react-web": "^0.2.376",
