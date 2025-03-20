@@ -935,6 +935,3 @@
   color: rgba(133, 132, 129, 1);
   position: relative;
 }
-.contactSection:global(.__wab_instance) {
-  max-width: 100%;
-}

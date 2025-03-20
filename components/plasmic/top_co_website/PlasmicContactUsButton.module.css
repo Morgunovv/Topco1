@@ -8,9 +8,9 @@
   cursor: pointer;
   position: relative;
   transition-property: all;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   -webkit-transition-property: all;
-  -webkit-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.3s;
   border-radius: 100px;
   padding: 12px 18px;
 }
@@ -32,7 +32,14 @@
   margin-left: 6px;
 }
 .button6:hover {
-  background: #fffdf9;
+  transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+  transform-style: preserve-3d;
+}
+.button6:hover * {
+  transform-style: preserve-3d;
+}
+.button6:active {
+  background: #f7f5ef;
 }
 .iconFrame6 {
   width: 24px;
@@ -52,8 +59,8 @@
   top: 0px;
   left: 0px;
 }
-.button6:hover .svg__pWpOe {
-  color: var(--token-V0_Q-Dvegas_);
+.button6:active .svg__pWpOe {
+  color: #14161f;
 }
 .label6 {
   display: block;
@@ -67,8 +74,8 @@
   position: relative;
   padding-bottom: 0px;
 }
-.button6:hover .label6 {
-  color: var(--token-V0_Q-Dvegas_);
+.button6:active .label6 {
+  color: #14161f;
 }
 .arrow245 {
   width: 24px;

@@ -59,8 +59,6 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
-import ContactSection from "../../ContactSection"; // plasmic-import: 4un3pt4AfjWC/component
-
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -135,7 +133,6 @@ export type PlasmicFooter1__OverridesType = {
   section4?: Flex__<"div">;
   icons?: Flex__<"div">;
   bottom?: Flex__<"div">;
-  contactSection?: Flex__<typeof ContactSection>;
 };
 
 export interface DefaultFooter1Props {
@@ -789,11 +786,6 @@ function PlasmicFooter1__RenderFunc(props: {
           </div>
         </Stack__>
       </div>
-      <ContactSection
-        data-plasmic-name={"contactSection"}
-        data-plasmic-override={overrides.contactSection}
-        className={classNames("__wab_instance", sty.contactSection)}
-      />
     </div>
   ) as React.ReactElement | null;
 }
@@ -846,8 +838,7 @@ const PlasmicDescendants = {
     "icons24IconGridSquare5",
     "section4",
     "icons",
-    "bottom",
-    "contactSection"
+    "bottom"
   ],
   figmaPaste: [
     "figmaPaste",
@@ -1072,8 +1063,7 @@ const PlasmicDescendants = {
   icons24IconGridSquare5: ["icons24IconGridSquare5"],
   section4: ["section4", "icons"],
   icons: ["icons"],
-  bottom: ["bottom"],
-  contactSection: ["contactSection"]
+  bottom: ["bottom"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1126,7 +1116,6 @@ type NodeDefaultElementType = {
   section4: "div";
   icons: "div";
   bottom: "div";
-  contactSection: typeof ContactSection;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1235,7 +1224,6 @@ export const PlasmicFooter1 = Object.assign(
     section4: makeNodeComponent("section4"),
     icons: makeNodeComponent("icons"),
     bottom: makeNodeComponent("bottom"),
-    contactSection: makeNodeComponent("contactSection"),
 
     // Metadata about props expected for PlasmicFooter1
     internalVariantProps: PlasmicFooter1__VariantProps,

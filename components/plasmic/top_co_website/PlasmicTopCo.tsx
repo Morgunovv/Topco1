@@ -151,16 +151,10 @@ import Explore242Icon from "./icons/PlasmicIcon__Explore242"; // plasmic-import:
 
 createPlasmicElementProxy;
 
-export type PlasmicTopCo__VariantMembers = {
-  unnamedGroupOfVariants: "unnamedVariant";
-};
-export type PlasmicTopCo__VariantsArgs = {
-  unnamedGroupOfVariants?: SingleChoiceArg<"unnamedVariant">;
-};
+export type PlasmicTopCo__VariantMembers = {};
+export type PlasmicTopCo__VariantsArgs = {};
 type VariantPropType = keyof PlasmicTopCo__VariantsArgs;
-export const PlasmicTopCo__VariantProps = new Array<VariantPropType>(
-  "unnamedGroupOfVariants"
-);
+export const PlasmicTopCo__VariantProps = new Array<VariantPropType>();
 
 export type PlasmicTopCo__ArgsType = {};
 type ArgPropType = keyof PlasmicTopCo__ArgsType;
@@ -706,14 +700,7 @@ function PlasmicTopCo__RenderFunc(props: {
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
-            sty.root,
-            {
-              [sty.rootunnamedGroupOfVariants_unnamedVariant]: hasVariant(
-                $state,
-                "unnamedGroupOfVariants",
-                "unnamedVariant"
-              )
-            }
+            sty.root
           )}
         >
           <Header

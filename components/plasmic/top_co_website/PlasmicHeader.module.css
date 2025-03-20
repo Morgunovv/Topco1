@@ -6,6 +6,7 @@
   height: auto;
   justify-content: flex-start;
   align-items: center;
+  padding-bottom: 0px;
   min-width: 0;
 }
 .header {
