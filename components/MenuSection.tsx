@@ -1,8 +1,9 @@
 import { Menu } from 'antd';
 import type { MenuProps } from 'antd';
 
-interface MenuSectionProps extends MenuProps {
-    children: React.ReactNode;
+// Используем тип из antd для пропсов
+export interface MenuSectionProps extends MenuProps {
+    children?: React.ReactNode;
 }
 
 export const MenuSection: React.FC<MenuSectionProps> = ({ children, ...props }) => {
@@ -11,4 +12,6 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ children, ...props }) 
             {children}
         </Menu>
     );
-}; 
+};
+
+export type { MenuProps }; 

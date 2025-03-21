@@ -42,7 +42,12 @@ const items: MenuProps['items'] = [
 ];
 
 export function NavigationBar() {
-  return <Navigation />;
+  return (
+    <Menu mode="horizontal">
+      <Menu.Item key="home">Главная</Menu.Item>
+      <Menu.Item key="about">О нас</Menu.Item>
+    </Menu>
+  );
 }
 
 function NavigationBarComponent(props: NavigationBarProps) {
