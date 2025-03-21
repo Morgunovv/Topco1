@@ -11,7 +11,7 @@ import AntdRegistry from '../components/AntdRegistry';
 import 'antd/dist/reset.css';
 import '../styles/antd.css';
 
-export default function App({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps) {
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
@@ -42,3 +42,5 @@ export default function App({ Component, pageProps }: AppProps) {
         </AntdRegistry>
     );
 }
+
+export default MyApp;

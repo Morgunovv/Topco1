@@ -12,6 +12,7 @@ import { Menu } from 'antd';
 import type { MenuProps } from 'antd';
 import { MenuWrapper } from './MenuWrapper';
 import { SimpleMenu } from './SimpleMenu';
+import { Navigation } from './Navigation';
 
 // Your component props start with props for variants and slots you defined
 // in Plasmic, but you can add more here, like event handlers that you can
@@ -41,7 +42,7 @@ const items: MenuProps['items'] = [
 ];
 
 export function NavigationBar() {
-  return <SimpleMenu />;
+  return <Navigation />;
 }
 
 function NavigationBarComponent(props: NavigationBarProps) {

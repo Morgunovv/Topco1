@@ -8,32 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@ant-design/cssinjs": "^1.18.4",
-    "antd": "^5.0.0",
-    "@ant-design/icons": "^5.0.0",
-    "@next/env": "14.1.0",
-    "@plasmicapp/cli": "^0.1.335",
-    "@plasmicapp/loader-nextjs": "^1.0.415",
-    "@plasmicapp/react-web": "^0.2.376",
-    "@plasmicpkgs/antd5": "^0.0.277",
-    "@plasmicpkgs/lottie-react": "^0.0.202",
-    "@plasmicpkgs/plasmic-basic-components": "^0.0.234",
-    "@plasmicpkgs/plasmic-nav": "^0.0.181",
-    "@plasmicpkgs/plasmic-strapi": "^0.1.161",
-    "@strapi/plugin-cloud": "5.11.2",
-    "@strapi/plugin-users-permissions": "5.11.2",
-    "@strapi/strapi": "5.11.2",
-    "@swc/helpers": "0.5.2",
-    "better-sqlite3": "11.3.0",
-    "fs-extra": "^10.0.0",
-    "mime-types": "^2.1.27",
     "next": "14.1.0",
-    "rc-util": "^5.38.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.0.0",
-    "styled-components": "^6.0.0",
-    "styled-jsx": "5.1.1"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
