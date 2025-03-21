@@ -2,9 +2,10 @@
   width: 300px;
   box-sizing: border-box;
   object-fit: cover;
-  background: var(--token-FBkQlcVEu_S5);
+  background: linear-gradient(#fffdf9, #fffdf9),
+    linear-gradient(#ffffff, #ffffff), var(--token-FBkQlcVEu_S5);
   position: relative;
-  overflow: auto;
+  overflow: hidden;
   box-shadow: 0px 0px 12px 0px #00000040,
     0px 0px 0px 0.5px var(--token-B1GyU-PI2-qS);
   border-radius: var(--token-qtw42j78T7BA);

@@ -1,0 +1,107 @@
+.root:global(.__wab_instance) {
+  position: relative;
+  background: none;
+  display: flex;
+  cursor: pointer;
+  box-sizing: border-box;
+  min-width: var(--token-blCmg7lQWb1V);
+  font-family: "Inter", sans-serif;
+  font-size: var(--token-aswsJx6IoFUX);
+  line-height: var(--token-3CgTdPe_gkUK);
+  outline-style: none;
+  text-decoration-line: none;
+  flex-direction: row;
+  height: 169px;
+  max-width: 532px;
+  width: 100%;
+  color: var(--token-V0_Q-Dvegas_);
+  border-radius: 100px;
+  padding: 12rem 18rem;
+  border-width: 0px;
+}
+.rootcolor_neutral:global(.__wab_instance) {
+  background: var(--token-qcErGK0RZqRr);
+  color: #14161f;
+  height: 42px;
+  width: 403px;
+  text-align: center;
+  pointer-events: none;
+  border-radius: 100px;
+  padding: 12px 18px;
+}
+.rootroundedFull:global(.__wab_instance) {
+  border-radius: 99px;
+}
+.rootflatSide_top:global(.__wab_instance) {
+  border-top-right-radius: 0rem;
+  border-top-left-radius: 0rem;
+}
+.rootflatSide_right:global(.__wab_instance) {
+  border-top-right-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+}
+.rootflatSide_bottom:global(.__wab_instance) {
+  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+}
+.rootflatSide_left:global(.__wab_instance) {
+  border-top-left-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+}
+.interactionEffect {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  margin-bottom: 0px;
+  z-index: 9;
+  border-radius: 100px;
+}
+.interactionEffectcolor_neutral {
+  background: #14161f;
+  width: 439px;
+  top: -4px;
+  margin-bottom: 0px;
+  bottom: -2px;
+  padding-top: 0px;
+  height: 48px;
+  left: -21px;
+  right: -15px;
+}
+.interactionEffectroundedFull {
+  border-radius: 99px;
+}
+.rootcolor_neutral .interactionEffectcolor_neutral[data-hovered] {
+  transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+  transform-style: preserve-3d;
+}
+.rootcolor_neutral .interactionEffectcolor_neutral[data-hovered] * {
+  transform-style: preserve-3d;
+}
+.sendApplication {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  left: 0px;
+  top: 12px;
+  color: var(--token-FBkQlcVEu_S5);
+  z-index: 10;
+  background: var(--token-C8FTlBFs80Bl);
+  min-width: 0;
+}
+.sendApplicationcolor_neutral {
+  top: 13px;
+  background: none;
+}
+.text {
+  position: absolute;
+  left: 116px;
+  top: 166px;
+  color: var(--token-FBkQlcVEu_S5);
+  background: var(--token-KEwySeDIQiQh);
+  margin-right: 0px;
+  padding: 15px 86px 11px 100px;
+}

@@ -1,8 +1,8 @@
 .button15 {
   background: rgba(20, 22, 31, 1);
-  width: auto;
+  width: 439px;
   height: auto;
-  display: inline-flex;
+  display: flex;
   overflow: hidden;
   flex-direction: row;
   position: relative;
@@ -38,27 +38,6 @@
 }
 .button15:hover * {
   transform-style: preserve-3d;
-}
-.iconFrame15 {
-  width: 24px;
-  height: 24px;
-  display: block;
-  position: relative;
-  flex-shrink: 0;
-}
-.svg__zlMp9 {
-  object-fit: cover;
-  max-width: 100%;
-  color: #fffdf9;
-  width: 24px;
-  height: 24px;
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-.button15:hover .svg__zlMp9 {
-  color: #14161f;
 }
 .label15 {
   display: block;
@@ -111,7 +90,7 @@
 .img > picture > img {
   object-fit: cover;
 }
-.svg__xYaHw {
+.svg {
   object-fit: cover;
   max-width: 100%;
   color: #fef9ee;

@@ -59,6 +59,8 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import Modal from "../../Modal"; // plasmic-import: i7CIl4afDTa3/component
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -81,13 +83,16 @@ type ArgPropType = keyof PlasmicContactUsButton__ArgsType;
 export const PlasmicContactUsButton__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicContactUsButton__OverridesType = {
-  button6?: Flex__<"div">;
+  button6?: Flex__<"button">;
   iconFrame6?: Flex__<"div">;
+  freeBox?: Flex__<"div">;
   label6?: Flex__<"div">;
   arrow245?: Flex__<"div">;
   icon24Grid5?: Flex__<"div">;
   icons24IconGridSquare5?: Flex__<"div">;
   img?: Flex__<typeof PlasmicImg__>;
+  link?: Flex__<"a"> & Partial<LinkProps>;
+  modal?: Flex__<typeof Modal>;
 };
 
 export interface DefaultContactUsButtonProps {
@@ -134,9 +139,32 @@ function PlasmicContactUsButton__RenderFunc(props: {
 
   const currentUser = useCurrentUser?.() || {};
 
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
+    () => [
+      {
+        path: "modal.isOpen",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
+      }
+    ],
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $refs
+  });
+
+  const [isButton6Hover, triggerButton6HoverProps] = useTrigger("useHover", {});
+  const triggers = {
+    hover_button6: isButton6Hover
+  };
+
   return (
     <Stack__
-      as={"div"}
+      as={"button"}
       data-plasmic-name={"button6"}
       data-plasmic-override={overrides.button6}
       data-plasmic-root={true}
@@ -144,6 +172,7 @@ function PlasmicContactUsButton__RenderFunc(props: {
       hasGap={true}
       className={classNames(
         projectcss.all,
+        projectcss.button,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
@@ -151,6 +180,42 @@ function PlasmicContactUsButton__RenderFunc(props: {
         plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.button6
       )}
+      onClick={async event => {
+        const $steps = {};
+
+        $steps["updateModalIsOpen"] = true
+          ? (() => {
+              const actionArgs = {
+                variable: {
+                  objRoot: $state,
+                  variablePath: ["modal", "isOpen"]
+                },
+                operation: 4
+              };
+              return (({ variable, value, startIndex, deleteCount }) => {
+                if (!variable) {
+                  return;
+                }
+                const { objRoot, variablePath } = variable;
+
+                const oldValue = $stateGet(objRoot, variablePath);
+                $stateSet(objRoot, variablePath, !oldValue);
+                return !oldValue;
+              })?.apply(null, [actionArgs]);
+            })()
+          : undefined;
+        if (
+          $steps["updateModalIsOpen"] != null &&
+          typeof $steps["updateModalIsOpen"] === "object" &&
+          typeof $steps["updateModalIsOpen"].then === "function"
+        ) {
+          $steps["updateModalIsOpen"] = await $steps["updateModalIsOpen"];
+        }
+      }}
+      ref={ref => {
+        $refs["button6"] = ref;
+      }}
+      data-plasmic-trigger-props={[triggerButton6HoverProps]}
     >
       <div
         data-plasmic-name={"iconFrame6"}
@@ -163,15 +228,21 @@ function PlasmicContactUsButton__RenderFunc(props: {
         />
       </div>
       <div
-        data-plasmic-name={"label6"}
-        data-plasmic-override={overrides.label6}
-        className={classNames(
-          projectcss.all,
-          projectcss.__wab_text,
-          sty.label6
-        )}
+        data-plasmic-name={"freeBox"}
+        data-plasmic-override={overrides.freeBox}
+        className={classNames(projectcss.all, sty.freeBox)}
       >
-        {"Contact Us"}
+        <div
+          data-plasmic-name={"label6"}
+          data-plasmic-override={overrides.label6}
+          className={classNames(
+            projectcss.all,
+            projectcss.__wab_text,
+            sty.label6
+          )}
+        >
+          {"Contact Us"}
+        </div>
       </div>
       {false ? (
         <div
@@ -221,6 +292,34 @@ function PlasmicContactUsButton__RenderFunc(props: {
           />
         </div>
       ) : null}
+      <PlasmicLink__
+        data-plasmic-name={"link"}
+        data-plasmic-override={overrides.link}
+        className={classNames(projectcss.all, projectcss.a, sty.link)}
+        component={Link}
+        platform={"nextjs"}
+      >
+        <Modal
+          data-plasmic-name={"modal"}
+          data-plasmic-override={overrides.modal}
+          className={classNames("__wab_instance", sty.modal)}
+          isOpen={generateStateValueProp($state, ["modal", "isOpen"])}
+          onOpenChange={async (...eventArgs: any) => {
+            generateStateOnChangeProp($state, ["modal", "isOpen"]).apply(
+              null,
+              eventArgs
+            );
+
+            if (
+              eventArgs.length > 1 &&
+              eventArgs[1] &&
+              eventArgs[1]._plasmic_state_init_
+            ) {
+              return;
+            }
+          }}
+        />
+      </PlasmicLink__>
     </Stack__>
   ) as React.ReactElement | null;
 }
@@ -229,30 +328,39 @@ const PlasmicDescendants = {
   button6: [
     "button6",
     "iconFrame6",
+    "freeBox",
     "label6",
     "arrow245",
     "icon24Grid5",
     "icons24IconGridSquare5",
-    "img"
+    "img",
+    "link",
+    "modal"
   ],
   iconFrame6: ["iconFrame6"],
+  freeBox: ["freeBox", "label6"],
   label6: ["label6"],
   arrow245: ["arrow245", "icon24Grid5", "icons24IconGridSquare5", "img"],
   icon24Grid5: ["icon24Grid5", "icons24IconGridSquare5", "img"],
   icons24IconGridSquare5: ["icons24IconGridSquare5", "img"],
-  img: ["img"]
+  img: ["img"],
+  link: ["link", "modal"],
+  modal: ["modal"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  button6: "div";
+  button6: "button";
   iconFrame6: "div";
+  freeBox: "div";
   label6: "div";
   arrow245: "div";
   icon24Grid5: "div";
   icons24IconGridSquare5: "div";
   img: typeof PlasmicImg__;
+  link: "a";
+  modal: typeof Modal;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -316,11 +424,14 @@ export const PlasmicContactUsButton = Object.assign(
   {
     // Helper components rendering sub-elements
     iconFrame6: makeNodeComponent("iconFrame6"),
+    freeBox: makeNodeComponent("freeBox"),
     label6: makeNodeComponent("label6"),
     arrow245: makeNodeComponent("arrow245"),
     icon24Grid5: makeNodeComponent("icon24Grid5"),
     icons24IconGridSquare5: makeNodeComponent("icons24IconGridSquare5"),
     img: makeNodeComponent("img"),
+    link: makeNodeComponent("link"),
+    modal: makeNodeComponent("modal"),
 
     // Metadata about props expected for PlasmicContactUsButton
     internalVariantProps: PlasmicContactUsButton__VariantProps,

@@ -33,13 +33,11 @@
 }
 .button6:hover {
   transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+  background: #f7f5ef;
   transform-style: preserve-3d;
 }
 .button6:hover * {
   transform-style: preserve-3d;
-}
-.button6:active {
-  background: #f7f5ef;
 }
 .iconFrame6 {
   width: 24px;
@@ -59,8 +57,19 @@
   top: 0px;
   left: 0px;
 }
-.button6:active .svg__pWpOe {
+.button6:hover .svg__pWpOe {
   color: #14161f;
+}
+.freeBox {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
 }
 .label6 {
   display: block;
@@ -71,10 +80,9 @@
   letter-spacing: 0em;
   line-height: 24px;
   color: rgba(255, 253, 249, 1);
-  position: relative;
   padding-bottom: 0px;
 }
-.button6:active .label6 {
+.button6:hover .label6 {
   color: #14161f;
 }
 .arrow245 {
@@ -125,4 +133,14 @@
   position: absolute;
   top: 6px;
   left: 4px;
+}
+.link {
+  display: none;
+}
+.modal:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+  display: none;
+}
+.button6:hover .modal:global(.__wab_instance):global(.__wab_instance) {
+  display: block;
 }

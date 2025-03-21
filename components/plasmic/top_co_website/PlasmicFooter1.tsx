@@ -59,6 +59,10 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import Footer from "../../Footer"; // plasmic-import: KQgXictVT3o_/component
+
+import { useScreenVariants as useScreenVariantsknLyTCzNv2Gm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: KNLyTCzNV2Gm/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -133,6 +137,11 @@ export type PlasmicFooter1__OverridesType = {
   section4?: Flex__<"div">;
   icons?: Flex__<"div">;
   bottom?: Flex__<"div">;
+  footer?: Flex__<typeof Footer>;
+  footer2?: Flex__<typeof Footer>;
+  group1817245932?: Flex__<"div">;
+  footer3?: Flex__<"div">;
+  footer4?: Flex__<typeof Footer>;
 };
 
 export interface DefaultFooter1Props {
@@ -178,6 +187,10 @@ function PlasmicFooter1__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = useCurrentUser?.() || {};
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsknLyTCzNv2Gm()
+  });
 
   return (
     <div
@@ -786,6 +799,38 @@ function PlasmicFooter1__RenderFunc(props: {
           </div>
         </Stack__>
       </div>
+      {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : false) ? (
+        <Footer
+          data-plasmic-name={"footer"}
+          data-plasmic-override={overrides.footer}
+          className={classNames("__wab_instance", sty.footer)}
+        />
+      ) : null}
+      <Footer
+        data-plasmic-name={"footer2"}
+        data-plasmic-override={overrides.footer2}
+        className={classNames("__wab_instance", sty.footer2)}
+      />
+
+      {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : false) ? (
+        <div
+          data-plasmic-name={"group1817245932"}
+          data-plasmic-override={overrides.group1817245932}
+          className={classNames(projectcss.all, sty.group1817245932)}
+        >
+          <div
+            data-plasmic-name={"footer3"}
+            data-plasmic-override={overrides.footer3}
+            className={classNames(projectcss.all, sty.footer3)}
+          >
+            <Footer
+              data-plasmic-name={"footer4"}
+              data-plasmic-override={overrides.footer4}
+              className={classNames("__wab_instance", sty.footer4)}
+            />
+          </div>
+        </div>
+      ) : null}
     </div>
   ) as React.ReactElement | null;
 }
@@ -838,7 +883,12 @@ const PlasmicDescendants = {
     "icons24IconGridSquare5",
     "section4",
     "icons",
-    "bottom"
+    "bottom",
+    "footer",
+    "footer2",
+    "group1817245932",
+    "footer3",
+    "footer4"
   ],
   figmaPaste: [
     "figmaPaste",
@@ -1063,7 +1113,12 @@ const PlasmicDescendants = {
   icons24IconGridSquare5: ["icons24IconGridSquare5"],
   section4: ["section4", "icons"],
   icons: ["icons"],
-  bottom: ["bottom"]
+  bottom: ["bottom"],
+  footer: ["footer"],
+  footer2: ["footer2"],
+  group1817245932: ["group1817245932", "footer3", "footer4"],
+  footer3: ["footer3", "footer4"],
+  footer4: ["footer4"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1116,6 +1171,11 @@ type NodeDefaultElementType = {
   section4: "div";
   icons: "div";
   bottom: "div";
+  footer: typeof Footer;
+  footer2: typeof Footer;
+  group1817245932: "div";
+  footer3: "div";
+  footer4: typeof Footer;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1224,6 +1284,11 @@ export const PlasmicFooter1 = Object.assign(
     section4: makeNodeComponent("section4"),
     icons: makeNodeComponent("icons"),
     bottom: makeNodeComponent("bottom"),
+    footer: makeNodeComponent("footer"),
+    footer2: makeNodeComponent("footer2"),
+    group1817245932: makeNodeComponent("group1817245932"),
+    footer3: makeNodeComponent("footer3"),
+    footer4: makeNodeComponent("footer4"),
 
     // Metadata about props expected for PlasmicFooter1
     internalVariantProps: PlasmicFooter1__VariantProps,

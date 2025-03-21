@@ -1778,6 +1778,12 @@
   top: 240px;
   width: 162px;
   z-index: 10;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 4s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-delay: 4s;
 }
 .curve:global(.__wab_instance) {
   max-width: 100%;
@@ -6028,6 +6034,7 @@
 }
 .exploreButton:global(.__wab_instance) {
   position: relative;
+  z-index: 10;
 }
 .svg__iYuDx {
   object-fit: cover;
@@ -6038,13 +6045,14 @@
   display: block;
   position: absolute;
   left: 435px;
-  top: 356px;
+  top: 359px;
+  z-index: 1;
   flex-shrink: 0;
 }
-.footer1:global(.__wab_instance) {
+.footer1__a5Zeq:global(.__wab_instance) {
   max-width: 100%;
-  height: 439px;
-  margin-top: calc(0px + 10px) !important;
+  height: 279px;
+  margin-top: calc(164px + 10px) !important;
   margin-bottom: 0px;
   flex-shrink: 0;
 }
@@ -6111,12 +6119,13 @@
 }
 .content36 {
   width: 375px;
-  height: auto;
+  height: 690px;
   display: flex;
   position: relative;
   flex-direction: row;
+  margin-top: 0px;
   flex-shrink: 0;
-  padding: 72px 16px;
+  padding: 48px 16px 72px;
 }
 .content36 > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -6139,8 +6148,8 @@
   object-fit: cover;
   max-width: 100%;
   color: #f7f5ef;
-  width: 445px;
-  height: 598px;
+  width: 376px;
+  height: 571px;
   display: block;
   position: relative;
   margin-right: 0px;
@@ -7624,6 +7633,14 @@
   margin-left: 0px;
   margin-bottom: 88px;
 }
+.curve2:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+}
 .content46 {
   height: auto;
   display: flex;
@@ -8848,7 +8865,7 @@
   position: relative;
 }
 .pageBlock14 {
-  width: 998px;
+  width: 375px;
   height: auto;
   display: flex;
   overflow: hidden;
@@ -9330,7 +9347,7 @@
   height: auto;
   display: flex;
   flex-direction: row;
-  padding-bottom: 72px;
+  padding-bottom: 0px;
   position: absolute;
   left: 0px;
   top: 5970px;
@@ -11269,4 +11286,13 @@
   position: absolute;
   left: 281px;
   top: 0px;
+}
+.footer1__sWkZ:global(.__wab_instance) {
+  max-width: 100%;
+  height: 439px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: absolute;
+  left: 16px;
+  top: 6640px;
 }

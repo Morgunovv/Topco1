@@ -311,6 +311,16 @@
       }
     },
     {
+      "name": "Muted/Muted-Soft-Hover",
+      "type": "color",
+      "value": "#E5E7EB",
+      "category": "color",
+      "meta": {
+        "projectId": "tVrjFA7RVCG7zyycB4xXud",
+        "id": "Ov98LXY0SklB"
+      }
+    },
+    {
       "name": "Neutral/Neutral",
       "type": "color",
       "value": "#374151",
@@ -448,6 +458,16 @@
       "meta": {
         "projectId": "tVrjFA7RVCG7zyycB4xXud",
         "id": "6Vrs1twlnZ7V"
+      }
+    },
+    {
+      "name": "Size-32",
+      "type": "spacing",
+      "value": "2rem",
+      "category": "spacing",
+      "meta": {
+        "projectId": "tVrjFA7RVCG7zyycB4xXud",
+        "id": "uRTA66II9Z7V"
       }
     },
     {

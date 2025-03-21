@@ -425,7 +425,6 @@ export type PlasmicTopCo__OverridesType = {
   titleSubtitle46?: Flex__<"div">;
   title25?: Flex__<"div">;
   exploreButton?: Flex__<typeof ExploreButton>;
-  footer1?: Flex__<typeof Footer1>;
   figmaPaste2?: Flex__<"div">;
   pageBlock9?: Flex__<"div">;
   pageBlock17?: Flex__<"div">;
@@ -496,6 +495,7 @@ export type PlasmicTopCo__OverridesType = {
   banners2?: Flex__<"div">;
   banner3?: Flex__<"div">;
   image10?: Flex__<"div">;
+  curve2?: Flex__<typeof LottieWrapper>;
   content46?: Flex__<"div">;
   content47?: Flex__<"div">;
   image11?: Flex__<"div">;
@@ -1679,352 +1679,361 @@ function PlasmicTopCo__RenderFunc(props: {
                 </div>
               ) : null}
             </Stack__>
-            <LottieWrapper
-              data-plasmic-name={"plane2"}
-              data-plasmic-override={overrides.plane2}
-              animationData={{
-                ddd: 0,
-                h: 176,
-                w: 172,
-                meta: { g: "@lottiefiles/toolkit-js 0.57.2-beta.0" },
-                layers: [
-                  {
-                    ty: 4,
-                    sr: 1,
-                    st: 0,
-                    op: 4523,
-                    ip: 0,
-                    ln: "20",
-                    hasMask: false,
-                    ao: 0,
-                    ks: {
-                      a: { a: 0, k: [86, 88.5, 0] },
-                      s: {
-                        a: 1,
-                        k: [
-                          {
-                            s: [0, 0, 0],
-                            i: { x: [0, 0, 0], y: [1, 1, 1] },
-                            o: { x: [0.2, 0.2, 0.2], y: [0, 0, 0] },
-                            t: 0
-                          },
-                          {
-                            s: [100, 100, 100],
-                            i: { x: [0.833, 0.833, 0.833], y: [1, 1, 1] },
-                            o: { x: [0.167, 0.167, 0.167], y: [0, 0, 0] },
-                            t: 45
-                          }
-                        ]
-                      },
-                      p: {
-                        a: 1,
-                        k: [
-                          {
-                            o: { x: 0.2, y: 0 },
-                            i: { x: 0, y: 1 },
-                            s: [29.25, 112.625, 0],
-                            t: 0
-                          },
-                          { s: [86, 88, 0], t: 45 }
-                        ]
-                      },
-                      r: { a: 0, k: 0 },
-                      o: { a: 0, k: 100 }
-                    },
-                    shapes: [
+            {(_par => (!_par ? [] : Array.isArray(_par) ? _par : [_par]))([
+              2, 3, 4
+            ]).map((__plasmic_item_0, __plasmic_idx_0) => {
+              const currentItem = __plasmic_item_0;
+              const __index = __plasmic_idx_0;
+              return (
+                <LottieWrapper
+                  data-plasmic-name={"plane2"}
+                  data-plasmic-override={overrides.plane2}
+                  animationData={{
+                    ddd: 0,
+                    h: 176,
+                    w: 172,
+                    meta: { g: "@lottiefiles/toolkit-js 0.57.2-beta.0" },
+                    layers: [
                       {
-                        ty: "gr",
-                        it: [
-                          {
-                            ty: "sh",
-                            d: 1,
-                            ks: {
-                              a: 0,
-                              k: {
-                                c: true,
-                                i: [
-                                  [0, 0],
-                                  [0, 0],
-                                  [-0.245, 0.807],
-                                  [0, 0],
-                                  [-0.797, 0.088]
-                                ],
-                                o: [
-                                  [0, 0],
-                                  [-0.78, 0.321],
-                                  [0, 0],
-                                  [0.232, -0.768],
-                                  [0, 0]
-                                ],
-                                v: [
-                                  [49.507, -20.232],
-                                  [-47.924, 19.91],
-                                  [-49.262, 18.695],
-                                  [-40.816, -9.214],
-                                  [-39.118, -10.623]
-                                ]
+                        ty: 4,
+                        sr: 1,
+                        st: 0,
+                        op: 4523,
+                        ip: 0,
+                        ln: "20",
+                        hasMask: false,
+                        ao: 0,
+                        ks: {
+                          a: { a: 0, k: [86, 88.5, 0] },
+                          s: {
+                            a: 1,
+                            k: [
+                              {
+                                s: [0, 0, 0],
+                                i: { x: [0, 0, 0], y: [1, 1, 1] },
+                                o: { x: [0.2, 0.2, 0.2], y: [0, 0, 0] },
+                                t: 0
+                              },
+                              {
+                                s: [100, 100, 100],
+                                i: { x: [0.833, 0.833, 0.833], y: [1, 1, 1] },
+                                o: { x: [0.167, 0.167, 0.167], y: [0, 0, 0] },
+                                t: 45
                               }
-                            }
+                            ]
                           },
-                          {
-                            ty: "st",
-                            lc: 1,
-                            lj: 2,
-                            ml: 4,
-                            o: { a: 0, k: 100 },
-                            w: { a: 0, k: 4 },
-                            c: { a: 0, k: [0.2039, 0.502, 0.9451] }
+                          p: {
+                            a: 1,
+                            k: [
+                              {
+                                o: { x: 0.2, y: 0 },
+                                i: { x: 0, y: 1 },
+                                s: [29.25, 112.625, 0],
+                                t: 0
+                              },
+                              { s: [86, 88, 0], t: 45 }
+                            ]
                           },
-                          {
-                            ty: "tr",
-                            a: { a: 0, k: [0, 0] },
-                            s: { a: 0, k: [100, 100] },
-                            p: { a: 0, k: [109.747, 65.215] },
-                            r: { a: 0, k: 0 },
-                            o: { a: 0, k: 100 }
-                          }
-                        ]
-                      },
-                      {
-                        ty: "gr",
-                        it: [
-                          {
-                            ty: "sh",
-                            d: 1,
-                            ks: {
-                              a: 0,
-                              k: {
-                                c: true,
-                                i: [
-                                  [0, 0],
-                                  [0, 0],
-                                  [0.025, 1.765],
-                                  [0, 0],
-                                  [-0.621, 0.364]
-                                ],
-                                o: [
-                                  [0, 0],
-                                  [-1.252, 1.244],
-                                  [0, 0],
-                                  [-0.01, -0.72],
-                                  [0, 0]
-                                ],
-                                v: [
-                                  [51.627, -49.984],
-                                  [-47.709, 48.74],
-                                  [-51.119, 47.35],
-                                  [-51.617, 11.683],
-                                  [-50.629, 9.929]
-                                ]
-                              }
-                            }
-                          },
-                          {
-                            ty: "st",
-                            lc: 1,
-                            lj: 2,
-                            ml: 4,
-                            o: { a: 0, k: 100 },
-                            w: { a: 0, k: 4 },
-                            c: { a: 0, k: [0.2039, 0.502, 0.9451] }
-                          },
-                          {
-                            ty: "tr",
-                            a: { a: 0, k: [0, 0] },
-                            s: { a: 0, k: [100, 100] },
-                            p: { a: 0, k: [107.784, 95.165] },
-                            r: { a: 0, k: 0 },
-                            o: { a: 0, k: 100 }
-                          }
-                        ]
-                      },
-                      {
-                        ty: "gr",
-                        it: [
-                          {
-                            ty: "sh",
-                            d: 1,
-                            ks: {
-                              a: 0,
-                              k: {
-                                c: true,
-                                i: [
-                                  [0, 0],
-                                  [0, 0],
-                                  [0, 0],
-                                  [0, 0]
-                                ],
-                                o: [
-                                  [0, 0],
-                                  [0, 0],
-                                  [0, 0],
-                                  [0, 0]
-                                ],
-                                v: [
-                                  [13.024, 0.389],
-                                  [-10.476, -4.111],
-                                  [-11.228, -0.182],
-                                  [12.272, 4.318]
-                                ]
-                              }
-                            }
-                          },
-                          {
-                            ty: "sh",
-                            d: 1,
-                            ks: {
-                              a: 0,
-                              k: {
-                                c: true,
-                                i: [
-                                  [0, 0],
-                                  [0.208, -1.085],
-                                  [-1.085, -0.208]
-                                ],
-                                o: [
-                                  [-1.085, -0.208],
-                                  [-0.207, 1.084],
-                                  [0, 0]
-                                ],
-                                v: [
-                                  [-10.476, -4.111],
-                                  [-12.817, -2.522],
-                                  [-11.228, -0.182]
-                                ]
-                              }
-                            }
-                          },
-                          {
-                            ty: "fl",
-                            c: { a: 0, k: [0.2039, 0.502, 0.9451] },
-                            r: 1,
-                            o: { a: 0, k: 100 }
-                          },
-                          {
-                            ty: "tr",
-                            a: { a: 0, k: [0, 0] },
-                            s: { a: 0, k: [100, 100] },
-                            p: { a: 0, k: [71.86, 87.123] },
-                            r: { a: 0, k: 0 },
-                            o: { a: 0, k: 100 }
-                          }
-                        ]
-                      }
-                    ],
-                    ind: 1
-                  },
-                  {
-                    ty: 4,
-                    sr: 1,
-                    st: 0,
-                    op: 4523,
-                    ip: 0,
-                    ln: "17",
-                    hasMask: false,
-                    ao: 0,
-                    ks: {
-                      a: { a: 0, k: [-81, 28, 0] },
-                      s: {
-                        a: 1,
-                        k: [
-                          {
-                            s: [0, 0, 0],
-                            i: { x: [0, 0, 0], y: [1, 1, 1] },
-                            o: { x: [0.2, 0.2, 0.2], y: [0, 0, 0] },
-                            t: 0
-                          },
-                          {
-                            s: [100, 100, 100],
-                            i: { x: [0.833, 0.833, 0.833], y: [1, 1, 1] },
-                            o: { x: [0.167, 0.167, 0.167], y: [0, 0, 0] },
-                            t: 45
-                          }
-                        ]
-                      },
-                      p: { a: 0, k: [5, 116, 0] },
-                      r: { a: 0, k: 0 },
-                      o: { a: 0, k: 100 }
-                    },
-                    shapes: [
-                      {
-                        ty: "gr",
-                        it: [
-                          {
-                            ty: "sh",
-                            d: 1,
-                            ks: {
-                              a: 0,
-                              k: {
-                                c: false,
-                                i: [
-                                  [-0.001, 0],
-                                  [-13.092, 5.54],
-                                  [0, -0.001]
-                                ],
-                                o: [
-                                  [-0.001, 0],
-                                  [13.801, -5.841],
-                                  [0, -0.001]
-                                ],
-                                v: [
-                                  [-80.937, 28.25],
-                                  [-58.676, 22.966],
-                                  [-38.75, 11.813]
-                                ]
-                              }
-                            }
-                          },
-                          {
-                            ty: "st",
-                            lc: 2,
-                            lj: 1,
-                            ml: 4,
-                            o: { a: 0, k: 100 },
-                            w: { a: 0, k: 4 },
-                            c: { a: 0, k: [0.2039, 0.502, 0.9451] }
-                          },
-                          {
-                            ty: "tr",
-                            a: { a: 0, k: [0, 0] },
-                            s: { a: 0, k: [100, 100] },
-                            p: { a: 0, k: [0, 0] },
-                            r: { a: 0, k: 0 },
-                            o: { a: 0, k: 100 }
-                          }
-                        ]
-                      },
-                      {
-                        ty: "tm",
-                        e: {
-                          a: 1,
-                          k: [
-                            {
-                              o: { x: 0.2, y: 0 },
-                              i: { x: 0, y: 1 },
-                              s: [0],
-                              t: 0
-                            },
-                            { s: [100], t: 30 }
-                          ]
+                          r: { a: 0, k: 0 },
+                          o: { a: 0, k: 100 }
                         },
-                        o: { a: 0, k: 0 },
-                        s: { a: 0, k: 0 },
-                        m: 1
+                        shapes: [
+                          {
+                            ty: "gr",
+                            it: [
+                              {
+                                ty: "sh",
+                                d: 1,
+                                ks: {
+                                  a: 0,
+                                  k: {
+                                    c: true,
+                                    i: [
+                                      [0, 0],
+                                      [0, 0],
+                                      [-0.245, 0.807],
+                                      [0, 0],
+                                      [-0.797, 0.088]
+                                    ],
+                                    o: [
+                                      [0, 0],
+                                      [-0.78, 0.321],
+                                      [0, 0],
+                                      [0.232, -0.768],
+                                      [0, 0]
+                                    ],
+                                    v: [
+                                      [49.507, -20.232],
+                                      [-47.924, 19.91],
+                                      [-49.262, 18.695],
+                                      [-40.816, -9.214],
+                                      [-39.118, -10.623]
+                                    ]
+                                  }
+                                }
+                              },
+                              {
+                                ty: "st",
+                                lc: 1,
+                                lj: 2,
+                                ml: 4,
+                                o: { a: 0, k: 100 },
+                                w: { a: 0, k: 4 },
+                                c: { a: 0, k: [0.2039, 0.502, 0.9451] }
+                              },
+                              {
+                                ty: "tr",
+                                a: { a: 0, k: [0, 0] },
+                                s: { a: 0, k: [100, 100] },
+                                p: { a: 0, k: [109.747, 65.215] },
+                                r: { a: 0, k: 0 },
+                                o: { a: 0, k: 100 }
+                              }
+                            ]
+                          },
+                          {
+                            ty: "gr",
+                            it: [
+                              {
+                                ty: "sh",
+                                d: 1,
+                                ks: {
+                                  a: 0,
+                                  k: {
+                                    c: true,
+                                    i: [
+                                      [0, 0],
+                                      [0, 0],
+                                      [0.025, 1.765],
+                                      [0, 0],
+                                      [-0.621, 0.364]
+                                    ],
+                                    o: [
+                                      [0, 0],
+                                      [-1.252, 1.244],
+                                      [0, 0],
+                                      [-0.01, -0.72],
+                                      [0, 0]
+                                    ],
+                                    v: [
+                                      [51.627, -49.984],
+                                      [-47.709, 48.74],
+                                      [-51.119, 47.35],
+                                      [-51.617, 11.683],
+                                      [-50.629, 9.929]
+                                    ]
+                                  }
+                                }
+                              },
+                              {
+                                ty: "st",
+                                lc: 1,
+                                lj: 2,
+                                ml: 4,
+                                o: { a: 0, k: 100 },
+                                w: { a: 0, k: 4 },
+                                c: { a: 0, k: [0.2039, 0.502, 0.9451] }
+                              },
+                              {
+                                ty: "tr",
+                                a: { a: 0, k: [0, 0] },
+                                s: { a: 0, k: [100, 100] },
+                                p: { a: 0, k: [107.784, 95.165] },
+                                r: { a: 0, k: 0 },
+                                o: { a: 0, k: 100 }
+                              }
+                            ]
+                          },
+                          {
+                            ty: "gr",
+                            it: [
+                              {
+                                ty: "sh",
+                                d: 1,
+                                ks: {
+                                  a: 0,
+                                  k: {
+                                    c: true,
+                                    i: [
+                                      [0, 0],
+                                      [0, 0],
+                                      [0, 0],
+                                      [0, 0]
+                                    ],
+                                    o: [
+                                      [0, 0],
+                                      [0, 0],
+                                      [0, 0],
+                                      [0, 0]
+                                    ],
+                                    v: [
+                                      [13.024, 0.389],
+                                      [-10.476, -4.111],
+                                      [-11.228, -0.182],
+                                      [12.272, 4.318]
+                                    ]
+                                  }
+                                }
+                              },
+                              {
+                                ty: "sh",
+                                d: 1,
+                                ks: {
+                                  a: 0,
+                                  k: {
+                                    c: true,
+                                    i: [
+                                      [0, 0],
+                                      [0.208, -1.085],
+                                      [-1.085, -0.208]
+                                    ],
+                                    o: [
+                                      [-1.085, -0.208],
+                                      [-0.207, 1.084],
+                                      [0, 0]
+                                    ],
+                                    v: [
+                                      [-10.476, -4.111],
+                                      [-12.817, -2.522],
+                                      [-11.228, -0.182]
+                                    ]
+                                  }
+                                }
+                              },
+                              {
+                                ty: "fl",
+                                c: { a: 0, k: [0.2039, 0.502, 0.9451] },
+                                r: 1,
+                                o: { a: 0, k: 100 }
+                              },
+                              {
+                                ty: "tr",
+                                a: { a: 0, k: [0, 0] },
+                                s: { a: 0, k: [100, 100] },
+                                p: { a: 0, k: [71.86, 87.123] },
+                                r: { a: 0, k: 0 },
+                                o: { a: 0, k: 100 }
+                              }
+                            ]
+                          }
+                        ],
+                        ind: 1
+                      },
+                      {
+                        ty: 4,
+                        sr: 1,
+                        st: 0,
+                        op: 4523,
+                        ip: 0,
+                        ln: "17",
+                        hasMask: false,
+                        ao: 0,
+                        ks: {
+                          a: { a: 0, k: [-81, 28, 0] },
+                          s: {
+                            a: 1,
+                            k: [
+                              {
+                                s: [0, 0, 0],
+                                i: { x: [0, 0, 0], y: [1, 1, 1] },
+                                o: { x: [0.2, 0.2, 0.2], y: [0, 0, 0] },
+                                t: 0
+                              },
+                              {
+                                s: [100, 100, 100],
+                                i: { x: [0.833, 0.833, 0.833], y: [1, 1, 1] },
+                                o: { x: [0.167, 0.167, 0.167], y: [0, 0, 0] },
+                                t: 45
+                              }
+                            ]
+                          },
+                          p: { a: 0, k: [5, 116, 0] },
+                          r: { a: 0, k: 0 },
+                          o: { a: 0, k: 100 }
+                        },
+                        shapes: [
+                          {
+                            ty: "gr",
+                            it: [
+                              {
+                                ty: "sh",
+                                d: 1,
+                                ks: {
+                                  a: 0,
+                                  k: {
+                                    c: false,
+                                    i: [
+                                      [-0.001, 0],
+                                      [-13.092, 5.54],
+                                      [0, -0.001]
+                                    ],
+                                    o: [
+                                      [-0.001, 0],
+                                      [13.801, -5.841],
+                                      [0, -0.001]
+                                    ],
+                                    v: [
+                                      [-80.937, 28.25],
+                                      [-58.676, 22.966],
+                                      [-38.75, 11.813]
+                                    ]
+                                  }
+                                }
+                              },
+                              {
+                                ty: "st",
+                                lc: 2,
+                                lj: 1,
+                                ml: 4,
+                                o: { a: 0, k: 100 },
+                                w: { a: 0, k: 4 },
+                                c: { a: 0, k: [0.2039, 0.502, 0.9451] }
+                              },
+                              {
+                                ty: "tr",
+                                a: { a: 0, k: [0, 0] },
+                                s: { a: 0, k: [100, 100] },
+                                p: { a: 0, k: [0, 0] },
+                                r: { a: 0, k: 0 },
+                                o: { a: 0, k: 100 }
+                              }
+                            ]
+                          },
+                          {
+                            ty: "tm",
+                            e: {
+                              a: 1,
+                              k: [
+                                {
+                                  o: { x: 0.2, y: 0 },
+                                  i: { x: 0, y: 1 },
+                                  s: [0],
+                                  t: 0
+                                },
+                                { s: [100], t: 30 }
+                              ]
+                            },
+                            o: { a: 0, k: 0 },
+                            s: { a: 0, k: 0 },
+                            m: 1
+                          }
+                        ],
+                        ind: 2
                       }
                     ],
-                    ind: 2
-                  }
-                ],
-                v: "5.7.0",
-                fr: 60,
-                op: 46,
-                ip: 0,
-                assets: []
-              }}
-              className={classNames("__wab_instance", sty.plane2)}
-              preview={true}
-            />
-
+                    v: "5.7.0",
+                    fr: 60,
+                    op: 46,
+                    ip: 0,
+                    assets: []
+                  }}
+                  className={classNames("__wab_instance", sty.plane2)}
+                  key={__index}
+                  loop={true}
+                  preview={true}
+                />
+              );
+            })}
             <LottieWrapper
               data-plasmic-name={"curve"}
               data-plasmic-override={overrides.curve}
@@ -4252,9 +4261,7 @@ function PlasmicTopCo__RenderFunc(props: {
                 />
               </Stack__>
               <Footer1
-                data-plasmic-name={"footer1"}
-                data-plasmic-override={overrides.footer1}
-                className={classNames("__wab_instance", sty.footer1)}
+                className={classNames("__wab_instance", sty.footer1__a5Zeq)}
               />
             </Stack__>
           </div>
@@ -5121,6 +5128,150 @@ function PlasmicTopCo__RenderFunc(props: {
                         loop={true}
                         muted={true}
                         src={"https://exceltic.dev/phone.mp4"}
+                      />
+
+                      <LottieWrapper
+                        data-plasmic-name={"curve2"}
+                        data-plasmic-override={overrides.curve2}
+                        animationData={{
+                          ddd: 0,
+                          h: 184,
+                          w: 144,
+                          meta: { g: "@lottiefiles/toolkit-js 0.57.2-beta.0" },
+                          layers: [
+                            {
+                              ty: 4,
+                              sr: 1,
+                              st: 0,
+                              op: 60,
+                              ip: 0,
+                              ln: "35",
+                              hasMask: false,
+                              ao: 0,
+                              ks: {
+                                a: { a: 0, k: [72, 92, 0] },
+                                s: { a: 0, k: [100, 100] },
+                                p: { a: 0, k: [72, 92] },
+                                r: { a: 0, k: 0 },
+                                o: { a: 0, k: 100 }
+                              },
+                              shapes: [
+                                {
+                                  ty: "gr",
+                                  it: [
+                                    {
+                                      ty: "sh",
+                                      d: 1,
+                                      ks: {
+                                        a: 0,
+                                        k: {
+                                          c: false,
+                                          i: [
+                                            [0, 0],
+                                            [11.644, -1.79],
+                                            [7.199, -9],
+                                            [1, -8.5],
+                                            [-7, -14.5],
+                                            [-2.998, -3.164],
+                                            [-3.654, -3.452],
+                                            [-8.055, -3.098],
+                                            [-19, 2],
+                                            [18, 7.5],
+                                            [7.5, -1],
+                                            [6, -5.5],
+                                            [0.242, -6.285],
+                                            [-4.197, -7.555],
+                                            [-11.513, -3.289],
+                                            [-20, 4.056]
+                                          ],
+                                          o: [
+                                            [-11.5, -1.5],
+                                            [-11.652, 1.794],
+                                            [-6, 7.5],
+                                            [0, 7.586],
+                                            [3.5, 5.5],
+                                            [3.431, 3.622],
+                                            [6.071, 5.734],
+                                            [11.222, 6.222],
+                                            [7.03, 0],
+                                            [-7.293, -3.241],
+                                            [-9.912, 1.322],
+                                            [-5, 4.5],
+                                            [-0.348, 9.055],
+                                            [6.377, 11.48],
+                                            [14.108, 4.032],
+                                            [0, 0]
+                                          ],
+                                          v: [
+                                            [7.75, -83.577],
+                                            [-26.75, -83.633],
+                                            [-57.25, -65.577],
+                                            [-65.25, -45.077],
+                                            [-58.75, -18.077],
+                                            [-50.25, -7.077],
+                                            [-40.25, 3.423],
+                                            [-18.472, 20.201],
+                                            [14.25, 29.923],
+                                            [25.25, 11.423],
+                                            [4.25, 8.423],
+                                            [-16.25, 18.923],
+                                            [-26.25, 38.201],
+                                            [-20.472, 59.423],
+                                            [14.306, 81.367],
+                                            [65.75, 81.367]
+                                          ]
+                                        }
+                                      }
+                                    },
+                                    {
+                                      ty: "st",
+                                      lc: 2,
+                                      lj: 1,
+                                      ml: 4,
+                                      o: { a: 0, k: 100 },
+                                      w: { a: 0, k: 4 },
+                                      c: { a: 0, k: [0.2039, 0.502, 0.9451] }
+                                    },
+                                    {
+                                      ty: "tr",
+                                      a: { a: 0, k: [0, 0] },
+                                      s: { a: 0, k: [100, 100] },
+                                      p: { a: 0, k: [72.258, 90.546] },
+                                      r: { a: 0, k: 0 },
+                                      o: { a: 0, k: 100 }
+                                    }
+                                  ]
+                                },
+                                {
+                                  ty: "tm",
+                                  e: {
+                                    a: 1,
+                                    k: [
+                                      {
+                                        o: { x: 0.2, y: 0 },
+                                        i: { x: 0.183, y: 1 },
+                                        s: [0],
+                                        t: 0
+                                      },
+                                      { s: [100], t: 45 }
+                                    ]
+                                  },
+                                  o: { a: 0, k: 0 },
+                                  s: { a: 0, k: 0 },
+                                  m: 1
+                                }
+                              ],
+                              ind: 1
+                            }
+                          ],
+                          v: "5.7.0",
+                          fr: 60,
+                          op: 46,
+                          ip: 0,
+                          assets: []
+                        }}
+                        className={classNames("__wab_instance", sty.curve2)}
+                        preview={true}
                       />
                     </div>
                     <Stack__
@@ -7154,6 +7305,13 @@ function PlasmicTopCo__RenderFunc(props: {
               </div>
             </div>
           ) : null}
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
+          ) ? (
+            <Footer1
+              className={classNames("__wab_instance", sty.footer1__sWkZ)}
+            />
+          ) : null}
         </div>
       </div>
     </React.Fragment>
@@ -7417,7 +7575,6 @@ const PlasmicDescendants = {
     "titleSubtitle46",
     "title25",
     "exploreButton",
-    "footer1",
     "figmaPaste2",
     "pageBlock9",
     "pageBlock17",
@@ -7488,6 +7645,7 @@ const PlasmicDescendants = {
     "banners2",
     "banner3",
     "image10",
+    "curve2",
     "content46",
     "content47",
     "image11",
@@ -8724,8 +8882,7 @@ const PlasmicDescendants = {
     "content35",
     "titleSubtitle46",
     "title25",
-    "exploreButton",
-    "footer1"
+    "exploreButton"
   ],
   pageBlock7: [
     "pageBlock7",
@@ -8804,14 +8961,12 @@ const PlasmicDescendants = {
     "content35",
     "titleSubtitle46",
     "title25",
-    "exploreButton",
-    "footer1"
+    "exploreButton"
   ],
   content35: ["content35", "titleSubtitle46", "title25", "exploreButton"],
   titleSubtitle46: ["titleSubtitle46", "title25", "exploreButton"],
   title25: ["title25"],
   exploreButton: ["exploreButton"],
-  footer1: ["footer1"],
   figmaPaste2: [
     "figmaPaste2",
     "pageBlock9",
@@ -8883,6 +9038,7 @@ const PlasmicDescendants = {
     "banners2",
     "banner3",
     "image10",
+    "curve2",
     "content46",
     "content47",
     "image11",
@@ -9400,6 +9556,7 @@ const PlasmicDescendants = {
     "banners2",
     "banner3",
     "image10",
+    "curve2",
     "content46",
     "content47",
     "image11",
@@ -9434,6 +9591,7 @@ const PlasmicDescendants = {
     "banners2",
     "banner3",
     "image10",
+    "curve2",
     "content46",
     "content47",
     "image11",
@@ -9465,6 +9623,7 @@ const PlasmicDescendants = {
   banner3: [
     "banner3",
     "image10",
+    "curve2",
     "content46",
     "content47",
     "image11",
@@ -9479,7 +9638,8 @@ const PlasmicDescendants = {
     "icon24Grid16",
     "icons24IconGridSquare16"
   ],
-  image10: ["image10"],
+  image10: ["image10", "curve2"],
+  curve2: ["curve2"],
   content46: [
     "content46",
     "content47",
@@ -10402,7 +10562,6 @@ type NodeDefaultElementType = {
   titleSubtitle46: "div";
   title25: "div";
   exploreButton: typeof ExploreButton;
-  footer1: typeof Footer1;
   figmaPaste2: "div";
   pageBlock9: "div";
   pageBlock17: "div";
@@ -10473,6 +10632,7 @@ type NodeDefaultElementType = {
   banners2: "div";
   banner3: "div";
   image10: "div";
+  curve2: typeof LottieWrapper;
   content46: "div";
   content47: "div";
   image11: "div";
@@ -10963,7 +11123,6 @@ export const PlasmicTopCo = Object.assign(
     titleSubtitle46: makeNodeComponent("titleSubtitle46"),
     title25: makeNodeComponent("title25"),
     exploreButton: makeNodeComponent("exploreButton"),
-    footer1: makeNodeComponent("footer1"),
     figmaPaste2: makeNodeComponent("figmaPaste2"),
     pageBlock9: makeNodeComponent("pageBlock9"),
     pageBlock17: makeNodeComponent("pageBlock17"),
@@ -11034,6 +11193,7 @@ export const PlasmicTopCo = Object.assign(
     banners2: makeNodeComponent("banners2"),
     banner3: makeNodeComponent("banner3"),
     image10: makeNodeComponent("image10"),
+    curve2: makeNodeComponent("curve2"),
     content46: makeNodeComponent("content46"),
     content47: makeNodeComponent("content47"),
     image11: makeNodeComponent("image11"),
