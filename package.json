@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@ant-design/cssinjs": "^1.18.4",
+    "antd": "^5.0.0",
     "@ant-design/icons": "^5.0.0",
     "@next/env": "14.1.0",
     "@plasmicapp/cli": "^0.1.335",
@@ -22,7 +24,6 @@
     "@strapi/plugin-users-permissions": "5.11.2",
     "@strapi/strapi": "5.11.2",
     "@swc/helpers": "0.5.2",
-    "antd": "^5.0.0",
     "better-sqlite3": "11.3.0",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
