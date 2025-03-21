@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.0.0",
     "@next/env": "14.1.0",
     "@plasmicapp/cli": "^0.1.335",
     "@plasmicapp/loader-nextjs": "^1.0.415",
@@ -21,24 +22,27 @@
     "@strapi/plugin-users-permissions": "5.11.2",
     "@strapi/strapi": "5.11.2",
     "@swc/helpers": "0.5.2",
+    "antd": "^5.0.0",
     "better-sqlite3": "11.3.0",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
     "next": "14.1.0",
+    "rc-util": "^5.38.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
     "styled-components": "^6.0.0",
-    "styled-jsx": "5.1.1",
-    "antd": "^5.0.0",
-    "@ant-design/icons": "^5.0.0",
-    "rc-util": "^5.38.0"
+    "styled-jsx": "5.1.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
     "@netlify/plugin-nextjs": "^5.10.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "babel-plugin-import": "^1.13.8",
     "typescript": "^5"
   },
   "engines": {

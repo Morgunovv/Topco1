@@ -16,13 +16,9 @@ const nextConfig = {
         '@ant-design/icons',
         '@ant-design/icons-svg',
         'rc-util',
-        'rc-pagination',
-        'rc-picker',
-        'rc-table',
-        'rc-tree',
-        'rc-dialog'
+        'antd'
     ],
-    webpack: (config, { isServer }) => {
+    webpack: (config) => {
         // Добавляем обработку компонентов
         config.resolve.fallback = {
             ...config.resolve.fallback,
