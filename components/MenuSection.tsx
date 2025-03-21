@@ -1,5 +1,14 @@
-import { PlasmicComponent } from '@plasmicapp/loader-nextjs';
+import { Menu } from 'antd';
+import type { MenuProps } from 'antd';
 
-export function MenuSection({ children }) {
-    return <PlasmicComponent component="MenuSection">{children}</PlasmicComponent>;
-} 
+interface MenuSectionProps extends MenuProps {
+    children: React.ReactNode;
+}
+
+export const MenuSection: React.FC<MenuSectionProps> = ({ children, ...props }) => {
+    return (
+        <Menu mode="horizontal" {...props}>
+            {children}
+        </Menu>
+    );
+}; 

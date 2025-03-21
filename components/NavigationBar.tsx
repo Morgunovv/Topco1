@@ -8,6 +8,7 @@ import {
 import { MenuSection } from './MenuSection';
 import { MenuItem } from './MenuItem';
 import { PlasmicComponent } from '@plasmicapp/loader-nextjs';
+import { ConfigProvider } from 'antd';
 
 // Your component props start with props for variants and slots you defined
 // in Plasmic, but you can add more here, like event handlers that you can
@@ -24,9 +25,26 @@ import { PlasmicComponent } from '@plasmicapp/loader-nextjs';
 // total control over the props for your component.
 export interface NavigationBarProps extends DefaultNavigationBarProps { }
 
-export function NavigationBar() {
-  return <PlasmicComponent component="NavigationBar" />;
-}
+export const NavigationBar: React.FC = () => {
+  return (
+    <ConfigProvider
+      theme={{
+        components: {
+          Menu: {
+            itemHeight: 40,
+            itemHoverColor: '#1890ff',
+          },
+        },
+      }}
+    >
+      <MenuSection>
+        <MenuItem key="home">Главная</MenuItem>
+        <MenuItem key="about">О нас</MenuItem>
+        {/* другие пункты меню */}
+      </MenuSection>
+    </ConfigProvider>
+  );
+};
 
 function NavigationBarComponent(props: NavigationBarProps) {
   // Use PlasmicNavigationBar to render this component as it was
