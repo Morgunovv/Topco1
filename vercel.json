@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@vercel/next"
+        }
+    ],
+    "env": {
+        "PLASMIC_API_TOKEN": "GTRFxXOnFd2a1M3g9Hql8rpTTnXMbKQGvJhPwQVrWb2ChqeAJW5Wjy4gbeusvolZHoWmG3GkHkCd5zDz8vgQ",
+        "PLASMIC_PROJECT_ID": "tVrjFA7RVCG7zyycB4xXud"
+    }
+}
