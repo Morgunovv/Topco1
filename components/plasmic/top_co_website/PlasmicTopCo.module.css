@@ -1770,7 +1770,7 @@
   align-self: stretch;
   position: relative;
 }
-.plane2:global(.__wab_instance) {
+.plane:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   position: absolute;
@@ -1778,12 +1778,6 @@
   top: 240px;
   width: 162px;
   z-index: 10;
-  transition-property: all;
-  transition-duration: 1s;
-  transition-delay: 4s;
-  -webkit-transition-property: all;
-  -webkit-transition-duration: 1s;
-  -webkit-transition-delay: 4s;
 }
 .curve:global(.__wab_instance) {
   max-width: 100%;
@@ -1851,7 +1845,7 @@
   flex-shrink: 0;
   border-radius: 28px;
 }
-.htmlVideo__r2J9E:global(.__wab_instance) {
+.phone3:global(.__wab_instance) {
   width: 751px;
   height: 437px;
   max-width: 100%;
@@ -5597,6 +5591,11 @@
   left: 0px;
   border-radius: 34.1307373046875px;
 }
+.text__lt6O3 {
+  position: absolute;
+  left: 129.05081176757812px;
+  top: 111.6728515625px;
+}
 .titleSubtitle43 {
   height: auto;
   display: flex;
@@ -6506,6 +6505,11 @@
   > img {
   margin-top: 10px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .root .card35:hover {
+    background: #f7f5ef;
+  }
+}
 .content38 {
   width: 303px;
   height: auto;
@@ -6602,7 +6606,7 @@
   position: relative;
 }
 .card36 {
-  background: rgba(247, 245, 239, 1);
+  background: none;
   height: auto;
   display: flex;
   position: relative;
@@ -6628,6 +6632,11 @@
   > picture
   > img {
   margin-left: 10px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root .card36:hover {
+    background: #f7f5ef;
+  }
 }
 .content39 {
   width: 303px;
@@ -6756,6 +6765,11 @@
   > img {
   margin-top: 10px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .root .card37:hover {
+    background: #f7f5ef;
+  }
+}
 .content40 {
   width: 303px;
   height: auto;
@@ -6861,6 +6875,7 @@
   align-self: stretch;
   overflow: hidden;
   flex-direction: column;
+  background: none;
   border-radius: 20px;
   padding: 16px 12px;
 }
@@ -6986,6 +7001,7 @@
   align-self: stretch;
   overflow: hidden;
   flex-direction: column;
+  background: none;
   border-radius: 20px;
   padding: 16px 12px;
 }
@@ -7005,6 +7021,11 @@
   > picture
   > img {
   margin-top: 10px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root .card39:hover {
+    background: #f7f5ef;
+  }
 }
 .content42 {
   width: 303px;
@@ -7131,6 +7152,11 @@
   > img {
   margin-top: 10px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .root .card40:hover {
+    background: #f7f5ef;
+  }
+}
 .content43 {
   width: 303px;
   height: auto;
@@ -7254,6 +7280,11 @@
   > img {
   margin-top: 10px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .root .card41:hover {
+    background: #f7f5ef;
+  }
+}
 .content44 {
   width: 303px;
   height: auto;
@@ -7366,6 +7397,11 @@
   > picture
   > img {
   margin-top: 10px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root .card42:hover {
+    background: #f7f5ef;
+  }
 }
 .content45 {
   width: 303px;
@@ -7563,6 +7599,21 @@
   align-self: stretch;
   position: relative;
 }
+.plane3:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 270px;
+  top: 180px;
+  width: 102px;
+  z-index: 99;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 4s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-delay: 4s;
+}
 .banners2 {
   width: 343px;
   height: auto;
@@ -7621,25 +7672,17 @@
   flex-shrink: 0;
   border-radius: 20px;
 }
-.htmlVideo__yeot5:global(.__wab_instance) {
-  width: 751px;
-  height: 437px;
+.htmlVideo:global(.__wab_instance) {
+  width: 200px;
+  height: 282px;
   max-width: 100%;
   object-fit: cover;
   position: absolute;
-  left: 0px;
-  top: 0px;
-  margin-right: 11px;
+  left: 64px;
+  top: -4px;
+  margin-right: 0px;
   margin-left: 0px;
   margin-bottom: 88px;
-}
-.curve2:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 10;
 }
 .content46 {
   height: auto;
@@ -8382,6 +8425,15 @@
   .svg__d26Gi {
     display: block;
   }
+}
+.curve2:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0px;
+  top: 2450px;
+  z-index: 999;
+  height: 142px;
 }
 .pageBlock13 {
   width: 373px;
