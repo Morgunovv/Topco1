@@ -5036,7 +5036,7 @@
   position: sticky;
   flex-direction: column;
   left: 0px;
-  top: 80px;
+  top: 90px;
   z-index: 1;
   margin-top: 0px;
   padding-top: 0px;
@@ -6043,8 +6043,8 @@
   height: 142.82093811035156px;
   display: block;
   position: absolute;
-  left: 435px;
-  top: 359px;
+  left: 414px;
+  top: 349px;
   z-index: 1;
   flex-shrink: 0;
 }
