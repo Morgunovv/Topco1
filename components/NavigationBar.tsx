@@ -8,7 +8,8 @@ import {
 import { MenuSection } from './MenuSection';
 import { MenuItem } from './MenuItem';
 import { PlasmicComponent } from '@plasmicapp/loader-nextjs';
-import { ConfigProvider, Menu } from 'antd';
+import { Menu } from 'antd';
+import type { MenuProps } from 'antd';
 
 // Your component props start with props for variants and slots you defined
 // in Plasmic, but you can add more here, like event handlers that you can
@@ -25,14 +26,28 @@ import { ConfigProvider, Menu } from 'antd';
 // total control over the props for your component.
 export interface NavigationBarProps extends DefaultNavigationBarProps { }
 
+const items: MenuProps['items'] = [
+  {
+    label: 'Главная',
+    key: 'home',
+  },
+  {
+    label: 'О нас',
+    key: 'about',
+  },
+  // Добавьте другие пункты меню здесь
+];
+
 export function NavigationBar() {
   return (
-    <ConfigProvider>
-      <Menu mode="horizontal">
-        <Menu.Item key="home">Главная</Menu.Item>
-        <Menu.Item key="about">О нас</Menu.Item>
-      </Menu>
-    </ConfigProvider>
+    <Menu
+      mode="horizontal"
+      items={items}
+      style={{
+        background: 'transparent',
+        borderBottom: 'none'
+      }}
+    />
   );
 }
 

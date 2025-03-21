@@ -16,7 +16,18 @@ export default function App({ Component, pageProps }: AppProps) {
     }
 
     return (
-        <ConfigProvider>
+        <ConfigProvider
+            theme={{
+                token: {
+                    colorPrimary: '#00b96b',
+                },
+                components: {
+                    Menu: {
+                        itemBg: 'transparent',
+                    },
+                },
+            }}
+        >
             <PlasmicRootProvider
                 loader={PLASMIC}
                 prefetchedData={pageProps.plasmicData}
