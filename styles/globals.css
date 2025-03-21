@@ -40,3 +40,16 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Добавьте эти стили для исправления проблем с antd */
+.ant-menu-horizontal {
+  border-bottom: none !important;
+}
+
+.ant-menu-item {
+  padding: 0 20px !important;
+}
+
+.ant-menu-item:hover {
+  color: #1890ff !important;
+}

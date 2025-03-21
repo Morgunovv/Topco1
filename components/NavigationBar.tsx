@@ -10,6 +10,7 @@ import { MenuItem } from './MenuItem';
 import { PlasmicComponent } from '@plasmicapp/loader-nextjs';
 import { Menu } from 'antd';
 import type { MenuProps } from 'antd';
+import { MenuWrapper } from './MenuWrapper';
 
 // Your component props start with props for variants and slots you defined
 // in Plasmic, but you can add more here, like event handlers that you can
@@ -40,14 +41,10 @@ const items: MenuProps['items'] = [
 
 export function NavigationBar() {
   return (
-    <Menu
-      mode="horizontal"
-      items={items}
-      style={{
-        background: 'transparent',
-        borderBottom: 'none'
-      }}
-    />
+    <MenuWrapper>
+      <Menu.Item key="home">Главная</Menu.Item>
+      <Menu.Item key="about">О нас</Menu.Item>
+    </MenuWrapper>
   );
 }
 
