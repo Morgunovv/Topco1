@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app';
 import { ConfigProvider, App as AntdApp } from 'antd';
-import { PlasmicRootProvider } from "@plasmicapp/loader-nextjs";
+import { PlasmicRootProvider } from "@plasmicapp/react-web/lib/host";
 import { PLASMIC } from "../plasmic-init";
 import Error from 'next/error';
 import { theme } from '../utils/theme';
@@ -30,10 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             {mounted && (
                 <ConfigProvider theme={theme}>
                     <AntdApp>
-                        <PlasmicRootProvider
-                            loader={PLASMIC}
-                            prefetchedData={pageProps.plasmicData}
-                        >
+                        <PlasmicRootProvider>
                             <Component {...pageProps} />
                         </PlasmicRootProvider>
                     </AntdApp>

@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    typescript: {
-        ignoreBuildErrors: true
-    },
+    reactStrictMode: true,
     // Отключаем SWC для Linux
     swcMinify: false,
     // Удаляем experimental.appDir
@@ -12,12 +10,7 @@ const nextConfig = {
     // Добавим настройки для production
     productionBrowserSourceMaps: true, // для лучшей отладки
     poweredByHeader: false,
-    transpilePackages: [
-        '@ant-design/icons',
-        '@ant-design/icons-svg',
-        'rc-util',
-        'antd'
-    ],
+    transpilePackages: ['antd', '@ant-design/icons'],
     webpack: (config) => {
         // Добавляем обработку компонентов
         config.resolve.fallback = {
@@ -27,7 +20,6 @@ const nextConfig = {
         config.resolve.alias = {
             ...config.resolve.alias,
             '@ant-design/icons/lib': '@ant-design/icons/es',
-            'rc-util/lib': 'rc-util/es'
         };
 
         // Добавляем правило для обработки ES модулей

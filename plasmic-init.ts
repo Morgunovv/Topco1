@@ -3,8 +3,8 @@ import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
 export const PLASMIC = initPlasmicLoader({
   projects: [
     {
-      id: process.env.PLASMIC_PROJECT_ID!,
-      token: process.env.PLASMIC_PROJECT_API_TOKEN!
+      id: "ваш_project_id", // Замените на ваш ID проекта
+      token: "ваш_token" // Замените на ваш токен
     }
   ],
 
