@@ -1,40 +1,34 @@
 import * as React from "react";
-import { DataCtxReader } from "@plasmicapp/strapi";
+import { DataCtxReader } from "@plasmicpkgs/plasmic-strapi";
+import { PlasmicComponent } from "@plasmicapp/loader-nextjs";
+
+interface Project {
+    id: string | number;
+    attributes: {
+        title?: string;
+        description?: string;
+        // добавьте другие поля проекта
+    };
+}
 
 export function ProjectsList() {
     return (
-        <DataCtxReader
-            query={{
-                collection: "projects",
-                params: {
-                    populate: '*' // Получаем все связанные данные
-                }
-            }}
-            render={data => {
-                console.log('Strapi data:', data); // Для отладки
-
-                if (!data) {
-                    return <div>Loading...</div>;
-                }
-
-                return (
-                    <div style={{ padding: '20px' }}>
-                        {data.data?.map((project: any) => (
-                            <div key={project.id} style={{ marginBottom: '20px' }}>
-                                <h2>{project.attributes.title}</h2>
-                                <p>{project.attributes.description}</p>
-                                {project.attributes.image?.data && (
-                                    <img
-                                        src={`${process.env.NEXT_PUBLIC_STRAPI_API_URL}${project.attributes.image.data.attributes.url}`}
-                                        alt={project.attributes.title}
-                                        style={{ maxWidth: '300px' }}
-                                    />
-                                )}
-                            </div>
-                        ))}
-                    </div>
-                );
-            }}
-        />
+        <DataCtxReader>
+            {(data: { projects?: { data: Project[] } }) => (
+                <div>
+                    {data.projects?.data.map((project: Project) => (
+                        <PlasmicComponent
+                            key={project.id}
+                            component="ProjectCard"
+                            componentProps={{
+                                title: project.attributes.title,
+                                description: project.attributes.description,
+                                // другие пропсы
+                            }}
+                        />
+                    ))}
+                </div>
+            )}
+        </DataCtxReader>
     );
 } 

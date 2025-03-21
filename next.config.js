@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
-    transpilePackages: ['@plasmicpkgs/antd5'],
+    transpilePackages: [
+        '@plasmicpkgs/plasmic-strapi',
+        '@plasmicapp/strapi'
+    ],
     compiler: {
         styledComponents: true
     }
