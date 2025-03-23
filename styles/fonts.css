@@ -62,3 +62,24 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'YourFontName';
+    src: url('/fonts/your-font.woff2') format('woff2'),
+        url('/fonts/your-font.woff') format('woff'),
+        url('/fonts/your-font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Повторите для других начертаний */
+@font-face {
+    font-family: 'YourFontName';
+    src: url('/fonts/your-font-bold.woff2') format('woff2'),
+        url('/fonts/your-font-bold.woff') format('woff'),
+        url('/fonts/your-font-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

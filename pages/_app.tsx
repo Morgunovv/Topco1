@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app';
 import localFont from 'next/font/local';
 import * as React from 'react';
+import '../styles/fonts.css';
 
 // Определяем все варианты шрифта InterDisplay
 const interDisplay = localFont({
