@@ -1,0 +1,84 @@
+[33mcf6d2e3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m fix: update Plasmic configuration and environment variables
+[33m808b742[m refactor: update StrapiDataFetcher to use native fetch
+[33m3691367[m refactor: simplify ProjectsList with direct fetch
+[33m6eb603d[m fix: update ProjectsList to use DataProvider from plasmic-strapi
+[33m131dafa[m fix: update ProjectsList to use StrapiProvider and StrapiField
+[33mc3a518a[m [plasmic] Sync project Top.co website
+[33m1a954ca[m fix: update DataCtxReader import path
+[33mfd252e6[m fix: update ESLint config and improve component types
+[33maf3bb6d[m [plasmic] Sync project Top.co website
+[33m237e495[m fix: update ESLint configuration to ignore Plasmic files
+[33m5bbc6ea[m fix: update ESLint configuration to ignore Plasmic files
+[33m8bcaf08[m Merge branch 'main' of https://github.com/Morgunovv/Topco1
+[33mf30aa15[m fix: add ESLint configuration for Plasmic files
+[33m130c26c[m fix: update ESLint configuration for Plasmic icons
+[33ma9a7e4b[m [plasmic] Sync project Top.co website
+[33mb09896e[m merge conflicts resolved
+[33mdb95dc5[m add Inter Display font configuration
+[33mf9bd8a6[m fonts
+[33m173e37d[m [plasmic] Sync project Top.co website
+[33m7d060d3[m [plasmic] Sync project Top.co website
+[33m528c8be[m [plasmic] Sync project Top.co website
+[33m81419b6[m [plasmic] Sync project Top.co website
+[33m3b24663[m fix: add ESLint and fix TypeScript errors
+[33ma4d35a7[m fix: add ESLint and fix TypeScript errors
+[33m7887a38[m add vercel configuration
+[33me82849c[m add vercel configuration
+[33m53ed5eb[m add vercel configuration
+[33m44c4881[m save current state
+[33m5f21d7c[m [plasmic] Sync project Top.co website
+[33m3db58c1[m [plasmic] Sync project Top.co website
+[33m44e7efa[m [plasmic] Sync project Top.co website
+[33mb0d8f25[m Add Apollo Client type declarations
+[33m625e8f4[m Add Apollo Client type declarations
+[33m82bd1ec[m Update dependencies to fix security vulnerabilities
+[33m9bae52d[m Fix dependencies and add .npmrc
+[33m950818a[m Fix Apollo Client installation and types
+[33m0b11384[m Fix Next.js version
+[33md5884f9[m reload npm
+[33m8f5996e[m Sync dependencies with remote version
+[33mccf3b52[m Update dependencies for Apollo Client
+[33md1599ee[m Add @apollo/client and graphql dependencies
+[33mc793a84[m Merge remote changes and add Apollo Client dependencies
+[33mdac4af8[m Добавлены зависимости @apollo/client и graphql
+[33m9e56bae[m [plasmic] Sync project Top.co website
+[33m1a8d33a[m [plasmic] Sync project Top.co website
+[33m86baea8[m [plasmic] Sync project Top.co website
+[33m651c5fb[m Добавлены шрифты
+[33m8495830[m Разрешены конфликты слияния
+[33m6ff9141[m Добавлены шрифты и локальные изменения
+[33mab815ce[m Добавлены шрифты InterDisplay и Inter
+[33m8062b1d[m [plasmic] Sync project Top.co website
+[33m67a2db8[m [plasmic] Sync project Top.co website
+[33mb424ce2[m [plasmic] Sync project Top.co website
+[33m25b9d68[m [plasmic] Sync project Top.co website
+[33mc54095c[m Add DynamicTopCo component and update routing
+[33ma279b1f[m Add DynamicTopCo component and update routing
+[33me4437a5[m Add DynamicTopCo component and update routing
+[33m5091a56[m Исправил ошибки и подготовил к деплою
+[33m4d3c2d4[m Update package.json
+[33mfb74dd0[m Update package.json
+[33m6909c87[m Rename [[...catchall]].tsx to [...catchall].tsx
+[33mbc1b12b[m Update plasmic-host.tsx
+[33m7658ac6[m Update [[...catchall]].tsx
+[33mf641a15[m Update [[...catchall]].tsx
+[33m53d87d3[m Update [[...catchall]].tsx
+[33md718777[m Update next.config.mjs
+[33m38207ac[m Update next.config.mjs
+[33mc8d666c[m Update next.config.mjs
+[33ma36d602[m Update tsconfig.json
+[33m5e5f791[m Update next.config.mjs
+[33m5e8420c[m Update package.json
+[33mf09ce17[m [plasmic] Sync project Top.co website
+[33m80114bc[m Update tsconfig.json
+[33meb62d84[m Update package.json
+[33mafc4fb2[m Update package.json
+[33ma99eed4[m Update package.json
+[33m6c56442[m Update tsconfig.json
+[33m44e7df5[m [plasmic] Sync project Top.co website
+[33m431cae6[m [plasmic] Sync project Top.co website
+[33m8d983b1[m [plasmic] Sync project Top.co website
+[33m7f1c449[m [plasmic] Sync project Top.co website
+[33m7bae119[m [plasmic] Sync project Top.co website
+[33m90b2a01[m [plasmic] Sync project Beginner's guide: website in 3 minutes
+[33mc0d6605[m Add/update Plasmic workflow
