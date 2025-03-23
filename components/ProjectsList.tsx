@@ -1,6 +1,5 @@
 import * as React from "react";
 import { PlasmicComponent } from "@plasmicapp/loader-nextjs";
-import { DataProvider } from "@plasmicpkgs/plasmic-strapi";
 
 interface Project {
     id: string | number;
@@ -11,29 +10,69 @@ interface Project {
     };
 }
 
+interface ProjectsResponse {
+    data: Project[];
+    meta: {
+        pagination: {
+            page: number;
+            pageSize: number;
+            total: number;
+        };
+    };
+}
+
 export function ProjectsList() {
+    const [projects, setProjects] = React.useState<Project[]>([]);
+    const [loading, setLoading] = React.useState(true);
+    const [error, setError] = React.useState<string | null>(null);
+
+    React.useEffect(() => {
+        const fetchProjects = async () => {
+            try {
+                setLoading(true);
+                const response = await fetch('/api/projects');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch projects');
+                }
+                const data: ProjectsResponse = await response.json();
+                setProjects(data.data || []);
+            } catch (err) {
+                setError(err instanceof Error ? err.message : 'Error fetching projects');
+                console.error('Error fetching projects:', err);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchProjects();
+    }, []);
+
+    if (loading) {
+        return <div>Loading projects...</div>;
+    }
+
+    if (error) {
+        return <div>Error: {error}</div>;
+    }
+
+    if (!projects.length) {
+        return <div>No projects found</div>;
+    }
+
     return (
-        <DataProvider
-            name="projects"
-            apiUrl={process.env.NEXT_PUBLIC_STRAPI_API_URL || 'http://localhost:1337'}
-            path="/api/projects"
-        >
-            {(data: { data?: Project[] }) => (
-                <div>
-                    {data?.data?.map((project: Project) => (
-                        <PlasmicComponent
-                            key={project.id}
-                            component="ProjectCard"
-                            componentProps={{
-                                title: project.attributes.title,
-                                description: project.attributes.description,
-                                // другие пропсы
-                            }}
-                        />
-                    ))}
-                </div>
-            )}
-        </DataProvider>
+        <div>
+            {projects.map((project) => (
+                <PlasmicComponent
+                    key={project.id}
+                    component="ProjectCard"
+                    componentProps={{
+                        title: project.attributes.title,
+                        description: project.attributes.description,
+                        // другие пропсы
+                    }}
+                />
+            ))}
+        </div>
     );
 }
 
