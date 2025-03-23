@@ -371,7 +371,7 @@ function PlasmicCombobox__RenderFunc(props: {
       <MenuPopover
         data-plasmic-name={"menuPopover"}
         data-plasmic-override={overrides.menuPopover}
-        className={classNames("__wab_instance", {
+        className={classNames("__wab_instance", sty.menuPopover, {
           [sty.menuPopovertype_soft]: hasVariant($state, "type", "soft")
         })}
         menuItems={renderPlasmicSlot({

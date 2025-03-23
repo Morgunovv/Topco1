@@ -87,6 +87,7 @@
   height: 32px;
   display: block;
   position: relative;
+  cursor: pointer;
   flex-shrink: 0;
 }
 .svg__spadY {
@@ -161,6 +162,11 @@
   position: relative;
   overflow: hidden;
   flex-direction: row;
+  transition-property: all;
+  transition-duration: 1s;
+  cursor: pointer;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
 }
 .button > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -279,6 +285,8 @@
   line-height: 24px;
   color: rgba(20, 22, 31, 1);
   position: relative;
+  padding-right: 0px;
+  cursor: pointer;
 }
 .arrow24 {
   width: 24px;
@@ -382,6 +390,7 @@
   line-height: 24px;
   color: rgba(20, 22, 31, 1);
   position: relative;
+  cursor: pointer;
 }
 .arrow242 {
   width: 24px;
@@ -510,6 +519,7 @@
   line-height: 24px;
   color: rgba(20, 22, 31, 1);
   position: relative;
+  cursor: pointer;
 }
 .arrow243 {
   width: 24px;
@@ -637,6 +647,7 @@
   line-height: 24px;
   color: rgba(20, 22, 31, 1);
   position: relative;
+  cursor: pointer;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .label5 {
@@ -783,6 +794,7 @@
   line-height: 24px;
   color: rgba(20, 22, 31, 1);
   position: relative;
+  cursor: pointer;
 }
 .arrow245 {
   width: 24px;
@@ -870,6 +882,7 @@
   display: block !important;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   flex-shrink: 0;
 }
 .img__f4Ey0 > picture > img {
@@ -884,6 +897,7 @@
   display: block;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   flex-shrink: 0;
 }
 .svg__q7Mq4 {
@@ -895,6 +909,7 @@
   display: block;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   flex-shrink: 0;
 }
 .svg__uLdvv {
@@ -906,6 +921,7 @@
   display: block;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   flex-shrink: 0;
 }
 .bottom {
@@ -957,6 +973,7 @@
   line-height: 24px;
   color: rgba(133, 132, 129, 1);
   position: relative;
+  cursor: pointer;
 }
 .footer:global(.__wab_instance) {
   width: 375px;

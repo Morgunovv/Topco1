@@ -4,6 +4,8 @@
   display: block;
   background: none;
   pointer-events: auto;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 .freeBox__iAw4P {
   background: rgba(247, 245, 239, 1);

@@ -1,6 +1,6 @@
 .ariaInput:global(.__wab_instance) {
   box-sizing: border-box;
-  box-shadow: inset 0px 0px 0px 1px var(--token-2yuF6d9mkpgj);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
   color: var(--token-hs5xukPbg3uP);
   font-family: "Inter", sans-serif;
   font-size: var(--token-aswsJx6IoFUX);
@@ -18,10 +18,13 @@
   letter-spacing: -0.11px;
   border-radius: var(--token-Aojtt6d7J13d);
   padding: var(--token-Aojtt6d7J13d) var(--token-qtw42j78T7BA);
-  border: 0px none var(--token-9jSldGMbUlHV);
+  border: 0px none var(--token-OyPG8bhCpd0Y);
 }
 .ariaInput[data-disabled]:global(.__wab_instance) {
   cursor: not-allowed;
+}
+.ariaInput[data-hovered]:global(.__wab_instance) {
+  background: none;
 }
 .ariaInput[data-focused]:global(.__wab_instance) {
   outline-style: solid;

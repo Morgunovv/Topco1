@@ -83,7 +83,7 @@ type ArgPropType = keyof PlasmicMobileMenu__ArgsType;
 export const PlasmicMobileMenu__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicMobileMenu__OverridesType = {
-  menuButton?: Flex__<"div">;
+  menuButton?: Flex__<"button">;
   frame2131327145?: Flex__<"div">;
   frame2131327146?: Flex__<"div">;
   frame2131327275?: Flex__<"div">;
@@ -144,6 +144,24 @@ function PlasmicMobileMenu__RenderFunc(props: {
 
   const currentUser = useCurrentUser?.() || {};
 
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
+    () => [
+      {
+        path: "mobMenu",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false
+      }
+    ],
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $refs
+  });
+
   const [isMenuButtonHover, triggerMenuButtonHoverProps] = useTrigger(
     "useHover",
     {}
@@ -161,13 +179,14 @@ function PlasmicMobileMenu__RenderFunc(props: {
   });
 
   return (
-    <div
+    <button
       data-plasmic-name={"menuButton"}
       data-plasmic-override={overrides.menuButton}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
         projectcss.all,
+        projectcss.button,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
@@ -175,6 +194,9 @@ function PlasmicMobileMenu__RenderFunc(props: {
         plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.menuButton
       )}
+      ref={ref => {
+        $refs["menuButton"] = ref;
+      }}
       data-plasmic-trigger-props={[
         triggerMenuButtonHoverProps,
         triggerMenuButtonActiveProps
@@ -339,7 +361,7 @@ function PlasmicMobileMenu__RenderFunc(props: {
           </Stack__>
         </div>
       </div>
-    </div>
+    </button>
   ) as React.ReactElement | null;
 }
 
@@ -405,7 +427,7 @@ type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  menuButton: "div";
+  menuButton: "button";
   frame2131327145: "div";
   frame2131327146: "div";
   frame2131327275: "div";

@@ -1702,7 +1702,7 @@ function PlasmicTopCo__RenderFunc(props: {
                         sr: 1,
                         st: 0,
                         op: 270,
-                        ip: 60,
+                        ip: 30,
                         ln: "20",
                         hasMask: false,
                         ao: 0,
@@ -1715,13 +1715,13 @@ function PlasmicTopCo__RenderFunc(props: {
                                 s: [0, 0, 0],
                                 i: { x: [0, 0, 0], y: [1, 1, 1] },
                                 o: { x: [0.2, 0.2, 0.2], y: [0, 0, 0] },
-                                t: 60
+                                t: 30
                               },
                               {
                                 s: [100, 100, 100],
                                 i: { x: [0.833, 0.833, 0.833], y: [1, 1, 1] },
                                 o: { x: [0.167, 0.167, 0.167], y: [0, 0, 0] },
-                                t: 105
+                                t: 75
                               }
                             ]
                           },
@@ -1732,9 +1732,9 @@ function PlasmicTopCo__RenderFunc(props: {
                                 o: { x: 0.2, y: 0 },
                                 i: { x: 0, y: 1 },
                                 s: [29.25, 112.625, 0],
-                                t: 60
+                                t: 30
                               },
-                              { s: [86, 88, 0], t: 105 }
+                              { s: [86, 88, 0], t: 75 }
                             ]
                           },
                           r: { a: 0, k: 0 },
@@ -1927,7 +1927,7 @@ function PlasmicTopCo__RenderFunc(props: {
                         sr: 1,
                         st: 0,
                         op: 270,
-                        ip: 60,
+                        ip: 0,
                         ln: "17",
                         hasMask: false,
                         ao: 0,
@@ -1940,13 +1940,13 @@ function PlasmicTopCo__RenderFunc(props: {
                                 s: [0, 0, 0],
                                 i: { x: [0, 0, 0], y: [1, 1, 1] },
                                 o: { x: [0.2, 0.2, 0.2], y: [0, 0, 0] },
-                                t: 60
+                                t: 0
                               },
                               {
                                 s: [100, 100, 100],
                                 i: { x: [0.833, 0.833, 0.833], y: [1, 1, 1] },
                                 o: { x: [0.167, 0.167, 0.167], y: [0, 0, 0] },
-                                t: 105
+                                t: 270
                               }
                             ]
                           },
@@ -2011,9 +2011,9 @@ function PlasmicTopCo__RenderFunc(props: {
                                   o: { x: 0.2, y: 0 },
                                   i: { x: 0, y: 1 },
                                   s: [0],
-                                  t: 60
+                                  t: 30
                                 },
-                                { s: [100], t: 90, h: 1 }
+                                { s: [100], t: 60, h: 1 }
                               ]
                             },
                             o: { a: 0, k: 0 },
@@ -2027,7 +2027,7 @@ function PlasmicTopCo__RenderFunc(props: {
                     v: "5.7.0",
                     fr: 60,
                     op: 270,
-                    ip: 60,
+                    ip: 0,
                     assets: []
                   }}
                   autoplay={true}
@@ -5139,8 +5139,8 @@ function PlasmicTopCo__RenderFunc(props: {
                                 ty: 4,
                                 sr: 1,
                                 st: 0,
-                                op: 4523,
-                                ip: 0,
+                                op: 270,
+                                ip: 30,
                                 ln: "20",
                                 hasMask: false,
                                 ao: 0,
@@ -5153,7 +5153,7 @@ function PlasmicTopCo__RenderFunc(props: {
                                         s: [0, 0, 0],
                                         i: { x: [0, 0, 0], y: [1, 1, 1] },
                                         o: { x: [0.2, 0.2, 0.2], y: [0, 0, 0] },
-                                        t: 0
+                                        t: 30
                                       },
                                       {
                                         s: [100, 100, 100],
@@ -5165,7 +5165,7 @@ function PlasmicTopCo__RenderFunc(props: {
                                           x: [0.167, 0.167, 0.167],
                                           y: [0, 0, 0]
                                         },
-                                        t: 45
+                                        t: 75
                                       }
                                     ]
                                   },
@@ -5176,9 +5176,9 @@ function PlasmicTopCo__RenderFunc(props: {
                                         o: { x: 0.2, y: 0 },
                                         i: { x: 0, y: 1 },
                                         s: [29.25, 112.625, 0],
-                                        t: 0
+                                        t: 30
                                       },
-                                      { s: [86, 88, 0], t: 45 }
+                                      { s: [86, 88, 0], t: 75 }
                                     ]
                                   },
                                   r: { a: 0, k: 0 },
@@ -5370,7 +5370,7 @@ function PlasmicTopCo__RenderFunc(props: {
                                 ty: 4,
                                 sr: 1,
                                 st: 0,
-                                op: 4523,
+                                op: 270,
                                 ip: 0,
                                 ln: "17",
                                 hasMask: false,
@@ -5396,7 +5396,7 @@ function PlasmicTopCo__RenderFunc(props: {
                                           x: [0.167, 0.167, 0.167],
                                           y: [0, 0, 0]
                                         },
-                                        t: 45
+                                        t: 270
                                       }
                                     ]
                                   },
@@ -5461,9 +5461,9 @@ function PlasmicTopCo__RenderFunc(props: {
                                           o: { x: 0.2, y: 0 },
                                           i: { x: 0, y: 1 },
                                           s: [0],
-                                          t: 0
+                                          t: 30
                                         },
-                                        { s: [100], t: 30 }
+                                        { s: [100], t: 60, h: 1 }
                                       ]
                                     },
                                     o: { a: 0, k: 0 },
@@ -5476,7 +5476,7 @@ function PlasmicTopCo__RenderFunc(props: {
                             ],
                             v: "5.7.0",
                             fr: 60,
-                            op: 46,
+                            op: 270,
                             ip: 0,
                             assets: []
                           }}
@@ -5975,7 +5975,7 @@ function PlasmicTopCo__RenderFunc(props: {
                       ty: 4,
                       sr: 1,
                       st: 0,
-                      op: 60,
+                      op: 270,
                       ip: 0,
                       ln: "35",
                       hasMask: false,
@@ -6085,7 +6085,7 @@ function PlasmicTopCo__RenderFunc(props: {
                                 s: [0],
                                 t: 0
                               },
-                              { s: [100], t: 45 }
+                              { s: [100], t: 45, h: 1 }
                             ]
                           },
                           o: { a: 0, k: 0 },
@@ -6098,7 +6098,7 @@ function PlasmicTopCo__RenderFunc(props: {
                   ],
                   v: "5.7.0",
                   fr: 60,
-                  op: 46,
+                  op: 270,
                   ip: 0,
                   assets: []
                 }}
@@ -6479,148 +6479,172 @@ function PlasmicTopCo__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.cards8)}
                 >
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"card56"}
-                    data-plasmic-override={overrides.card56}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.card56)}
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__s3Rn)}
+                    style={{
+                      style: {
+                        scrollbarWidth: "none",
+                        msOverflowStyle: "none",
+                        overflowY: "auto"
+                      }
+                    }}
                   >
-                    <div
-                      data-plasmic-name={"image6"}
-                      data-plasmic-override={overrides.image6}
-                      className={classNames(projectcss.all, sty.image6)}
+                    <Stack__
+                      as={"div"}
+                      data-plasmic-name={"card56"}
+                      data-plasmic-override={overrides.card56}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.card56)}
+                      style={{
+                        style: {
+                          scrollbarWidth: "none",
+                          msOverflowStyle: "none",
+                          overflowY: "auto"
+                        }
+                      }}
                     >
                       <div
-                        data-plasmic-name={"phone4"}
-                        data-plasmic-override={overrides.phone4}
-                        className={classNames(projectcss.all, sty.phone4)}
+                        data-plasmic-name={"image6"}
+                        data-plasmic-override={overrides.image6}
+                        className={classNames(projectcss.all, sty.image6)}
                       >
                         <div
-                          data-plasmic-name={"iPhone14ProDark4"}
-                          data-plasmic-override={overrides.iPhone14ProDark4}
-                          className={classNames(
-                            projectcss.all,
-                            sty.iPhone14ProDark4
-                          )}
+                          data-plasmic-name={"phone4"}
+                          data-plasmic-override={overrides.phone4}
+                          className={classNames(projectcss.all, sty.phone4)}
                         >
                           <div
-                            data-plasmic-name={"body4"}
-                            data-plasmic-override={overrides.body4}
-                            className={classNames(projectcss.all, sty.body4)}
-                          />
+                            data-plasmic-name={"iPhone14ProDark4"}
+                            data-plasmic-override={overrides.iPhone14ProDark4}
+                            className={classNames(
+                              projectcss.all,
+                              sty.iPhone14ProDark4
+                            )}
+                          >
+                            <div
+                              data-plasmic-name={"body4"}
+                              data-plasmic-override={overrides.body4}
+                              className={classNames(projectcss.all, sty.body4)}
+                            />
+                          </div>
                         </div>
                       </div>
-                    </div>
+                      <Stack__
+                        as={"div"}
+                        data-plasmic-name={"titleSubtitle80"}
+                        data-plasmic-override={overrides.titleSubtitle80}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.titleSubtitle80
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__w4Y9T
+                          )}
+                        >
+                          {"11 November, 2024"}
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__zdEpd
+                          )}
+                        >
+                          {
+                            "TAC raises $6.5 million to provide TON and Telegram users in-app access to EVM applications"
+                          }
+                        </div>
+                      </Stack__>
+                    </Stack__>
                     <Stack__
                       as={"div"}
-                      data-plasmic-name={"titleSubtitle80"}
-                      data-plasmic-override={overrides.titleSubtitle80}
+                      data-plasmic-name={"card57"}
+                      data-plasmic-override={overrides.card57}
                       hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.titleSubtitle80
-                      )}
+                      className={classNames(projectcss.all, sty.card57)}
                     >
                       <div
+                        data-plasmic-name={"image7"}
+                        data-plasmic-override={overrides.image7}
+                        className={classNames(projectcss.all, sty.image7)}
+                      >
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img__wkacG)}
+                          displayHeight={"216.7515411376953px"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"190.52413940429688px"}
+                          loading={"lazy"}
+                          src={{
+                            src: "/plasmic/top_co_website/images/group1321315927.svg",
+                            fullWidth: 190.52413940429688,
+                            fullHeight: 216.7515411376953,
+                            aspectRatio: 0.880184
+                          }}
+                        />
+
+                        <Vector208Icon
+                          className={classNames(
+                            projectcss.all,
+                            sty.svg___4IsXw
+                          )}
+                          role={"img"}
+                        />
+
+                        <Vector209Icon
+                          className={classNames(projectcss.all, sty.svg__btbqa)}
+                          role={"img"}
+                        />
+
+                        <Union3Icon
+                          className={classNames(
+                            projectcss.all,
+                            sty.svg___5DR4T
+                          )}
+                          role={"img"}
+                        />
+                      </div>
+                      <Stack__
+                        as={"div"}
+                        data-plasmic-name={"titleSubtitle81"}
+                        data-plasmic-override={overrides.titleSubtitle81}
+                        hasGap={true}
                         className={classNames(
                           projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__w4Y9T
+                          sty.titleSubtitle81
                         )}
                       >
-                        {"11 November, 2024"}
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__zdEpd
-                        )}
-                      >
-                        {
-                          "TAC raises $6.5 million to provide TON and Telegram users in-app access to EVM applications"
-                        }
-                      </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__vm8Qw
+                          )}
+                        >
+                          {"11 November, 2024"}
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__hm8Ac
+                          )}
+                        >
+                          {
+                            "TAC raises $6.5 million to provide TON and Telegram users in-app access to EVM applications"
+                          }
+                        </div>
+                      </Stack__>
                     </Stack__>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"card57"}
-                    data-plasmic-override={overrides.card57}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.card57)}
-                  >
-                    <div
-                      data-plasmic-name={"image7"}
-                      data-plasmic-override={overrides.image7}
-                      className={classNames(projectcss.all, sty.image7)}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__wkacG)}
-                        displayHeight={"216.7515411376953px"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"190.52413940429688px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/top_co_website/images/group1321315927.svg",
-                          fullWidth: 190.52413940429688,
-                          fullHeight: 216.7515411376953,
-                          aspectRatio: 0.880184
-                        }}
-                      />
-
-                      <Vector208Icon
-                        className={classNames(projectcss.all, sty.svg___4IsXw)}
-                        role={"img"}
-                      />
-
-                      <Vector209Icon
-                        className={classNames(projectcss.all, sty.svg__btbqa)}
-                        role={"img"}
-                      />
-
-                      <Union3Icon
-                        className={classNames(projectcss.all, sty.svg___5DR4T)}
-                        role={"img"}
-                      />
-                    </div>
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"titleSubtitle81"}
-                      data-plasmic-override={overrides.titleSubtitle81}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.titleSubtitle81
-                      )}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__vm8Qw
-                        )}
-                      >
-                        {"11 November, 2024"}
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__hm8Ac
-                        )}
-                      >
-                        {
-                          "TAC raises $6.5 million to provide TON and Telegram users in-app access to EVM applications"
-                        }
-                      </div>
-                    </Stack__>
-                  </Stack__>
+                  </div>
                 </Stack__>
               </Stack__>
               <Stack__

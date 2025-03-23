@@ -288,7 +288,10 @@ function PlasmicTextInput__RenderFunc(props: {
   const args = React.useMemo(
     () =>
       Object.assign(
-        {},
+        {
+          inputMode: "text",
+          autoComplete: []
+        },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)
         )
