@@ -1,3 +1,4 @@
-node_modules
+**/plasmic/**/*
 .next
+node_modules
 out 
