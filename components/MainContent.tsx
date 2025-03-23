@@ -1,3 +1,4 @@
+import { StrapiDataFetcher } from './StrapiDataFetcher';
 import { PlasmicComponent } from '@plasmicapp/loader-nextjs';
 
 // Определим интерфейс для item
@@ -18,21 +19,31 @@ interface MainContentProps {
     };
 }
 
-export function MainContent({ data }: MainContentProps) {
+export function MainContent() {
     return (
-        <div>
-            {data.mains.data.map((item: MainItem) => (
-                <PlasmicComponent
-                    key={item.id}
-                    component="ProjectCard"
-                    componentProps={{
-                        title: item.attributes.title,
-                        description: item.attributes.description,
-                        // другие пропсы
-                    }}
-                />
-            ))}
-        </div>
+        <StrapiDataFetcher
+            collection="mains"
+            filters={{
+                // ваши фильтры, если нужны
+            }}
+            sort={["createdAt:desc"]}
+            pagination={{ page: 1, pageSize: 10 }}
+        >
+            {(data) => (
+                <div>
+                    {data?.data?.map((item: any) => (
+                        <PlasmicComponent
+                            key={item.id}
+                            component="ProjectCard"
+                            componentProps={{
+                                title: item.attributes.title,
+                                description: item.attributes.description,
+                            }}
+                        />
+                    ))}
+                </div>
+            )}
+        </StrapiDataFetcher>
     );
 }
 
