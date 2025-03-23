@@ -58,6 +58,12 @@
   left: 249px;
   top: 206px;
 }
+.popup__v07C0:global(.__wab_instance) {
+  max-width: 100%;
+  position: absolute;
+  left: 563px;
+  top: 150px;
+}
 .ariaDialog:global(.__wab_instance) {
   max-width: 90vw;
   object-fit: cover;
@@ -79,6 +85,6 @@
   width: 100%;
   min-width: 0;
 }
-.popup:global(.__wab_instance) {
+.popup__yf9Ew:global(.__wab_instance) {
   max-width: 100%;
 }

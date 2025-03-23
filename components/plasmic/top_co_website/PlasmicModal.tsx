@@ -62,8 +62,8 @@ import {
 import { BaseDialogTrigger } from "@plasmicpkgs/react-aria/skinny/registerDialogTrigger";
 import { BaseButton } from "@plasmicpkgs/react-aria/skinny/registerButton";
 import { BaseModal } from "@plasmicpkgs/react-aria/skinny/registerModal";
-import { BaseDialog } from "@plasmicpkgs/react-aria/skinny/registerDialog";
 import Popup from "../../Popup"; // plasmic-import: apyUXb51frmk/component
+import { BaseDialog } from "@plasmicpkgs/react-aria/skinny/registerDialog";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -109,7 +109,6 @@ export type PlasmicModal__OverridesType = {
   ariaModal?: Flex__<typeof BaseModal>;
   ariaDialog?: Flex__<typeof BaseDialog>;
   scrollableContent?: Flex__<"div">;
-  popup?: Flex__<typeof Popup>;
 };
 
 export interface DefaultModalProps {
@@ -256,6 +255,8 @@ function PlasmicModal__RenderFunc(props: {
             plasmic_antd_5_hostless_css.plasmic_tokens
           )}
         >
+          <Popup className={classNames("__wab_instance", sty.popup__v07C0)} />
+
           <BaseDialog
             data-plasmic-name={"ariaDialog"}
             data-plasmic-override={overrides.ariaDialog}
@@ -273,10 +274,8 @@ function PlasmicModal__RenderFunc(props: {
               className={classNames(projectcss.all, sty.scrollableContent)}
             >
               <Popup
-                data-plasmic-name={"popup"}
-                data-plasmic-override={overrides.popup}
-                className={classNames("__wab_instance", sty.popup, {
-                  [sty.popupnoTrigger]: hasVariant(
+                className={classNames("__wab_instance", sty.popup__yf9Ew, {
+                  [sty.popupnoTrigger__yf9Ew6Zdog]: hasVariant(
                     $state,
                     "noTrigger",
                     "noTrigger"
@@ -339,15 +338,13 @@ const PlasmicDescendants = {
     "text",
     "ariaModal",
     "ariaDialog",
-    "scrollableContent",
-    "popup"
+    "scrollableContent"
   ],
   ariaButton: ["ariaButton", "text"],
   text: ["text"],
-  ariaModal: ["ariaModal", "ariaDialog", "scrollableContent", "popup"],
-  ariaDialog: ["ariaDialog", "scrollableContent", "popup"],
-  scrollableContent: ["scrollableContent", "popup"],
-  popup: ["popup"]
+  ariaModal: ["ariaModal", "ariaDialog", "scrollableContent"],
+  ariaDialog: ["ariaDialog", "scrollableContent"],
+  scrollableContent: ["scrollableContent"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -359,7 +356,6 @@ type NodeDefaultElementType = {
   ariaModal: typeof BaseModal;
   ariaDialog: typeof BaseDialog;
   scrollableContent: "div";
-  popup: typeof Popup;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -427,7 +423,6 @@ export const PlasmicModal = Object.assign(
     ariaModal: makeNodeComponent("ariaModal"),
     ariaDialog: makeNodeComponent("ariaDialog"),
     scrollableContent: makeNodeComponent("scrollableContent"),
-    popup: makeNodeComponent("popup"),
 
     // Metadata about props expected for PlasmicModal
     internalVariantProps: PlasmicModal__VariantProps,

@@ -149,8 +149,8 @@ function PlasmicModalMobileMenu__RenderFunc(props: {
       Object.assign(
         {
           closeOnBackdropClick: true,
-          showHeader: true,
-          showFooter: true
+          showHeader: false,
+          showFooter: false
         },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)

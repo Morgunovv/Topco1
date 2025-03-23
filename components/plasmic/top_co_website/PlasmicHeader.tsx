@@ -60,7 +60,7 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import ContactUsButton from "../../ContactUsButton"; // plasmic-import: RtBKwP03e9N1/component
-import MobileMenu from "../../MobileMenu"; // plasmic-import: Wg9QJsiBjK-d/component
+import ModalMobileMenu from "../../ModalMobileMenu"; // plasmic-import: siKgXh_j7OMH/component
 import BuildWithUs from "../../BuildWithUs"; // plasmic-import: IHGcM1N4E6Ud/component
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
@@ -74,6 +74,8 @@ import sty from "./PlasmicHeader.module.css"; // plasmic-import: 9nAwrax2T-Wy/cs
 
 import WhiteSymbol3Icon from "./icons/PlasmicIcon__WhiteSymbol3"; // plasmic-import: 3LLgeuK0YypS/icon
 import Top5Icon from "./icons/PlasmicIcon__Top5"; // plasmic-import: c7U4VQimyxqf/icon
+import Frame2131327153Icon from "./icons/PlasmicIcon__Frame2131327153"; // plasmic-import: i9h3lVHw5uRy/icon
+import Chevron243Icon from "./icons/PlasmicIcon__Chevron243"; // plasmic-import: 8aTfnpHQ1sUB/icon
 import WhiteSymbolIcon from "./icons/PlasmicIcon__WhiteSymbol"; // plasmic-import: o42r5gsZOuat/icon
 import TopIcon from "./icons/PlasmicIcon__Top"; // plasmic-import: 8GpoSJw8S8kx/icon
 import Contact24Icon from "./icons/PlasmicIcon__Contact24"; // plasmic-import: 4_F0VNY3gp1U/icon
@@ -96,7 +98,7 @@ export type PlasmicHeader__OverridesType = {
   content?: Flex__<"div">;
   logoWhite2?: Flex__<"div">;
   buttons2?: Flex__<"div">;
-  mobileMenu?: Flex__<typeof MobileMenu>;
+  modalMobileMenu?: Flex__<typeof ModalMobileMenu>;
   header?: Flex__<"div">;
   logoWhite?: Flex__<"div">;
   buttons?: Flex__<"div">;
@@ -190,6 +192,12 @@ function PlasmicHeader__RenderFunc(props: {
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => ""
+      },
+      {
+        path: "modalMobileMenu.isOpen",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
       }
     ],
     [$props, $ctx, $refs]
@@ -263,10 +271,28 @@ function PlasmicHeader__RenderFunc(props: {
               hasGap={true}
               className={classNames(projectcss.all, sty.buttons2)}
             >
-              <MobileMenu
-                data-plasmic-name={"mobileMenu"}
-                data-plasmic-override={overrides.mobileMenu}
-                className={classNames("__wab_instance", sty.mobileMenu)}
+              <ModalMobileMenu
+                data-plasmic-name={"modalMobileMenu"}
+                data-plasmic-override={overrides.modalMobileMenu}
+                className={classNames("__wab_instance", sty.modalMobileMenu)}
+                isOpen={generateStateValueProp($state, [
+                  "modalMobileMenu",
+                  "isOpen"
+                ])}
+                onOpenChange={async (...eventArgs: any) => {
+                  generateStateOnChangeProp($state, [
+                    "modalMobileMenu",
+                    "isOpen"
+                  ]).apply(null, eventArgs);
+
+                  if (
+                    eventArgs.length > 1 &&
+                    eventArgs[1] &&
+                    eventArgs[1]._plasmic_state_init_
+                  ) {
+                    return;
+                  }
+                }}
               />
             </Stack__>
           </Stack__>
@@ -768,7 +794,7 @@ const PlasmicDescendants = {
     "content",
     "logoWhite2",
     "buttons2",
-    "mobileMenu",
+    "modalMobileMenu",
     "header",
     "logoWhite",
     "buttons",
@@ -810,11 +836,11 @@ const PlasmicDescendants = {
     "icon5",
     "icon6"
   ],
-  freeBox: ["freeBox", "content", "logoWhite2", "buttons2", "mobileMenu"],
-  content: ["content", "logoWhite2", "buttons2", "mobileMenu"],
+  freeBox: ["freeBox", "content", "logoWhite2", "buttons2", "modalMobileMenu"],
+  content: ["content", "logoWhite2", "buttons2", "modalMobileMenu"],
   logoWhite2: ["logoWhite2"],
-  buttons2: ["buttons2", "mobileMenu"],
-  mobileMenu: ["mobileMenu"],
+  buttons2: ["buttons2", "modalMobileMenu"],
+  modalMobileMenu: ["modalMobileMenu"],
   header: [
     "header",
     "logoWhite",
@@ -974,7 +1000,7 @@ type NodeDefaultElementType = {
   content: "div";
   logoWhite2: "div";
   buttons2: "div";
-  mobileMenu: typeof MobileMenu;
+  modalMobileMenu: typeof ModalMobileMenu;
   header: "div";
   logoWhite: "div";
   buttons: "div";
@@ -1081,7 +1107,7 @@ export const PlasmicHeader = Object.assign(
     content: makeNodeComponent("content"),
     logoWhite2: makeNodeComponent("logoWhite2"),
     buttons2: makeNodeComponent("buttons2"),
-    mobileMenu: makeNodeComponent("mobileMenu"),
+    modalMobileMenu: makeNodeComponent("modalMobileMenu"),
     header: makeNodeComponent("header"),
     logoWhite: makeNodeComponent("logoWhite"),
     buttons: makeNodeComponent("buttons"),

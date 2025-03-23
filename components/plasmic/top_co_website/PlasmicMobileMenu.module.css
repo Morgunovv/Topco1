@@ -120,13 +120,15 @@
 .frame2131327275 {
   background: rgba(255, 253, 249, 1);
   filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1599999964237213));
-  width: 343px;
+  width: 341px;
   height: auto;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   opacity: 0;
+  left: -154px;
+  top: 56px;
   flex-shrink: 0;
   border-radius: 16px;
   padding: 8px;

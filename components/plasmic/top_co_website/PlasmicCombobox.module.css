@@ -100,7 +100,7 @@
   color: #858481;
   align-self: flex-end;
   position: absolute;
-  left: 168px;
+  left: 288px;
   top: -8px;
   flex-shrink: 0;
 }
@@ -116,6 +116,9 @@
 }
 .description:global(.__wab_instance):global(.__wab_instance) {
   position: relative;
+}
+.menuPopovertype_soft:global(.__wab_instance):global(.__wab_instance) {
+  width: 397px;
 }
 .text___6S8Hd {
   position: relative;
