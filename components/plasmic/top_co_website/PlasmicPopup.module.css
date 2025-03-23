@@ -20,6 +20,10 @@
   padding-bottom: 32px;
   max-height: 588px;
   min-height: 588px;
+  max-width: 375px;
+  position: absolute;
+  left: 2px;
+  top: 0px;
   border-radius: 28px;
 }
 .popUp > :global(.__wab_flex-container) {
@@ -39,6 +43,12 @@
   .popUp {
     width: 375px;
     align-self: flex-start;
+    left: auto;
+    top: auto;
+    z-index: 1;
+    position: sticky;
+    height: auto;
+    bottom: 0px;
   }
 }
 .titleSubtitle {
@@ -76,8 +86,9 @@
   line-height: 28px;
   color: rgba(20, 22, 31, 1);
   position: relative;
-  width: 419px;
+  width: 189px;
   align-self: auto;
+  margin-right: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .title2 {
@@ -113,7 +124,7 @@
   flex-shrink: 0;
   border-radius: 1000px;
 }
-.freeBox {
+.freeBox__swa10 {
   display: block;
   position: relative;
   width: 24px;
@@ -196,9 +207,15 @@
   height: 1em;
   flex-shrink: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .svg__nZHm {
+    left: 114px;
+    top: 74px;
+  }
+}
 .combobox:global(.__wab_instance):global(.__wab_instance) {
   max-width: 100%;
-  width: 441px;
+  width: 330px;
   margin-left: 30px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -277,6 +294,12 @@
   height: 1em;
   flex-shrink: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .svg__pUcLu {
+    left: 81px;
+    top: 173px;
+  }
+}
 .email:global(.__wab_instance):global(.__wab_instance) {
   max-width: 100%;
   position: absolute;
@@ -326,6 +349,12 @@
   height: 1em;
   flex-shrink: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .svg__uXt1X {
+    top: 269px;
+    left: 136px;
+  }
+}
 .message:global(.__wab_instance):global(.__wab_instance) {
   max-width: 100%;
   position: absolute;
@@ -341,4 +370,40 @@
     height: 56px;
     flex-shrink: 0;
   }
+}
+.button3 {
+  background: rgba(247, 245, 239, 1);
+  width: auto;
+  height: 40px;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  left: 313px;
+  top: -9px;
+  cursor: pointer;
+  align-self: flex-start;
+  flex-shrink: 0;
+  border-radius: 1000px;
+}
+.freeBox__qX1Zu {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.svg__aaVOu {
+  object-fit: cover;
+  max-width: 100%;
+  color: #14161f;
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }

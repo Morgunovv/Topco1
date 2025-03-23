@@ -53,6 +53,11 @@
     width: 375px;
   }
 }
+.ariaModalnoTrigger:global(.__wab_instance) {
+  position: absolute;
+  left: 249px;
+  top: 206px;
+}
 .ariaDialog:global(.__wab_instance) {
   max-width: 90vw;
   object-fit: cover;

@@ -342,7 +342,9 @@ function PlasmicCombobox__RenderFunc(props: {
         <BaseButton
           data-plasmic-name={"ariaButton"}
           data-plasmic-override={overrides.ariaButton}
-          className={classNames("__wab_instance", sty.ariaButton)}
+          className={classNames("__wab_instance", sty.ariaButton, {
+            [sty.ariaButtontype_soft]: hasVariant($state, "type", "soft")
+          })}
         >
           <div className={classNames(projectcss.all, sty.freeBox__vmGeB)}>
             <ChevronDownIcon

@@ -135,6 +135,8 @@
   --plasmic-token-size-32: var(--token-uRTA66II9Z7V);
   --token-Ov98LXY0SklB: #e5e7eb;
   --plasmic-token-muted-muted-soft-hover: var(--token-Ov98LXY0SklB);
+  --token-4um2OHRMG4lE: Inter;
+  --plasmic-token-sans-serif: var(--token-4um2OHRMG4lE);
 }
 
 .plasmic_tokens {

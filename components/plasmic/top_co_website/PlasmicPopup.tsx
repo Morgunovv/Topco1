@@ -91,7 +91,6 @@ export type PlasmicPopup__OverridesType = {
   title2?: Flex__<"div">;
   submitButton?: Flex__<typeof SubmitButton>;
   button2?: Flex__<"button">;
-  freeBox?: Flex__<"div">;
   content?: Flex__<"div">;
   combobox?: Flex__<typeof Combobox>;
   generalInquiry?: Flex__<typeof MenuItem>;
@@ -100,6 +99,7 @@ export type PlasmicPopup__OverridesType = {
   name?: Flex__<typeof TextInput>;
   email?: Flex__<typeof TextInput>;
   message?: Flex__<typeof TextInput>;
+  button3?: Flex__<"button">;
 };
 
 export interface DefaultPopupProps {
@@ -238,11 +238,7 @@ function PlasmicPopup__RenderFunc(props: {
             $refs["button2"] = ref;
           }}
         >
-          <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
-          >
+          <div className={classNames(projectcss.all, sty.freeBox__swa10)}>
             <Cross20Icon
               className={classNames(projectcss.all, sty.svg__bChss)}
               role={"img"}
@@ -441,6 +437,21 @@ function PlasmicPopup__RenderFunc(props: {
             type={"plain"}
           />
         </Stack__>
+        <button
+          data-plasmic-name={"button3"}
+          data-plasmic-override={overrides.button3}
+          className={classNames(projectcss.all, projectcss.button, sty.button3)}
+          ref={ref => {
+            $refs["button3"] = ref;
+          }}
+        >
+          <div className={classNames(projectcss.all, sty.freeBox__qX1Zu)}>
+            <Cross20Icon
+              className={classNames(projectcss.all, sty.svg__aaVOu)}
+              role={"img"}
+            />
+          </div>
+        </button>
       </Stack__>
     </div>
   ) as React.ReactElement | null;
@@ -454,7 +465,6 @@ const PlasmicDescendants = {
     "title2",
     "submitButton",
     "button2",
-    "freeBox",
     "content",
     "combobox",
     "generalInquiry",
@@ -462,7 +472,8 @@ const PlasmicDescendants = {
     "feedback",
     "name",
     "email",
-    "message"
+    "message",
+    "button3"
   ],
   popUp: [
     "popUp",
@@ -470,7 +481,6 @@ const PlasmicDescendants = {
     "title2",
     "submitButton",
     "button2",
-    "freeBox",
     "content",
     "combobox",
     "generalInquiry",
@@ -478,13 +488,13 @@ const PlasmicDescendants = {
     "feedback",
     "name",
     "email",
-    "message"
+    "message",
+    "button3"
   ],
   titleSubtitle: ["titleSubtitle", "title2"],
   title2: ["title2"],
   submitButton: ["submitButton"],
-  button2: ["button2", "freeBox"],
-  freeBox: ["freeBox"],
+  button2: ["button2"],
   content: [
     "content",
     "combobox",
@@ -501,7 +511,8 @@ const PlasmicDescendants = {
   feedback: ["feedback"],
   name: ["name"],
   email: ["email"],
-  message: ["message"]
+  message: ["message"],
+  button3: ["button3"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -513,7 +524,6 @@ type NodeDefaultElementType = {
   title2: "div";
   submitButton: typeof SubmitButton;
   button2: "button";
-  freeBox: "div";
   content: "div";
   combobox: typeof Combobox;
   generalInquiry: typeof MenuItem;
@@ -522,6 +532,7 @@ type NodeDefaultElementType = {
   name: typeof TextInput;
   email: typeof TextInput;
   message: typeof TextInput;
+  button3: "button";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -589,7 +600,6 @@ export const PlasmicPopup = Object.assign(
     title2: makeNodeComponent("title2"),
     submitButton: makeNodeComponent("submitButton"),
     button2: makeNodeComponent("button2"),
-    freeBox: makeNodeComponent("freeBox"),
     content: makeNodeComponent("content"),
     combobox: makeNodeComponent("combobox"),
     generalInquiry: makeNodeComponent("generalInquiry"),
@@ -598,6 +608,7 @@ export const PlasmicPopup = Object.assign(
     _name: makeNodeComponent("name"),
     email: makeNodeComponent("email"),
     message: makeNodeComponent("message"),
+    button3: makeNodeComponent("button3"),
 
     // Metadata about props expected for PlasmicPopup
     internalVariantProps: PlasmicPopup__VariantProps,
