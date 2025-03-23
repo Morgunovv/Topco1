@@ -60,6 +60,7 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import ContactUsButton from "../../ContactUsButton"; // plasmic-import: RtBKwP03e9N1/component
+import ModalMobileMenu from "../../ModalMobileMenu"; // plasmic-import: siKgXh_j7OMH/component
 import BuildWithUs from "../../BuildWithUs"; // plasmic-import: IHGcM1N4E6Ud/component
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
@@ -74,6 +75,7 @@ import sty from "./PlasmicHeader.module.css"; // plasmic-import: 9nAwrax2T-Wy/cs
 import WhiteSymbol3Icon from "./icons/PlasmicIcon__WhiteSymbol3"; // plasmic-import: 3LLgeuK0YypS/icon
 import Top5Icon from "./icons/PlasmicIcon__Top5"; // plasmic-import: c7U4VQimyxqf/icon
 import Frame2131327153Icon from "./icons/PlasmicIcon__Frame2131327153"; // plasmic-import: i9h3lVHw5uRy/icon
+import Chevron243Icon from "./icons/PlasmicIcon__Chevron243"; // plasmic-import: 8aTfnpHQ1sUB/icon
 import WhiteSymbolIcon from "./icons/PlasmicIcon__WhiteSymbol"; // plasmic-import: o42r5gsZOuat/icon
 import TopIcon from "./icons/PlasmicIcon__Top"; // plasmic-import: 8GpoSJw8S8kx/icon
 import Contact24Icon from "./icons/PlasmicIcon__Contact24"; // plasmic-import: 4_F0VNY3gp1U/icon
@@ -92,11 +94,11 @@ export const PlasmicHeader__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHeader__OverridesType = {
   root?: Flex__<"div">;
+  freeBox?: Flex__<"div">;
   content?: Flex__<"div">;
   logoWhite2?: Flex__<"div">;
   buttons2?: Flex__<"div">;
-  menuButton?: Flex__<"div">;
-  frame2131327145?: Flex__<"div">;
+  modalMobileMenu?: Flex__<typeof ModalMobileMenu>;
   header?: Flex__<"div">;
   logoWhite?: Flex__<"div">;
   buttons?: Flex__<"div">;
@@ -190,6 +192,12 @@ function PlasmicHeader__RenderFunc(props: {
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => ""
+      },
+      {
+        path: "modalMobileMenu.isOpen",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
       }
     ],
     [$props, $ctx, $refs]
@@ -221,61 +229,75 @@ function PlasmicHeader__RenderFunc(props: {
         sty.root
       )}
     >
-      {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : false) ? (
-        <Stack__
-          as={"div"}
-          data-plasmic-name={"content"}
-          data-plasmic-override={overrides.content}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.content)}
-        >
-          <div
-            data-plasmic-name={"logoWhite2"}
-            data-plasmic-override={overrides.logoWhite2}
-            className={classNames(projectcss.all, sty.logoWhite2)}
-          >
-            <WhiteSymbol3Icon
-              className={classNames(projectcss.all, sty.svg__qOkYf)}
-              role={"img"}
-            />
-
-            <Top5Icon
-              className={classNames(projectcss.all, sty.svg__if5T8)}
-              role={"img"}
-            />
-          </div>
-          <ContactUsButton
-            className={classNames("__wab_instance", sty.contactUsButton__bwDLb)}
-          />
-
+      <div
+        data-plasmic-name={"freeBox"}
+        data-plasmic-override={overrides.freeBox}
+        className={classNames(projectcss.all, sty.freeBox)}
+      >
+        {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : false) ? (
           <Stack__
             as={"div"}
-            data-plasmic-name={"buttons2"}
-            data-plasmic-override={overrides.buttons2}
+            data-plasmic-name={"content"}
+            data-plasmic-override={overrides.content}
             hasGap={true}
-            className={classNames(projectcss.all, sty.buttons2)}
+            className={classNames(projectcss.all, sty.content)}
           >
             <div
-              data-plasmic-name={"menuButton"}
-              data-plasmic-override={overrides.menuButton}
-              className={classNames(projectcss.all, sty.menuButton)}
+              data-plasmic-name={"logoWhite2"}
+              data-plasmic-override={overrides.logoWhite2}
+              className={classNames(projectcss.all, sty.logoWhite2)}
             >
-              <div
-                data-plasmic-name={"frame2131327145"}
-                data-plasmic-override={overrides.frame2131327145}
-                className={classNames(projectcss.all, sty.frame2131327145)}
-              >
-                <Stack__
-                  as={Frame2131327153Icon}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.svg___4ZTz7)}
-                  role={"img"}
-                />
-              </div>
+              <WhiteSymbol3Icon
+                className={classNames(projectcss.all, sty.svg__qOkYf)}
+                role={"img"}
+              />
+
+              <Top5Icon
+                className={classNames(projectcss.all, sty.svg__if5T8)}
+                role={"img"}
+              />
             </div>
+            <ContactUsButton
+              className={classNames(
+                "__wab_instance",
+                sty.contactUsButton__bwDLb
+              )}
+            />
+
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"buttons2"}
+              data-plasmic-override={overrides.buttons2}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.buttons2)}
+            >
+              <ModalMobileMenu
+                data-plasmic-name={"modalMobileMenu"}
+                data-plasmic-override={overrides.modalMobileMenu}
+                className={classNames("__wab_instance", sty.modalMobileMenu)}
+                isOpen={generateStateValueProp($state, [
+                  "modalMobileMenu",
+                  "isOpen"
+                ])}
+                onOpenChange={async (...eventArgs: any) => {
+                  generateStateOnChangeProp($state, [
+                    "modalMobileMenu",
+                    "isOpen"
+                  ]).apply(null, eventArgs);
+
+                  if (
+                    eventArgs.length > 1 &&
+                    eventArgs[1] &&
+                    eventArgs[1]._plasmic_state_init_
+                  ) {
+                    return;
+                  }
+                }}
+              />
+            </Stack__>
           </Stack__>
-        </Stack__>
-      ) : null}
+        ) : null}
+      </div>
       <Stack__
         as={"div"}
         data-plasmic-name={"header"}
@@ -768,11 +790,11 @@ function PlasmicHeader__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
+    "freeBox",
     "content",
     "logoWhite2",
     "buttons2",
-    "menuButton",
-    "frame2131327145",
+    "modalMobileMenu",
     "header",
     "logoWhite",
     "buttons",
@@ -814,17 +836,11 @@ const PlasmicDescendants = {
     "icon5",
     "icon6"
   ],
-  content: [
-    "content",
-    "logoWhite2",
-    "buttons2",
-    "menuButton",
-    "frame2131327145"
-  ],
+  freeBox: ["freeBox", "content", "logoWhite2", "buttons2", "modalMobileMenu"],
+  content: ["content", "logoWhite2", "buttons2", "modalMobileMenu"],
   logoWhite2: ["logoWhite2"],
-  buttons2: ["buttons2", "menuButton", "frame2131327145"],
-  menuButton: ["menuButton", "frame2131327145"],
-  frame2131327145: ["frame2131327145"],
+  buttons2: ["buttons2", "modalMobileMenu"],
+  modalMobileMenu: ["modalMobileMenu"],
   header: [
     "header",
     "logoWhite",
@@ -980,11 +996,11 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  freeBox: "div";
   content: "div";
   logoWhite2: "div";
   buttons2: "div";
-  menuButton: "div";
-  frame2131327145: "div";
+  modalMobileMenu: typeof ModalMobileMenu;
   header: "div";
   logoWhite: "div";
   buttons: "div";
@@ -1087,11 +1103,11 @@ export const PlasmicHeader = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    freeBox: makeNodeComponent("freeBox"),
     content: makeNodeComponent("content"),
     logoWhite2: makeNodeComponent("logoWhite2"),
     buttons2: makeNodeComponent("buttons2"),
-    menuButton: makeNodeComponent("menuButton"),
-    frame2131327145: makeNodeComponent("frame2131327145"),
+    modalMobileMenu: makeNodeComponent("modalMobileMenu"),
     header: makeNodeComponent("header"),
     logoWhite: makeNodeComponent("logoWhite"),
     buttons: makeNodeComponent("buttons"),

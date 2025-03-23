@@ -212,6 +212,15 @@
   width: 10px;
   height: 1em;
 }
+.generalInquiry:global(.__wab_instance):global(.__wab_instance) {
+  width: 327px;
+}
+.support:global(.__wab_instance):global(.__wab_instance) {
+  width: 327px;
+}
+.feedback:global(.__wab_instance):global(.__wab_instance) {
+  width: 327px;
+}
 .name:global(.__wab_instance):global(.__wab_instance) {
   max-width: 100%;
   position: absolute;

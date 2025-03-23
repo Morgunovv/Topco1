@@ -342,7 +342,9 @@ function PlasmicCombobox__RenderFunc(props: {
         <BaseButton
           data-plasmic-name={"ariaButton"}
           data-plasmic-override={overrides.ariaButton}
-          className={classNames("__wab_instance", sty.ariaButton)}
+          className={classNames("__wab_instance", sty.ariaButton, {
+            [sty.ariaButtontype_soft]: hasVariant($state, "type", "soft")
+          })}
         >
           <div className={classNames(projectcss.all, sty.freeBox__vmGeB)}>
             <ChevronDownIcon
@@ -369,6 +371,9 @@ function PlasmicCombobox__RenderFunc(props: {
       <MenuPopover
         data-plasmic-name={"menuPopover"}
         data-plasmic-override={overrides.menuPopover}
+        className={classNames("__wab_instance", sty.menuPopover, {
+          [sty.menuPopovertype_soft]: hasVariant($state, "type", "soft")
+        })}
         menuItems={renderPlasmicSlot({
           defaultContents: (
             <React.Fragment>

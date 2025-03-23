@@ -72,7 +72,7 @@
   align-items: center;
   height: 100%;
   bottom: -1px;
-  right: 0px;
+  right: -104px;
   flex-shrink: 0;
   min-height: 0;
   border-radius: var(--token-Aojtt6d7J13d);
@@ -100,7 +100,7 @@
   color: #858481;
   align-self: flex-end;
   position: absolute;
-  left: 168px;
+  left: 288px;
   top: -8px;
   flex-shrink: 0;
 }
@@ -116,6 +116,12 @@
 }
 .description:global(.__wab_instance):global(.__wab_instance) {
   position: relative;
+}
+.menuPopover:global(.__wab_instance):global(.__wab_instance) {
+  width: 462px;
+}
+.menuPopovertype_soft:global(.__wab_instance):global(.__wab_instance) {
+  width: 397px;
 }
 .text___6S8Hd {
   position: relative;

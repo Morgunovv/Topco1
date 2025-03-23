@@ -6,23 +6,19 @@ interface MobileMenuProps {
     // добавьте другие пропсы если нужны
 }
 
-function MobileMenu_(
-    props: MobileMenuProps,
-    ref: React.ForwardedRef<HTMLButtonElement>
-) {
-    return (
-        <PlasmicMobileMenu
-            menuButton={{
-                ref: ref as React.Ref<HTMLButtonElement>,
-                as: "button" // явно указываем, что это кнопка
-            }}
-            {...props}
-        />
-    );
-}
-
-export const MobileMenu = React.forwardRef<HTMLButtonElement, MobileMenuProps>(
-    MobileMenu_
+const MobileMenu = React.forwardRef<HTMLButtonElement, MobileMenuProps>(
+    (props, ref) => {
+        return (
+            <PlasmicMobileMenu
+                menuButton={{
+                    ref: ref,
+                    as: "button",
+                    type: "button"
+                }}
+                {...props}
+            />
+        );
+    }
 );
 
 MobileMenu.displayName = 'MobileMenu';

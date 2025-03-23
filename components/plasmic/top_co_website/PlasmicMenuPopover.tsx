@@ -284,16 +284,28 @@ function PlasmicMenuPopover__RenderFunc(props: {
                     items={
                       <React.Fragment>
                         <MenuItem
+                          className={classNames(
+                            "__wab_instance",
+                            sty.menuItem__y3Nru
+                          )}
                           label={"Section Item 1"}
                           value={"section-item-1"}
                         />
 
                         <MenuItem
+                          className={classNames(
+                            "__wab_instance",
+                            sty.menuItem__mFnoH
+                          )}
                           label={"Section Item 2"}
                           value={"section-item-2"}
                         />
 
                         <MenuItem
+                          className={classNames(
+                            "__wab_instance",
+                            sty.menuItem__blrrX
+                          )}
                           label={"Section Item 3"}
                           value={"section-item-3"}
                         />
