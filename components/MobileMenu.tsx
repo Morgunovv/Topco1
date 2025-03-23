@@ -1,5 +1,5 @@
 import * as React from "react";
-import { PlasmicMobileMenu } from "../plasmic/topco/PlasmicMobileMenu";
+import { PlasmicMobileMenu } from "../plasmic/top_co_website/components/PlasmicMobileMenu";
 
 interface MobileMenuProps {
     className?: string;
