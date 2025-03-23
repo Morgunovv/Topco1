@@ -1,6 +1,6 @@
 import * as React from "react";
-import { DataCtxReader } from "@plasmicapp/strapi";
 import { PlasmicComponent } from "@plasmicapp/loader-nextjs";
+import { StrapiProvider, StrapiField } from "@plasmicpkgs/plasmic-strapi";
 
 interface Project {
     id: string | number;
@@ -13,23 +13,25 @@ interface Project {
 
 export function ProjectsList() {
     return (
-        <DataCtxReader>
-            {(data: { projects?: { data: Project[] } }) => (
-                <div>
-                    {data.projects?.data.map((project: Project) => (
-                        <PlasmicComponent
-                            key={project.id}
-                            component="ProjectCard"
-                            componentProps={{
-                                title: project.attributes.title,
-                                description: project.attributes.description,
-                                // другие пропсы
-                            }}
-                        />
-                    ))}
-                </div>
-            )}
-        </DataCtxReader>
+        <StrapiProvider>
+            <StrapiField path="/api/projects">
+                {(data: { projects?: { data: Project[] } }) => (
+                    <div>
+                        {data?.projects?.data?.map((project: Project) => (
+                            <PlasmicComponent
+                                key={project.id}
+                                component="ProjectCard"
+                                componentProps={{
+                                    title: project.attributes.title,
+                                    description: project.attributes.description,
+                                    // другие пропсы
+                                }}
+                            />
+                        ))}
+                    </div>
+                )}
+            </StrapiField>
+        </StrapiProvider>
     );
 }
 
