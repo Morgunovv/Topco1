@@ -6,6 +6,7 @@ import {
   DefaultContactUsButtonProps
 } from "./plasmic/top_co_website/PlasmicContactUsButton";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
+import { useRouter } from 'next/router';
 
 // Your component props start with props for variants and slots you defined
 // in Plasmic, but you can add more here, like event handlers that you can
@@ -24,24 +25,12 @@ export interface ContactUsButtonProps extends DefaultContactUsButtonProps {
   className?: string;
 }
 
-function ContactUsButton_(
-  props: ContactUsButtonProps & { ref?: React.ForwardedRef<HTMLButtonElement> }
-) {
-  const { ref, ...rest } = props;
-
-  return (
-    <PlasmicContactUsButton
-      button6={{
-        ref: ref as React.RefObject<HTMLButtonElement>
-      }}
-      {...rest}
-    />
-  );
+export function ContactUsButton(props: ContactUsButtonProps) {
+  return <PlasmicContactUsButton {...props} />;
 }
-
-export const ContactUsButton = React.forwardRef<HTMLButtonElement, ContactUsButtonProps>(
-  (props, ref) => <ContactUsButton_ {...props} ref={ref} />
-);
 
 // Убедитесь, что экспорт по умолчанию соответствует
 export default ContactUsButton;
+
+// Добавьте displayName
+ContactUsButton.displayName = 'ContactUsButton';

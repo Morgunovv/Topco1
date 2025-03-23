@@ -14,6 +14,22 @@ interface StrapiDataFetcherProps {
     render?: (data: any) => React.ReactNode;
 }
 
+interface StrapiResponse<T> {
+    data: T[];
+    meta: {
+        pagination?: {
+            page: number;
+            pageSize: number;
+            total: number;
+        };
+    };
+}
+
+interface StrapiError {
+    message: string;
+    details?: unknown;
+}
+
 export function StrapiDataFetcher<T>({
     collection,
     filters,
@@ -58,4 +74,6 @@ export function StrapiDataFetcher<T>({
             }}
         />
     );
-} 
+}
+
+StrapiDataFetcher.displayName = 'StrapiDataFetcher'; 

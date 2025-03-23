@@ -1,6 +1,4 @@
-import { useQuery } from '@apollo/client';
 import { PlasmicComponent } from '@plasmicapp/loader-nextjs';
-import { GET_MAINS } from '../lib/queries';
 
 // Определим интерфейс для item
 interface MainItem {
@@ -12,19 +10,15 @@ interface MainItem {
     };
 }
 
-// Определим интерфейс для data
-interface MainData {
-    mains: {
-        data: MainItem[];
+interface MainContentProps {
+    data: {
+        mains: {
+            data: MainItem[];
+        };
     };
 }
 
-export function MainContent() {
-    const { loading, error, data } = useQuery(GET_MAINS);
-
-    if (loading) return <PlasmicComponent component="LoadingState" />;
-    if (error) return <div>Ошибка: {error.message}</div>;
-
+export function MainContent({ data }: MainContentProps) {
     return (
         <div>
             {data.mains.data.map((item: MainItem) => (
@@ -40,4 +34,7 @@ export function MainContent() {
             ))}
         </div>
     );
-} 
+}
+
+// Добавьте displayName для компонента
+MainContent.displayName = 'MainContent'; 
