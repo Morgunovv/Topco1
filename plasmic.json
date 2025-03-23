@@ -657,19 +657,6 @@
           "componentType": "component"
         },
         {
-          "id": "Wg9QJsiBjK-d",
-          "name": "MobileMenu",
-          "type": "managed",
-          "projectId": "tVrjFA7RVCG7zyycB4xXud",
-          "renderModuleFilePath": "plasmic/top_co_website/PlasmicMobileMenu.tsx",
-          "importSpec": {
-            "modulePath": "MobileMenu.tsx"
-          },
-          "cssFilePath": "plasmic/top_co_website/PlasmicMobileMenu.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "aJ0o5qvyx3Nn",
           "name": "Button2",
           "type": "managed",
