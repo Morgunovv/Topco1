@@ -153,6 +153,11 @@ function PlasmicBuildWithUs__RenderFunc(props: {
 
   const currentUser = useCurrentUser?.() || {};
 
+  const [isButtonHover, triggerButtonHoverProps] = useTrigger("useHover", {});
+  const triggers = {
+    hover_button: isButtonHover
+  };
+
   return (
     <Stack__
       as={"div"}
@@ -170,6 +175,7 @@ function PlasmicBuildWithUs__RenderFunc(props: {
         plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.button
       )}
+      data-plasmic-trigger-props={[triggerButtonHoverProps]}
     >
       {false ? (
         <div
