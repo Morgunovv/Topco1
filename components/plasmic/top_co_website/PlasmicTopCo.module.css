@@ -8930,7 +8930,7 @@
   width: 375px;
   height: auto;
   display: flex;
-  overflow: hidden;
+  overflow: auto;
   flex-direction: column;
   padding-left: 16px;
   padding-right: 16px;
