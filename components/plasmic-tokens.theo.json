@@ -201,6 +201,16 @@
       }
     },
     {
+      "name": "Inter",
+      "type": "fontfamily",
+      "value": "Inter",
+      "category": "fontfamily",
+      "meta": {
+        "projectId": "tVrjFA7RVCG7zyycB4xXud",
+        "id": "ztZ1HQIopiwH"
+      }
+    },
+    {
       "name": "Interaction / Disabled",
       "type": "color",
       "value": "#FFFFFF40",
@@ -371,16 +381,6 @@
       }
     },
     {
-      "name": "Pink",
-      "type": "color",
-      "value": "#D1387C",
-      "category": "color",
-      "meta": {
-        "projectId": "tVrjFA7RVCG7zyycB4xXud",
-        "id": "3MP4KjbkHjQV"
-      }
-    },
-    {
       "name": "Red",
       "type": "color",
       "value": "#B3294D",
@@ -388,16 +388,6 @@
       "meta": {
         "projectId": "tVrjFA7RVCG7zyycB4xXud",
         "id": "dbEr9a0ro7a6"
-      }
-    },
-    {
-      "name": "Sans-serif",
-      "type": "fontfamily",
-      "value": "Inter",
-      "category": "fontfamily",
-      "meta": {
-        "projectId": "tVrjFA7RVCG7zyycB4xXud",
-        "id": "ztZ1HQIopiwH"
       }
     },
     {

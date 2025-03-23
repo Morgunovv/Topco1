@@ -99,10 +99,10 @@
   position: absolute;
   left: 0px;
   top: 0px;
-  transition-property: all, all, all;
-  transition-duration: 1s, 0.5s, 0.5s;
-  -webkit-transition-property: all, all, all;
-  -webkit-transition-duration: 1s, 0.5s, 0.5s;
+  transition-property: all;
+  transition-duration: 0.3s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
 }
 .button:hover .svg__g93MW {
   transform: rotateX(0deg) rotateY(0deg) rotateZ(180deg) translateX(0px)
@@ -114,7 +114,6 @@
   filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1599999964237213));
   width: 250px;
   height: auto;
-  display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
@@ -122,6 +121,7 @@
   left: -38px;
   top: 50px;
   flex-shrink: 0;
+  display: none;
   border-radius: 16px;
   padding: 8px;
 }
@@ -335,254 +335,6 @@
   letter-spacing: -0.4300000071525574px;
   line-height: 22px;
   color: rgba(0, 0, 0, 1);
-}
-.frame2131327276 {
-  background: linear-gradient(#ffffff, #ffffff), rgba(255, 253, 249, 1);
-  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1599999964237213));
-  width: 250px;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  left: -48px;
-  top: 50px;
-  opacity: 1;
-  flex-shrink: 0;
-  border-radius: 16px;
-  padding: 8px;
-}
-.button:hover .frame2131327276 {
-  display: flex;
-}
-.contextMenus2 {
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-grow: 1;
-  overflow: hidden;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  border-radius: 12px;
-}
-.header2 {
-  width: 250px;
-  height: 32px;
-  display: block;
-  position: relative;
-  flex-shrink: 0;
-}
-.text__kJryC {
-  display: block;
-  font-size: 12px;
-  font-family: "SF Pro";
-  font-weight: 400;
-  letter-spacing: 0px;
-  line-height: 16px;
-  color: rgba(60, 60, 67, 0.6000000238418579);
-  position: absolute;
-  top: 9px;
-  left: 16px;
-  right: 16px;
-  height: 16px;
-}
-.controls4 {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  overflow: hidden;
-  flex-direction: row;
-  padding: 10px 16px;
-}
-.controls4 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-left: calc(0px - 8px);
-  width: calc(100% + 8px);
-}
-.controls4 > :global(.__wab_flex-container) > *,
-.controls4 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.controls4 > :global(.__wab_flex-container) > picture > img,
-.controls4
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 8px;
-}
-.text__cz7Jm {
-  display: block;
-  flex-grow: 1;
-  font-size: 18px;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0em;
-  line-height: 24px;
-  color: rgba(20, 22, 31, 1);
-  position: relative;
-}
-.icon7 {
-  position: relative;
-  width: 22px;
-  height: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.icon8 {
-  display: block;
-  font-size: 17px;
-  text-align: center;
-  font-family: "SF Pro";
-  font-weight: 400;
-  letter-spacing: -0.4300000071525574px;
-  line-height: 22px;
-  color: rgba(0, 0, 0, 1);
-}
-.controls5 {
-  background: rgba(247, 245, 239, 1);
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  overflow: hidden;
-  flex-direction: row;
-  border-radius: 10px;
-  padding: 10px 16px;
-}
-.controls5 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-left: calc(0px - 8px);
-  width: calc(100% + 8px);
-}
-.controls5 > :global(.__wab_flex-container) > *,
-.controls5 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.controls5 > :global(.__wab_flex-container) > picture > img,
-.controls5
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 8px;
-}
-.text__rDlC2 {
-  display: block;
-  flex-grow: 1;
-  font-size: 18px;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0em;
-  line-height: 24px;
-  color: rgba(20, 22, 31, 1);
-  position: relative;
-}
-.icon9 {
-  position: relative;
-  width: 22px;
-  height: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.icon10 {
-  display: block;
-  font-size: 17px;
-  text-align: center;
-  font-family: "SF Pro";
-  font-weight: 400;
-  letter-spacing: -0.4300000071525574px;
-  line-height: 22px;
-  color: rgba(0, 0, 0, 1);
-}
-.controls6 {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  overflow: hidden;
-  flex-direction: row;
-  padding: 10px 16px;
-}
-.controls6 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-left: calc(0px - 8px);
-  width: calc(100% + 8px);
-}
-.controls6 > :global(.__wab_flex-container) > *,
-.controls6 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.controls6 > :global(.__wab_flex-container) > picture > img,
-.controls6
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 8px;
-}
-.text___59X4C {
-  display: block;
-  flex-grow: 1;
-  font-size: 18px;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0em;
-  line-height: 24px;
-  color: rgba(20, 22, 31, 1);
-  position: relative;
-}
-.icon11 {
-  position: relative;
-  width: 22px;
-  height: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.icon12 {
-  display: block;
-  font-size: 17px;
-  text-align: center;
-  font-family: "SF Pro";
-  font-weight: 400;
-  letter-spacing: -0.4300000071525574px;
-  line-height: 22px;
-  color: rgba(0, 0, 0, 1);
-}
-.pointinghand1 {
-  width: 60px;
-  height: 60px;
-  display: block;
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.img {
-  object-fit: cover;
-  max-width: 100%;
-  filter: drop-shadow(0px 3.75px 2.5px rgba(0, 0, 0, 0.25));
-  transform: translate(-0.189453125px, -0.2578125px);
-  width: 27.123157501220703px;
-  height: 28.590930938720703px;
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  display: none !important;
-}
-.img > picture > img {
-  object-fit: cover;
-}
-.button:hover .img {
-  display: block !important;
 }
 .frame2131327277 {
   background: rgba(255, 253, 249, 1);

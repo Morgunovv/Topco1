@@ -9,6 +9,12 @@
   padding-bottom: 0px;
   min-width: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    background: #fffdf9;
+    padding-top: 8px;
+  }
+}
 .header {
   background: rgba(255, 253, 249, 1);
   width: 1440px;
@@ -48,8 +54,10 @@
   width: 97px;
   height: 32px;
   display: block;
-  position: relative;
+  position: absolute;
   padding-top: 5px;
+  left: 100px;
+  top: 25px;
   flex-shrink: 0;
 }
 .svg__r3IgJ {
@@ -536,7 +544,7 @@
   top: 6px;
   left: 4px;
 }
-.contactUsButton:global(.__wab_instance) {
+.contactUsButton__stQw5:global(.__wab_instance) {
   position: relative;
 }
 .frame2131327275 {
@@ -756,4 +764,164 @@
   letter-spacing: -0.4300000071525574px;
   line-height: 22px;
   color: rgba(0, 0, 0, 1);
+}
+.content {
+  width: 343px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.content > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: calc(0px - 110px);
+  width: calc(100% + 110px);
+}
+.content > :global(.__wab_flex-container) > *,
+.content > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.content > :global(.__wab_flex-container) > picture > img,
+.content
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 110px;
+}
+.logoWhite2 {
+  width: 85px;
+  height: 28px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.svg__qOkYf {
+  object-fit: cover;
+  max-width: 100%;
+  color: #14161f;
+  transform: translate(0.3727092742919922px, 0.41663551330566406px);
+  width: 34.890625px;
+  height: 28.875px;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  display: none;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .svg__qOkYf {
+    display: block;
+  }
+}
+.svg__if5T8 {
+  object-fit: cover;
+  max-width: 100%;
+  color: #14161f;
+  transform: translate(0.263336181640625px, 0.1360321044921875px);
+  width: 51px;
+  height: 18px;
+  position: absolute;
+  top: 5px;
+  left: 34px;
+  display: none;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .svg__if5T8 {
+    display: block;
+  }
+}
+.contactUsButton__bwDLb:global(.__wab_instance) {
+  max-width: 100%;
+  position: absolute;
+  left: 45px;
+  top: 0px;
+  width: 142px;
+  height: 36px;
+  flex-shrink: 0;
+}
+.buttons2 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.buttons2 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: calc(0px - 6px);
+  width: calc(100% + 6px);
+}
+.buttons2 > :global(.__wab_flex-container) > *,
+.buttons2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.buttons2 > :global(.__wab_flex-container) > picture > img,
+.buttons2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 6px;
+}
+.menuButton {
+  background: rgba(247, 245, 239, 1);
+  width: auto;
+  height: 36px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 1000px;
+}
+.frame2131327145 {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.svg___4ZTz7 {
+  object-fit: cover;
+  max-width: 100%;
+  color: #14161f;
+  transform: translate(-0.19999980926513672px, 0px);
+  width: 14.399999618530273px;
+  height: 6px;
+  position: absolute;
+  top: 9px;
+  left: 5px;
+  flex-direction: column;
+  display: none;
+}
+.svg___4ZTz7 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 6px);
+  height: calc(100% + 6px);
+}
+.svg___4ZTz7 > :global(.__wab_flex-container) > *,
+.svg___4ZTz7 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.svg___4ZTz7 > :global(.__wab_flex-container) > picture > img,
+.svg___4ZTz7
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 6px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .svg___4ZTz7 {
+    display: flex;
+  }
+}
+.contactUsButton___9W3JE:global(.__wab_instance) {
+  position: absolute;
+  left: 341px;
+  top: 0px;
 }

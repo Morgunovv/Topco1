@@ -1205,6 +1205,11 @@
           "id": "TsC0_8x1KEMX",
           "name": "RequiredSvgIcon",
           "moduleFilePath": "plasmic/top_co_website/icons/PlasmicIcon__RequiredSvg.tsx"
+        },
+        {
+          "id": "i9h3lVHw5uRy",
+          "name": "Frame2131327153Icon",
+          "moduleFilePath": "plasmic/top_co_website/icons/PlasmicIcon__Frame2131327153.tsx"
         }
       ],
       "images": [
@@ -1887,6 +1892,21 @@
           "id": "LzdI8Th2W55J",
           "name": "Social Icons 21",
           "filePath": "../public/plasmic/top_co_website/images/socialIcons21.svg"
+        },
+        {
+          "id": "T8tEOj2nRdsQ",
+          "name": "Social Icons 22",
+          "filePath": "../public/plasmic/top_co_website/images/socialIcons22.svg"
+        },
+        {
+          "id": "hsFgF3fF6xmv",
+          "name": "Social Icons 23",
+          "filePath": "../public/plasmic/top_co_website/images/socialIcons23.svg"
+        },
+        {
+          "id": "bLndhbOTCD9r",
+          "name": "Social Icons 24",
+          "filePath": "../public/plasmic/top_co_website/images/socialIcons24.svg"
         }
       ],
       "indirect": false,
