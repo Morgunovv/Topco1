@@ -94,8 +94,8 @@
   color: #858481;
   align-self: flex-end;
   position: absolute;
-  left: 188px;
-  top: -9px;
+  left: 128px;
+  top: -3px;
   flex-shrink: 0;
 }
 .ariaComboBox[data-disabled] .svg {
