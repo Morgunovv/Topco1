@@ -31,6 +31,12 @@
   > img {
   margin-left: 6px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .button15 {
+    width: 234px;
+    height: 36px;
+  }
+}
 .button15:hover {
   transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
   background: #f7f5ef;
@@ -55,7 +61,13 @@
   display: block;
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 1px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .svg__zlMp9 {
+    width: 20px;
+    height: 20px;
+  }
 }
 .button15:hover .svg__zlMp9 {
   color: #14161f;
@@ -70,6 +82,11 @@
   line-height: 24px;
   color: rgba(255, 253, 249, 1);
   position: relative;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .label15 {
+    font-size: 15px;
+  }
 }
 .button15:hover .label15 {
   color: #14161f;
