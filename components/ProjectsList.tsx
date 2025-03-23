@@ -1,5 +1,5 @@
 import * as React from "react";
-import { DataCtxReader } from "@plasmicpkgs/plasmic-strapi";
+import { DataCtxReader } from "@plasmicapp/strapi";
 import { PlasmicComponent } from "@plasmicapp/loader-nextjs";
 
 interface Project {
@@ -31,4 +31,6 @@ export function ProjectsList() {
             )}
         </DataCtxReader>
     );
-} 
+}
+
+ProjectsList.displayName = 'ProjectsList'; 
