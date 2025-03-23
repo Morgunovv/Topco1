@@ -75,6 +75,9 @@ import WhiteSymbolIcon from "./icons/PlasmicIcon__WhiteSymbol"; // plasmic-impor
 import TopIcon from "./icons/PlasmicIcon__Top"; // plasmic-import: 8GpoSJw8S8kx/icon
 import Contact24Icon from "./icons/PlasmicIcon__Contact24"; // plasmic-import: 4_F0VNY3gp1U/icon
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: _0LPyGJ07UD3/icon
+import WhiteSymbol3Icon from "./icons/PlasmicIcon__WhiteSymbol3"; // plasmic-import: 3LLgeuK0YypS/icon
+import Top5Icon from "./icons/PlasmicIcon__Top5"; // plasmic-import: c7U4VQimyxqf/icon
+import Frame2131327153Icon from "./icons/PlasmicIcon__Frame2131327153"; // plasmic-import: i9h3lVHw5uRy/icon
 
 createPlasmicElementProxy;
 
@@ -117,7 +120,6 @@ export type PlasmicHeader__OverridesType = {
   arrow244?: Flex__<"div">;
   icon24Grid4?: Flex__<"div">;
   icons24IconGridSquare4?: Flex__<"div">;
-  contactUsButton?: Flex__<typeof ContactUsButton>;
   frame2131327275?: Flex__<"div">;
   contextMenus?: Flex__<"div">;
   header2?: Flex__<"div">;
@@ -130,6 +132,11 @@ export type PlasmicHeader__OverridesType = {
   controls3?: Flex__<"div">;
   icon5?: Flex__<"div">;
   icon6?: Flex__<"div">;
+  content?: Flex__<"div">;
+  logoWhite2?: Flex__<"div">;
+  buttons2?: Flex__<"div">;
+  menuButton?: Flex__<"div">;
+  frame2131327145?: Flex__<"div">;
 };
 
 export interface DefaultHeaderProps {
@@ -558,9 +565,7 @@ function PlasmicHeader__RenderFunc(props: {
             ) : null}
           </Stack__>
           <ContactUsButton
-            data-plasmic-name={"contactUsButton"}
-            data-plasmic-override={overrides.contactUsButton}
-            className={classNames("__wab_instance", sty.contactUsButton)}
+            className={classNames("__wab_instance", sty.contactUsButton__stQw5)}
           />
         </Stack__>
       </Stack__>
@@ -701,6 +706,61 @@ function PlasmicHeader__RenderFunc(props: {
           </Stack__>
         </div>
       </div>
+      {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : false) ? (
+        <Stack__
+          as={"div"}
+          data-plasmic-name={"content"}
+          data-plasmic-override={overrides.content}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.content)}
+        >
+          <div
+            data-plasmic-name={"logoWhite2"}
+            data-plasmic-override={overrides.logoWhite2}
+            className={classNames(projectcss.all, sty.logoWhite2)}
+          >
+            <WhiteSymbol3Icon
+              className={classNames(projectcss.all, sty.svg__qOkYf)}
+              role={"img"}
+            />
+
+            <Top5Icon
+              className={classNames(projectcss.all, sty.svg__if5T8)}
+              role={"img"}
+            />
+          </div>
+          <ContactUsButton
+            className={classNames("__wab_instance", sty.contactUsButton__bwDLb)}
+          />
+
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"buttons2"}
+            data-plasmic-override={overrides.buttons2}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.buttons2)}
+          >
+            <div
+              data-plasmic-name={"menuButton"}
+              data-plasmic-override={overrides.menuButton}
+              className={classNames(projectcss.all, sty.menuButton)}
+            >
+              <div
+                data-plasmic-name={"frame2131327145"}
+                data-plasmic-override={overrides.frame2131327145}
+                className={classNames(projectcss.all, sty.frame2131327145)}
+              >
+                <Stack__
+                  as={Frame2131327153Icon}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.svg___4ZTz7)}
+                  role={"img"}
+                />
+              </div>
+            </div>
+          </Stack__>
+        </Stack__>
+      ) : null}
     </div>
   ) as React.ReactElement | null;
 }
@@ -736,7 +796,6 @@ const PlasmicDescendants = {
     "arrow244",
     "icon24Grid4",
     "icons24IconGridSquare4",
-    "contactUsButton",
     "frame2131327275",
     "contextMenus",
     "header2",
@@ -748,7 +807,12 @@ const PlasmicDescendants = {
     "icon4",
     "controls3",
     "icon5",
-    "icon6"
+    "icon6",
+    "content",
+    "logoWhite2",
+    "buttons2",
+    "menuButton",
+    "frame2131327145"
   ],
   header: [
     "header",
@@ -778,8 +842,7 @@ const PlasmicDescendants = {
     "label5",
     "arrow244",
     "icon24Grid4",
-    "icons24IconGridSquare4",
-    "contactUsButton"
+    "icons24IconGridSquare4"
   ],
   logoWhite: ["logoWhite"],
   buttons: [
@@ -808,8 +871,7 @@ const PlasmicDescendants = {
     "label5",
     "arrow244",
     "icon24Grid4",
-    "icons24IconGridSquare4",
-    "contactUsButton"
+    "icons24IconGridSquare4"
   ],
   buildWithUs: ["buildWithUs"],
   button2: [
@@ -864,7 +926,6 @@ const PlasmicDescendants = {
   arrow244: ["arrow244", "icon24Grid4", "icons24IconGridSquare4"],
   icon24Grid4: ["icon24Grid4", "icons24IconGridSquare4"],
   icons24IconGridSquare4: ["icons24IconGridSquare4"],
-  contactUsButton: ["contactUsButton"],
   frame2131327275: [
     "frame2131327275",
     "contextMenus",
@@ -901,7 +962,18 @@ const PlasmicDescendants = {
   icon4: ["icon4"],
   controls3: ["controls3", "icon5", "icon6"],
   icon5: ["icon5", "icon6"],
-  icon6: ["icon6"]
+  icon6: ["icon6"],
+  content: [
+    "content",
+    "logoWhite2",
+    "buttons2",
+    "menuButton",
+    "frame2131327145"
+  ],
+  logoWhite2: ["logoWhite2"],
+  buttons2: ["buttons2", "menuButton", "frame2131327145"],
+  menuButton: ["menuButton", "frame2131327145"],
+  frame2131327145: ["frame2131327145"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -936,7 +1008,6 @@ type NodeDefaultElementType = {
   arrow244: "div";
   icon24Grid4: "div";
   icons24IconGridSquare4: "div";
-  contactUsButton: typeof ContactUsButton;
   frame2131327275: "div";
   contextMenus: "div";
   header2: "div";
@@ -949,6 +1020,11 @@ type NodeDefaultElementType = {
   controls3: "div";
   icon5: "div";
   icon6: "div";
+  content: "div";
+  logoWhite2: "div";
+  buttons2: "div";
+  menuButton: "div";
+  frame2131327145: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1039,7 +1115,6 @@ export const PlasmicHeader = Object.assign(
     arrow244: makeNodeComponent("arrow244"),
     icon24Grid4: makeNodeComponent("icon24Grid4"),
     icons24IconGridSquare4: makeNodeComponent("icons24IconGridSquare4"),
-    contactUsButton: makeNodeComponent("contactUsButton"),
     frame2131327275: makeNodeComponent("frame2131327275"),
     contextMenus: makeNodeComponent("contextMenus"),
     header2: makeNodeComponent("header2"),
@@ -1052,6 +1127,11 @@ export const PlasmicHeader = Object.assign(
     controls3: makeNodeComponent("controls3"),
     icon5: makeNodeComponent("icon5"),
     icon6: makeNodeComponent("icon6"),
+    content: makeNodeComponent("content"),
+    logoWhite2: makeNodeComponent("logoWhite2"),
+    buttons2: makeNodeComponent("buttons2"),
+    menuButton: makeNodeComponent("menuButton"),
+    frame2131327145: makeNodeComponent("frame2131327145"),
 
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,

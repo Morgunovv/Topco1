@@ -32,7 +32,7 @@
   margin-left: 6px;
 }
 .button15:hover {
-  transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+  transform: scaleX(1.1) scaleY(1.1) scaleZ(1.1);
   background: #f7f5ef;
   transform-style: preserve-3d;
 }

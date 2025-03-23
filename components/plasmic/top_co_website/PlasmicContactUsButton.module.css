@@ -13,6 +13,7 @@
   -webkit-transition-duration: 0.3s;
   border-radius: 100px;
   padding: 12px 18px;
+  border: 1px solid #f7f5ef;
 }
 .button6 > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -81,6 +82,15 @@
   line-height: 24px;
   color: rgba(255, 253, 249, 1);
   padding-bottom: 0px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .label6 {
+    font-size: 15px;
+    max-width: 99px;
+    width: 82px;
+    text-align: left;
+    align-self: flex-start;
+  }
 }
 .button6:hover .label6 {
   color: #14161f;

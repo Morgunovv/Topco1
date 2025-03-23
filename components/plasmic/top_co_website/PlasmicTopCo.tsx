@@ -243,11 +243,12 @@ export type PlasmicTopCo__OverridesType = {
   pageBlock4?: Flex__<"div">;
   titleSubtitle11?: Flex__<"div">;
   title22?: Flex__<"div">;
-  plane2?: Flex__<typeof LottieWrapper>;
+  plane?: Flex__<typeof LottieWrapper>;
   curve?: Flex__<typeof LottieWrapper>;
   banners?: Flex__<"div">;
   banner?: Flex__<"div">;
   image2?: Flex__<"div">;
+  phone3?: Flex__<typeof Video>;
   content10?: Flex__<"div">;
   content11?: Flex__<"div">;
   wallet56?: Flex__<"div">;
@@ -492,10 +493,11 @@ export type PlasmicTopCo__OverridesType = {
   pageBlock11?: Flex__<"div">;
   titleSubtitle57?: Flex__<"div">;
   title210?: Flex__<"div">;
+  plane3?: Flex__<typeof LottieWrapper>;
   banners2?: Flex__<"div">;
   banner3?: Flex__<"div">;
   image10?: Flex__<"div">;
-  curve2?: Flex__<typeof LottieWrapper>;
+  htmlVideo?: Flex__<typeof Video>;
   content46?: Flex__<"div">;
   content47?: Flex__<"div">;
   image11?: Flex__<"div">;
@@ -523,6 +525,7 @@ export type PlasmicTopCo__OverridesType = {
   arrow2417?: Flex__<"div">;
   icon24Grid17?: Flex__<"div">;
   icons24IconGridSquare17?: Flex__<"div">;
+  curve2?: Flex__<typeof LottieWrapper>;
   pageBlock13?: Flex__<"div">;
   titleSubtitle75?: Flex__<"div">;
   title212?: Flex__<"div">;
@@ -1686,8 +1689,8 @@ function PlasmicTopCo__RenderFunc(props: {
               const __index = __plasmic_idx_0;
               return (
                 <LottieWrapper
-                  data-plasmic-name={"plane2"}
-                  data-plasmic-override={overrides.plane2}
+                  data-plasmic-name={"plane"}
+                  data-plasmic-override={overrides.plane}
                   animationData={{
                     ddd: 0,
                     h: 176,
@@ -1698,8 +1701,8 @@ function PlasmicTopCo__RenderFunc(props: {
                         ty: 4,
                         sr: 1,
                         st: 0,
-                        op: 4523,
-                        ip: 0,
+                        op: 270,
+                        ip: 60,
                         ln: "20",
                         hasMask: false,
                         ao: 0,
@@ -1712,13 +1715,13 @@ function PlasmicTopCo__RenderFunc(props: {
                                 s: [0, 0, 0],
                                 i: { x: [0, 0, 0], y: [1, 1, 1] },
                                 o: { x: [0.2, 0.2, 0.2], y: [0, 0, 0] },
-                                t: 0
+                                t: 60
                               },
                               {
                                 s: [100, 100, 100],
                                 i: { x: [0.833, 0.833, 0.833], y: [1, 1, 1] },
                                 o: { x: [0.167, 0.167, 0.167], y: [0, 0, 0] },
-                                t: 45
+                                t: 105
                               }
                             ]
                           },
@@ -1729,9 +1732,9 @@ function PlasmicTopCo__RenderFunc(props: {
                                 o: { x: 0.2, y: 0 },
                                 i: { x: 0, y: 1 },
                                 s: [29.25, 112.625, 0],
-                                t: 0
+                                t: 60
                               },
-                              { s: [86, 88, 0], t: 45 }
+                              { s: [86, 88, 0], t: 105 }
                             ]
                           },
                           r: { a: 0, k: 0 },
@@ -1923,8 +1926,8 @@ function PlasmicTopCo__RenderFunc(props: {
                         ty: 4,
                         sr: 1,
                         st: 0,
-                        op: 4523,
-                        ip: 0,
+                        op: 270,
+                        ip: 60,
                         ln: "17",
                         hasMask: false,
                         ao: 0,
@@ -1937,13 +1940,13 @@ function PlasmicTopCo__RenderFunc(props: {
                                 s: [0, 0, 0],
                                 i: { x: [0, 0, 0], y: [1, 1, 1] },
                                 o: { x: [0.2, 0.2, 0.2], y: [0, 0, 0] },
-                                t: 0
+                                t: 60
                               },
                               {
                                 s: [100, 100, 100],
                                 i: { x: [0.833, 0.833, 0.833], y: [1, 1, 1] },
                                 o: { x: [0.167, 0.167, 0.167], y: [0, 0, 0] },
-                                t: 45
+                                t: 105
                               }
                             ]
                           },
@@ -2008,9 +2011,9 @@ function PlasmicTopCo__RenderFunc(props: {
                                   o: { x: 0.2, y: 0 },
                                   i: { x: 0, y: 1 },
                                   s: [0],
-                                  t: 0
+                                  t: 60
                                 },
-                                { s: [100], t: 30 }
+                                { s: [100], t: 90, h: 1 }
                               ]
                             },
                             o: { a: 0, k: 0 },
@@ -2023,11 +2026,12 @@ function PlasmicTopCo__RenderFunc(props: {
                     ],
                     v: "5.7.0",
                     fr: 60,
-                    op: 46,
-                    ip: 0,
+                    op: 270,
+                    ip: 60,
                     assets: []
                   }}
-                  className={classNames("__wab_instance", sty.plane2)}
+                  autoplay={true}
+                  className={classNames("__wab_instance", sty.plane)}
                   key={__index}
                   loop={true}
                   preview={true}
@@ -2047,7 +2051,7 @@ function PlasmicTopCo__RenderFunc(props: {
                     ty: 4,
                     sr: 1,
                     st: 0,
-                    op: 60,
+                    op: 270,
                     ip: 0,
                     ln: "35",
                     hasMask: false,
@@ -2157,7 +2161,7 @@ function PlasmicTopCo__RenderFunc(props: {
                               s: [0],
                               t: 0
                             },
-                            { s: [100], t: 45 }
+                            { s: [100], t: 45, h: 1 }
                           ]
                         },
                         o: { a: 0, k: 0 },
@@ -2170,7 +2174,7 @@ function PlasmicTopCo__RenderFunc(props: {
                 ],
                 v: "5.7.0",
                 fr: 60,
-                op: 46,
+                op: 270,
                 ip: 0,
                 assets: []
               }}
@@ -2198,11 +2202,10 @@ function PlasmicTopCo__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.image2)}
                 >
                   <Video
+                    data-plasmic-name={"phone3"}
+                    data-plasmic-override={overrides.phone3}
                     autoPlay={true}
-                    className={classNames(
-                      "__wab_instance",
-                      sty.htmlVideo__r2J9E
-                    )}
+                    className={classNames("__wab_instance", sty.phone3)}
                     controls={false}
                     loop={true}
                     muted={true}
@@ -5099,6 +5102,373 @@ function PlasmicTopCo__RenderFunc(props: {
                     </div>
                   ) : null}
                 </Stack__>
+                {(_par => (!_par ? [] : Array.isArray(_par) ? _par : [_par]))([
+                  2, 3, 4
+                ]).map((__plasmic_item_0, __plasmic_idx_0) => {
+                  const currentItem = __plasmic_item_0;
+                  const __index = __plasmic_idx_0;
+                  return (
+                    <LottieWrapper
+                      data-plasmic-name={"plane3"}
+                      data-plasmic-override={overrides.plane3}
+                      animationData={{
+                        ddd: 0,
+                        h: 176,
+                        w: 172,
+                        meta: { g: "@lottiefiles/toolkit-js 0.57.2-beta.0" },
+                        layers: [
+                          {
+                            ty: 4,
+                            sr: 1,
+                            st: 0,
+                            op: 4523,
+                            ip: 0,
+                            ln: "20",
+                            hasMask: false,
+                            ao: 0,
+                            ks: {
+                              a: { a: 0, k: [86, 88.5, 0] },
+                              s: {
+                                a: 1,
+                                k: [
+                                  {
+                                    s: [0, 0, 0],
+                                    i: { x: [0, 0, 0], y: [1, 1, 1] },
+                                    o: { x: [0.2, 0.2, 0.2], y: [0, 0, 0] },
+                                    t: 0
+                                  },
+                                  {
+                                    s: [100, 100, 100],
+                                    i: {
+                                      x: [0.833, 0.833, 0.833],
+                                      y: [1, 1, 1]
+                                    },
+                                    o: {
+                                      x: [0.167, 0.167, 0.167],
+                                      y: [0, 0, 0]
+                                    },
+                                    t: 45
+                                  }
+                                ]
+                              },
+                              p: {
+                                a: 1,
+                                k: [
+                                  {
+                                    o: { x: 0.2, y: 0 },
+                                    i: { x: 0, y: 1 },
+                                    s: [29.25, 112.625, 0],
+                                    t: 0
+                                  },
+                                  { s: [86, 88, 0], t: 45 }
+                                ]
+                              },
+                              r: { a: 0, k: 0 },
+                              o: { a: 0, k: 100 }
+                            },
+                            shapes: [
+                              {
+                                ty: "gr",
+                                it: [
+                                  {
+                                    ty: "sh",
+                                    d: 1,
+                                    ks: {
+                                      a: 0,
+                                      k: {
+                                        c: true,
+                                        i: [
+                                          [0, 0],
+                                          [0, 0],
+                                          [-0.245, 0.807],
+                                          [0, 0],
+                                          [-0.797, 0.088]
+                                        ],
+                                        o: [
+                                          [0, 0],
+                                          [-0.78, 0.321],
+                                          [0, 0],
+                                          [0.232, -0.768],
+                                          [0, 0]
+                                        ],
+                                        v: [
+                                          [49.507, -20.232],
+                                          [-47.924, 19.91],
+                                          [-49.262, 18.695],
+                                          [-40.816, -9.214],
+                                          [-39.118, -10.623]
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  {
+                                    ty: "st",
+                                    lc: 1,
+                                    lj: 2,
+                                    ml: 4,
+                                    o: { a: 0, k: 100 },
+                                    w: { a: 0, k: 4 },
+                                    c: { a: 0, k: [0.2039, 0.502, 0.9451] }
+                                  },
+                                  {
+                                    ty: "tr",
+                                    a: { a: 0, k: [0, 0] },
+                                    s: { a: 0, k: [100, 100] },
+                                    p: { a: 0, k: [109.747, 65.215] },
+                                    r: { a: 0, k: 0 },
+                                    o: { a: 0, k: 100 }
+                                  }
+                                ]
+                              },
+                              {
+                                ty: "gr",
+                                it: [
+                                  {
+                                    ty: "sh",
+                                    d: 1,
+                                    ks: {
+                                      a: 0,
+                                      k: {
+                                        c: true,
+                                        i: [
+                                          [0, 0],
+                                          [0, 0],
+                                          [0.025, 1.765],
+                                          [0, 0],
+                                          [-0.621, 0.364]
+                                        ],
+                                        o: [
+                                          [0, 0],
+                                          [-1.252, 1.244],
+                                          [0, 0],
+                                          [-0.01, -0.72],
+                                          [0, 0]
+                                        ],
+                                        v: [
+                                          [51.627, -49.984],
+                                          [-47.709, 48.74],
+                                          [-51.119, 47.35],
+                                          [-51.617, 11.683],
+                                          [-50.629, 9.929]
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  {
+                                    ty: "st",
+                                    lc: 1,
+                                    lj: 2,
+                                    ml: 4,
+                                    o: { a: 0, k: 100 },
+                                    w: { a: 0, k: 4 },
+                                    c: { a: 0, k: [0.2039, 0.502, 0.9451] }
+                                  },
+                                  {
+                                    ty: "tr",
+                                    a: { a: 0, k: [0, 0] },
+                                    s: { a: 0, k: [100, 100] },
+                                    p: { a: 0, k: [107.784, 95.165] },
+                                    r: { a: 0, k: 0 },
+                                    o: { a: 0, k: 100 }
+                                  }
+                                ]
+                              },
+                              {
+                                ty: "gr",
+                                it: [
+                                  {
+                                    ty: "sh",
+                                    d: 1,
+                                    ks: {
+                                      a: 0,
+                                      k: {
+                                        c: true,
+                                        i: [
+                                          [0, 0],
+                                          [0, 0],
+                                          [0, 0],
+                                          [0, 0]
+                                        ],
+                                        o: [
+                                          [0, 0],
+                                          [0, 0],
+                                          [0, 0],
+                                          [0, 0]
+                                        ],
+                                        v: [
+                                          [13.024, 0.389],
+                                          [-10.476, -4.111],
+                                          [-11.228, -0.182],
+                                          [12.272, 4.318]
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  {
+                                    ty: "sh",
+                                    d: 1,
+                                    ks: {
+                                      a: 0,
+                                      k: {
+                                        c: true,
+                                        i: [
+                                          [0, 0],
+                                          [0.208, -1.085],
+                                          [-1.085, -0.208]
+                                        ],
+                                        o: [
+                                          [-1.085, -0.208],
+                                          [-0.207, 1.084],
+                                          [0, 0]
+                                        ],
+                                        v: [
+                                          [-10.476, -4.111],
+                                          [-12.817, -2.522],
+                                          [-11.228, -0.182]
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  {
+                                    ty: "fl",
+                                    c: { a: 0, k: [0.2039, 0.502, 0.9451] },
+                                    r: 1,
+                                    o: { a: 0, k: 100 }
+                                  },
+                                  {
+                                    ty: "tr",
+                                    a: { a: 0, k: [0, 0] },
+                                    s: { a: 0, k: [100, 100] },
+                                    p: { a: 0, k: [71.86, 87.123] },
+                                    r: { a: 0, k: 0 },
+                                    o: { a: 0, k: 100 }
+                                  }
+                                ]
+                              }
+                            ],
+                            ind: 1
+                          },
+                          {
+                            ty: 4,
+                            sr: 1,
+                            st: 0,
+                            op: 4523,
+                            ip: 0,
+                            ln: "17",
+                            hasMask: false,
+                            ao: 0,
+                            ks: {
+                              a: { a: 0, k: [-81, 28, 0] },
+                              s: {
+                                a: 1,
+                                k: [
+                                  {
+                                    s: [0, 0, 0],
+                                    i: { x: [0, 0, 0], y: [1, 1, 1] },
+                                    o: { x: [0.2, 0.2, 0.2], y: [0, 0, 0] },
+                                    t: 0
+                                  },
+                                  {
+                                    s: [100, 100, 100],
+                                    i: {
+                                      x: [0.833, 0.833, 0.833],
+                                      y: [1, 1, 1]
+                                    },
+                                    o: {
+                                      x: [0.167, 0.167, 0.167],
+                                      y: [0, 0, 0]
+                                    },
+                                    t: 45
+                                  }
+                                ]
+                              },
+                              p: { a: 0, k: [5, 116, 0] },
+                              r: { a: 0, k: 0 },
+                              o: { a: 0, k: 100 }
+                            },
+                            shapes: [
+                              {
+                                ty: "gr",
+                                it: [
+                                  {
+                                    ty: "sh",
+                                    d: 1,
+                                    ks: {
+                                      a: 0,
+                                      k: {
+                                        c: false,
+                                        i: [
+                                          [-0.001, 0],
+                                          [-13.092, 5.54],
+                                          [0, -0.001]
+                                        ],
+                                        o: [
+                                          [-0.001, 0],
+                                          [13.801, -5.841],
+                                          [0, -0.001]
+                                        ],
+                                        v: [
+                                          [-80.937, 28.25],
+                                          [-58.676, 22.966],
+                                          [-38.75, 11.813]
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  {
+                                    ty: "st",
+                                    lc: 2,
+                                    lj: 1,
+                                    ml: 4,
+                                    o: { a: 0, k: 100 },
+                                    w: { a: 0, k: 4 },
+                                    c: { a: 0, k: [0.2039, 0.502, 0.9451] }
+                                  },
+                                  {
+                                    ty: "tr",
+                                    a: { a: 0, k: [0, 0] },
+                                    s: { a: 0, k: [100, 100] },
+                                    p: { a: 0, k: [0, 0] },
+                                    r: { a: 0, k: 0 },
+                                    o: { a: 0, k: 100 }
+                                  }
+                                ]
+                              },
+                              {
+                                ty: "tm",
+                                e: {
+                                  a: 1,
+                                  k: [
+                                    {
+                                      o: { x: 0.2, y: 0 },
+                                      i: { x: 0, y: 1 },
+                                      s: [0],
+                                      t: 0
+                                    },
+                                    { s: [100], t: 30 }
+                                  ]
+                                },
+                                o: { a: 0, k: 0 },
+                                s: { a: 0, k: 0 },
+                                m: 1
+                              }
+                            ],
+                            ind: 2
+                          }
+                        ],
+                        v: "5.7.0",
+                        fr: 60,
+                        op: 46,
+                        ip: 0,
+                        assets: []
+                      }}
+                      className={classNames("__wab_instance", sty.plane3)}
+                      key={__index}
+                      loop={true}
+                      preview={true}
+                    />
+                  );
+                })}
                 <Stack__
                   as={"div"}
                   data-plasmic-name={"banners2"}
@@ -5119,159 +5489,14 @@ function PlasmicTopCo__RenderFunc(props: {
                       className={classNames(projectcss.all, sty.image10)}
                     >
                       <Video
+                        data-plasmic-name={"htmlVideo"}
+                        data-plasmic-override={overrides.htmlVideo}
                         autoPlay={true}
-                        className={classNames(
-                          "__wab_instance",
-                          sty.htmlVideo__yeot5
-                        )}
+                        className={classNames("__wab_instance", sty.htmlVideo)}
                         controls={false}
                         loop={true}
                         muted={true}
                         src={"https://exceltic.dev/phone.mp4"}
-                      />
-
-                      <LottieWrapper
-                        data-plasmic-name={"curve2"}
-                        data-plasmic-override={overrides.curve2}
-                        animationData={{
-                          ddd: 0,
-                          h: 184,
-                          w: 144,
-                          meta: { g: "@lottiefiles/toolkit-js 0.57.2-beta.0" },
-                          layers: [
-                            {
-                              ty: 4,
-                              sr: 1,
-                              st: 0,
-                              op: 60,
-                              ip: 0,
-                              ln: "35",
-                              hasMask: false,
-                              ao: 0,
-                              ks: {
-                                a: { a: 0, k: [72, 92, 0] },
-                                s: { a: 0, k: [100, 100] },
-                                p: { a: 0, k: [72, 92] },
-                                r: { a: 0, k: 0 },
-                                o: { a: 0, k: 100 }
-                              },
-                              shapes: [
-                                {
-                                  ty: "gr",
-                                  it: [
-                                    {
-                                      ty: "sh",
-                                      d: 1,
-                                      ks: {
-                                        a: 0,
-                                        k: {
-                                          c: false,
-                                          i: [
-                                            [0, 0],
-                                            [11.644, -1.79],
-                                            [7.199, -9],
-                                            [1, -8.5],
-                                            [-7, -14.5],
-                                            [-2.998, -3.164],
-                                            [-3.654, -3.452],
-                                            [-8.055, -3.098],
-                                            [-19, 2],
-                                            [18, 7.5],
-                                            [7.5, -1],
-                                            [6, -5.5],
-                                            [0.242, -6.285],
-                                            [-4.197, -7.555],
-                                            [-11.513, -3.289],
-                                            [-20, 4.056]
-                                          ],
-                                          o: [
-                                            [-11.5, -1.5],
-                                            [-11.652, 1.794],
-                                            [-6, 7.5],
-                                            [0, 7.586],
-                                            [3.5, 5.5],
-                                            [3.431, 3.622],
-                                            [6.071, 5.734],
-                                            [11.222, 6.222],
-                                            [7.03, 0],
-                                            [-7.293, -3.241],
-                                            [-9.912, 1.322],
-                                            [-5, 4.5],
-                                            [-0.348, 9.055],
-                                            [6.377, 11.48],
-                                            [14.108, 4.032],
-                                            [0, 0]
-                                          ],
-                                          v: [
-                                            [7.75, -83.577],
-                                            [-26.75, -83.633],
-                                            [-57.25, -65.577],
-                                            [-65.25, -45.077],
-                                            [-58.75, -18.077],
-                                            [-50.25, -7.077],
-                                            [-40.25, 3.423],
-                                            [-18.472, 20.201],
-                                            [14.25, 29.923],
-                                            [25.25, 11.423],
-                                            [4.25, 8.423],
-                                            [-16.25, 18.923],
-                                            [-26.25, 38.201],
-                                            [-20.472, 59.423],
-                                            [14.306, 81.367],
-                                            [65.75, 81.367]
-                                          ]
-                                        }
-                                      }
-                                    },
-                                    {
-                                      ty: "st",
-                                      lc: 2,
-                                      lj: 1,
-                                      ml: 4,
-                                      o: { a: 0, k: 100 },
-                                      w: { a: 0, k: 4 },
-                                      c: { a: 0, k: [0.2039, 0.502, 0.9451] }
-                                    },
-                                    {
-                                      ty: "tr",
-                                      a: { a: 0, k: [0, 0] },
-                                      s: { a: 0, k: [100, 100] },
-                                      p: { a: 0, k: [72.258, 90.546] },
-                                      r: { a: 0, k: 0 },
-                                      o: { a: 0, k: 100 }
-                                    }
-                                  ]
-                                },
-                                {
-                                  ty: "tm",
-                                  e: {
-                                    a: 1,
-                                    k: [
-                                      {
-                                        o: { x: 0.2, y: 0 },
-                                        i: { x: 0.183, y: 1 },
-                                        s: [0],
-                                        t: 0
-                                      },
-                                      { s: [100], t: 45 }
-                                    ]
-                                  },
-                                  o: { a: 0, k: 0 },
-                                  s: { a: 0, k: 0 },
-                                  m: 1
-                                }
-                              ],
-                              ind: 1
-                            }
-                          ],
-                          v: "5.7.0",
-                          fr: 60,
-                          op: 46,
-                          ip: 0,
-                          assets: []
-                        }}
-                        className={classNames("__wab_instance", sty.curve2)}
-                        preview={true}
                       />
                     </div>
                     <Stack__
@@ -5733,6 +5958,150 @@ function PlasmicTopCo__RenderFunc(props: {
                   </Stack__>
                 </Stack__>
               </Stack__>
+              <LottieWrapper
+                data-plasmic-name={"curve2"}
+                data-plasmic-override={overrides.curve2}
+                animationData={{
+                  ddd: 0,
+                  h: 184,
+                  w: 144,
+                  meta: { g: "@lottiefiles/toolkit-js 0.57.2-beta.0" },
+                  layers: [
+                    {
+                      ty: 4,
+                      sr: 1,
+                      st: 0,
+                      op: 60,
+                      ip: 0,
+                      ln: "35",
+                      hasMask: false,
+                      ao: 0,
+                      ks: {
+                        a: { a: 0, k: [72, 92, 0] },
+                        s: { a: 0, k: [100, 100] },
+                        p: { a: 0, k: [72, 92] },
+                        r: { a: 0, k: 0 },
+                        o: { a: 0, k: 100 }
+                      },
+                      shapes: [
+                        {
+                          ty: "gr",
+                          it: [
+                            {
+                              ty: "sh",
+                              d: 1,
+                              ks: {
+                                a: 0,
+                                k: {
+                                  c: false,
+                                  i: [
+                                    [0, 0],
+                                    [11.644, -1.79],
+                                    [7.199, -9],
+                                    [1, -8.5],
+                                    [-7, -14.5],
+                                    [-2.998, -3.164],
+                                    [-3.654, -3.452],
+                                    [-8.055, -3.098],
+                                    [-19, 2],
+                                    [18, 7.5],
+                                    [7.5, -1],
+                                    [6, -5.5],
+                                    [0.242, -6.285],
+                                    [-4.197, -7.555],
+                                    [-11.513, -3.289],
+                                    [-20, 4.056]
+                                  ],
+                                  o: [
+                                    [-11.5, -1.5],
+                                    [-11.652, 1.794],
+                                    [-6, 7.5],
+                                    [0, 7.586],
+                                    [3.5, 5.5],
+                                    [3.431, 3.622],
+                                    [6.071, 5.734],
+                                    [11.222, 6.222],
+                                    [7.03, 0],
+                                    [-7.293, -3.241],
+                                    [-9.912, 1.322],
+                                    [-5, 4.5],
+                                    [-0.348, 9.055],
+                                    [6.377, 11.48],
+                                    [14.108, 4.032],
+                                    [0, 0]
+                                  ],
+                                  v: [
+                                    [7.75, -83.577],
+                                    [-26.75, -83.633],
+                                    [-57.25, -65.577],
+                                    [-65.25, -45.077],
+                                    [-58.75, -18.077],
+                                    [-50.25, -7.077],
+                                    [-40.25, 3.423],
+                                    [-18.472, 20.201],
+                                    [14.25, 29.923],
+                                    [25.25, 11.423],
+                                    [4.25, 8.423],
+                                    [-16.25, 18.923],
+                                    [-26.25, 38.201],
+                                    [-20.472, 59.423],
+                                    [14.306, 81.367],
+                                    [65.75, 81.367]
+                                  ]
+                                }
+                              }
+                            },
+                            {
+                              ty: "st",
+                              lc: 2,
+                              lj: 1,
+                              ml: 4,
+                              o: { a: 0, k: 100 },
+                              w: { a: 0, k: 4 },
+                              c: { a: 0, k: [0.2039, 0.502, 0.9451] }
+                            },
+                            {
+                              ty: "tr",
+                              a: { a: 0, k: [0, 0] },
+                              s: { a: 0, k: [100, 100] },
+                              p: { a: 0, k: [72.258, 90.546] },
+                              r: { a: 0, k: 0 },
+                              o: { a: 0, k: 100 }
+                            }
+                          ]
+                        },
+                        {
+                          ty: "tm",
+                          e: {
+                            a: 1,
+                            k: [
+                              {
+                                o: { x: 0.2, y: 0 },
+                                i: { x: 0.183, y: 1 },
+                                s: [0],
+                                t: 0
+                              },
+                              { s: [100], t: 45 }
+                            ]
+                          },
+                          o: { a: 0, k: 0 },
+                          s: { a: 0, k: 0 },
+                          m: 1
+                        }
+                      ],
+                      ind: 1
+                    }
+                  ],
+                  v: "5.7.0",
+                  fr: 60,
+                  op: 46,
+                  ip: 0,
+                  assets: []
+                }}
+                className={classNames("__wab_instance", sty.curve2)}
+                preview={true}
+              />
+
               <Stack__
                 as={"div"}
                 data-plasmic-name={"pageBlock13"}
@@ -7393,11 +7762,12 @@ const PlasmicDescendants = {
     "pageBlock4",
     "titleSubtitle11",
     "title22",
-    "plane2",
+    "plane",
     "curve",
     "banners",
     "banner",
     "image2",
+    "phone3",
     "content10",
     "content11",
     "wallet56",
@@ -7642,10 +8012,11 @@ const PlasmicDescendants = {
     "pageBlock11",
     "titleSubtitle57",
     "title210",
+    "plane3",
     "banners2",
     "banner3",
     "image10",
-    "curve2",
+    "htmlVideo",
     "content46",
     "content47",
     "image11",
@@ -7673,6 +8044,7 @@ const PlasmicDescendants = {
     "arrow2417",
     "icon24Grid17",
     "icons24IconGridSquare17",
+    "curve2",
     "pageBlock13",
     "titleSubtitle75",
     "title212",
@@ -8109,11 +8481,12 @@ const PlasmicDescendants = {
     "pageBlock4",
     "titleSubtitle11",
     "title22",
-    "plane2",
+    "plane",
     "curve",
     "banners",
     "banner",
     "image2",
+    "phone3",
     "content10",
     "content11",
     "wallet56",
@@ -8133,12 +8506,13 @@ const PlasmicDescendants = {
   ],
   titleSubtitle11: ["titleSubtitle11", "title22"],
   title22: ["title22"],
-  plane2: ["plane2"],
+  plane: ["plane"],
   curve: ["curve"],
   banners: [
     "banners",
     "banner",
     "image2",
+    "phone3",
     "content10",
     "content11",
     "wallet56",
@@ -8159,6 +8533,7 @@ const PlasmicDescendants = {
   banner: [
     "banner",
     "image2",
+    "phone3",
     "content10",
     "content11",
     "wallet56",
@@ -8168,7 +8543,8 @@ const PlasmicDescendants = {
     "titleSubtitle14",
     "goToWallet"
   ],
-  image2: ["image2"],
+  image2: ["image2", "phone3"],
+  phone3: ["phone3"],
   content10: [
     "content10",
     "content11",
@@ -9035,10 +9411,11 @@ const PlasmicDescendants = {
     "pageBlock11",
     "titleSubtitle57",
     "title210",
+    "plane3",
     "banners2",
     "banner3",
     "image10",
-    "curve2",
+    "htmlVideo",
     "content46",
     "content47",
     "image11",
@@ -9066,6 +9443,7 @@ const PlasmicDescendants = {
     "arrow2417",
     "icon24Grid17",
     "icons24IconGridSquare17",
+    "curve2",
     "pageBlock13",
     "titleSubtitle75",
     "title212",
@@ -9553,10 +9931,11 @@ const PlasmicDescendants = {
     "pageBlock11",
     "titleSubtitle57",
     "title210",
+    "plane3",
     "banners2",
     "banner3",
     "image10",
-    "curve2",
+    "htmlVideo",
     "content46",
     "content47",
     "image11",
@@ -9587,11 +9966,12 @@ const PlasmicDescendants = {
   ],
   titleSubtitle57: ["titleSubtitle57", "title210"],
   title210: ["title210"],
+  plane3: ["plane3"],
   banners2: [
     "banners2",
     "banner3",
     "image10",
-    "curve2",
+    "htmlVideo",
     "content46",
     "content47",
     "image11",
@@ -9623,7 +10003,7 @@ const PlasmicDescendants = {
   banner3: [
     "banner3",
     "image10",
-    "curve2",
+    "htmlVideo",
     "content46",
     "content47",
     "image11",
@@ -9638,8 +10018,8 @@ const PlasmicDescendants = {
     "icon24Grid16",
     "icons24IconGridSquare16"
   ],
-  image10: ["image10", "curve2"],
-  curve2: ["curve2"],
+  image10: ["image10", "htmlVideo"],
+  htmlVideo: ["htmlVideo"],
   content46: [
     "content46",
     "content47",
@@ -9738,6 +10118,7 @@ const PlasmicDescendants = {
   arrow2417: ["arrow2417", "icon24Grid17", "icons24IconGridSquare17"],
   icon24Grid17: ["icon24Grid17", "icons24IconGridSquare17"],
   icons24IconGridSquare17: ["icons24IconGridSquare17"],
+  curve2: ["curve2"],
   pageBlock13: [
     "pageBlock13",
     "titleSubtitle75",
@@ -10380,11 +10761,12 @@ type NodeDefaultElementType = {
   pageBlock4: "div";
   titleSubtitle11: "div";
   title22: "div";
-  plane2: typeof LottieWrapper;
+  plane: typeof LottieWrapper;
   curve: typeof LottieWrapper;
   banners: "div";
   banner: "div";
   image2: "div";
+  phone3: typeof Video;
   content10: "div";
   content11: "div";
   wallet56: "div";
@@ -10629,10 +11011,11 @@ type NodeDefaultElementType = {
   pageBlock11: "div";
   titleSubtitle57: "div";
   title210: "div";
+  plane3: typeof LottieWrapper;
   banners2: "div";
   banner3: "div";
   image10: "div";
-  curve2: typeof LottieWrapper;
+  htmlVideo: typeof Video;
   content46: "div";
   content47: "div";
   image11: "div";
@@ -10660,6 +11043,7 @@ type NodeDefaultElementType = {
   arrow2417: "div";
   icon24Grid17: "div";
   icons24IconGridSquare17: "div";
+  curve2: typeof LottieWrapper;
   pageBlock13: "div";
   titleSubtitle75: "div";
   title212: "div";
@@ -10941,11 +11325,12 @@ export const PlasmicTopCo = Object.assign(
     pageBlock4: makeNodeComponent("pageBlock4"),
     titleSubtitle11: makeNodeComponent("titleSubtitle11"),
     title22: makeNodeComponent("title22"),
-    plane2: makeNodeComponent("plane2"),
+    plane: makeNodeComponent("plane"),
     curve: makeNodeComponent("curve"),
     banners: makeNodeComponent("banners"),
     banner: makeNodeComponent("banner"),
     image2: makeNodeComponent("image2"),
+    phone3: makeNodeComponent("phone3"),
     content10: makeNodeComponent("content10"),
     content11: makeNodeComponent("content11"),
     wallet56: makeNodeComponent("wallet56"),
@@ -11190,10 +11575,11 @@ export const PlasmicTopCo = Object.assign(
     pageBlock11: makeNodeComponent("pageBlock11"),
     titleSubtitle57: makeNodeComponent("titleSubtitle57"),
     title210: makeNodeComponent("title210"),
+    plane3: makeNodeComponent("plane3"),
     banners2: makeNodeComponent("banners2"),
     banner3: makeNodeComponent("banner3"),
     image10: makeNodeComponent("image10"),
-    curve2: makeNodeComponent("curve2"),
+    htmlVideo: makeNodeComponent("htmlVideo"),
     content46: makeNodeComponent("content46"),
     content47: makeNodeComponent("content47"),
     image11: makeNodeComponent("image11"),
@@ -11221,6 +11607,7 @@ export const PlasmicTopCo = Object.assign(
     arrow2417: makeNodeComponent("arrow2417"),
     icon24Grid17: makeNodeComponent("icon24Grid17"),
     icons24IconGridSquare17: makeNodeComponent("icons24IconGridSquare17"),
+    curve2: makeNodeComponent("curve2"),
     pageBlock13: makeNodeComponent("pageBlock13"),
     titleSubtitle75: makeNodeComponent("titleSubtitle75"),
     title212: makeNodeComponent("title212"),

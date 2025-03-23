@@ -59,10 +59,10 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import SubmitButton from "../../SubmitButton"; // plasmic-import: LurICPq3ksiD/component
 import Combobox from "../../Combobox"; // plasmic-import: RmoZ-FB3YaYT/component
 import MenuItem from "../../MenuItem"; // plasmic-import: T2u9UxC3Owqa/component
 import TextInput from "../../TextInput"; // plasmic-import: XhUZaLCwsrvr/component
-import SubmitButton from "../../SubmitButton"; // plasmic-import: LurICPq3ksiD/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -70,8 +70,8 @@ import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: tVrjFA7RVCG7zyycB4xXud/projectcss
 import sty from "./PlasmicPopup.module.css"; // plasmic-import: apyUXb51frmk/css
 
-import RequiredSvgIcon from "./icons/PlasmicIcon__RequiredSvg"; // plasmic-import: TsC0_8x1KEMX/icon
 import Cross20Icon from "./icons/PlasmicIcon__Cross20"; // plasmic-import: 28c3JiKFdBbF/icon
+import RequiredSvgIcon from "./icons/PlasmicIcon__RequiredSvg"; // plasmic-import: TsC0_8x1KEMX/icon
 
 createPlasmicElementProxy;
 
@@ -89,6 +89,9 @@ export type PlasmicPopup__OverridesType = {
   popUp?: Flex__<"div">;
   titleSubtitle?: Flex__<"div">;
   title2?: Flex__<"div">;
+  submitButton?: Flex__<typeof SubmitButton>;
+  button2?: Flex__<"button">;
+  freeBox?: Flex__<"div">;
   content?: Flex__<"div">;
   combobox?: Flex__<typeof Combobox>;
   generalInquiry?: Flex__<typeof MenuItem>;
@@ -97,9 +100,6 @@ export type PlasmicPopup__OverridesType = {
   name?: Flex__<typeof TextInput>;
   email?: Flex__<typeof TextInput>;
   message?: Flex__<typeof TextInput>;
-  submitButton?: Flex__<typeof SubmitButton>;
-  button2?: Flex__<"button">;
-  freeBox?: Flex__<"div">;
 };
 
 export interface DefaultPopupProps {
@@ -224,6 +224,31 @@ function PlasmicPopup__RenderFunc(props: {
             {"Contact Us"}
           </div>
         </Stack__>
+        <SubmitButton
+          data-plasmic-name={"submitButton"}
+          data-plasmic-override={overrides.submitButton}
+          className={classNames("__wab_instance", sty.submitButton)}
+        />
+
+        <button
+          data-plasmic-name={"button2"}
+          data-plasmic-override={overrides.button2}
+          className={classNames(projectcss.all, projectcss.button, sty.button2)}
+          ref={ref => {
+            $refs["button2"] = ref;
+          }}
+        >
+          <div
+            data-plasmic-name={"freeBox"}
+            data-plasmic-override={overrides.freeBox}
+            className={classNames(projectcss.all, sty.freeBox)}
+          >
+            <Cross20Icon
+              className={classNames(projectcss.all, sty.svg__bChss)}
+              role={"img"}
+            />
+          </div>
+        </button>
         <Stack__
           as={"div"}
           data-plasmic-name={"content"}
@@ -231,6 +256,20 @@ function PlasmicPopup__RenderFunc(props: {
           hasGap={true}
           className={classNames(projectcss.all, sty.content)}
         >
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__fyJ0S
+            )}
+          >
+            {"Your Name"}
+          </div>
+          <RequiredSvgIcon
+            className={classNames(projectcss.all, sty.svg__nZHm)}
+            role={"img"}
+          />
+
           <Combobox
             data-plasmic-name={"combobox"}
             data-plasmic-override={overrides.combobox}
@@ -293,20 +332,6 @@ function PlasmicPopup__RenderFunc(props: {
             }}
             placeholder={"Select one option"}
             type={"plain"}
-          />
-
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__fyJ0S
-            )}
-          >
-            {"Your Name"}
-          </div>
-          <RequiredSvgIcon
-            className={classNames(projectcss.all, sty.svg__nZHm)}
-            role={"img"}
           />
 
           <TextInput
@@ -416,31 +441,6 @@ function PlasmicPopup__RenderFunc(props: {
             type={"plain"}
           />
         </Stack__>
-        <SubmitButton
-          data-plasmic-name={"submitButton"}
-          data-plasmic-override={overrides.submitButton}
-          className={classNames("__wab_instance", sty.submitButton)}
-        />
-
-        <button
-          data-plasmic-name={"button2"}
-          data-plasmic-override={overrides.button2}
-          className={classNames(projectcss.all, projectcss.button, sty.button2)}
-          ref={ref => {
-            $refs["button2"] = ref;
-          }}
-        >
-          <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
-          >
-            <Cross20Icon
-              className={classNames(projectcss.all, sty.svg__bChss)}
-              role={"img"}
-            />
-          </div>
-        </button>
       </Stack__>
     </div>
   ) as React.ReactElement | null;
@@ -452,6 +452,9 @@ const PlasmicDescendants = {
     "popUp",
     "titleSubtitle",
     "title2",
+    "submitButton",
+    "button2",
+    "freeBox",
     "content",
     "combobox",
     "generalInquiry",
@@ -459,15 +462,15 @@ const PlasmicDescendants = {
     "feedback",
     "name",
     "email",
-    "message",
-    "submitButton",
-    "button2",
-    "freeBox"
+    "message"
   ],
   popUp: [
     "popUp",
     "titleSubtitle",
     "title2",
+    "submitButton",
+    "button2",
+    "freeBox",
     "content",
     "combobox",
     "generalInquiry",
@@ -475,13 +478,13 @@ const PlasmicDescendants = {
     "feedback",
     "name",
     "email",
-    "message",
-    "submitButton",
-    "button2",
-    "freeBox"
+    "message"
   ],
   titleSubtitle: ["titleSubtitle", "title2"],
   title2: ["title2"],
+  submitButton: ["submitButton"],
+  button2: ["button2", "freeBox"],
+  freeBox: ["freeBox"],
   content: [
     "content",
     "combobox",
@@ -498,10 +501,7 @@ const PlasmicDescendants = {
   feedback: ["feedback"],
   name: ["name"],
   email: ["email"],
-  message: ["message"],
-  submitButton: ["submitButton"],
-  button2: ["button2", "freeBox"],
-  freeBox: ["freeBox"]
+  message: ["message"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -511,6 +511,9 @@ type NodeDefaultElementType = {
   popUp: "div";
   titleSubtitle: "div";
   title2: "div";
+  submitButton: typeof SubmitButton;
+  button2: "button";
+  freeBox: "div";
   content: "div";
   combobox: typeof Combobox;
   generalInquiry: typeof MenuItem;
@@ -519,9 +522,6 @@ type NodeDefaultElementType = {
   name: typeof TextInput;
   email: typeof TextInput;
   message: typeof TextInput;
-  submitButton: typeof SubmitButton;
-  button2: "button";
-  freeBox: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -587,6 +587,9 @@ export const PlasmicPopup = Object.assign(
     popUp: makeNodeComponent("popUp"),
     titleSubtitle: makeNodeComponent("titleSubtitle"),
     title2: makeNodeComponent("title2"),
+    submitButton: makeNodeComponent("submitButton"),
+    button2: makeNodeComponent("button2"),
+    freeBox: makeNodeComponent("freeBox"),
     content: makeNodeComponent("content"),
     combobox: makeNodeComponent("combobox"),
     generalInquiry: makeNodeComponent("generalInquiry"),
@@ -595,9 +598,6 @@ export const PlasmicPopup = Object.assign(
     _name: makeNodeComponent("name"),
     email: makeNodeComponent("email"),
     message: makeNodeComponent("message"),
-    submitButton: makeNodeComponent("submitButton"),
-    button2: makeNodeComponent("button2"),
-    freeBox: makeNodeComponent("freeBox"),
 
     // Metadata about props expected for PlasmicPopup
     internalVariantProps: PlasmicPopup__VariantProps,
