@@ -11,6 +11,17 @@
   cursor: not-allowed;
   pointer-events: none;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .ariaComboBox:global(.__wab_instance) {
+    padding-right: 0px;
+    width: 327px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .label:global(.__wab_instance):global(.__wab_instance) {
+    width: 327px;
+  }
+}
 .freeBox__yLlMx {
   display: flex;
   flex-direction: row;
@@ -18,18 +29,24 @@
   align-items: stretch;
   justify-content: flex-start;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__yLlMx {
+    width: 327px;
+    height: 40px;
+  }
+}
 .ariaInput:global(.__wab_instance) {
   box-shadow: 0px 0px 0px 0px var(--token-C8FTlBFs80Bl);
-  width: 439px;
+  width: 327px;
   font-size: var(--token-aswsJx6IoFUX);
   line-height: var(--token-3CgTdPe_gkUK);
   outline-style: none;
   text-align: left;
   height: 48px;
   background: #f7f5ef;
-  margin-right: 0px;
   pointer-events: none;
   backdrop-filter: none;
+  margin-right: 0px;
   flex-shrink: 0;
   -webkit-backdrop-filter: none;
   border-radius: var(--token-Aojtt6d7J13d);
@@ -43,18 +60,28 @@
   object-fit: cover;
   background: none;
   position: absolute;
-  right: 0px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   bottom: -1px;
+  right: 0px;
   min-width: 0;
   min-height: 0;
   border-radius: var(--token-Aojtt6d7J13d);
   padding: var(--token-Aojtt6d7J13d) var(--token-qtw42j78T7BA);
   border: 1px none black;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .ariaButton:global(.__wab_instance) {
+    font-size: 14px;
+    width: 324.98956298828125px;
+    right: 0px;
+    bottom: 0px;
+    margin-left: 0px;
+    flex-shrink: 0;
+  }
 }
 .freeBox__vmGeB {
   display: flex;
