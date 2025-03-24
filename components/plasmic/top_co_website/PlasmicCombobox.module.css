@@ -11,13 +11,13 @@
   cursor: not-allowed;
   pointer-events: none;
 }
-@media (min-width: 0px) and (max-width: 375px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .ariaComboBox:global(.__wab_instance) {
     padding-right: 0px;
     width: 327px;
   }
 }
-@media (min-width: 0px) and (max-width: 375px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .label:global(.__wab_instance):global(.__wab_instance) {
     width: 327px;
   }
@@ -29,7 +29,7 @@
   align-items: stretch;
   justify-content: flex-start;
 }
-@media (min-width: 0px) and (max-width: 375px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .freeBox__yLlMx {
     width: 327px;
     height: 40px;
@@ -54,7 +54,7 @@
     var(--token-Aojtt6d7J13d) var(--token-qtw42j78T7BA);
   border-style: none;
 }
-@media (min-width: 0px) and (max-width: 375px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .ariaInput:global(.__wab_instance) {
     width: 327px;
     flex-shrink: 0;
@@ -79,7 +79,7 @@
   padding: var(--token-Aojtt6d7J13d) var(--token-qtw42j78T7BA);
   border: 1px none black;
 }
-@media (min-width: 0px) and (max-width: 375px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .ariaButton:global(.__wab_instance) {
     font-size: 14px;
     width: 324.98956298828125px;
@@ -108,7 +108,7 @@
   transform: none;
   left: 183px;
 }
-@media (min-width: 0px) and (max-width: 375px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .svg {
     left: 118px;
     top: -4px;

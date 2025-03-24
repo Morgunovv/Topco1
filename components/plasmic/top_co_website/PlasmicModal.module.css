@@ -48,7 +48,7 @@
   width: 100vw;
   outline: none;
 }
-@media (min-width: 0px) and (max-width: 375px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .ariaModal:global(.__wab_instance) {
     width: 375px;
   }
@@ -64,7 +64,7 @@
   left: 641px;
   top: 150px;
 }
-@media (min-width: 0px) and (max-width: 375px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .contactUsPopup__v07C0:global(.__wab_instance) {
     display: none;
   }

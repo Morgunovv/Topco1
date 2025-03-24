@@ -29,7 +29,7 @@
   overflow: hidden;
   min-width: 0;
 }
-@media (min-width: 0px) and (max-width: 375px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .freeBox {
     justify-content: flex-start;
     align-items: center;
@@ -50,7 +50,7 @@
 .img > picture > img {
   object-fit: cover;
 }
-@media (min-width: 0px) and (max-width: 375px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .img {
     height: 250px;
     width: 100%;

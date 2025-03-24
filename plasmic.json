@@ -720,6 +720,19 @@
           "cssFilePath": "plasmic/top_co_website/PlasmicMobileNoPopover.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "z-KqOFoyVLjc",
+          "name": "ExploreButtonMob",
+          "type": "managed",
+          "projectId": "tVrjFA7RVCG7zyycB4xXud",
+          "renderModuleFilePath": "plasmic/top_co_website/PlasmicExploreButtonMob.tsx",
+          "importSpec": {
+            "modulePath": "ExploreButtonMob.tsx"
+          },
+          "cssFilePath": "plasmic/top_co_website/PlasmicExploreButtonMob.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

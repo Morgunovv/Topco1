@@ -68,6 +68,7 @@ import { LottieWrapper } from "@plasmicpkgs/lottie-react";
 import { Video } from "@plasmicpkgs/plasmic-basic-components";
 import GoToWallet from "../../GoToWallet"; // plasmic-import: X6nv7zY2utC2/component
 import ApplyForInvestment from "../../ApplyForInvestment"; // plasmic-import: Daot0e6yLXbN/component
+import ExploreButtonMob from "../../ExploreButtonMob"; // plasmic-import: z-KqOFoyVLjc/component
 import ExploreButton from "../../ExploreButton"; // plasmic-import: gJgBLsmMGU7T/component
 import Footer1 from "../../Footer1"; // plasmic-import: rAIC55lfHAgI/component
 import SeeMore from "../../SeeMore"; // plasmic-import: 45nkc3vlT8-m/component
@@ -549,6 +550,7 @@ export type PlasmicTopCo__OverridesType = {
   arrow2424?: Flex__<"div">;
   icon24Grid24?: Flex__<"div">;
   icons24IconGridSquare24?: Flex__<"div">;
+  exploreButtonMob?: Flex__<typeof ExploreButtonMob>;
   pageBlock12?: Flex__<"div">;
   title?: Flex__<"h1">;
   image13?: Flex__<"div">;
@@ -6457,6 +6459,15 @@ function PlasmicTopCo__RenderFunc(props: {
                         </div>
                       ) : null}
                     </Stack__>
+                    <ExploreButtonMob
+                      data-plasmic-name={"exploreButtonMob"}
+                      data-plasmic-override={overrides.exploreButtonMob}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.exploreButtonMob
+                      )}
+                    />
+
                     <ExploreButton
                       className={classNames(
                         "__wab_instance",
@@ -8050,6 +8061,7 @@ const PlasmicDescendants = {
     "arrow2424",
     "icon24Grid24",
     "icons24IconGridSquare24",
+    "exploreButtonMob",
     "pageBlock12",
     "title",
     "image13",
@@ -9366,6 +9378,7 @@ const PlasmicDescendants = {
     "arrow2424",
     "icon24Grid24",
     "icons24IconGridSquare24",
+    "exploreButtonMob",
     "pageBlock12",
     "title",
     "image13",
@@ -10138,7 +10151,8 @@ const PlasmicDescendants = {
     "label25",
     "arrow2424",
     "icon24Grid24",
-    "icons24IconGridSquare24"
+    "icons24IconGridSquare24",
+    "exploreButtonMob"
   ],
   content62: [
     "content62",
@@ -10150,7 +10164,8 @@ const PlasmicDescendants = {
     "label25",
     "arrow2424",
     "icon24Grid24",
-    "icons24IconGridSquare24"
+    "icons24IconGridSquare24",
+    "exploreButtonMob"
   ],
   content63: [
     "content63",
@@ -10161,7 +10176,8 @@ const PlasmicDescendants = {
     "label25",
     "arrow2424",
     "icon24Grid24",
-    "icons24IconGridSquare24"
+    "icons24IconGridSquare24",
+    "exploreButtonMob"
   ],
   titleSubtitle82: [
     "titleSubtitle82",
@@ -10171,7 +10187,8 @@ const PlasmicDescendants = {
     "label25",
     "arrow2424",
     "icon24Grid24",
-    "icons24IconGridSquare24"
+    "icons24IconGridSquare24",
+    "exploreButtonMob"
   ],
   title27: ["title27"],
   button25: [
@@ -10187,6 +10204,7 @@ const PlasmicDescendants = {
   arrow2424: ["arrow2424", "icon24Grid24", "icons24IconGridSquare24"],
   icon24Grid24: ["icon24Grid24", "icons24IconGridSquare24"],
   icons24IconGridSquare24: ["icons24IconGridSquare24"],
+  exploreButtonMob: ["exploreButtonMob"],
   pageBlock12: [
     "pageBlock12",
     "title",
@@ -11020,6 +11038,7 @@ type NodeDefaultElementType = {
   arrow2424: "div";
   icon24Grid24: "div";
   icons24IconGridSquare24: "div";
+  exploreButtonMob: typeof ExploreButtonMob;
   pageBlock12: "div";
   title: "h1";
   image13: "div";
@@ -11584,6 +11603,7 @@ export const PlasmicTopCo = Object.assign(
     arrow2424: makeNodeComponent("arrow2424"),
     icon24Grid24: makeNodeComponent("icon24Grid24"),
     icons24IconGridSquare24: makeNodeComponent("icons24IconGridSquare24"),
+    exploreButtonMob: makeNodeComponent("exploreButtonMob"),
     pageBlock12: makeNodeComponent("pageBlock12"),
     title: makeNodeComponent("title"),
     image13: makeNodeComponent("image13"),

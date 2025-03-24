@@ -100,6 +100,8 @@ export type PlasmicHeader__OverridesType = {
   logoWhite2?: Flex__<"div">;
   buttons2?: Flex__<"div">;
   modalMobileMenu?: Flex__<typeof ModalMobileMenu>;
+  menuButton?: Flex__<"div">;
+  frame2131327145?: Flex__<"div">;
   header?: Flex__<"div">;
   logoWhite?: Flex__<"div">;
   buttons?: Flex__<"div">;
@@ -294,6 +296,34 @@ function PlasmicHeader__RenderFunc(props: {
                     return;
                   }
                 }}
+                trigger={
+                  <div
+                    data-plasmic-name={"menuButton"}
+                    data-plasmic-override={overrides.menuButton}
+                    className={classNames(projectcss.all, sty.menuButton)}
+                  >
+                    <div
+                      data-plasmic-name={"frame2131327145"}
+                      data-plasmic-override={overrides.frame2131327145}
+                      className={classNames(
+                        projectcss.all,
+                        sty.frame2131327145
+                      )}
+                    >
+                      <Stack__
+                        as={Frame2131327153Icon}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.svg___1KYuI)}
+                        role={"img"}
+                      />
+
+                      <Cross20Icon
+                        className={classNames(projectcss.all, sty.svg___59Oyi)}
+                        role={"img"}
+                      />
+                    </div>
+                  </div>
+                }
               />
             </Stack__>
           </Stack__>
@@ -796,6 +826,8 @@ const PlasmicDescendants = {
     "logoWhite2",
     "buttons2",
     "modalMobileMenu",
+    "menuButton",
+    "frame2131327145",
     "header",
     "logoWhite",
     "buttons",
@@ -837,11 +869,28 @@ const PlasmicDescendants = {
     "icon5",
     "icon6"
   ],
-  freeBox: ["freeBox", "content", "logoWhite2", "buttons2", "modalMobileMenu"],
-  content: ["content", "logoWhite2", "buttons2", "modalMobileMenu"],
+  freeBox: [
+    "freeBox",
+    "content",
+    "logoWhite2",
+    "buttons2",
+    "modalMobileMenu",
+    "menuButton",
+    "frame2131327145"
+  ],
+  content: [
+    "content",
+    "logoWhite2",
+    "buttons2",
+    "modalMobileMenu",
+    "menuButton",
+    "frame2131327145"
+  ],
   logoWhite2: ["logoWhite2"],
-  buttons2: ["buttons2", "modalMobileMenu"],
-  modalMobileMenu: ["modalMobileMenu"],
+  buttons2: ["buttons2", "modalMobileMenu", "menuButton", "frame2131327145"],
+  modalMobileMenu: ["modalMobileMenu", "menuButton", "frame2131327145"],
+  menuButton: ["menuButton", "frame2131327145"],
+  frame2131327145: ["frame2131327145"],
   header: [
     "header",
     "logoWhite",
@@ -1002,6 +1051,8 @@ type NodeDefaultElementType = {
   logoWhite2: "div";
   buttons2: "div";
   modalMobileMenu: typeof ModalMobileMenu;
+  menuButton: "div";
+  frame2131327145: "div";
   header: "div";
   logoWhite: "div";
   buttons: "div";
@@ -1109,6 +1160,8 @@ export const PlasmicHeader = Object.assign(
     logoWhite2: makeNodeComponent("logoWhite2"),
     buttons2: makeNodeComponent("buttons2"),
     modalMobileMenu: makeNodeComponent("modalMobileMenu"),
+    menuButton: makeNodeComponent("menuButton"),
+    frame2131327145: makeNodeComponent("frame2131327145"),
     header: makeNodeComponent("header"),
     logoWhite: makeNodeComponent("logoWhite"),
     buttons: makeNodeComponent("buttons"),

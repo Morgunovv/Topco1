@@ -1,8 +1,8 @@
 .button15 {
   background: rgba(20, 22, 31, 1);
-  width: auto;
+  width: 234px;
   height: auto;
-  display: inline-flex;
+  display: flex;
   overflow: hidden;
   flex-direction: row;
   position: relative;
@@ -37,14 +37,6 @@
     height: 36px;
   }
 }
-.button15:hover {
-  transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
-  background: #f7f5ef;
-  transform-style: preserve-3d;
-}
-.button15:hover * {
-  transform-style: preserve-3d;
-}
 .iconFrame15 {
   width: 24px;
   height: 24px;
@@ -52,29 +44,26 @@
   position: relative;
   flex-shrink: 0;
 }
-.svg__zlMp9 {
+.svg__p1JlJ {
   object-fit: cover;
   max-width: 100%;
   color: #fffdf9;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   display: block;
   position: absolute;
   top: 0px;
   left: 1px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .svg__zlMp9 {
+  .svg__p1JlJ {
     width: 20px;
     height: 20px;
   }
 }
-.button15:hover .svg__zlMp9 {
-  color: #14161f;
-}
 .label15 {
   display: block;
-  font-size: 18px;
+  font-size: 15px;
   text-align: right;
   font-family: "Inter", sans-serif;
   font-weight: 600;
@@ -87,9 +76,6 @@
   .label15 {
     font-size: 15px;
   }
-}
-.button15:hover .label15 {
-  color: #14161f;
 }
 .arrow2414 {
   width: 24px;
@@ -128,7 +114,7 @@
 .img > picture > img {
   object-fit: cover;
 }
-.svg__xYaHw {
+.svg__nb0Aj {
   object-fit: cover;
   max-width: 100%;
   color: #fef9ee;
