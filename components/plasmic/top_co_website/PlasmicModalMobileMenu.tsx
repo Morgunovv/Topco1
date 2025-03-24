@@ -70,19 +70,23 @@ import projectcss from "./plasmic.module.css"; // plasmic-import: tVrjFA7RVCG7zy
 import sty from "./PlasmicModalMobileMenu.module.css"; // plasmic-import: siKgXh_j7OMH/css
 
 import Frame2131327153Icon from "./icons/PlasmicIcon__Frame2131327153"; // plasmic-import: i9h3lVHw5uRy/icon
+import Cross20Icon from "./icons/PlasmicIcon__Cross20"; // plasmic-import: 28c3JiKFdBbF/icon
 import Chevron243Icon from "./icons/PlasmicIcon__Chevron243"; // plasmic-import: 8aTfnpHQ1sUB/icon
 
 createPlasmicElementProxy;
 
 export type PlasmicModalMobileMenu__VariantMembers = {
   noTrigger: "noTrigger";
+  isOpen2: "isOpen2";
 };
 export type PlasmicModalMobileMenu__VariantsArgs = {
   noTrigger?: SingleBooleanChoiceArg<"noTrigger">;
+  isOpen2?: SingleBooleanChoiceArg<"isOpen2">;
 };
 type VariantPropType = keyof PlasmicModalMobileMenu__VariantsArgs;
 export const PlasmicModalMobileMenu__VariantProps = new Array<VariantPropType>(
-  "noTrigger"
+  "noTrigger",
+  "isOpen2"
 );
 
 export type PlasmicModalMobileMenu__ArgsType = {
@@ -124,6 +128,7 @@ export interface DefaultModalMobileMenuProps {
   trigger?: React.ReactNode;
   content?: React.ReactNode;
   noTrigger?: SingleBooleanChoiceArg<"noTrigger">;
+  isOpen2?: SingleBooleanChoiceArg<"isOpen2">;
   className?: string;
 }
 
@@ -194,6 +199,12 @@ function PlasmicModalMobileMenu__RenderFunc(props: {
         type: "private",
         variableType: "variant",
         initFunc: ({ $props, $state, $queries, $ctx }) => $props.noTrigger
+      },
+      {
+        path: "isOpen2",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.isOpen2
       }
     ],
     [$props, $ctx, $refs]
@@ -220,6 +231,11 @@ function PlasmicModalMobileMenu__RenderFunc(props: {
         plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.ariaDialogTrigger,
         {
+          [sty.ariaDialogTriggerisOpen2]: hasVariant(
+            $state,
+            "isOpen2",
+            "isOpen2"
+          ),
           [sty.ariaDialogTriggernoTrigger]: hasVariant(
             $state,
             "noTrigger",
@@ -452,6 +468,11 @@ function PlasmicModalMobileMenu__RenderFunc(props: {
                       as={Frame2131327153Icon}
                       hasGap={true}
                       className={classNames(projectcss.all, sty.svg__lNm99)}
+                      role={"img"}
+                    />
+
+                    <Cross20Icon
+                      className={classNames(projectcss.all, sty.svg__p6Roq)}
                       role={"img"}
                     />
                   </div>

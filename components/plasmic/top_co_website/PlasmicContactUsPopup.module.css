@@ -9,6 +9,15 @@
   padding-top: 0px;
   min-width: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    width: auto;
+    justify-self: flex-start;
+    max-width: 375px;
+    max-height: 472px;
+    display: inline-flex;
+  }
+}
 .popUp {
   background: #fffdf9;
   width: 503px;
@@ -17,7 +26,7 @@
   overflow: hidden;
   flex-direction: column;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 0px;
   max-height: 588px;
   min-height: 588px;
   max-width: 503px;
@@ -44,12 +53,11 @@
   .popUp {
     width: 375px;
     align-self: flex-start;
-    left: auto;
-    top: auto;
+    left: -187px;
+    top: -270px;
     z-index: 1;
-    position: sticky;
+    position: absolute;
     height: auto;
-    bottom: 0px;
   }
 }
 .titleSubtitle {
@@ -106,6 +114,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .submitButton:global(.__wab_instance) {
     width: 327px;
+    top: 440px;
   }
 }
 .content {
@@ -158,6 +167,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .text__fyJ0S {
     font-size: 15px;
+    top: 71px;
   }
 }
 .svg__nZHm {
@@ -234,6 +244,7 @@
   .name:global(.__wab_instance):global(.__wab_instance) {
     width: 327px;
     height: 40px;
+    top: 97px;
     flex-shrink: 0;
   }
 }
@@ -255,6 +266,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .text__sdRfb {
     font-size: 15px;
+    top: 149px;
   }
 }
 .svg__pUcLu {
@@ -273,7 +285,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .svg__pUcLu {
     left: 81px;
-    top: 173px;
+    top: 143px;
   }
 }
 .email:global(.__wab_instance):global(.__wab_instance) {
@@ -289,6 +301,7 @@
   .email:global(.__wab_instance):global(.__wab_instance) {
     width: 327px;
     height: 40px;
+    top: 175px;
     flex-shrink: 0;
   }
 }
@@ -312,6 +325,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .text___3MKrT {
     font-size: 15px;
+    top: 229px;
   }
 }
 .svg__uXt1X {
@@ -328,7 +342,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .svg__uXt1X {
-    top: 269px;
+    top: 229px;
     left: 136px;
   }
 }
@@ -346,6 +360,7 @@
   .message:global(.__wab_instance):global(.__wab_instance) {
     width: 327px;
     height: 56px;
+    top: 256px;
     flex-shrink: 0;
   }
 }
@@ -366,6 +381,11 @@
   align-self: flex-start;
   flex-shrink: 0;
   border-radius: 1000px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .button3 {
+    left: 315px;
+  }
 }
 .freeBox {
   display: block;

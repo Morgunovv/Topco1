@@ -57,6 +57,17 @@
   > img {
   margin-top: 6px;
 }
+.svg__p6Roq {
+  object-fit: cover;
+  max-width: 100%;
+  color: #14161f;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+}
 .ariaModal:global(.__wab_instance) {
   background: none;
   display: block;
