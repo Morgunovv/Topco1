@@ -8915,8 +8915,10 @@
   width: 343px;
   height: auto;
   display: flex;
-  position: relative;
+  position: absolute;
   flex-direction: column;
+  left: 6px;
+  top: 218px;
   flex-shrink: 0;
 }
 .content63 > :global(.__wab_flex-container) {
