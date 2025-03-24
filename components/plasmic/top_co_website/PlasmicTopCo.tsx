@@ -4138,6 +4138,12 @@ function PlasmicTopCo__RenderFunc(props: {
                         </div>
                       </Stack__>
                     </Stack__>
+                    <div
+                      data-plasmic-name={"image9"}
+                      data-plasmic-override={overrides.image9}
+                      className={classNames(projectcss.all, sty.image9)}
+                    />
+
                     <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img___8TPxq)}
@@ -4154,12 +4160,6 @@ function PlasmicTopCo__RenderFunc(props: {
                         fullHeight: 264,
                         aspectRatio: 1.299242
                       }}
-                    />
-
-                    <div
-                      data-plasmic-name={"image9"}
-                      data-plasmic-override={overrides.image9}
-                      className={classNames(projectcss.all, sty.image9)}
                     />
                   </Stack__>
                 </Stack__>
