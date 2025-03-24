@@ -31,7 +31,7 @@
   > img {
   margin-left: 6px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .button15 {
     width: 234px;
     height: 36px;
@@ -63,7 +63,7 @@
   top: 0px;
   left: 1px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .svg__zlMp9 {
     width: 20px;
     height: 20px;
@@ -83,7 +83,7 @@
   color: rgba(255, 253, 249, 1);
   position: relative;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .label15 {
     font-size: 15px;
   }

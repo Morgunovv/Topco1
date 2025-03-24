@@ -40,6 +40,12 @@
 .button6:hover * {
   transform-style: preserve-3d;
 }
+@media (min-width: 0px) and (max-width: 375px) {
+  .button6:hover {
+    background: #14161f;
+    transform: none;
+  }
+}
 .iconFrame6 {
   width: 24px;
   height: 24px;
@@ -60,6 +66,11 @@
 }
 .button6:hover .svg__pWpOe {
   color: #14161f;
+}
+@media (min-width: 0px) and (max-width: 375px) {
+  .button6:hover .svg__pWpOe {
+    color: #fffdf9;
+  }
 }
 .freeBox {
   display: flex;
@@ -83,7 +94,7 @@
   color: rgba(255, 253, 249, 1);
   padding-bottom: 0px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .label6 {
     font-size: 15px;
     max-width: 99px;
@@ -94,6 +105,11 @@
 }
 .button6:hover .label6 {
   color: #14161f;
+}
+@media (min-width: 0px) and (max-width: 375px) {
+  .button6:hover .label6 {
+    color: #fffdf9;
+  }
 }
 .arrow245 {
   width: 24px;

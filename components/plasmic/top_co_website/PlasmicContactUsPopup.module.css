@@ -9,7 +9,7 @@
   padding-top: 0px;
   min-width: 0;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .root {
     width: auto;
     justify-self: flex-start;
@@ -49,7 +49,7 @@
 .popUp > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: 28px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .popUp {
     width: 375px;
     align-self: flex-start;
@@ -99,7 +99,7 @@
   align-self: auto;
   margin-right: 0px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .title2 {
     font-size: 22px;
     width: 325px;
@@ -111,7 +111,7 @@
   left: 32px;
   top: 481px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .submitButton:global(.__wab_instance) {
     width: 327px;
     top: 440px;
@@ -141,7 +141,7 @@
   > img {
   margin-top: 16px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .content {
     padding-right: 0px;
     position: absolute;
@@ -164,7 +164,7 @@
   top: 74px;
   position: absolute;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .text__fyJ0S {
     font-size: 15px;
     top: 71px;
@@ -183,7 +183,7 @@
   height: 1em;
   flex-shrink: 0;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .svg__nZHm {
     left: 114px;
     top: 74px;
@@ -194,7 +194,7 @@
   width: 330px;
   margin-left: 30px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .combobox:global(.__wab_instance):global(.__wab_instance) {
     width: 327px;
   }
@@ -206,7 +206,7 @@
   letter-spacing: -0.14px;
   margin-bottom: 4px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .text___1KLrq {
     font-size: 15px;
   }
@@ -240,7 +240,7 @@
   width: 439px;
   flex-shrink: 0;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .name:global(.__wab_instance):global(.__wab_instance) {
     width: 327px;
     height: 40px;
@@ -263,7 +263,7 @@
   left: 30px;
   top: 172px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .text__sdRfb {
     font-size: 15px;
     top: 149px;
@@ -282,7 +282,7 @@
   height: 1em;
   flex-shrink: 0;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .svg__pUcLu {
     left: 81px;
     top: 143px;
@@ -297,7 +297,7 @@
   width: 439px;
   flex-shrink: 0;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .email:global(.__wab_instance):global(.__wab_instance) {
     width: 327px;
     height: 40px;
@@ -322,7 +322,7 @@
   left: 30px;
   top: 269px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .text___3MKrT {
     font-size: 15px;
     top: 229px;
@@ -340,7 +340,7 @@
   height: 1em;
   flex-shrink: 0;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .svg__uXt1X {
     top: 229px;
     left: 136px;
@@ -356,7 +356,7 @@
   width: 439px;
   flex-shrink: 0;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .message:global(.__wab_instance):global(.__wab_instance) {
     width: 327px;
     height: 56px;
@@ -382,7 +382,7 @@
   flex-shrink: 0;
   border-radius: 1000px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .button3 {
     left: 315px;
   }

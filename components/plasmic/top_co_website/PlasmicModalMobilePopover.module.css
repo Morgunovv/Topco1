@@ -1,7 +1,7 @@
 .ariaDialogTrigger:global(.__wab_instance) {
   position: relative;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .ariaDialogTrigger:global(.__wab_instance) {
     background: none;
     pointer-events: auto;
@@ -54,7 +54,7 @@
   width: 100vw;
   outline: none;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .ariaModal:global(.__wab_instance) {
     width: 375px;
     box-shadow: 0px 24px 48px -12px transparent;
@@ -74,7 +74,7 @@
   left: 563px;
   top: 150px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .contactUsPopup__hJky:global(.__wab_instance) {
     opacity: 0;
     display: none;
@@ -104,7 +104,7 @@
 .contactUsPopup__dzi6F:global(.__wab_instance) {
   max-width: 100%;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .contactUsPopup__dzi6F:global(.__wab_instance) {
     display: none;
   }

@@ -32,7 +32,7 @@
   outline-offset: 1px;
   outline-color: var(--token-OyPG8bhCpd0Y);
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 375px) {
   .ariaInput:global(.__wab_instance) {
     font-size: 14px;
   }
