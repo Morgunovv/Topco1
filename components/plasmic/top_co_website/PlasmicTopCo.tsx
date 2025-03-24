@@ -814,11 +814,12 @@ function PlasmicTopCo__RenderFunc(props: {
                   displayWidth={"200px"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/top_co_website/images/bubble.svg",
-                    fullWidth: 200,
-                    fullHeight: 185,
-                    aspectRatio: 1.081081
+                    src: "/plasmic/top_co_website/images/bubble1Svg.svg",
+                    fullWidth: 100,
+                    fullHeight: 93,
+                    aspectRatio: 1.075269
                   }}
+                  svg={'<svg viewBox="0 0 100 100" width="100%" height="100%">'}
                 />
 
                 <PlasmicImg__
@@ -1016,6 +1017,7 @@ function PlasmicTopCo__RenderFunc(props: {
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
                     displayWidth={"auto"}
+                    image={``}
                     loading={"lazy"}
                     src={{
                       src: "/plasmic/top_co_website/images/image17.svg",
@@ -1023,6 +1025,7 @@ function PlasmicTopCo__RenderFunc(props: {
                       fullHeight: 441,
                       aspectRatio: 1.21542
                     }}
+                    svg={'shape-rendering="crispEdges"'}
                   />
                 </div>
                 <Vector5085Icon

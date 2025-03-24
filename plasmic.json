@@ -1969,6 +1969,11 @@
           "id": "d6hA896RX1t5",
           "name": "Wallet.svg",
           "filePath": "../public/plasmic/top_co_website/images/walletSvg.svg"
+        },
+        {
+          "id": "IUdhiEsqGY9s",
+          "name": "Bubble (1).svg",
+          "filePath": "../public/plasmic/top_co_website/images/bubble1Svg.svg"
         }
       ],
       "indirect": false,
