@@ -774,11 +774,6 @@ function PlasmicTopCo__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.pageBlock1)}
           >
-            <HandwriteIcon
-              className={classNames(projectcss.all, sty.svg__b30Rp)}
-              role={"img"}
-            />
-
             <h1
               data-plasmic-name={"h1"}
               data-plasmic-override={overrides.h1}
@@ -793,6 +788,11 @@ function PlasmicTopCo__RenderFunc(props: {
                 "The Open Platform \nprovides a Powerful Toolkit \nto Build on TON"
               }
             </h1>
+            <HandwriteIcon
+              className={classNames(projectcss.all, sty.svg__b30Rp)}
+              role={"img"}
+            />
+
             <div
               data-plasmic-name={"illustration"}
               data-plasmic-override={overrides.illustration}
@@ -7353,13 +7353,10 @@ function PlasmicTopCo__RenderFunc(props: {
               />
             </div>
           </div>
-          {(
-            hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
-          ) ? (
-            <Footer1
-              className={classNames("__wab_instance", sty.footer1__sWkZ)}
-            />
-          ) : null}
+          <Footer1
+            className={classNames("__wab_instance", sty.footer1__sWkZ)}
+          />
+
           <Stack__
             as={"div"}
             data-plasmic-name={"pageBlock7"}
@@ -7606,10 +7603,6 @@ function PlasmicTopCo__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.pageBlock8)}
           >
-            <Footer1
-              className={classNames("__wab_instance", sty.footer1__a5Zeq)}
-            />
-
             <Stack__
               as={"div"}
               data-plasmic-name={"content35"}
@@ -7664,6 +7657,9 @@ function PlasmicTopCo__RenderFunc(props: {
                 role={"img"}
               />
             </Stack__>
+            <Footer1
+              className={classNames("__wab_instance", sty.footer1__a5Zeq)}
+            />
           </Stack__>
         </div>
       </div>
