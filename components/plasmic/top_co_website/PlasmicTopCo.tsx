@@ -74,6 +74,10 @@ import Footer1 from "../../Footer1"; // plasmic-import: rAIC55lfHAgI/component
 import SeeMore from "../../SeeMore"; // plasmic-import: 45nkc3vlT8-m/component
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
+import {
+  UnnamedGlobalGroupOfVariantsValue,
+  useUnnamedGlobalGroupOfVariants
+} from "./PlasmicGlobalVariant__UnnamedGlobalGroupOfVariants"; // plasmic-import: lWQJ-KpigOYP/globalVariant
 import { useScreenVariants as useScreenVariantsknLyTCzNv2Gm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: KNLyTCzNV2Gm/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -83,8 +87,8 @@ import projectcss from "./plasmic.module.css"; // plasmic-import: tVrjFA7RVCG7zy
 import sty from "./PlasmicTopCo.module.css"; // plasmic-import: gNJkpbGSqBC6/css
 
 import HandwriteIcon from "./icons/PlasmicIcon__Handwrite"; // plasmic-import: O2csYnzG9y9K/icon
-import Star2Icon from "./icons/PlasmicIcon__Star2"; // plasmic-import: kkBN8MD9NRST/icon
 import Star3Icon from "./icons/PlasmicIcon__Star3"; // plasmic-import: dTKUTfime_op/icon
+import Star2Icon from "./icons/PlasmicIcon__Star2"; // plasmic-import: kkBN8MD9NRST/icon
 import Vector5085Icon from "./icons/PlasmicIcon__Vector5085"; // plasmic-import: ttbTmaf6HQ_n/icon
 import Vector5086Icon from "./icons/PlasmicIcon__Vector5086"; // plasmic-import: 49S6mxI0ztqm/icon
 import Vector5087Icon from "./icons/PlasmicIcon__Vector5087"; // plasmic-import: acvec5lB8NQv/icon
@@ -180,12 +184,12 @@ export type PlasmicTopCo__OverridesType = {
   illustration2?: Flex__<"div">;
   playdeck?: Flex__<"div">;
   background?: Flex__<"div">;
-  tonstakers?: Flex__<"div">;
-  background2?: Flex__<"div">;
-  wallet?: Flex__<"div">;
-  background3?: Flex__<"div">;
   getgems?: Flex__<"div">;
   background4?: Flex__<"div">;
+  wallet?: Flex__<"div">;
+  background3?: Flex__<"div">;
+  tonstakers?: Flex__<"div">;
+  background2?: Flex__<"div">;
   pageBlock2?: Flex__<"div">;
   image?: Flex__<"div">;
   group1817245925?: Flex__<"div">;
@@ -721,6 +725,7 @@ function PlasmicTopCo__RenderFunc(props: {
   });
 
   const globalVariants = ensureGlobalVariants({
+    unnamedGlobalGroupOfVariants: useUnnamedGlobalGroupOfVariants(),
     screen: useScreenVariantsknLyTCzNv2Gm()
   });
 
@@ -760,7 +765,15 @@ function PlasmicTopCo__RenderFunc(props: {
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
-            sty.root
+            sty.root,
+            {
+              [sty.rootglobal_unnamedGlobalGroupOfVariants_unnamedVariant]:
+                hasVariant(
+                  globalVariants,
+                  "unnamedGlobalGroupOfVariants",
+                  "unnamedVariant"
+                )
+            }
           )}
         >
           <Header
@@ -776,20 +789,22 @@ function PlasmicTopCo__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.pageBlock1)}
           >
-            <h1
-              data-plasmic-name={"h1"}
-              data-plasmic-override={overrides.h1}
-              className={classNames(
-                projectcss.all,
-                projectcss.h1,
-                projectcss.__wab_text,
-                sty.h1
-              )}
-            >
-              {
-                "The Open Platform \nprovides a Powerful Toolkit \nto Build on TON"
-              }
-            </h1>
+            <div className={classNames(projectcss.all, sty.freeBox__sm2CN)}>
+              <h1
+                data-plasmic-name={"h1"}
+                data-plasmic-override={overrides.h1}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1
+                )}
+              >
+                {
+                  "The Open Platform \nprovides a Powerful Toolkit \nto Build on TON"
+                }
+              </h1>
+            </div>
             <HandwriteIcon
               className={classNames(projectcss.all, sty.svg__b30Rp)}
               role={"img"}
@@ -805,23 +820,67 @@ function PlasmicTopCo__RenderFunc(props: {
                 data-plasmic-override={overrides.illustration2}
                 className={classNames(projectcss.all, sty.illustration2)}
               >
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__cK5D)}
-                  displayHeight={"185px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"200px"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/top_co_website/images/bubble1Svg.svg",
-                    fullWidth: 100,
-                    fullHeight: 93,
-                    aspectRatio: 1.075269
-                  }}
-                  svg={'<svg viewBox="0 0 100 100" width="100%" height="100%">'}
+                <div
+                  data-plasmic-name={"playdeck"}
+                  data-plasmic-override={overrides.playdeck}
+                  className={classNames(projectcss.all, sty.playdeck)}
+                >
+                  <div
+                    data-plasmic-name={"background"}
+                    data-plasmic-override={overrides.background}
+                    className={classNames(projectcss.all, sty.background)}
+                  />
+
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img___4NudL)}
+                    displayHeight={"42px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"62px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/top_co_website/images/logo.svg",
+                      fullWidth: 62,
+                      fullHeight: 42,
+                      aspectRatio: 1.47619
+                    }}
+                  />
+                </div>
+                <div
+                  data-plasmic-name={"getgems"}
+                  data-plasmic-override={overrides.getgems}
+                  className={classNames(projectcss.all, sty.getgems)}
+                >
+                  <div
+                    data-plasmic-name={"background4"}
+                    data-plasmic-override={overrides.background4}
+                    className={classNames(projectcss.all, sty.background4)}
+                  />
+
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__odWg5)}
+                    displayHeight={"71px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"71px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/top_co_website/images/logo4.svg",
+                      fullWidth: 71,
+                      fullHeight: 71,
+                      aspectRatio: 1
+                    }}
+                  />
+                </div>
+                <Star3Icon
+                  className={classNames(projectcss.all, sty.svg__ge34)}
+                  role={"img"}
                 />
 
                 <PlasmicImg__
@@ -860,32 +919,56 @@ function PlasmicTopCo__RenderFunc(props: {
                   }}
                 />
 
+                <Star2Icon
+                  className={classNames(projectcss.all, sty.svg___0GWj)}
+                  role={"img"}
+                />
+
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__cK5D)}
+                  displayHeight={"185px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"200px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/top_co_website/images/bubble1Svg.svg",
+                    fullWidth: 100,
+                    fullHeight: 93,
+                    aspectRatio: 1.075269
+                  }}
+                  svg={'<svg viewBox="0 0 100 100" width="100%" height="100%">'}
+                />
+
                 <div
-                  data-plasmic-name={"playdeck"}
-                  data-plasmic-override={overrides.playdeck}
-                  className={classNames(projectcss.all, sty.playdeck)}
+                  data-plasmic-name={"wallet"}
+                  data-plasmic-override={overrides.wallet}
+                  className={classNames(projectcss.all, sty.wallet)}
                 >
                   <div
-                    data-plasmic-name={"background"}
-                    data-plasmic-override={overrides.background}
-                    className={classNames(projectcss.all, sty.background)}
+                    data-plasmic-name={"background3"}
+                    data-plasmic-override={overrides.background3}
+                    className={classNames(projectcss.all, sty.background3)}
                   />
 
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img___4NudL)}
-                    displayHeight={"42px"}
+                    className={classNames(sty.img__tAy3T)}
+                    displayHeight={"53px"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"62px"}
+                    displayWidth={"67px"}
                     loading={"lazy"}
                     src={{
-                      src: "/plasmic/top_co_website/images/logo.svg",
-                      fullWidth: 62,
-                      fullHeight: 42,
-                      aspectRatio: 1.47619
+                      src: "/plasmic/top_co_website/images/logo3.svg",
+                      fullWidth: 67,
+                      fullHeight: 53,
+                      aspectRatio: 1.264151
                     }}
                   />
                 </div>
@@ -918,73 +1001,6 @@ function PlasmicTopCo__RenderFunc(props: {
                     }}
                   />
                 </div>
-                <div
-                  data-plasmic-name={"wallet"}
-                  data-plasmic-override={overrides.wallet}
-                  className={classNames(projectcss.all, sty.wallet)}
-                >
-                  <div
-                    data-plasmic-name={"background3"}
-                    data-plasmic-override={overrides.background3}
-                    className={classNames(projectcss.all, sty.background3)}
-                  />
-
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__tAy3T)}
-                    displayHeight={"53px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"67px"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/top_co_website/images/logo3.svg",
-                      fullWidth: 67,
-                      fullHeight: 53,
-                      aspectRatio: 1.264151
-                    }}
-                  />
-                </div>
-                <div
-                  data-plasmic-name={"getgems"}
-                  data-plasmic-override={overrides.getgems}
-                  className={classNames(projectcss.all, sty.getgems)}
-                >
-                  <div
-                    data-plasmic-name={"background4"}
-                    data-plasmic-override={overrides.background4}
-                    className={classNames(projectcss.all, sty.background4)}
-                  />
-
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__odWg5)}
-                    displayHeight={"71px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"71px"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/top_co_website/images/logo4.svg",
-                      fullWidth: 71,
-                      fullHeight: 71,
-                      aspectRatio: 1
-                    }}
-                  />
-                </div>
-                <Star2Icon
-                  className={classNames(projectcss.all, sty.svg___0GWj)}
-                  role={"img"}
-                />
-
-                <Star3Icon
-                  className={classNames(projectcss.all, sty.svg__ge34)}
-                  role={"img"}
-                />
               </div>
             </div>
           </Stack__>
@@ -7691,12 +7707,12 @@ const PlasmicDescendants = {
     "illustration2",
     "playdeck",
     "background",
-    "tonstakers",
-    "background2",
-    "wallet",
-    "background3",
     "getgems",
     "background4",
+    "wallet",
+    "background3",
+    "tonstakers",
+    "background2",
     "pageBlock2",
     "image",
     "group1817245925",
@@ -8171,12 +8187,12 @@ const PlasmicDescendants = {
     "illustration2",
     "playdeck",
     "background",
-    "tonstakers",
-    "background2",
+    "getgems",
+    "background4",
     "wallet",
     "background3",
-    "getgems",
-    "background4"
+    "tonstakers",
+    "background2"
   ],
   h1: ["h1"],
   illustration: [
@@ -8184,32 +8200,32 @@ const PlasmicDescendants = {
     "illustration2",
     "playdeck",
     "background",
-    "tonstakers",
-    "background2",
+    "getgems",
+    "background4",
     "wallet",
     "background3",
-    "getgems",
-    "background4"
+    "tonstakers",
+    "background2"
   ],
   illustration2: [
     "illustration2",
     "playdeck",
     "background",
-    "tonstakers",
-    "background2",
+    "getgems",
+    "background4",
     "wallet",
     "background3",
-    "getgems",
-    "background4"
+    "tonstakers",
+    "background2"
   ],
   playdeck: ["playdeck", "background"],
   background: ["background"],
-  tonstakers: ["tonstakers", "background2"],
-  background2: ["background2"],
-  wallet: ["wallet", "background3"],
-  background3: ["background3"],
   getgems: ["getgems", "background4"],
   background4: ["background4"],
+  wallet: ["wallet", "background3"],
+  background3: ["background3"],
+  tonstakers: ["tonstakers", "background2"],
+  background2: ["background2"],
   pageBlock2: [
     "pageBlock2",
     "image",
@@ -10668,12 +10684,12 @@ type NodeDefaultElementType = {
   illustration2: "div";
   playdeck: "div";
   background: "div";
-  tonstakers: "div";
-  background2: "div";
-  wallet: "div";
-  background3: "div";
   getgems: "div";
   background4: "div";
+  wallet: "div";
+  background3: "div";
+  tonstakers: "div";
+  background2: "div";
   pageBlock2: "div";
   image: "div";
   group1817245925: "div";
@@ -11233,12 +11249,12 @@ export const PlasmicTopCo = Object.assign(
     illustration2: makeNodeComponent("illustration2"),
     playdeck: makeNodeComponent("playdeck"),
     background: makeNodeComponent("background"),
-    tonstakers: makeNodeComponent("tonstakers"),
-    background2: makeNodeComponent("background2"),
-    wallet: makeNodeComponent("wallet"),
-    background3: makeNodeComponent("background3"),
     getgems: makeNodeComponent("getgems"),
     background4: makeNodeComponent("background4"),
+    wallet: makeNodeComponent("wallet"),
+    background3: makeNodeComponent("background3"),
+    tonstakers: makeNodeComponent("tonstakers"),
+    background2: makeNodeComponent("background2"),
     pageBlock2: makeNodeComponent("pageBlock2"),
     image: makeNodeComponent("image"),
     group1817245925: makeNodeComponent("group1817245925"),
